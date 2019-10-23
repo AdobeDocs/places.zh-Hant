@@ -4,7 +4,7 @@ seo-title: Adobe Places的發行說明。
 description: Adobe Places的發行說明。
 seo-description: Adobe Places的發行說明。
 translation-type: tm+mt
-source-git-commit: 60d72318db5f19646bca8870cec33979934593a7
+source-git-commit: a9aacd39be486195159b163b2c5969cb8b82b51b
 
 ---
 
@@ -183,7 +183,7 @@ iOS Places Monitor 1.0.0
 
 iOS版Places Monitor的初次發行。
 
-Places Monitor會管理作業系統層級的位置API，並直接與Places擴充功能通訊。 在安裝這兩個擴充功能後，客戶就可以在其應用程式中進行立即可用的區域監控。 有關Places Monitor的詳細資訊，請參 [閱Places Monitor擴展](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)。
+Places Monitor會管理作業系統層級的位置API，並直接與Places擴充功能通訊。 在安裝這兩個擴充功能後，客戶就可以在其應用程式中進行立即可用的區域監控。 有關Places Monitor的詳細資訊，請參 [閱Places Monitor擴展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ## 2019 年 2 月 28 日
 
@@ -212,7 +212,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 * 在POI進入或退出時觸發的規則事件。
 * 建立指向使用者目前POI的資料元素。
 
-如需Places擴充功能的詳細資訊，請參 [閱Places擴充功能](/help/configure-places-in-the sdk/places-extension/places-extension.md)。
+如需「地標」延伸功能的詳細資訊，請參閱「地 [標」延伸功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 #### 地標API
 
@@ -224,7 +224,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 
    Python實用程式隨API提供。
 
-如需Places API的詳細資訊，請參閱 [Places web services](/help/places-rest-apis/places-web-services.md)。
+如需Places API的詳細資訊，請參閱 [Places web services](/help/places-web-service-api/places-web-services.md)。
 
 ### 即將推出
 
