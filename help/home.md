@@ -4,7 +4,7 @@ seo-title: Adobe Places概觀
 description: 'Adobe Places是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 seo-description: '地點是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ---
 
@@ -30,13 +30,19 @@ Places可讓您達成下列目標：
 * 使用具有位置內容的受眾個人檔案，根據離線行為劃分受眾。
 * 在相關時，以店內體驗為目標使用者。
 
+## 從Brandon新增「位置介紹」影片的預留位置
+
+## 地標使用案例
+
+使用
+
 ## 放置元件
 
 地點包括下列元件：
 
 * **放置Web服務**
 
-   您可以使用REST API來建立和管理POI。 如需REST API的詳細資訊，請參閱「置 [入網站服務」](/help/places-rest-apis/api-usage/api-usage.md)。
+   您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參 [閱管理程式庫](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md)。
 
 * **Places UI**
 
@@ -44,7 +50,7 @@ Places可讓您達成下列目標：
 
 * **位置SDK**
 
-   多平台行動API介面，可整合行動應用程式中的位置內容。 如需SDK的詳細資訊，請參閱「地 [標擴充功能](/help/configure-places-in-the-sdk/places-extension/places-extension.md)」。
+   多平台行動API介面，可整合行動應用程式中的位置內容。 如需SDK的詳細資訊，請參閱「地 [標擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)」。
 
 * **位置規則**
 
@@ -52,7 +58,7 @@ Places可讓您達成下列目標：
 
 * **Places Monitor**
 
-   多平台行動SDK可內嵌在您的行動應用程式中，以自動監控使用者的位置變更並觸發「地標」規則。 如需詳細資訊，請參 [閱Places Monitor擴充功能](/help/configure-places-in-the-sdk/places-monitor-extension/places-monitor-extension.md)。
+   多平台行動SDK可內嵌在您的行動應用程式中，以自動監控使用者的位置變更並觸發「地標」規則。 如需詳細資訊，請參 [閱Places Monitor擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 ## 術語
 
@@ -87,23 +93,3 @@ Places可讓您達成下列目標：
 * **Experience Cloud ID服務提供通用、永續性的ID** ，可識別Experience cloud中所有解決方案的訪客。
 
    For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
-
-## 瞭解地標UI
-
-若要存取Places UI，請在瀏覽器中前往 [Places UI](https://places.adobe.com) ，並使用您的Adobe ID登入。
-
-以下是一些基本資訊，可協助您熟悉UI:
-
-* 在右上角，您可以按一下按鈕來建立資料庫、POI和篩選搜尋。
-* 在畫面的右下角，有一些按鈕可讓您以目前位置為中心來放大和縮小 **[!UICONTROL Find Me]**，以及在地圖檢視和衛星檢視之間切換。
-* 按兩下以放大，或按一下並拖曳以重新輸入地圖。
-* 您也可以使用方向鍵來捲動地圖。
-
-![](assets/location-services.png)
-
-
-## Places工作流程
-
-以下是「地標」工作流程的高階檢視：
-
-![](/help/assets/places-workflow-diagram-lc-1.png)
