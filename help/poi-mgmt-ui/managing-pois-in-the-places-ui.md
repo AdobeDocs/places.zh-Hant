@@ -4,7 +4,7 @@ seo-title: 在Places UI中管理POI
 description: 使用「地標」UI管理您的POI。
 seo-description: 使用「地標」UI管理您的POI。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -37,7 +37,7 @@ Geoffences是POI的一種類型，在資料庫中按以下鍵定義：
 ## 編輯POI
 
 1. 使用您的Adobe ID登入「地標」。
-1. 使用您的Adobe ID登入Adobe Places服務。
+1. 使用您的Adobe ID登入Places服務。
 1. 在右上方，按一下類似項目清單的圖示。
 1. 找出您要編輯的POI。
 1. 按一 **[!UICONTROL ...]** 下並選取 **[!UICONTROL View Details]**。
@@ -46,14 +46,14 @@ Geoffences是POI的一種類型，在資料庫中按以下鍵定義：
 ## 刪除POI
 
 1. 使用您的Adobe ID登入「地標」。
-1. 使用您的Adobe ID登入Adobe Places服務。
+1. 使用您的Adobe ID登入Places服務。
 1. 在右上方，按一下類似項目清單的圖示。
 1. 找到要刪除的POI。
 1. 按一 **[!UICONTROL ...]** 下並選取 **[!UICONTROL Delete]**。
 
 ## 依城市、州、國家或中繼資料篩選POI
 
-1. 使用您的Adobe ID登入Adobe Places服務。
+1. 使用您的Adobe ID登入Places服務。
 1. 在右上方，按一下篩選圖示。
 1. 您可透過下列其中一種方式來篩選POI:
 
