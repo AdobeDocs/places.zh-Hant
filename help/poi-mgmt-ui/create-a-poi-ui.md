@@ -4,7 +4,7 @@ seo-title: 建立 POI
 description: 使用「地標」UI建立POI。
 seo-description: 使用「地標」UI建立POI。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 興趣點(POI)是您感興趣的地圖上的位置或點。 酒店可以包括咖啡館、餐館等地。
 
-1. 使用您的Adobe ID登入Adobe Places。
+1. 使用您的Adobe ID登入「地標」。
 2. 在右上方，按一下看起來像項目清單的圖示，然後按一下 **[!UICONTROL New]**。
 3. 鍵入POI的名稱。
 4. 選取或新增資料庫。
