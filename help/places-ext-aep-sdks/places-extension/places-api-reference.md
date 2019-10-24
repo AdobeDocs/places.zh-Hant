@@ -4,7 +4,7 @@ seo-title: Places API參考
 description: Places中API參考的相關資訊。
 seo-description: Places中API參考的相關資訊。
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -35,7 +35,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 在已註冊接收Android地 `IntentService` 理序列事件的您中呼叫此方法。
 
-以下是此方法的程式碼範例：
+以下是此方法的範例程式碼:
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -50,7 +50,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
         List<Geofence> geofences = geofencingEvent.getTriggeringGeofences();
 
         if (geofences.size() > 0) {
-          // Call Adobe Places API to process information
+          // Call the Places API to process information
           Places.processGeofence(geofences.get(0), geofencingEvent.getGeofenceTransition());
         }
     }
@@ -107,7 +107,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
     protected void onHandleIntent(Intent intent) {
         GeofencingEvent geofencingEvent = GeofencingEvent.fromIntent(intent);
-        // Call Adobe Places API to process information
+        // Call the Places API to process information
         Places.processGeofenceEvent(geofencingEvent);
     }
 }
