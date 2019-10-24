@@ -1,16 +1,16 @@
 ---
-product: 地點
+product: Adobe Experience Platform Places
 audience: 終端使用者
-user-guide-title: Adobe Places說明
+user-guide-title: Adobe Experience Platform Places說明
 translation-type: tm+mt
-source-git-commit: cc5162bd71a22eec1ca8645a351e11695fd5eb16
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
 
-# Adobe Places說明 {#using}
+# Adobe Experience Platform Places說明 {#using}
 
-+ [Adobe Places概觀](home.md)
++ [Adobe Experience Platform Places概觀](home.md)
 + [發行說明](release-notes.md)
 + [入門](getting-started.md)
 + 地點興趣點管理介面 {#poi-mgmt-ui}
