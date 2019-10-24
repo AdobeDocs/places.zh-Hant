@@ -4,7 +4,7 @@ seo-title: 使用Places擴充功能設定SDK
 description: '您可以使用Places擴充功能來設定SDK，以在行動應用程式中啟用位置感知。 '
 seo-description: '您可以使用Places擴充功能來設定SDK，以在行動應用程式中啟用位置感知。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -19,15 +19,15 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 
 1. 在Launch中設定Places擴充功能。
 
-   如需詳細資訊，請 *參閱Launch中的Configure the Places擴充功能*。
+   如需詳細資訊，請參 *閱在Launch in* Places擴充功能中設定Places擴充功能 [](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 1. 將Places擴充功能新增至您的行動應用程式。
 
-   如需詳細資訊，請參 *閱「將地標擴充功能新增至應用程式」*。
+   如需詳細資訊，請參 *閱「在Places擴充功能中將Places擴充功能新增至您* 的 [應用程式」](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 1. 使用行動核心擴充功能註冊地標。
 
-   如需詳細資訊，請參 *閱「註冊Adobe Places與Mobile核心」*。
+   如需詳細資訊，請參 *閱「在Places擴充功能中註冊Mobile核心*[位置」](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 ## 配置Places Monitor擴展
 
