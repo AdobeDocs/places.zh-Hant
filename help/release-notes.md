@@ -1,10 +1,10 @@
 ---
 title: 發行說明
-seo-title: Adobe Places的發行說明。
-description: Adobe Places的發行說明。
-seo-description: Adobe Places的發行說明。
+seo-title: Adobe Experience Platform Places的發行說明。
+description: Adobe Experience Platform Places的發行說明。
+seo-description: Adobe Experience Platform Places的發行說明。
 translation-type: tm+mt
-source-git-commit: a9aacd39be486195159b163b2c5969cb8b82b51b
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
