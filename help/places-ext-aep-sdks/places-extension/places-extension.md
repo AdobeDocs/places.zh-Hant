@@ -4,7 +4,7 @@ seo-title: Places擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 seo-description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -16,7 +16,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 ## 在Adobe Experience Platform Launch中安裝Places擴充功能
 
 1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Extensions]** 簽。
-2. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Adobe Places]** 展名，然後按一下 **[!UICONTROL Install]**。
+2. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
 3. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
 4. 按一下 **[!UICONTROL Save]**。
 
@@ -26,7 +26,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
    如需有關在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobelaunch.com/launch-reference/publishing)。
 
-### 設定Places擴充功能 {#configure-places-extension}
+### Configure the Places extension {#configure-places-extension}
 
 ![](//help/assets/places-extension.png)
 
