@@ -4,7 +4,7 @@ seo-title: 在「地標」UI中管理程式庫
 description: 使用「地標」UI管理您的資料庫。
 seo-description: 使用「地標」UI管理您的資料庫。
 translation-type: tm+mt
-source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
+source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ## 建立程式庫
 
-1. 使用您的Adobe ID登入Adobe Places。
+1. 使用您的Adobe ID登入「地標」。
 2. 在右上方，按一下 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 按一下 **[!UICONTROL New]**。
 4. 鍵入名稱。
@@ -33,13 +33,13 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ## 在「地標」UI中變更資料庫的排名
 
-1. 使用您的Adobe ID登入Adobe Places。
+1. 使用您的Adobe ID登入「地標」。
 2. 在右上方，按一下 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 按一下程式庫名稱左側的圖示，並將程式庫拖曳至新排名。
 
 ## 重新命名資料庫
 
-1. 使用您的Adobe ID登入Adobe Places。
+1. 使用您的Adobe ID登入「地標」。
 2. 在右上方，按一下 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 找到您要刪除的程式庫。
 4. 按一 **[!UICONTROL ...]** 下並選取 **[!UICONTROL Rename]**。
@@ -47,7 +47,7 @@ source-git-commit: fdfeb8c17820c4eb0eae249da39be4eebece22d3
 
 ## 刪除程式庫
 
-1. 使用您的Adobe ID登入Adobe Places。
+1. 使用您的Adobe ID登入「地標」。
 2. 在右上方，按一下 **[!UICONTROL ...]** &gt; **[!UICONTROL Manage Libraries]**。
 3. 找到您要刪除的程式庫。
 4. 按一 **[!UICONTROL ...]** 下並選取 **[!UICONTROL Delete]**。
