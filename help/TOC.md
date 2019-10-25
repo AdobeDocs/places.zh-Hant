@@ -3,14 +3,14 @@ product: Adobe Experience Platform Location Service
 audience: 終端使用者
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
+source-git-commit: 5cb539b41426b177f17ff1ff44988ff646259d3f
 
 ---
 
 
 # Adobe Experience Platform位置服務說明 {#using}
 
-+ [Adobe Experience Platform Places概觀](home.md)
++ [Adobe Experience Platform位置服務總覽](home.md)
 + [發行說明](release-notes.md)
 + [入門](getting-started.md)
 + 興趣點管理介面 {#poi-mgmt-ui}
@@ -64,8 +64,8 @@ source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
    + [建立登入與退出規則](use-places-launch-workflow/create-rule-places-property.md)
 + 與其他Adobe解決方案搭配使用位置服務 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
-      + [傳送地點資料至Adobe Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
-      + [在包含Places資料的Adobe Analytics中執行報表](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [傳送位置服務資料至Adobe Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
+      + [在包含位置服務資料的Adobe Analytics中執行報表](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
    + Mobile Services for Messaging {#places-mobile-svcs-messaging}
       + [Mobile Services for Messaging](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [推送訊息](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
@@ -74,7 +74,7 @@ source-git-commit: 717250d3d6b11badde74df7e85ac5cce8cf0ef80
       + [推播通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [應用程式內訊息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
-      + [搭配Adobe Target使用地標](use-places-with-other-solutions/places-target/places-target.md)
+      + [搭配Adobe Target使用位置服務](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
    + [測試和驗證地點](places-testing-validation/test-validate-places.md)
 + [常見問題集](places-faqs.md)
