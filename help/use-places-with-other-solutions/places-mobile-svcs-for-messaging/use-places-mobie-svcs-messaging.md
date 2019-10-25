@@ -4,20 +4,15 @@ seo-title: 搭配Mobile services使用地標傳訊
 description: 本節將說明如何搭配Mobile services使用Places進行傳訊。
 seo-description: 本節將說明如何搭配Mobile services使用Places進行傳訊。
 translation-type: tm+mt
-source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
+source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
 ---
 
 
-# 搭配Mobile services使用地標以傳訊 {#places-mobile-services-messaging}
+# 傳訊的Mobile Services {#places-mobile-services-messaging}
 
 
 
 ## Steve影片的預留位置
 
 
-
-
-## 應用程式內訊息
-
-如何設定應用程式內訊息以從「地標」事件觸發；訊息必須位於Analytics點擊上。
