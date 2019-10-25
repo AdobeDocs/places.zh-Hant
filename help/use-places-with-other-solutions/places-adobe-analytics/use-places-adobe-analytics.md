@@ -4,7 +4,7 @@ seo-title: 傳送地點資料至Adobe Analytics
 description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
 seo-description: '本節提供如何將「地標」資料傳送至Analytics的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
+source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
 ---
 
@@ -17,4 +17,3 @@ source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
 
 
 
-## 在包含Places資料的Adobe Analytics中執行報表
