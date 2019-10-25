@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Places
 description: '地點是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 seo-description: '地點是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
@@ -42,7 +42,7 @@ Places可讓您達成下列目標：
 
 * **放置Web服務**
 
-   您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參 [閱管理程式庫](/help/places-web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/places-web-service-api/api-usage/manage-pois/manage-pois.md)。
+   您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參 [閱管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
 * **Places UI**
 
