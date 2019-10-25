@@ -1,17 +1,17 @@
 ---
-title: Adobe Experience Platform Places的發行說明
-seo-title: Adobe Experience Platform Places的發行說明。
-description: Adobe Experience Platform Places的發行說明。
-seo-description: Adobe Experience Platform Places的發行說明。
+title: 發行說明
+seo-title: 發行說明
+description: Adobe Experience Platform Location service的發行說明。
+seo-description: Adobe Experience Platform Location service的發行說明。
 translation-type: tm+mt
-source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # 發行說明 {#release-notes}
 
-以下是Adobe Experience Platform Places(Places)的發行說明：
+以下是發行說明：
 
 ## 2019 年 10 月 9 日
 
@@ -31,7 +31,7 @@ source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 此版本已進行下列更新：
 
-### 置入UI更新
+### UI更新
 
 以下是Places UI的更新清單：
 
@@ -54,7 +54,7 @@ source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
 此版本已進行下列更新：
 
-### 置入Monitor Launch Extension 2.0.0
+### Monitor Launch Extension 2.0.0
 
 * 已更新Places Monitor 2.0的Android和iOS安裝指示。
 
@@ -72,7 +72,7 @@ source-git-commit: 9fc484fd44c74ad77255668e4fbd7bc1642932e2
 
    新API: `public static void stop (final boolean clearData);`
 
-* 更新Places `getNearbyPointsOfInterest` API的使用，以更有效率地處理錯誤案例。
+* 更新API的使用 `getNearbyPointsOfInterest` ，以更有效率地處理錯誤案例。
 
 ## 2019 年 7 月 25 日
 
@@ -195,12 +195,12 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 
 以下是此版本的主要功能：
 
-#### Places UI
+#### 位置服務UI
 
 我們已發佈管理UI，您可在其中檢視及管理興趣點(POI)。 您也可以將POI組織到資料庫。 除了標準中繼資料（例如城市、州和類別）外，我們也支援將自訂中繼資料新增至POI的能力。
 
-* 若要檢視Places UI，請前往 [https://places.adobe.com](https://places.adobe.com)。
-* 若要開始使用Places UI，請參閱快速 [入門](/help/getting-started.md)。
+* 若要檢視UI，請前往https://places.adobe.com [](https://places.adobe.com)。
+* 若要開始使用UI，請參閱快 [速入門](/help/getting-started.md)。
 
 #### Places擴充功能
 
@@ -224,7 +224,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 
    Python實用程式隨API提供。
 
-如需Places API的詳細資訊，請參閱 [Places web services](/help/places-web-service-api/places-web-services.md)。
+如需Places API的詳細資訊，請參閱 [Web service API](/help/web-service-api/places-web-services.md)。
 
 ### 即將推出
 
