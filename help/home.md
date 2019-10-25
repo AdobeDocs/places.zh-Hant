@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Platform Places
-seo-title: Adobe Experience Platform Places
-description: '地點是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
-seo-description: '地點是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
+title: Adobe Experience Platform Location Service
+seo-title: Adobe Experience Platform Location Service
+description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
+seo-description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 85ce31329ad155e5c835be286c18e6609b88167b
 
 ---
 
 
 # 概述 {#home}
 
-Adobe Experience Platform Places(Places)是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 Places是地理位置服務，可讓行動應用程式開發人員使用豐富且簡單易用的SDK介面，加上有彈性的興趣點資料庫(POI)，來瞭解位置環境。
+Adobe Experience Platform Location Service(Location Service)是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 Places是地理位置服務，可讓行動應用程式開發人員使用豐富且簡單易用的SDK介面，加上有彈性的興趣點資料庫(POI)，來瞭解位置環境。
 
-Places可讓您達成下列目標：
+位置服務可讓您達成下列目標：
 
 * 建立並管理可與其他Adobe Experience cloud解決方案搭配運用的POI資料庫。
 * 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
@@ -30,21 +30,21 @@ Places可讓您達成下列目標：
 * 使用具有位置內容的受眾個人檔案，根據離線行為劃分受眾。
 * 在相關時，以店內體驗為目標使用者。
 
-## 從Brandon新增「位置介紹」影片的預留位置
+## 從Brandon新增「位置服務介紹」影片的預留位置
 
-## 地標使用案例
+## 位置服務使用案例
 
 使用
 
-## 放置元件
+## 位置服務元件
 
-地點包括下列元件：
+位置服務包含下列元件：
 
 * **放置Web服務**
 
    您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參 [閱管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
-* **Places UI**
+* **位置服務UI**
 
    在地圖上視覺化POI，以瞭解空間內容，並新增／編輯POI及其自訂中繼資料。
 
