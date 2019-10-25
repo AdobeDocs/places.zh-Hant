@@ -1,35 +1,35 @@
 ---
 title: 入門
 seo-title: 入門
-description: Places 快速入門.
-seo-description: Places 快速入門.
+description: 位置服務快速入門。
+seo-description: 位置服務快速入門。
 translation-type: tm+mt
-source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
+source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 ---
 
 
 # 入門 {#getting-started}
 
-以下是可協助您開始使用「地標」的影片：
+以下是可協助您開始使用位置服務的影片：
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
-要使用「地標」，請完成以下任務：
+若要使用位置服務，請完成下列工作：
 
-## 1.獲得布建以使用地標
+## 1.已布建以使用位置服務
 
-Places需要使用您的一般Adobe Experience platform布建內容的特殊布建內容。
+位置服務需要您的一般Adobe Experience platform布建內容的特殊布建內容。
 
 若要取得布建，請完成下列工作：
 
-* 在「管理控制台」中，請確定您的組織已布建「地點」。
+* 在Admin Console中，請確定您的組織已布建位置服務。
 
-   如果您不是Adobe管理員，請聯絡管理員以確定「管理控制台」中的「置入」內容。
+   如果您不是Adobe管理員，請聯絡管理員，以確保「管理控制台」中的位置服務內容。
 
-* 請確定您是在「管理控制台」的「位置」和「體驗平台啟動」產品內容下列為使用者。
+* 請確定您是在「管理控制台」的「位置服務」和「體驗平台啟動」產品內容下列為使用者。
 
-   如需詳細資訊，請 *參閱「新增使用者至Experience Platform Launch」和「Places in* Places常見問答」 [](/help/places-faqs.md)。
+   如需詳細資訊，請 *參閱常見問題中的「新增使用者至Experience Platform Launch*[和位置服務」](/help/places-faqs.md)。
 
 * 請確定您的行動應用程式屬性已在Experience Platform Launch中設定，並已安裝Places擴充功能。
 
@@ -49,7 +49,7 @@ Places需要使用您的一般Adobe Experience platform布建內容的特殊布�
 
 * 使用web services。
 
-   如需詳細資訊，請參 [閱「置入網站服務」](/help/places-web-service-api/places-web-services.md)。
+   如需詳細資訊，請參 [閱網站服務API](/help/web-service-api/places-web-services.md)。
 
 * 使用「地標」UI。
 
