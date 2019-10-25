@@ -1,17 +1,17 @@
 ---
-title: 地標常見問答集
-seo-title: 地標常見問答集
-description: 本主題提供有關「地標」的一些常見問題的其他資訊。
-seo-description: 本主題提供有關「地標」的一些常見問題的其他資訊。
+title: 常見問題集
+seo-title: 常見問題集
+description: 本主題提供一些常見問題的其他資訊。
+seo-description: 本主題提供一些常見問題的其他資訊。
 translation-type: tm+mt
-source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
+source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
 ---
 
 
-# 地標常見問答集
+# 常見問題集
 
-以下是有關「地標」的一些資訊和常見問題。
+以下是有關位置服務的一些資訊和常見問題。
 
 ## 大小與可靠性
 
@@ -25,7 +25,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
 如果作業系統無法在裝置離開地區時傳送退出事件，則SDK僅略過退出事件會更安全。 如果SDK製作退出事件而未由作業系統觸發，則可能會在裝置接近POI的時段之外，充分處理退出事件。
 
-## 新增使用者至地點和體驗平台啟動 {#adding-user-launch-places}
+## 新增使用者至位置服務與體驗平台啟動 {#adding-user-launch-places}
 
 若要允許使用者存 [取Launch Service UI](https://places.adobe.com)，他們必須以使用者身分新增至Admin Console的Places Core Service。 若要讓使用者能夠存取Experience Platform Launch、設定行動裝置屬性，以及搭配Adobe Experience Platform SDK使用Places，他們必須新增至Admin Console的Experience Platform Launch，並獲得下列Experience Platform Launch權限：
 
@@ -37,15 +37,15 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
    * 管理環境
 * 管理公司權限下的屬性權限
 
-如果這是您第一次新增使用者，請完成下列步驟，將使用者新增至Experience Platform Launch and Places。 如果您之前已新增使用者，可能會顯示多個描述檔，因此請確定您選取的是正確的描述檔。
+如果這是您第一次新增使用者，請完成下列步驟，將使用者新增至Experience Platform Launch and Location Service。 如果您之前已新增使用者，可能會顯示多個描述檔，因此請確定您選取的是正確的描述檔。
 
 >[!IMPORTANT]
 >
 >只有組織管理員才能存取Admin Console並新增使用者。
 
-### 1.確認已布建「位置」和「體驗平台啟動」
+### 1.確認已布建位置服務和體驗平台啟動
 
-若要確認已布建「位置」和「體驗平台啟動」:
+若要確認已布建位置服務和體驗平台啟動：
 
 1. 登入您的Experience cloud組織。
 1. 在右上方，按一下Experience cloud殼層切換器。
@@ -70,7 +70,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
    ![](/help/assets/places_provisioned1.png)
 
-   如果顯示，您的組織已布建「地標」和「體驗平台啟動」。 如果未顯示，則需要為您的組織布建。
+   如果顯示，您的組織已布建「位置服務」和「體驗平台啟動」。 如果未顯示，則需要為您的組織布建。
 
    >[!IMPORTANT]
    >
@@ -111,17 +111,17 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
 >[!IMPORTANT]
 >
->對於「地標」，有預設的描述檔，但您不需要新增任何權限。
+>對於位置服務，有預設的描述檔，但您不需要新增任何權限。
 
 您已成功新增權限至您建立的描述檔。
 
-### 3.將使用者或開發人員新增至您的Places和Experience Platform Launch設定檔
+### 3.將使用者或開發人員新增至您的位置服務與體驗平台啟動設定檔
 
-您可以將使用者和／或開發人員新增至您的Places和Experience Platform Launch設定檔。
+您可以將使用者和／或開發人員新增至您的位置服務和體驗平台啟動設定檔。
 
 ### 新增使用者
 
-若要將使用者新增至您的Places和Experience Platform Launch設定檔：
+若要將使用者新增至您的位置服務與體驗平台啟動設定檔：
 
 1. 新增使用者至Experience Platform Launch設定檔。
 
@@ -149,7 +149,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
    >[!TIP]
    >
-   >目前，所有「地標」使用者都有相同的權限，因此您不需要編輯權限。
+   >目前，所有位置服務使用者都有相同的權限，因此您不需要編輯權限。
 
    a.在卡 **[!UICONTROL Places Core Services]** 上驗證以下內容：
 
@@ -169,7 +169,7 @@ source-git-commit: 26b0cab7bdada26a7598b20623095b72f7c8d334
 
 ### 新增開發人員
 
-對於需要存取Places REST API的使用者，您必須將他們新增為開發人員。
+對於需要存取網站服務API的使用者，您必須以開發人員身分加入。
 
 若要新增開發人員：
 
