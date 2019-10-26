@@ -4,7 +4,7 @@ seo-title: '網站服務API概觀 '
 description: Places是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料，並為適當的人提供適當的體驗。
 seo-description: Places是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料，並為適當的人提供適當的體驗。
 translation-type: tm+mt
-source-git-commit: e204958ac3acbf5fb45d2347987f35557be70e43
+source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
 
 ---
 
@@ -39,17 +39,3 @@ Places REST API可讓您以程式設計方式處理組織的POI。 這些API可�
 
 * 如需可用API的詳細資訊以及如何使用這些API的詳細資訊，請參 [閱管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 * 如需這些API中標題和參數的詳細資訊，請參閱標 [題和參數](/help/web-service-api/api-usage/headers-and-parameters.md)。
-
-## 組織需求 {#org-requirements}
-
-要訪問Web服務REST API，請向系統管理員確認以下任務已完成：
-
-* 位置已布建，並會顯示在組織中。
-* 您已加入組織。
-* 您已新增至組織中的「地標」。
-
-   如需詳細資訊，請 *參閱常見問題中的新增使用者至地點*[和體驗平台啟動](/help/places-faqs.md)。
-
-* 您已新增為「地標」開發人員至您的組織。
-
-   如需開發人員角色的詳細資訊，請參閱「管 [理開發人員](https://helpx.adobe.com/enterprise/using/manage-developers.html)」。
