@@ -4,12 +4,32 @@ seo-title: Adobe I/O整合概觀
 description: 建立Adobe I/O整合的相關資訊。
 seo-description: 有關建立Adobe I/O整合的資訊。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ---
 
 
-# Adobe I/O整合概觀 {#adobeio-integration}
+# Adobe I/O整合 {#adobeio-integration}
+
+此資訊會示範如何建立Adobe I/O和Places整合。
+
+## 使用者存取的先決條件
+
+向組織的系統管理員確認下列任務已完成：
+
+* 「置入核心服務」會顯示在您組織的管理控制台中。
+* 您已加入組織。
+* 您已新增為「將核心服務置於組織中的使用者」。
+
+   如需詳細資訊，請參 *閱常見問題中的「將使用者或開發人員新增至您的位置服務和體驗平台啟動設定檔* 」 [一節](/help/places-faqs.md)。
+
+* 您已新增為「開發人員」，加入貴組織的「放置核心服務」。
+
+   如需有關新增開發人員的詳細資訊，請參 *閱常見問答集中的「將使用者或開發人員新增至您的位置服務和體驗平台啟動設定檔* 」 [一節](/help/places-faqs.md)。
+
+   如需開發人員角色的詳細資訊，請參閱「管 [理開發人員](https://helpx.adobe.com/enterprise/using/manage-developers.html)」。
+
+### REST API請求
 
 對Places REST API的每個請求都需要下列項目：
 
@@ -19,8 +39,6 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 與Adobe I/O的整合提供這些項目，以及使用JSON網頁Token(JWT)來請求不記名Token的方式。
 
-## 其他資訊
-
 * 如需JWT的詳細資訊，請參 [閱JSON Web Token簡介](https://jwt.io/introduction/)。
 * 若要建立Places的整合，請參閱下 *方的「建立Places整合* 」一節。
 * 若要瞭解API金鑰整合、產生JWT和公開金鑰憑證，請參閱 [Adobe I/O驗證概觀](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)。
@@ -29,7 +47,7 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 >
 >如果您無法登入Adobe I/O主控台，或如果「建立整合」頁面上不提供Experience Platform Location Service *，請參閱* Web services API總覽中的「組織需求 *」*[](/help/web-service-api/places-web-services.md)。
 
-## 建立Places整合 {#create-places-integration}
+## 建立Places整合
 
 若要建立Places整合，請完成下列工作：
 
@@ -75,7 +93,7 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 
 以下視頻將引導您完成生成密鑰對的過程：
 
-![](/help/assets/places_integration_video.gif)
+![整合視訊](/help/assets/places_integration_video.gif)
 
 ### 在Adobe I/O主控台中建立位置整合
 
@@ -125,4 +143,3 @@ source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
 >[!IMPORTANT]
 >
 >Adobe存取Token的有效 **期限** 為24小時，請儲存範例CURL命令（步驟5）。 如果存取Token不再有效，您需要重新產生Token。
-
