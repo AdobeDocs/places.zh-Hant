@@ -4,13 +4,111 @@ seo-title: 推播通知
 description: 本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。
 seo-description: '本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
+source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
 
 ---
 
 
-# Push notifications {#push-notifications}
+# 使用Experience Platform Location service的推播通知 {#push-notifications}
 
-1. 連結至ACS文檔。
-1. 從Launch設定回傳
-1. 使用描述檔位置篩選器傳送推播的螢幕擷取。
+在本指南中，我們將說明您如何使用歷史地理位置資訊來定位透過Adobe Campaign standard傳送的推播通知。
+
+>[!IMPORTANT]
+>
+>開始之前，請完成下列工作：
+>
+>* 使用Adobe Experience Platform Mobile SDK設定行動應用程式，包括 [Adobe Campaign Standard擴充功能](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard)。
+   >
+   >
+* 將 [Adobe Experience Platform Mobile SDK整合至您的應用程式](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk) 。
+>* 將 [Adobe Campaign Standard Extension新增至您的行動應用程式設定](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-campaign-standard) 。
+   >
+   >
+* [在「地標](/help/poi-mgmt-ui/create-a-poi-ui.md) 」 POI管理介面中建立POI。
+   >
+   >
+* 啟用並安裝 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+
+
+
+## 在Experience Platform Launch中建立資料元素
+
+在您確認Places and Places Monitor for Location Service擴充功能在應用程式中運作正常後，請在Experience Platform Launch中建立資料元素。 資料元素可讓您讀取透過Mobile SDK事件中樞提供之擴充功能所提供的資訊，並當成別名，從用戶端應用程式擷取資料。 讓我們建立一些資料元素，以從「地標」擴充功能擷取資料，以便將「地標」資訊傳送至「促銷活動」。
+
+1. 在您的Experience Platform Launch mobile屬性中，按一下「資料元 **素」標籤** ，然後按一 **下「新增資料元素」**。
+2. 在「擴 **充功能** 」下拉式清單中，選取「 **位置」**。
+3. 從「資 **料元素類型** 」下拉式清單中，選取「 **名稱」**。
+4. 在右側窗格中，您可以選擇「 **Current POI** 」（當前POI），該POI檢索用戶當前所在的POI的名稱。
+
+   **Last Entered** （上次輸入）檢索用戶上次輸入的POI的名稱，而 **Last Excest** （上次退出）則提供用戶上次離開的POI的名稱。 在此範例中，我們將選取「上次 **輸入** 」，並輸入資料元素的名稱，例如「上次輸入的POI名稱」 **，然後按一下「** 儲存 ****」。
+
+   !["Campaign Standard中的推送訊息"](/help/assets/ACS_Push1.png)
+
+
+5. 重複上述步驟，並為「上次輸入POI Latitude _」、「上次輸入POI經度_」和「上次輸入POI Radius」建立資料元素 ____。
+
+除了位置服務的資料元素外，請確定您已為應用程式ID和 _Experience Cloud ID建立Mobile Core__資料元素_。
+
+## 建立規則以傳送位置資料至Adobe Campaign Standard
+
+Experience Platform Launch的規則可讓您根據事件觸發程式建立複雜、多解決方案的工作流程。 規則的優點在於，您可以建立新規則或修改現有規則，並將更新動態部署至行動應用程式。 在此範例中，我們將建立規則，當使用者進入地理圍欄的POI時，就會觸發此規則。 觸發規則後，會傳送更新至促銷活動，以根據Experience Cloud ID記錄特定使用者的特定POI項目。
+
+1. 在「啟動行動裝置」屬性中，按一下「 **規則** 」標籤，然後按 **一下「新增規則」**。
+2. 在「事 **件** 」區段下，按一 **下+** 並選取「 **位置** 」做為副檔名。
+3. 對於「事 **件類型** 」, **選擇「輸入POI**」。
+4. 為規則命名，例如，用戶 **輸入POI**。
+5. Click **Keep Changes**.
+6. 「條 **件** 」區段可讓您篩選或限制觸發此規則的時機。  我們暫時不要說這個。
+7. 在「動 **作** 」區段下，按 **一下+** 以建立新動作
+8. 在「擴 **展** 」下拉式清單中，選取「 **Mobile Core」** ，並在「 **Action Type** 」下拉式清單中，選取「 **** Send Postback」。
+9. 對於 **URL**，您需要建構您的Campaign Standard位置端點。  URL看起來應類似下方的URL。 請確定您使用先前為促銷活動伺服器和PKey建立的正確資料元素。 `https:///rest/head/mobileAppV5//locations/`
+10. 按一下方塊以新增貼文內文並傳送下列內容：
+
+   ```
+   {
+    "locationData": {
+    "distances": "{%%Last Entered POI Radius%%}",
+    "poiLabel": "{%%Last Entered POI Name%%}",
+    "latitude": "{%%Last Entered POI Lat%%}",
+    "longitude": "{%%Last Entered POI Long%%}",
+    "appId": "{%%AppID%%}",
+    "marketingCloudId": “{%%ecid%%}”
+    }
+   }
+   ```
+
+11. 請確定您使用的是您在上一節中建立的特定資料元素。
+12. 在「內 **容類型**」中，輸 **入application/json**。
+13. 設定完 **成後** ，按一下「保留變更」。
+14. 設定Slack Web掛接可做為額外動作，以驗證項目是否已觸發，以及是否正在收集正確資料，這會有所幫助。
+
+
+>請不要忘記將最近的變更發佈至您的應用程式，以確定規則和所有資料元素都已部署為您設定的一部分。 發佈後，您應再次啟動行動應用程式，以取得最新的組態更新。
+
+## 使用位置資料來定位促銷活動訊息
+
+既然我們在Campaign中填入了位置資料，我們就可以將POI當成觀眾區隔工具。
+
+1. 在您的Adobe Campaign standard例項中，按一下「建 **立推播通知」**。
+2. 針對推播通知類型，選取「 **傳送推播至促銷活動設定檔」**。
+3. 按一 **下「下一** 步」，然後在下一個畫面上輸入一般詳細資訊。
+4. 在「對象」畫面上，按一 **下「計數** 」以查看推播通知的預估傳送使用者人數。
+
+   *在這種情況下，我的計數將等於3，因為我已安裝了3台設備，用於測試應用程式。*
+
+5. 在左側邊欄上，展開 **Profile** （描述檔）標籤，並將 **** POI位置篩選器拖曳至主區域
+6. 在「POI篩選」視窗中，輸入您要定位的POI的確切名稱。
+
+   *您可以進行其他選擇，以決定自使用者上次造訪此POI以來的時間範圍。*
+
+   !["ACS中的推送消息2"](/help/assets/ACS_push2.png)
+
+
+7.  按一下&#x200B;**「確認」**。
+8. 再次在頂端執行計數，以查看您的受眾規模變更。  如果您未看到計數更新，則可能已輸入POI名稱，但沒有設備觸發了該條目。 在這裡，使用Slack web掛接變得很有價值，因為您可以看到來自各種測試設備的POI條目清單。
+9. 您可以拖曳其他POI位置篩選器，將多個POI加入訊息中。
+10. 按一 **下「下一** 步」以完成建立傳送的推播通知。
+
+   !["ACS中的推送消息3"](/help/assets/ACS_push3.html)
+
+搭配Adobe Campaign standard使用位置服務為您提供強大的工具，讓您根據地理圍欄項目和外圍，將訊息分段並鎖定給使用者。 此簡單的整合為建立更個人化和情境化的使用案例開啟了大門。
