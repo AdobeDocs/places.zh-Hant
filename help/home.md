@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Location Service
 description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 seo-description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: 85ce31329ad155e5c835be286c18e6609b88167b
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
@@ -29,8 +29,6 @@ Adobe Experience Platform Location Service(Location Service)是瞭解行動使�
 * 分析您自有商店與競爭對手商店的足路流量。
 * 使用具有位置內容的受眾個人檔案，根據離線行為劃分受眾。
 * 在相關時，以店內體驗為目標使用者。
-
-## 從Brandon新增「位置服務介紹」影片的預留位置
 
 ## 位置服務使用案例
 
