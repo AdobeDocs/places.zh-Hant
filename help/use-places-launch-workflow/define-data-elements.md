@@ -4,7 +4,7 @@ seo-title: 定義資料元素
 description: 本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。
 seo-description: '本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 573f2bb368bd8384f5b465819600a1668b0bdda8
 
 ---
 
@@ -30,10 +30,10 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 每個POI都包含下列資料參考：
 
 * **[!UICONTROL Category]**:POI的類別
-* **[!IUICONTROL 城市]**:POI城市
+* **[!UICONTROL City]**:POI城市
 * **[!UICONTROL Country]**:POI的國家／地區
-* **[UICONTROL Latitude]**:POI的緯度
-* **[UICONCONTROL經度]**:POI的經度
+* **[!UICONTROL Latitude]**:POI的緯度
+* **[!UICONTROL Longitude]**:POI的經度
 * **[!UICONTROL Metadata]**:POI的自訂中繼資料
 * **[!UICONTROL Name]**:POI地區
 * **[!UICONTROL Radius]**:POI半徑
