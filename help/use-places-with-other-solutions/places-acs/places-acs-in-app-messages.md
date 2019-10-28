@@ -4,14 +4,12 @@ seo-title: 包含位置服務的應用程式內訊息
 description: 本節提供如何在Campaign Standard中搭配Campaign standard中的應用程式內訊息使用推播訊息的相關資訊。
 seo-description: '本節提供如何在Campaign standard中搭配應用程式內訊息使用「Campaign Standard中的推播訊息」的資訊。 '
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 ---
 
 
 # 使用位置服務的應用程式內訊息 {#in-app-messages-loc-service}
-
-（來自伊凡的影片。）
 
 這些資訊可協助您瞭解如何使用Adobe Experience Platform Location Service資訊來傳送應用程式內訊息或本機通知。
 
