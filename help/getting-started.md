@@ -4,7 +4,7 @@ seo-title: 入門
 description: 位置服務快速入門。
 seo-description: 位置服務快速入門。
 translation-type: tm+mt
-source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
+source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
 ---
 
@@ -15,9 +15,11 @@ source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
+## 使用位置服務
+
 若要使用位置服務，請完成下列工作：
 
-## 1.確保您的使用者已布建為使用位置服務
+### 1.確保您的使用者已布建為使用位置服務
 
 所有Experience cloud組織都可使用位置服務產品內容。
 
@@ -30,7 +32,7 @@ source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
    若要針對您的地域圍欄使用Adobe提供的地區監控，請安裝Places Monitor擴充功能。 如需詳細資訊，請參閱「置 [入螢幕擴充功能」](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
 
-## 2.建立您的POI
+### 2.建立您的POI
 
 地標(POI)是您為組織建立的地理圍欄，您可以透過下列其中一種方式建立POI:
 
@@ -43,7 +45,7 @@ source-git-commit: fb8bfc92f7af5ee30da395b7ee2d9c4eb2a87c09
    如需詳細資訊，請參 [閱網站服務API](/help/web-service-api/places-web-services.md)。
 
 
-## 3.配置Places擴展和Places監視擴展
+### 3.配置Places擴展和Places監視擴展
 
 如需有關設定Places擴充功能和Monitor擴充功能的詳細資訊，請參閱下列資訊：
 
