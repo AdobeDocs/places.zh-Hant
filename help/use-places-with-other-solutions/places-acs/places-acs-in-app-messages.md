@@ -4,7 +4,7 @@ seo-title: 包含位置服務的應用程式內訊息
 description: 本節提供如何在Campaign Standard中搭配Campaign standard中的應用程式內訊息使用推播訊息的相關資訊。
 seo-description: '本節提供如何在Campaign standard中搭配應用程式內訊息使用「Campaign Standard中的推播訊息」的資訊。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
@@ -54,6 +54,4 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 搭配使用位置服務與Adobe Campaign Standard為您提供強大的工具，讓您根據地理圍欄登入和退出點，將訊息分段並定位給使用者。 此簡單的整合為建立更個人化和情境化的使用案例開啟了大門。
 
-## 在Campaign Standard中根據Places中繼資料建立不同的觸發器
-
-（此資訊是否會傳送）
+>[!VIDEO](https://www.youtube.com/watch?v=ikiTTQw9c-o)
