@@ -4,7 +4,7 @@ seo-title: 大量上傳POI
 description: 本節提供如何大量上傳POI的相關資訊。
 seo-description: 本節提供如何大量上傳POI的相關資訊。
 translation-type: tm+mt
-source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
+source-git-commit: 31462861efa807583c245963d8496eecdd3cf92e
 
 ---
 
@@ -13,7 +13,7 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 已建立一組Python指令碼，以利使用Web服務API，將POI從。csv檔案批次匯入POI資料庫。 這些指令碼可從此開放原始碼 [git repo下載](https://github.com/adobe/places-scripts)。
 
-在執行這些指令碼之前，為了確保您能夠存取web service API，請參閱 *Adobe I/O整合概觀中的使用者存取必要條件*[](/help/web-service-api/adobe-i-o-integration.md)。
+在您執行這些指令碼之前，若要存取網站服務API，請參 *閱* Adobe I/O整合概觀中的使用者存取必要條件 [](/help/web-service-api/adobe-i-o-integration.md)。
 
 以下是有關指令碼的一些資訊：
 
@@ -23,7 +23,7 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ## CSV檔案
 
-範例。csv檔案 `places_sample.csv`是此套件的一部分，包含必要的標題和一列範例資料。 這些標題都是小寫，並對應於Places資料庫中使用的保留中繼資料索引鍵。 在添加標題時，附加列將作為鍵／值對添加到每個POI的單獨元資料區段中的POI資料庫。
+範例。csv檔案 `places_sample.csv`是此套件的一部分，包含必要的標題和一列範例資料。 這些標題都是小寫，並對應於Places資料庫中使用的保留中繼資料索引鍵。 您新增至。csv檔案的欄會以每個POI的索引鍵／值配對形式，新增至POI資料庫的個別中繼資料區段，而標題值則用作索引鍵。
 
 以下是您需要使用的欄和值的清單：
 
@@ -55,17 +55,18 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
    * 有效值為「」、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56b和#3DC8DE。
    * 如果值保留為空白，則定位服務UI會使用藍色作為預設顏色。
 
-      這些值分別對應藍色、紫色、富士基亞、橙色、淡橙色、黃色、淡綠色、綠色和淡藍色。
+      這些值對應藍色(#3E76D0)、紫色(#AA99E8)、fuschia(#DC2ABA)、橘色(#FC685B)、淡橙(#FC962E)、黃色(#F6C436)、淡綠色(#BECE5D)、綠色(#61B56B)和淺藍色(#3DC8DE)。
 
 * 表徵圖，此表徵圖用作PIN上的表徵圖，該表徵圖代表POI在位置服務UI映射上的位置
-   * 有效值為「」、錨記、燒杯、鐘、筆刷、筆刷、建築、電腦、相機、購物車、鐘、盒、手電筒、跟隨、競標、緞帶、教育、錘、心、家、鑰匙、郵箱、男性、促銷、金錢、陷阱、遊戲、禮品、啟動、星形、燈泡、針、目標、茶壺、拇指Down、獎品、女性、扳手。
+
+   * 有效值為""、商店、旅館、汽車、火車、船、體育場、娛樂園、錨、燒杯、鐘、投標、書、箱、公事包、瀏覽、筆刷、建築、計算器、相機、鐘、教育、手電筒、追隨者、遊戲、男性、禮物、錘、心、家、鑰匙、啟動、燈泡、郵箱、銷、促銷、緞帶、購物車、星目標，茶壺，拇指向下，拇指向上，陷阱，獎杯，扳手。
    * 如果值保留為空白，UI會使用星號作為預設圖示。
 
 * 未提及的欄可留空。
 
 ## 運行指令碼
 
-1. 將檔案下載至適當的目錄。
+1. 從Git repo下載 [檔案](https://github.com/adobe/places-scripts) ，到您的本機目錄。
 1. 在文字編輯器中，開啟 `config.py` 檔案並完成下列工作：
 
    a.將下列變數值編輯為字串：
@@ -76,15 +77,15 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
    * `access_code`
 
-      這是您從呼叫Adobe IMS所取得的存取代碼。
+      這是您從呼叫Adobe IMS所取得的存取代碼。 如需如何取得此存取程式碼的詳細資訊，請參閱使 [用者存取的先決條件](/help/web-service-api/adobe-i-o-integration.md) 。
 
    * `org_id`
 
-      要匯入POI的Experience cloud組織ID。
+      要匯入POI的Experience cloud組織ID。 如需如何取得組織ID的詳細資訊，請參 [閱使用者存取的先決條件](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `api_key`
 
-      這是您從Adobe I/O Places整合取得的Places REST API金鑰。
+      這是您從Adobe I/O Places整合取得的Places REST API金鑰。 如需如何取得API金鑰的詳細資訊，請參 [閱使用者存取的先決條件](/help/web-service-api/adobe-i-o-integration.md)。
    b.儲存您的變更。
 
 1. 在終端窗口中，導航到該 `…/places-scripts/import/` 目錄。
@@ -112,6 +113,3 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 ## 設備測試
 
 設備測試位於文 `tests.py` 件中，應在每個提取請求之前運行，並且應全部通過。 應新增其他測試與新程式碼。 若要執行測試，請導覽至目 `…/places-scripts/import/` 錄，然後在 `python ./places_import.py` 終端機中輸入。
-
-
-
