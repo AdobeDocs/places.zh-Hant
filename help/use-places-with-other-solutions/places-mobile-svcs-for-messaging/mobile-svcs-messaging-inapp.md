@@ -1,69 +1,86 @@
 ---
-title: 應用程式內訊息
-seo-title: 應用程式內訊息
+title: 應用程式內通知
+seo-title: 應用程式內通知
 description: 本節將說明如何搭配應用程式內訊息使用「地標」。
 seo-description: 本節將說明如何搭配應用程式內訊息使用「地標」。
 translation-type: tm+mt
-source-git-commit: 7985943cef606525401983c4c80862c277f41bf0
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
 # 應用程式內通知(#places-push-messaging)
 
-如何設定應用程式內訊息以從「地標」事件觸發；訊息必須位於Analytics點擊上。
+下列資訊將說明如何設定「應用程式內訊息」，以便從「位置」事件觸發。
+
+>[!IMPORTANT]
+>
+>訊息必須位於Analytics點擊上。
 
 ## 應用程式內訊息
 
-AMS可讓您使用傳送至Analytics的位置資料作為應用程式內訊息的觸發事件和／或條件。 從SDK引發觸發器時，應用程式內訊息可立即顯示給使用者，而不需等待Analytics處理資料。
+Mobile services可讓您使用傳送至Analytics的位置資料作為應用程式內訊息的觸發事件和／或條件。 如果從SDK引發應用程式內訊息，而不需要等待Analytics處理資料，則觸發器一發生，訊息就會即時顯示。
 
-本機通知：應用程式內訊息有3種不同類型：
+### 本機通知
+
+以下是可用的應用程式內訊息類型清單：
 
 * 全螢幕
 * 警報
-* 本機通知。
+* 本機通知
 
-這些類型符合應用程式內訊息的資格，因為這些訊息是由SDK觸發，但請務必注意，當本機通知在應用程式未在前景時，其外觀和感覺就像推播通知。 當使用者在應用程式背景時進入或退出您的POI時，本機通知是提供即時通知的絕佳選項。 請參閱Places Monitor擴充功能檔案以瞭解位置監視(https://placesdocs.com/places-services-by-adobe-documentation/configure-places-in-the-sdk/places-monitor-extension)。
+這些類型是應用程式內訊息，因為是由SDK觸發。 本機通知的外觀和感覺就像推播通知，因為當應用程式在背景時，這些通知就會出現。 當使用者在應用程式背景時進入或退出您的POI時，這些通知也會傳送即時通知。 如需詳細資訊，請參 [閱「置入螢幕擴充功能」。](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
 
-### 先決條件
+### 必要條件
 
-* 瞭解如何在AMS中傳送和建立應用程式內訊息，以及觸發程式的運作方式。
+在開始之前，您會先瞭解如何在Mobile services中傳送和建立應用程式內訊息，以及觸發程式的運作方式。 For more information, see [Create an in-app message.](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
 
-   如需詳細資訊，請參閱[建立應用程式內訊息](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)。
+##  Experience Platform Launch 中的規則
 
+您可以建立「啟動」規則，將您想要能用作應用程式內訊息「觸發規則」一部分的資料傳送至Analytics。 您可以根據使用案例，將Launch規則中Places擴充功能的資料當做事件和／或條件使用。
 
-## 在Experience Platform Launch中建立規則
+* 使用位置資料作為觸發事件。
 
-建立啟動規則，將正確的資料傳送至Analytics，以便能夠用作應用程式內訊息觸發規則的一部分。 您可以根據使用案例，將Launch規則中Places擴充功能的資料當做事件和／或條件使用。
+   例如，當使用者輸入POI時，您可以傳送資料至Analytics。
 
-* 使用位置資料作為觸發事件。 例如，如果您想在使用者輸入POI時傳送資料至Analytics。
+* 使用位置資料作為觸發事件的條件。
 
-* 使用位置資料作為觸發事件的條件。 例如，如果您在位置服務中針對不同POI的天氣建立自訂中繼資料標籤，則可將該中繼資料用作規則條件的參數，如下所示。 雖然您可以將此條件用於前面所述的POI參加項目事件，但您也可以將它用作任何事件的上下文。
+   例如，如果您在位置服務中針對不同POI的天氣建立自訂中繼資料標籤，則可將該中繼資料用作規則條件的參數。 雖然您可以將此條件與前面所述的POI參加項目事件搭配使用，但您也可以將該條件用作任何事件的上下文。
 
-設定規則時，請設定動作以傳送資料至Analytics，以完成規則設定。 要執行此操作：
+設定規則時，請設定動作，將資料傳送至Analytics，以完成規則設定。
 
-* 選擇Adobe Analytics做為擴充功能
-* 選擇「追蹤」作為動作類型
-* 確定動作的名稱
-* 設定要隨事件一起傳送的上下文資料。 使用「內容資料」介面，將「啟動資料元素」對應至您要傳送至Analytics的關鍵名稱。
+## 建立動作
 
-請注意，可以設定「Analytics處理規則」來擷取此上下文資料。 如有需要，請參閱Analytics處理規則(https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)例如，此動作會以內容形式在點名中傳送，以說明要傳送至Analytics的POIentry事件。
+要執行此操作：
+
+1. 選取 **擴充功能。[!UICONTROL Adobe Analytics]**
+1. 在下拉 **[!UICONTROL Action type]** 式清單中，選取 **[!UICONTROL Track.]**
+1. 鍵入動作的名稱。
+1. 在右窗格中，選 **[!UICONTROL Context Data]**&#x200B;取索引鍵和值對，以設定將傳送至Analytics的內容資料。
+
+例如，您可以選 **[!UICONTROL poiname]** 擇鍵和**[!UICONTROL `{%%Last Entered POI Name}`。]
+
+>[!TIP]
+>
+>可以設定「分析處理規則」來擷取此上下文資料。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在「建立 *動作*」中的範例中，「動作」會傳送作 `poiname` 為內容，以說明要傳送至Analytics的POIentry事件。
 
 ![建立操作](/help/assets/configure-action.png)
 
-以下是完成規則的範例。
+以下是完整規則的範例：
 
 ![已完成規則](/help/assets/create-a-rule.png)
 
-## 在AMS中建立應用程式內訊息：
+## 在AMS中建立應用程式內訊息。
 
-您會使用來自位置服務的資料來建立訊息的對象，做為觸發器參數的一部分。
+在觸發器參數中，您可以透過下列其中一種方式，使用位置服務的資料來建立訊息的對象：
 
-* 使用特定位置的動作，例如進入或退出
-* 使用以內容資料形式傳送的POI中繼資料，以縮小對象的目標。 這可與特定位置的動作（例如登入）搭配使用，或可當成其他事件（例如啟動或按鈕點按）的上下文。
+* 使用特定位置的動作，例如登入或退出。
+* 使用以內容資料傳送的POI中繼資料，以縮小對象的目標。
 
-   以下範例說明如何設定應用程式內訊息以歡迎輸入名稱中包含"Adobe"的POI的使用者：
+   此選項可與特定位置的動作（例如登入）搭配使用，或可當成啟動或按鈕點選等其他事件的內容。
+
+   以下範例說明如何設定應用程式內訊息以歡迎輸入名稱中包含POI **[!UICONTROL Adobe]** 的使用者：
 
    ![觸發參數](/help/assets/trigger-parameters.png)
 
-* 在AMS觸發器和特徵中的「位置」標題中找到的參數無法與位置服務的資料一起使用。 這些參數用於在AMS中建立的舊版Places資料庫。
+* Mobile services中「觸發器」和「特 *徵」頁面中* ,「置入」標題的參數無法與「位置服務」中的資料搭配使用。 這些參數僅適用於在Mobile services中建立的舊版Places資料庫。
