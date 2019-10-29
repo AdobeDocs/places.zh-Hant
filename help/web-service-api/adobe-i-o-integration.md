@@ -4,7 +4,7 @@ seo-title: Adobe I/O整合概觀
 description: 建立Adobe I/O整合的相關資訊。
 seo-description: 有關建立Adobe I/O整合的資訊。
 translation-type: tm+mt
-source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
+source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
 
 ---
 
@@ -100,25 +100,31 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 要建立Places整合，請執行以下操作：
 
 1. 請前往 [https://console.adobe.io](https://console.adobe.io) ，並使用您的Adobe ID登入。
-2. 如果您可以存取多個Experience cloud組織，請從左側的下拉式清單中選取組織。
-3. 按一下 **[!UICONTROL New Integration]**。
-4. 選擇 **[!UICONTROL Access an API]** 並按一下 **[!UICONTROL Continue]**。
+2. 在「快 **速開始** 」區段中，按一下「 **建立整合」**。
+3. 選擇 **[!UICONTROL Access an API]** 並按一下 **[!UICONTROL Continue]**。
+
+   **[!UICONTROL Access an API]** 是預設位置。
+
+4. 如果您可以存取多個Experience cloud組織，請從右上角的下拉式清單中選取組織。
 5. 在下 **[!UICONTROL Experience Cloud]**&#x200B;方，選 **[!UICONTROL Places]** 取您要整合的Adobe服務，然後按一下 **[!UICONTROL Continue]**。
 6. 選擇 **[!UICONTROL New integration]** 並按一下 **[!UICONTROL Continue]**。
-7. 在「建 *立新整合」畫面* ，輸入名稱和說明。
+7. 在「建立新整合」畫面中，輸入名稱和說明。
 8. 將您在上方建 `xxxx_public.crt` 立的檔案拖放至拖放 **[!UICONTROL Public keys certificates]** 區域。
-9. At the bottom of the page, click **[!UICONTROL Create integration]**.
-10. 數秒後，在「已建立的整 *合」畫面中* ，確認出現下列訊息：
+9. 選擇產品設定檔。
+
+   如果您不確定要選擇哪個配置檔案，請與系統管理員聯繫。
+10. At the bottom of the page, click **[!UICONTROL Create integration]**.
+11. 數秒後，在「已建立的整 *合」畫面中* ，確認出現下列訊息：
 
    `Your integration has been created.`
 
-11. 按一下 **[!UICONTROL Continue to integration details]**。
+12. 此時會顯示整合詳細資訊頁面，其頂端是整合名稱。
 
-   此時會顯示您與API金鑰、組織ID、技術帳戶ID的整合概觀，以及有關整合的其他詳細資訊。
+   依預 **[!UICONTROL Overview]** 設會顯示標籤，並顯示API金鑰、您的組織ID、技術帳戶ID，以及您整合的其他詳細資訊。
 
 ### 記錄組織ID和API金鑰
 
-1. 在標籤 **[!UICONTROL Services]** 上，確認已 **[!UICONTROL Places]** 顯示。
+1. 在整合詳細資訊頁面上，按一下 **[!UICONTROL Services]** 標籤並確認顯 **[!UICONTROL Places]** 示於下方 **[!UICONTROL Configured Services]**。
 2. 在標籤 **[!UICONTROL Overview]** 上，找出並記錄API金鑰（用戶端ID）和組織ID。
 
    每個Places REST API請求都需要這些ID。
@@ -127,7 +133,7 @@ source-git-commit: 3a9653dcc7f5d18b717c4bb59424b8cad7104dd7
 
 ### 產生JWT Token
 
-在標 **[!UICONTROL JWT]** 簽上，Adobe I/O主控台可讓您產生JWT並提供交換URL，以測試您的整合。
+在整合詳細資訊頁面上，按一 **[!UICONTROL JWT]** 下標籤，以便您透過產生JWT並提供交換URL來測試整合。
 
 要生成JWT令牌：
 
