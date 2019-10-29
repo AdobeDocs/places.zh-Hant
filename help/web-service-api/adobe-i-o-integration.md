@@ -4,12 +4,12 @@ seo-title: Adobe I/O整合概觀
 description: 建立Adobe I/O整合的相關資訊。
 seo-description: 有關建立Adobe I/O整合的資訊。
 translation-type: tm+mt
-source-git-commit: f99930325a3d94bcc60595e69306c51d6b81caa6
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
 
-# Adobe I/O整合 {#adobeio-integration}
+# 整合概觀和先決條件 {#integration-prereqs}
 
 此資訊會示範如何建立Adobe I/O和Places整合。
 
