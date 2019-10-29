@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: 終端使用者
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
    + [管理多個程式庫](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
 + 網站服務API {#web-service-api}
    + [網站服務API概觀](web-service-api/places-web-services.md)
-   + [Adobe I/O整合](web-service-api/adobe-i-o-integration.md)
+   + [整合先決條件](web-service-api/adobe-i-o-integration.md)
    + API使用 {#api-usage}
       + [標題和參數](web-service-api/api-usage/headers-and-parameters.md)
       + Manage libraries {#manage-libraries}
@@ -76,5 +76,5 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
    + Adobe Target {#places-target}
       + [搭配Adobe Target使用位置服務](use-places-with-other-solutions/places-target/places-target.md)
 + Testing and validation {#places-testing-validation}
-   + [測試和驗證地點](places-testing-validation/test-validate-places.md)
+   + [測試和驗證位置服務](places-testing-validation/test-validate-places.md)
 + [常見問題集](places-faqs.md)
