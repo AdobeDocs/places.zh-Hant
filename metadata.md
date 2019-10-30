@@ -10,7 +10,7 @@ tutorials-url: https://experienceleague.adobe.com/
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
 index: true
 translation-type: tm+mt
-source-git-commit: 35353d02b791bcb234a45b612b0bc481b604afdf
+source-git-commit: 8b9b84a12c40e93ecd1aea1cee5d44c37dc439e8
 
 ---
 
@@ -31,7 +31,7 @@ metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中�
 | tutorials-title | 教學課程不適合時極少使用 |
 | tutorials-url | 教學課程影片 (helpx 或 KT 教學課程其中之一) 的連結 |
 | mini-toc-levels | 決定右邊欄中顯示的標頭層級數。預設為 2 |
-| git-repo | 指定共同作業存放庫的位置。針對公開文件使用 github.com 鏡像 |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | 索引 | set index=no for soft launch |
 
 在 TOC.md 檔案中
