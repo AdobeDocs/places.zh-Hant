@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Location Service
 description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 seo-description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: a5eee2378475885a2aef9867ff2c38a8881c9bbe
 
 ---
 
@@ -19,7 +19,7 @@ Adobe Experience Platform Location Service(Location Service)是瞭解行動使�
 * 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
 * 在地圖上視覺化POI，以輕鬆瞭解空間內容並新增／編輯中繼資料屬性。
 * 在Adobe Experience Platform Launch中設定SDK，以定義您的位置觸發規則和中繼資料條件。
-* 減少您需要寫入螢幕裝置位置的程式碼，並使用Adobe的位置監視器自動觸發特定位置的規則。
+* 減少您需要寫入螢幕裝置位置的程式碼，並使用「置入」擴充功能自動觸發特定位置的規則。
 
 這可讓您即時、在何時、何地從位置訊號採取動作。 正確的情境可提供更豐富的行動互動體驗。
 
@@ -76,7 +76,7 @@ Adobe Experience Platform Location Service(Location Service)是瞭解行動使�
 
 * 程 **式庫** 是POI的集合，這些POI會分組，以輕鬆將規則附加至規則集，而非一個POI。
 
-* SDK擴 **充功能**，是將Places SDK整合在行動應用程式中所需的Experience Platform Launch擴充功能。
+* Places SDK擴 **充功能** ，是將Places SDK整合在行動應用程式中所需的Experience Platform Launch擴充功能。
 
    與其他行動SDK一起使用的擴充功能，可將位置內容新增至您的體驗。
 
