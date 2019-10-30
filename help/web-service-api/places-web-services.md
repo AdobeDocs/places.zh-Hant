@@ -4,7 +4,7 @@ seo-title: '網站服務API概觀 '
 description: Places是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料，並為適當的人提供適當的體驗。
 seo-description: Places是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料，並為適當的人提供適當的體驗。
 translation-type: tm+mt
-source-git-commit: e899cde6230353c8b34090c793983dc570e8115e
+source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
 
 ---
 
@@ -29,11 +29,11 @@ Places REST API可讓您以程式設計方式處理組織的POI。 這些API可�
 
 * 您的組織已布建地點，而且您以使用者身分擁有適當的存取權。
 
-   如需詳細資訊，請參 *閱下方的* 「組織需求」一節。
+   如需詳細資訊，請參閱「整 *合概觀」中的「使用者存取*[的必要條件」和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
 
 * 在您的組織中布建「地標」後，而且您擁有存取權，請建立「地標」的Adobe整合。
 
-   如需詳細資訊，請參 *閱「在* Adobe I/O整合概觀中建立Places整合」 [](/help/web-service-api/adobe-i-o-integration.md)。
+   如需詳細資訊，請參閱「整 *合概觀」中的*[「建立地標」整合](/help/web-service-api/adobe-i-o-integration.md)。
 
 其他資訊:
 
