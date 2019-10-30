@@ -4,7 +4,7 @@ seo-title: 查詢API
 description: 瞭解和使用查詢API。
 seo-description: 瞭解和使用查詢API。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
 
 ---
 
