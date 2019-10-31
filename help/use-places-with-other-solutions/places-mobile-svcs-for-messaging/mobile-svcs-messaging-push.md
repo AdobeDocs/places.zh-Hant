@@ -4,14 +4,14 @@ seo-title: 推播通知
 description: 本節將說明如何搭配推播通知使用「地標」。
 seo-description: 本節將說明如何搭配推播通知使用「地標」。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
 
 # 推播通知(#places-push-messaging)
 
-Mobile services可讓您傳送推播通知給Adobe Analytics區段。 在「位置服務」中，您可以依據推送訊息與POI的歷史互動來劃分其對象。 例如，您可以傳送訊息給過去30天內曾在您其中一家商店中的使用者。
+Mobile services可讓您傳送推播通知給Adobe Analytics區段。 在「位置服務」中，您可以使用推播訊息與POI的歷史互動來區隔對象。 例如，您可以傳送訊息給過去30天內曾在您其中一家商店中的使用者。
 
 開始之前，請確定您已完成下列工作：
 
@@ -36,4 +36,3 @@ Mobile services可讓您傳送推播通知給Adobe Analytics區段。 在「位�
 * 在區 **[!UICONTROL Custom Segment]** 段中，使用可用的自訂區段參數來建立觀眾。
 
 ![設定推播訊息](/help/assets/push-set-up.png)
-
