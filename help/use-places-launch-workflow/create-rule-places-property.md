@@ -4,14 +4,14 @@ seo-title: 為「地標」屬性建立規則
 description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 seo-description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 translation-type: tm+mt
-source-git-commit: 9feb88f1ccec83c96d08ac5bd48e43d7d9c247c8
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
 # 建立登入與退出規則 {#create-entry-exit-rules}
 
-在行動應用程式中安裝Places and Places Monitor擴充功能後，您就可以在Adobe Experience Platform Launch中建立規則，以觸發或限制位置資料，包括Places位置登入和退出事件。
+在行動應用程式中安裝Places and Places Monitor擴充功能後，您就可以在Adobe Experience Platform Launch中建立規則，以觸發或限制位置資料，包括位置進入和退出事件。
 
 ## 規則
 
@@ -54,7 +54,7 @@ Places SDK會維持下列狀態：
 
 >[!CAUTION]
 >
->此範例假設您已建立美國所有咖啡店的POI資料庫。 如需建立POI和資料庫的詳細資訊，請 [參閱建立POI](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/managing-pois-in-the-places-ui#create-a-poi)[和建立資料庫](https://placesdocs.com/places-services-by-adobe-documentation/places-database-management-1/manage-libraries#create-a-library)。
+>此範例假設您已建立美國所有咖啡店的POI資料庫。 如需有關建立POI和程式庫的詳細資訊，請參 [閱「管理多個程式庫」中的「建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)*和建立程式庫* 」 [一節](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)。
 
 以下程式是如何建立規則的範例，當您進入舊金山的咖啡店時，會將貼文傳回Slack。
 
@@ -128,6 +128,6 @@ Places SDK會維持下列狀態：
 
 ### 從進出出出發思考
 
-在Launch中使用「置入地理圍欄項目和退出點」來觸發規則功能強大，但您也可以使用位置資料作為其他事件觸發的條件。 例如，您可以根據應用程式內的特定trackAction呼叫事件，讓「行動核心追蹤動作」事件觸發器準備好觸發。 根據此事件，您可以在執行動作之前，將其他位置條件置入事件。 例如，當發生購買事件時開啟應用程式內調查，但 `trackAction` 僅在使用者目 **前位置包含特定** 「位置服務」中繼資料時才開啟。
+在Experience Platform Launch中使用位置服務地理柵欄登入和退出來觸發規則功能非常強大，但您也可以使用位置資料作為其他事件觸發的條件。 例如，您可以根據應用程式內的特定trackAction呼叫事件，讓「行動核心追蹤動作」事件觸發器準備好觸發。 根據此事件，您可以在執行動作之前，將其他位置條件置入事件。 例如，當發生購買事件時開啟應用程式內調查，但 `trackAction` 僅在使用者目 **前位置包含特定** 「位置服務」中繼資料時才開啟。
 
 ![建立條件](/help/assets/places-condition.png)
