@@ -4,7 +4,7 @@ seo-title: 在包含Places資料的Adobe Analytics中執行報表
 description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 seo-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
    * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
    * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
 
-## 1.選擇事件
+## 2.選擇事件
 
 1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。
 
@@ -42,7 +42,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 !["建立事件"](/help/assets/pt-selectEvent.png)
 
 
-## 2.新增條件
+## 3.新增條件
 
 >[!IMPORTANT]
 >
@@ -62,7 +62,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 !["建立條件"](/help/assets/pt-setCondition.png)
 
-## 3.定義動作
+## 4.定義動作
 
 1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
 
@@ -80,7 +80,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ![「建立動作」](/help/assets/pt-setAction.png)
 
-## 4.儲存規則並重建您的屬性
+## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
