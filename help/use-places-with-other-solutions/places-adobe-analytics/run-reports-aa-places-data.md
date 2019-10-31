@@ -4,7 +4,7 @@ seo-title: 在包含Places資料的Adobe Analytics中執行報表
 description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 seo-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有呼叫為 `TrackAction` 基礎。 設定事件後，按一下 **[!UICONTROL Keep Changes]**。
 
-!["建立事件"](/help/assets/ad-setEvent.png)
+!["建立事件"](/help/assets/pt-selectEvent.png)
 
 
 ## 2.新增條件
@@ -60,7 +60,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
-!["建立條件"](/help/assets/ad-setCondition.png)
+!["建立條件"](/help/assets/pt-setCondition.png)
 
 ## 3.定義動作
 
