@@ -4,7 +4,7 @@ seo-title: 在包含Places資料的Adobe Analytics中執行報表
 description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 seo-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 translation-type: tm+mt
-source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -22,14 +22,14 @@ source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
 1. 在標籤 **[!UICONTROL Rules]** 上，按一下 **[!UICONTROL Create New Rule]**。
 
    請記住以下資訊:
-   * 如果您沒有此屬性的現有規則，則按鈕會位於畫面中間。
-   * 如果您的屬性有規則，則按鈕會位於畫面的右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
 
 ## 1.選擇事件
 
 1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。
 
-   在此範例中，規則名為「將位置資 **料附加至Analytics追蹤動作事件」**。
+   在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
 
 2. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
 
@@ -46,7 +46,7 @@ source-git-commit: 0612e2fb06e45ff25ad580e3336be3eb48bb39b9
 
 >[!IMPORTANT]
 >
->如果您要將條件新增至規則，請完成此步驟。 否則，請跳至下 *面的「定義動作* 」區段。
+>完成此步驟，將條件新增至規則。 否則，請跳至下 *面的「定義動作* 」區段。
 
 在此範例中，會建立條件，讓規則僅針對AT&amp;T客戶觸發。
 
