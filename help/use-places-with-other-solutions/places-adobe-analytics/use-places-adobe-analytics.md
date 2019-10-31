@@ -4,7 +4,7 @@ seo-title: 傳送地點資料至Adobe Analytics
 description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
 seo-description: '本節提供如何將「地標」資料傳送至Analytics的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 >[!IMPORTANT]
 >
->本檔案假設您的應用程式中已實作「位置」。 如需實作「地標」的詳細資訊，請參閱「地 [標擴充功能」](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本節假設您已在應用程式中實作「地點」。 如需實作「地標」的詳細資訊，請參閱「地 [標」擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 在Places傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，將Places資料傳送至Adobe Analytics。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
 
@@ -24,12 +24,14 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
    請記住以下資訊:
 
-   * 如果您沒有此屬性的現有規則，則按鈕會位於畫面中間。
-   * 如果您的屬性有規則，則按鈕會位於畫面的右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
 
 ## 2.選擇事件
 
-1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。 在此範例中，規則名為「傳送 **資料至Analytics」**。
+1. 為規則輸入有意義的名稱。
+
+   如此，您就可輕鬆辨識規則清單中的規則。 在此範例中，規則為命名 **[!UICONTROL Send Data to Analytics]**。
 
 2. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
@@ -46,8 +48,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 >[!IMPORTANT]
 >
->如果您要將條件新增至規則，請完成此步驟。 否則，請跳至 *下方定義動作* 。
-
+>完成此步驟，將條件新增至規則。 否則，請跳至 *下方定義動作* 。
 
 在此範例中，會建立條件，僅在目前POI的名稱等於時，才會觸發規則 **[!UICONTROL My POI]**。
 
@@ -57,7 +58,7 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 3. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Name]**。
 
-4. 在右側的窗口中，在文本欄位中輸入 **[!UICONTROL My POI]**。
+4. 在右窗格中的文本欄位中，輸入 **[!UICONTROL My POI]**。
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
@@ -72,20 +73,21 @@ source-git-commit: fd98249c01fba93250dc7111798c76f3c96c6e20
 
 3. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Track]**。
 
-4. 在右窗格中，新增您要傳送至Analytics的動作或狀態。 您也可以選擇新增任何其他內容資料至此請求。 請記住，您可以使用資料元素從SDK動態取得此資料。
+4. 在右窗格中，新增您要傳送至Analytics的動作或狀態。
+
+   您也可以選擇新增任何其他內容資料至此請求。 請記住，您可以使用資料元素從SDK動態取得此資料。
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
-在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他 **poi.name** 的上下文資料等於觸發此參加項目事件的POI名稱：
+   在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他內容資料等 `poi.name` 於觸發此登入事件之POI的名稱：
 
-!["設定動作"](/help/assets/pt-setAction.png)
+   !["設定動作"](/help/assets/pt-setAction.png)
 
 ## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
 !["規則已建立"](/help/assets/pt-ruleComplete.png)
-
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
