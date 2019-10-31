@@ -4,7 +4,7 @@ seo-title: 傳送地點資料至Adobe Analytics
 description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
 seo-description: '本節提供如何將「地標」資料傳送至Analytics的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -41,7 +41,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
-   !["選擇事件"](/help/assets/ad-setEvent.png)
+   !["選擇事件"](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.新增條件
@@ -62,7 +62,7 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
-   !["設定條件"](/help/assets/ad-setCondition.png)
+   !["設定條件"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 
 ## 4.定義動作
@@ -81,13 +81,13 @@ source-git-commit: fc1dd9e36bf45a2e7c17c3d9dbbed66b28cb8b07
 
    在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他內容資料等 `poi.name` 於觸發此登入事件之POI的名稱：
 
-   !["設定動作"](/help/assets/ad-setAction.png)
+   !["設定動作"](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-!["規則已建立"](/help/assets/ad-ruleComplete.png)
+!["規則已建立"](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
