@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 seo-description: '本節提供如何搭配Adobe Target使用位置服務的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 ---
 
@@ -38,7 +38,7 @@ source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
-![新增事件](/help/assets/ad-addEvent.png)
+![新增事件](/help/assets/ad-setEvent_target.png)
 
 ## 3.新增條件
 
@@ -58,7 +58,7 @@ source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
 
 5. 按一下 **[!UICONTROL Keep Changes]**。
 
-![新增事件](/help/assets/ad-setCondition.png)
+![新增事件](/help/assets/ad-setCondition_target.png)
 
 ## 4.定義動作
 
@@ -82,13 +82,13 @@ source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
 >
 >對於數 `request[*]` 組中的每個對象，可將符號朗讀為_ `request` for。
 
-![新增事件](/help/assets/ad-setAction.png)
+![新增事件](/help/assets/ad-setCondition_target.png)
 
 ## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-![已完成規則](/help/assets/ad-ruleComplete.png)
+![已完成規則](/help/assets/ad-ruleComplete_target.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
