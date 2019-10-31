@@ -1,21 +1,23 @@
 ---
-title: '不使用活動區域監控的地點 '
-seo-title: '不使用活動區域監控的地點 '
-description: 本節提供有關如何在不進行活動區域監視的情況下使用地點的資訊。
-seo-description: 本節提供如何在不進行活動區域監視的情況下使用地點的資訊。
+title: '使用位置服務而不需進行有效區域監控 '
+seo-title: '使用位置服務而不需進行有效區域監控 '
+description: 本節提供如何使用Location servicePlaces而不進行作用中地區監控的資訊。
+seo-description: 本節提供如何在不進行有效區域監控的情況下使用定位服務的資訊。
 translation-type: tm+mt
-source-git-commit: ba918bfdb989ba4037409b17d799ef596064b676
+source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 ---
 
 
-# 不使用活動區域監控的地點 {#use-places-without-active-monitoring}
+# 使用位置服務而不需進行有效區域監控 {#use-places-without-active-monitoring}
 
 您應用程式的使用案例可能不需要主動監視區域。 Adobe Places仍可用來取得使用者的位置資料，並與其他Experience platform產品整合。
 
 本節說明如何僅在收集使用者位置（經緯度）時完成POI會籍檢查。
 
-****&#x200B;先決條件：開發人員將使用目標平台作業系統提供的API來收集裝置位置。
+## 先決條件
+
+開發人員將使用目標平台作業系統提供的API來收集裝置位置。
 
 >[!TIP]
 >
@@ -80,7 +82,6 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
     }
 }
 ```
-
 
 ### Objective-C
 
@@ -229,9 +230,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## 完整的範例實作
 
-下列程式碼範例說明如何擷取裝置的目前位置、觸發必要事件，以及確保一次瀏覽時不會收到同一位置的多個項目：
+以下程式碼範例將示範如何擷取裝置的目前位置、觸發必要事件，並確保一次瀏覽時不會收到相同位置的多個項目。
 
 >[!IMPORTANT]
+>
+>
 這些片段只 **是範例** 。 開發人員必須決定要如何實作功能，而決策應考量目標作業系統建議的最佳實務。
 
 ### Android
