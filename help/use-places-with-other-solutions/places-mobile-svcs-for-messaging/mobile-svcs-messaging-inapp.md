@@ -4,7 +4,7 @@ seo-title: 應用程式內通知
 description: 本節將說明如何搭配應用程式內訊息使用「地標」。
 seo-description: 本節將說明如何搭配應用程式內訊息使用「地標」。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 ---
 
@@ -29,7 +29,7 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 * 警報
 * 本機通知
 
-這些類型是應用程式內訊息，因為是由SDK觸發。 本機通知的外觀和感覺就像推播通知，因為當應用程式在背景時，這些通知就會出現。 當使用者在應用程式背景時進入或退出您的POI時，這些通知也會傳送即時通知。 如需詳細資訊，請參 [閱「置入螢幕擴充功能」。](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
+這些類型是應用程式內訊息，因為是由SDK觸發。 本機通知的外觀和感覺就像推播通知，因為當應用程式在背景時，這些通知就會出現。 當使用者在應用程式背景時進入或退出您的POI時，這些通知也會傳送即時通知。 如需詳細資訊，請參 [閱「置入螢幕擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)」。
 
 ### 必要條件
 
@@ -51,18 +51,18 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 ## 建立動作
 
-要執行此操作：
+要建立操作，請執行以下操作：
 
 1. 選取 **擴充功能。[!UICONTROL Adobe Analytics]**
 1. 在下拉 **[!UICONTROL Action type]** 式清單中，選取 **[!UICONTROL Track.]**
 1. 鍵入動作的名稱。
-1. 在右窗格中，選 **[!UICONTROL Context Data]**&#x200B;取索引鍵和值對，以設定將傳送至Analytics的內容資料。
+1. 在右窗格中，選 **[!UICONTROL Context Data]**&#x200B;取鍵值對，以設定將傳送至Analytics的內容資料。
 
-例如，您可以選 **[!UICONTROL poiname]** 擇鍵和**[!UICONTROL `{%%Last Entered POI Name}`。]
+例如，您可以選 `poiname` 擇作為鍵 `{%%Last Entered POI Name}` 和值。
 
 >[!TIP]
 >
->可以設定「分析處理規則」來擷取此上下文資料。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在「建立 *動作*」中的範例中，「動作」會傳送作 `poiname` 為內容，以說明要傳送至Analytics的POIentry事件。
+>可以設定「分析處理規則」來擷取此上下文資料。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在「建立 *動作*」中的範例中，「動作」會傳送作 `poiname` 為內容，以說明要傳送至Analytics的POI項目事件。
 
 ![建立操作](/help/assets/configure-action.png)
 
@@ -70,17 +70,19 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 ![已完成規則](/help/assets/create-a-rule.png)
 
-## 在AMS中建立應用程式內訊息。
+## 在Mobile services中建立應用程式內訊息
 
 在觸發器參數中，您可以透過下列其中一種方式，使用位置服務的資料來建立訊息的對象：
 
 * 使用特定位置的動作，例如登入或退出。
 * 使用以內容資料傳送的POI中繼資料，以縮小對象的目標。
 
-   此選項可與特定位置的動作（例如登入）搭配使用，或可當成啟動或按鈕點選等其他事件的內容。
+   此選項可與特定位置的動作（例如登入）搭配使用，或可當成啟動或按鈕點選等其他事件的上下文。
 
    以下範例說明如何設定應用程式內訊息以歡迎輸入名稱中包含POI **[!UICONTROL Adobe]** 的使用者：
 
    ![觸發參數](/help/assets/trigger-parameters.png)
 
-* Mobile services中「觸發器」和「特 *徵」頁面中* ,「置入」標題的參數無法與「位置服務」中的資料搭配使用。 這些參數僅適用於在Mobile services中建立的舊版Places資料庫。
+* Mobile services中「觸發器」和「特 *徵」頁面中* ,「置入」標題的參數無法與「位置服務」中的資料搭配使用。
+
+   這些參數僅適用於在Mobile services中建立的舊版Places資料庫。
