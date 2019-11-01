@@ -4,7 +4,7 @@ seo-title: 為「地標」屬性建立規則
 description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 seo-description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -71,44 +71,44 @@ Places SDK會維持下列狀態：
 若要在Experience Platform Launch中建立資料元素：
 
 1. 按一下「 **資料元素** 」標籤。
-2. Click **Add Data Element**.
-3. 鍵入名稱，例如，「當 **前咖啡店名稱」**。
-4. 在「擴 **充功能** 」下拉式清單中，選 **取「位置——測試版」**。
-5. 在「 **資料元素**」中，選 **取「城市」**。
-6. 在右窗格中，選擇「當 **前POI」**。
-7. 按一下&#x200B;**「儲存」**。
+1. Click **Add Data Element**.
+1. 鍵入名稱，例如，「當 **前咖啡店名稱」**。
+1. 在「擴 **充功能** 」下拉式清單中，選 **取「位置——測試版」**。
+1. 在「 **資料元素**」中，選 **取「城市」**。
+1. 在右窗格中，選擇「當 **前POI」**。
+1. 按一下&#x200B;**「儲存」**。
 
 ### 在Experience Platform Launch for Places中建立規則
 
 ![建立規則](/help/assets/placesrule.png)
 
 1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Rules]** 簽。
-2. 按一下 **[!UICONTROL Add Rule]**。
-3. 鍵入規則的名稱，例如 **[!UICONTROL Track entry for coffee shop in SF]**。
+1. 按一下 **[!UICONTROL Add Rule]**。
+1. 鍵入規則的名稱，例如 **[!UICONTROL Track entry for coffee shop in SF]**。
 
 ### 建立事件
 
 1. 在「事件」區段中，按一下 **[!UICONTROL + Add]**。 事件會決定您要何時觸發規則。
-2. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
-3. 在下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
-4. 在 **[!UICONTROL Name]**&#x200B;中，輸入事件的名稱，例如 **[!UICONTROL Entering a coffee shop]**。
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
+1. 在下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
+1. 在 **[!UICONTROL Name]**&#x200B;中，輸入事件的名稱，例如 **[!UICONTROL Entering a coffee shop]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 建立條件
 
 1. 在「條件」區段中，按一下 **[!UICONTROL +Add]**。 條件決定了要採取的動作必須符合哪些標準。
-2. 在中， **[!UICONTROL Logic Type]**&#x200B;選擇「常規」(Regular)，該選項允許在滿足條件時執行操作。
-3. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
-4. 在中 **[!UICONTROL Condition Type]**，選擇 **[!UICONTROL City]**。
-5. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-6. 在右窗格中，按一 **[!UICONTROL Current POI]**&#x200B;下，然後在下拉式清單中，選 **[!UICONTROL San Francisco]** 取其中一個城市。
-7. 按一下 **[!UICONTROL Keep Changes]**。
+1. 在中， **[!UICONTROL Logic Type]**&#x200B;選擇「常規」(Regular)，該選項允許在滿足條件時執行操作。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
+1. 在中 **[!UICONTROL Condition Type]**，選擇 **[!UICONTROL City]**。
+1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
+1. 在右窗格中，按一 **[!UICONTROL Current POI]**&#x200B;下，然後在下拉式清單中，選 **[!UICONTROL San Francisco]** 取其中一個城市。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 建立動作
 
 1. In the **[!UICONTROL Actions]** section, click **[!UICONTROL + Add]**.
-2. 在下拉 **[!UICONTROL Extension]** 式清單中，保留預設選 **[!UICONTROL Mobile Core]** 項的選取。
-3. 選擇操作類型，例如 **[!UICONTROL Send Postback]**。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，保留預設選 **[!UICONTROL Mobile Core]** 項的選取。
+1. 選擇操作類型，例如 **[!UICONTROL Send Postback]**。
 
    a.在 **[!UICONTROL URL]**&#x200B;中，鍵入Slack的回傳URL，例如 `https://hooks.slack.com/services/`。
 
@@ -120,7 +120,7 @@ Places SDK會維持下列狀態：
 
    d.選擇超時值，例如 **[!UICONTROL 5]**。
 
-4. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 發佈規則
 
