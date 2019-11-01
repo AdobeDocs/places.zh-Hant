@@ -4,7 +4,7 @@ seo-title: 建立 POI
 description: 使用「地標」UI建立POI。
 seo-description: 使用「地標」UI建立POI。
 translation-type: tm+mt
-source-git-commit: 32c670773421406591ba85a628760553ce6ad840
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 興趣點\(POI\)是地圖上對您的組織或公司而言重要的位置或點。 酒店可包括咖啡館、餐館、零售場所、體育場等。 當公司進入地理圍欄地區以取得特定興趣點時，可定義興趣點，以協助個人化使用者的行動體驗。 除了個人化的體驗，公司也可能建立興趣點，以協助他們分析並更瞭解位置流量模式。 大型零售連鎖店可能會選擇為其所有商店位置建立POI，以便分析使用者的行動應用程式，並造訪商店位置。
 
 1. 使用您的Adobe ID登入位置服務。
-2. 在右上方，按一下 **[!UICONTROL New]**。
-3. 鍵入POI的名稱。
-4. 選取資料庫。
-5. 輸入或選擇半徑。
+1. 在右上方，按一下 **[!UICONTROL New]**。
+1. 鍵入POI的名稱。
+1. 選取資料庫。
+1. 輸入或選擇半徑。
 
    半徑是最小距離，建議值是100米。
 
    ![定義POI](/help/assets/define_poi.png)
 
-6. 以下步驟為可選步驟：
+1. 以下步驟為可選步驟：
 
    a.為您的POI選取圖示。
 
@@ -31,7 +31,7 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 
    c.指定POI的類別。
 
-7. 展開該 **[!UICONTROL Location]** 部分。
+1. 展開該 **[!UICONTROL Location]** 部分。
 
    a.輸入地址。
 
@@ -47,7 +47,7 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 
    如果您不知道確切的經緯度，放下針子很有用。
 
-8. 展開該 **[!UICONTROL Metadata]** 部分並按一下 **[!UICONTROL Add Metadata]**。
+1. 展開該 **[!UICONTROL Metadata]** 部分並按一下 **[!UICONTROL Add Metadata]**。
 
    中繼資料可協助您進一步定義位置，並可用於其他Adobe解決方案工作流程，以進一步調整您的受眾。
 
@@ -55,4 +55,4 @@ source-git-commit: 32c670773421406591ba85a628760553ce6ad840
 
    b.鍵入鍵值。
 
-9. 按一 **[!UICONTROL Confirm]** 下然後 **[!UICONTROL  Save]**。
+1. 按一 **[!UICONTROL Confirm]** 下然後 **[!UICONTROL  Save]**。
