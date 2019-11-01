@@ -4,7 +4,7 @@ seo-title: 推播通知
 description: 本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。
 seo-description: '本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -34,15 +34,15 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 要建立資料元素：
 
 1. 在您的Experience Platform Launch mobile屬性中，按一下標籤， **[!UICONTROL Data Elements]** 然後按一下「 **[!UICONTROLA新增資料元素」]**。
-2. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
-3. 從下拉 **[!UICONTROL Data Element Type]** 式清單中，選取 **[!UICONTROL Name]**。
-4. 在右側窗格中，可以選 **[!UICONTROL Current POI]** 擇檢索用戶當前所在的POI名稱的用戶。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Data Element Type]** 式清單中，選取 **[!UICONTROL Name]**。
+1. 在右側窗格中，可以選 **[!UICONTROL Current POI]** 擇檢索用戶當前所在的POI名稱的用戶。
 
    **[!UICONTROL Last Entered]** 檢索用戶上次輸入的POI的名稱， **[!UICONTROL Last Exited]** 並提供用戶最後左側的POI的名稱。 在此範例中，我們將選取 **[!UICONTROL Last Entered]** 並輸入資料元素的名稱，例如並 **[!UICONTROL Last Entered POI Name]** 按一下 **[!UICONTROL Save]**。
 
    !["Campaign Standard中的推送訊息"](/help/assets/ACS_Push1.png)
 
-5. 重複上述步驟1-4，並為「上次輸入POI Latitude *」、「上次輸入POI經度」和「上次輸入* POI Radius」建立資料元素 ****。
+1. 重複上述步驟1-4，並為「上次輸入POI Latitude *」、「上次輸入POI經度」和「上次輸入* POI Radius」建立資料元素 ****。
 
 除了位置服務的資料元素外，請確定您已為應用程式ID和 *Experience Cloud ID建立Mobile Core**資料元素*。
 
@@ -51,22 +51,22 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 Experience Platform Launch的規則可讓您根據事件觸發程式建立複雜、多解決方案的工作流程。 有了規則，您可以建立新規則或修改現有規則，並將更新動態部署至行動應用程式。 在下列範例中，當使用者進入地理圍欄的POI時，將會觸發規則。 觸發規則後，會傳送更新至Campaign Standard，以根據Experience Cloud ID記錄特定使用者的特定POI項目。
 
 1. 在您的Launch mobile屬性中，按一 **[!UICONTROL Rules]** 下索引標籤 **[!UICONTROL Add Rule]**。
-2. 在區段 **[!UICONTROL Events]** 下，按一 **[!UICONTROL +]** 下並選 **[!UICONTROL Places]** 取為延伸模組。
-3. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
-4. 為規則命名，例如，用戶 **輸入POI**。
-5. 按一下 **[!UICONTROL Keep Changes]**。
-6. 將部分保 **[!UICONTROL Conditions]** 留為空白。
+1. 在區段 **[!UICONTROL Events]** 下，按一 **[!UICONTROL +]** 下並選 **[!UICONTROL Places]** 取為延伸模組。
+1. For the **[!UICONTROL Event Type]**, select **[!UICONTROL Enter POI]**.
+1. 為規則命名，例如，用戶 **輸入POI**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
+1. 將部分保 **[!UICONTROL Conditions]** 留為空白。
 
    此區段可讓您篩選或限制觸發此規則的時間。
 
-7. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL +]**。
-8. 在下拉 **[!UICONTROL Extension]** 式清單中，選 **[!UICONTROL Mobile Core]** 取並在下 **[!UICONTROL Action Type]** 拉式清單中選取 **[!UICONTROL Send Postback]**。
-9. 在中 **[!UICONTROL URL]**，您需要建構您的Campaign standard位置端點。
+1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL +]**。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，選 **[!UICONTROL Mobile Core]** 取並在下 **[!UICONTROL Action Type]** 拉式清單中選取 **[!UICONTROL Send Postback]**。
+1. 在中 **[!UICONTROL URL]**，您需要建構您的Campaign standard位置端點。
 
    URL看起來應類似 `https:///rest/head/mobileAppV5//locations/`。
 請確定您使用先前為促銷活動伺服器和PKey建立的正確資料元素。
 
-10. 按一下方塊以新增貼文內文並傳送下列內容：
+1. 按一下方塊以新增貼文內文並傳送下列內容：
 
    ```
    {
@@ -81,9 +81,9 @@ Experience Platform Launch的規則可讓您根據事件觸發程式建立複雜
    }
    ```
 
-11. 請確定您使用在上一節中建立的資料元素。
-12. 在中 **[!UICONTROL Content Type]**&#x200B;鍵入 **[!UICONTROL application/json]**。
-13. 按一下 **[!UICONTROL Keep Changes]**。
+1. 請確定您使用在上一節中建立的資料元素。
+1. 在中 **[!UICONTROL Content Type]**&#x200B;鍵入 **[!UICONTROL application/json]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 >[!IMPORTANT]
 >
@@ -98,16 +98,16 @@ Experience Platform Launch的規則可讓您根據事件觸發程式建立複雜
 既然我們在Campaign中填入了位置資料，我們就可以將POI當成觀眾區隔工具。
 
 1. 在您的Adobe Campaign standard例項中，按一下 **[!UICONTROL Create Push Notification]**。
-2. 對於推播通知類型，請選取 **[!UICONTROL Send push to Campaign profiles]**。
-3. 按一 **[!UICONTROL Next]** 下並輸入一般詳細資訊。
-4. 在「對象」畫面上，按 **[!UICONTROL Count]** 一下以決定推播通知的預估傳送使用者數。
+1. 對於推播通知類型，請選取 **[!UICONTROL Send push to Campaign profiles]**。
+1. 按一 **[!UICONTROL Next]** 下並輸入一般詳細資訊。
+1. 在「對象」畫面上，按 **[!UICONTROL Count]** 一下以決定推播通知的預估傳送使用者數。
 
    >[!TIP]
    >
    >在此範例中，計數為3，因為有3個已安裝的裝置正在測試應用程式。
 
-5. 在左窗格中，展開標 **[!UICONTROL Profile]** 簽並拖曳篩 **[!UICONTROL POI location]** 選器至主要區域。
-6. 在「POI篩選」視窗中，輸入您要定位的POI的確切名稱。
+1. 在左窗格中，展開標 **[!UICONTROL Profile]** 簽並拖曳篩 **[!UICONTROL POI location]** 選器至主要區域。
+1. 在「POI篩選」視窗中，輸入您要定位的POI的確切名稱。
 
    >[!TIP]
    >
@@ -115,12 +115,12 @@ Experience Platform Launch的規則可讓您根據事件觸發程式建立複雜
 
    !["ACS中的推送消息2"](/help/assets/ACS_push2.png)
 
-7. 按一下 **[!UICONTROL Confirm]**。
-8. 再次在頂端執行計數，以查看您的受眾規模變更。
+1. 按一下 **[!UICONTROL Confirm]**。
+1. 再次在頂端執行計數，以查看您的受眾規模變更。
 
    如果您未看到計數更新，則可能已輸入POI名稱，但沒有設備觸發了該條目。 在這種情況下，使用Slack web掛接變得很有價值，因為您可以看到來自各種測試設備的POI條目清單。
-9. 您可以拖曳其他POI位置篩選器，將多個POI加入訊息中。
-10. 按一 **[!UICONTROL Next]** 下以完成建立傳送的推播通知。
+1. 您可以拖曳其他POI位置篩選器，將多個POI加入訊息中。
+1. 按一 **[!UICONTROL Next]** 下以完成建立傳送的推播通知。
 
    !["ACS中的推送消息3"](/help/assets/ACS_push3.html)
 
