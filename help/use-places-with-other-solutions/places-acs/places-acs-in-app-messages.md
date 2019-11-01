@@ -4,7 +4,7 @@ seo-title: 包含位置服務的應用程式內訊息
 description: 本節提供如何在Campaign Standard中搭配Campaign standard中的應用程式內訊息使用推播訊息的相關資訊。
 seo-description: '本節提供如何在Campaign standard中搭配應用程式內訊息使用「Campaign Standard中的推播訊息」的資訊。 '
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -29,9 +29,9 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 ## 根據地理圍欄進入或退出傳送應用程式內訊息
 
 1. 在您的Adobe Campaign standard例項中，按一下 **[!UICONTROL Create In-App message]**。
-2. 對於消息類型，選擇 **[!UICONTROL Target all users of a Mobile application]**。
-3. 按一 **[!UICONTROL Next]** 下並輸入一般詳細資訊。
-4. 在左窗格中，確認您可以使用與位置服務相關的各種觸發器。
+1. 對於消息類型，選擇 **[!UICONTROL Target all users of a Mobile application]**。
+1. 按一 **[!UICONTROL Next]** 下並輸入一般詳細資訊。
+1. 在左窗格中，確認您可以使用與位置服務相關的各種觸發器。
 
    * 如果使用者已輸入POI地理圍欄，您可以選擇讓應用程式內訊息顯示。
    * 您也可以使用在位置服務UI中定義的中繼資料來篩選對象。
@@ -39,7 +39,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
    ![「應用程式內訊息置入中繼資料」](/help/assets/last-entered-vacation.png)
 
-5. 按一下 **[!UICONTROL Next]** 以完成建立要傳送的應用程式內訊息。
+1. 按一下 **[!UICONTROL Next]** 以完成建立要傳送的應用程式內訊息。
 
    !["建立事件"](/help/assets/prepare-ACS.png)
 
