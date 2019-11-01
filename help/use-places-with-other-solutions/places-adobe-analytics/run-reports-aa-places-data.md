@@ -4,7 +4,7 @@ seo-title: 在包含Places資料的Adobe Analytics中執行報表
 description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 seo-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -31,11 +31,11 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
    在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
 
-2. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
 
-3. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-4. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Track Action]**。
+1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Track Action]**。
 
 現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有呼叫為 `TrackAction` 基礎。 設定事件後，按一下 **[!UICONTROL Keep Changes]**。
 
@@ -52,13 +52,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
 
-2. 從下拉 **[!UICONTROL Extension]** 式清單中，選取「 **[!UICONTORL 行動核心」]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取「 **[!UICONTORL 行動核心」]**。
 
-3. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Carrier Name]**。
+1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Carrier Name]**。
 
-4. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]** 。
+1. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]** 。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 !["建立條件"](/help/assets/pt-setCondition.png)
 
@@ -66,13 +66,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
 
-2. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-3. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
+1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
 
-4. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
+1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 在右窗格中，您可以新增自由格式的JSON裝載，將資料新增至SDK事件，然後監聽此事件的副檔名才能聽到該事件。 在此範例中，有些上下文資料會在Analytics擴充功能處理前新增至此事件。 新增的上下文資料現在會出現在傳出的Analytics點擊上。
 
@@ -88,4 +88,4 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
-2. 重建您的Launch屬性，並將它部署至正確的環境。
+1. 重建您的Launch屬性，並將它部署至正確的環境。
