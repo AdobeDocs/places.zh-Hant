@@ -4,7 +4,7 @@ seo-title: 使用Places Monitor擴充功能
 description: 有關如何安裝、配置和使用Places Monitor擴展的資訊。
 seo-description: '有關如何安裝、配置和使用Places Monitor擴展的資訊。 '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,9 +16,9 @@ source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
 ## 在Experience Platform Launch中安裝Places Monitor擴充功能
 
 1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Extensions]** 簽。
-2. 在標籤 **[!UICONTROL Catalog]** 上，找到擴充 **[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
-3. 按一下 **[!UICONTROL Save]**。
-4. 依照發佈程式更新SDK組態。
+1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴充 **[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
+1. 按一下 **[!UICONTROL Save]**。
+1. 依照發佈程式更新SDK組態。
 
 ### 配置Places Monitor擴展 {#configure-places-monitor-extension}
 
@@ -38,7 +38,7 @@ Places Monitor擴展沒有配置任務。
 
 1. 使用應用程式的Gradle檔案，將Places Monitor擴充功能和Places擴充功能新增至您的專案。
 
-2. 此外，在Gradle檔案中也包含最新的Google位置服務。
+1. 此外，在Gradle檔案中也包含最新的Google位置服務。
 
    ```java
    implementation 'com.adobe.marketing.mobile:places:1.+'
@@ -47,7 +47,7 @@ Places Monitor擴展沒有配置任務。
    implementation 'com.google.android.gms:play-services-location:16.0.0'
    ```
 
-3. 在應用程式的主要活動中匯入Places Monitor擴充功能。
+1. 在應用程式的主要活動中匯入Places Monitor擴充功能。
 
    ```java
    import com.adobe.marketing.mobile.PlacesMonitor;
@@ -58,7 +58,7 @@ Places Monitor擴展沒有配置任務。
 在iOS中，完成下列步驟：
 
 1. 透過Cocoapods新增程式庫至您的專 `Podfile` 案 `pod 'ACPPlacesMonitor'`。
-2. 匯入「位置」和「位置」監控程式庫：
+1. 匯入「位置」和「位置」監控程式庫：
 
 #### Objective-C
 
