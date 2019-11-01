@@ -4,14 +4,12 @@ seo-title: 發行說明
 description: Adobe Experience Platform Location service的發行說明。
 seo-description: Adobe Experience Platform Location service的發行說明。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
 
 ---
 
 
 # 發行說明 {#release-notes}
-
-以下是發行說明：
 
 ## 2019 年 10 月 9 日
 
