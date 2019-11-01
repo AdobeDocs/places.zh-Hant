@@ -4,7 +4,7 @@ seo-title: 常見問題集
 description: 本主題提供一些常見問題的其他資訊。
 seo-description: 本主題提供一些常見問題的其他資訊。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -91,7 +91,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
       如果您先前已將使用者新增至Experience Platform Launch，您可能會看到列出多個描述檔。
 
-2. 選擇正確的配置檔案：
+1. 選擇正確的配置檔案：
 
    a.按一下預設配置檔案的名稱。
 
@@ -145,7 +145,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 
    g.按一 **[!UICONTROL Save]**&#x200B;下。
 
-2. 新增使用者至 **[!UICONTROL Places Core Services]**。
+1. 新增使用者至 **[!UICONTROL Places Core Services]**。
 
    >[!TIP]
    >
