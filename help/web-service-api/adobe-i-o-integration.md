@@ -4,7 +4,7 @@ seo-title: Adobe I/O整合概觀
 description: 建立Adobe I/O整合的相關資訊。
 seo-description: 有關建立Adobe I/O整合的資訊。
 translation-type: tm+mt
-source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
+source-git-commit: ec2b0f8ba94cecc5709d4d700490913978454ef1
 
 ---
 
@@ -69,7 +69,7 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
    >
    >建議您命名索引鍵以方便參考，並將它們儲存在資料夾中。 如果您建立多個整合，您可以輕鬆識別和管理屬於哪個整合的金鑰。
 
-2. 輸入OpenSSL要求的資訊：
+1. 輸入OpenSSL要求的資訊：
 
    ```text
    Country Name (2 letter code:  // Example: US
@@ -87,7 +87,7 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
    >
    >您提供的資訊會併入索引鍵中。
 
-3. 導覽至和檔案所 `.key` 在 `.crt` 的目錄。
+1. 導覽至和檔案所 `.key` 在 `.crt` 的目錄。
 
    例如，在iOS中，請至 **[!UICONTROL Macintosh HD]** &gt; **[!UICONTROL users]** &gt; **[!UICONTROL (your user name)]** &gt; **[!UICONTROL Keys]**。
 
@@ -100,32 +100,32 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 要建立Places整合，請執行以下操作：
 
 1. 請前往 [https://console.adobe.io](https://console.adobe.io) ，並使用您的Adobe ID登入。
-2. 在「快 **速開始** 」區段中，按一下「 **建立整合」**。
-3. 選擇 **[!UICONTROL Access an API]** 並按一下 **[!UICONTROL Continue]**。
+1. 在「快速 **開始** 」區段中，按一下「 **建立整合」**。
+1. 選擇 **[!UICONTROL Access an API]** 並按一下 **[!UICONTROL Continue]**。
 
    **[!UICONTROL Access an API]** 是預設位置。
 
-4. 如果您可以存取多個Experience cloud組織，請從右上角的下拉式清單中選取組織。
-5. 在下 **[!UICONTROL Experience Cloud]**&#x200B;方，選 **[!UICONTROL Places]** 取您要整合的Adobe服務，然後按一下 **[!UICONTROL Continue]**。
-6. 選擇 **[!UICONTROL New integration]** 並按一下 **[!UICONTROL Continue]**。
-7. 在「建立新整合」畫面中，輸入名稱和說明。
-8. 將您在上方建 `xxxx_public.crt` 立的檔案拖放至拖放 **[!UICONTROL Public keys certificates]** 區域。
-9. 選擇產品設定檔。
+1. 如果您可以存取多個Experience cloud組織，請從右上角的下拉式清單中選取組織。
+1. 在下 **[!UICONTROL Experience Cloud]**&#x200B;方，選 **[!UICONTROL Places]** 取您要整合的Adobe服務，然後按一下 **[!UICONTROL Continue]**。
+1. 選擇 **[!UICONTROL New integration]** 並按一下 **[!UICONTROL Continue]**。
+1. 在「建立新整合」畫面中，輸入名稱和說明。
+1. 將您在上方建 `xxxx_public.crt` 立的檔案拖放至拖放 **[!UICONTROL Public keys certificates]** 區域。
+1. 選擇產品設定檔。
 
    如果您不確定要選擇哪個配置檔案，請與系統管理員聯繫。
-10. At the bottom of the page, click **[!UICONTROL Create integration]**.
-11. 數秒後，在「已建立的整 *合」畫面中* ，確認出現下列訊息：
+1. At the bottom of the page, click **[!UICONTROL Create integration]**.
+1. 數秒後，在「已建立的整 *合」畫面中* ，確認出現下列訊息：
 
    `Your integration has been created.`
 
-12. 此時會顯示整合詳細資訊頁面，其頂端是整合名稱。
+1. 此時會顯示整合詳細資訊頁面，其頂端是整合名稱。
 
    依預 **[!UICONTROL Overview]** 設會顯示標籤，並顯示API金鑰、您的組織ID、技術帳戶ID，以及您整合的其他詳細資訊。
 
 ### 記錄組織ID和API金鑰
 
 1. 在整合詳細資訊頁面上，按一下 **[!UICONTROL Services]** 標籤並確認顯 **[!UICONTROL Places]** 示於下方 **[!UICONTROL Configured Services]**。
-2. 在標籤 **[!UICONTROL Overview]** 上，找出並記錄API金鑰（用戶端ID）和組織ID。
+1. 在標籤 **[!UICONTROL Overview]** 上，找出並記錄API金鑰（用戶端ID）和組織ID。
 
    每個Places REST API請求都需要這些ID。
 
@@ -138,11 +138,11 @@ source-git-commit: 95c29df19f61e7854e39b47e39471f7f1e94b736
 要生成JWT令牌：
 
 1. 在文字編輯器中，開啟您在上 `private.key` 方建立的檔案。
-2. 在標 **[!UICONTROL JWT]** 簽上，複製索引鍵的內容並貼入欄 **[!UICONTROL Paste private key]** 位。
-3. 按一下 **[!UICONTROL Generate JWT]**。
-4. 在該節 **[!UICONTROL Sample CURL command]** 中，按一下並 **[!UICONTROL Copy]** 將內容貼上到命令提示符或終端窗口中。
-5. 按鍵盤上的鍵 **[!UICONTROL Enter]** 盤運行命令。
-6. 找到 `"token_type": "bearer"` 和 `"access_token"` 值。
+1. 在標 **[!UICONTROL JWT]** 簽上，複製索引鍵的內容並貼入欄 **[!UICONTROL Paste private key]** 位。
+1. 按一下 **[!UICONTROL Generate JWT]**。
+1. 在該節 **[!UICONTROL Sample CURL command]** 中，按一下並 **[!UICONTROL Copy]** 將內容貼上到命令提示符或終端窗口中。
+1. 按鍵盤上的鍵 **[!UICONTROL Enter]** 盤運行命令。
+1. 找到 `"token_type": "bearer"` 和 `"access_token"` 值。
 
    載體存取Token的值是您在Places API請求中使用的值。
 
