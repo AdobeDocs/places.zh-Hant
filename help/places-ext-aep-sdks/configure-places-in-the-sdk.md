@@ -4,7 +4,7 @@ seo-title: 使用Places擴充功能設定SDK
 description: '您可以使用Places擴充功能來設定SDK，以在行動應用程式中啟用位置感知。 '
 seo-description: '您可以使用Places擴充功能來設定SDK，以在行動應用程式中啟用位置感知。 '
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -37,14 +37,14 @@ source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
 
    如需詳細資訊，請參 *閱Launch中的設定位置監控擴充功能*。
 
-2. 將Places Monitor擴充功能新增至您的行動應用程式。
+1. 將Places Monitor擴充功能新增至您的行動應用程式。
 
    如需詳細資訊，請參 *閱「將Places Monitor擴充功能新增至應用程式」*。
 
-3. 使用Mobile Core Extension註冊Places Monitor。
+1. 使用Mobile Core Extension註冊Places Monitor。
 
    如需詳細資訊，請參閱使用Mobile Core *註冊Places Monitor*。
 
-4. 在背景啟用位置更新。
+1. 在背景啟用位置更新。
 
    如需詳細資訊，請 *參閱背景啟用位置更新*。
