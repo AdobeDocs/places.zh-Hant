@@ -4,7 +4,7 @@ seo-title: Places擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 seo-description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: fd1b37a0f50d93de1efff4cb38fc23253f02d517
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -16,13 +16,13 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 ## 在Adobe Experience Platform Launch中安裝Places擴充功能
 
 1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Extensions]** 簽。
-2. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
-3. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
-4. 按一下 **[!UICONTROL Save]**。
+1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
+1. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
+1. 按一下 **[!UICONTROL Save]**。
 
    當您按一 **[!UICONTROL Save]**&#x200B;下，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，POI資料不會包含在程式庫的下載中，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
 
-5. 完成發佈程式以更新SDK組態。
+1. 完成發佈程式以更新SDK組態。
 
    如需有關在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobelaunch.com/launch-reference/publishing)。
 
@@ -45,7 +45,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
    ```
 
-2. 在應用程式的主要活動中匯入「位置」擴充功能。
+1. 在應用程式的主要活動中匯入「位置」擴充功能。
 
    ```java
    import com.adobe.marketing.mobile.Places;
@@ -65,13 +65,13 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
    或者，如果您不使用Cocoapods，則可以從Github的發行頁面手動加入Mobile Core [和](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Places程式庫。
 
-2. 更新您的Cocoapod:
+1. 更新您的Cocoapod:
 
    ```objective-c
    pod update
    ```
 
-3. 開啟Xcode，然後在您的AppDelegate類別中匯入「核心」和「位置」標題：
+1. 開啟Xcode，然後在您的AppDelegate類別中匯入「核心」和「位置」標題：
 
    **Objective-C**
 
