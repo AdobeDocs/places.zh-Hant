@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 seo-description: '本節提供如何搭配Adobe Target使用位置服務的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -30,13 +30,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
    在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Target Content Requested]**。
 
-2. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
 
-3. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Target]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Target]**。
 
-4. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Content Requested]**。
+1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Content Requested]**。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ![新增事件](/help/assets/ad-setEvent_target.png)
 
@@ -50,13 +50,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
 
-2. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-3. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Launches]**。
+1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Launches]**。
 
-4. 在右窗格中，修改下拉式清單和數字控制項，讓條件為「 **[!UICONTROL使用者已啟動超過或等於5次的應用程式」**。
+1. 在右窗格中，修改下拉式清單和數字控制項，讓條件為「 **[!UICONTROL使用者已啟動超過或等於5次的應用程式」**。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ![新增事件](/help/assets/ad-setCondition_target.png)
 
@@ -64,13 +64,13 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
 
-2. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-3. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
+1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
 
-4. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
+1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
 在右窗格中，您可以新增自由格式的JSON裝載，在監聽此事件的副檔名之前，將資料新增至SDK事件。
 
@@ -92,4 +92,4 @@ source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
-2. 重建您的Launch屬性，並將它部署至正確的環境。
+1. 重建您的Launch屬性，並將它部署至正確的環境。
