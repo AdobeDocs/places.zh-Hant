@@ -4,7 +4,7 @@ seo-title: 使用您自己的螢幕
 description: '您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。 '
 seo-description: '您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。 '
 translation-type: tm+mt
-source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
 
 1. 將從iOS的核心位置服務取得的位置更新傳遞至Places擴充功能。
 
-2. 使用 `getNearbyPointsOfInterest` Places擴充功能API取得目前位 *置*`ACPPlacesPoi` 周圍n個物件的陣列。
+1. 使用 `getNearbyPointsOfInterest` Places擴充功能API取得目前位 *置*`ACPPlacesPoi` 周圍n個物件的陣列。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -35,7 +35,7 @@ source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
    }
    ```
 
-3. 從獲取的對象中提取信 `ACPPlacesPOI` 息，並開始監控這些POI。
+1. 從獲取的對象中提取信 `ACPPlacesPOI` 息，並開始監控這些POI。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -60,7 +60,7 @@ source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
 
 1. 將從Google play服務或Android位置服務取得的位置更新傳遞至Places延伸功能。
 
-2. 使用 `getNearbyPointsOfInterest` Places Extension API取得目前位置 `PlacesPoi` 周圍n個物件的清單。
+1. 使用 `getNearbyPointsOfInterest` Places Extension API取得目前位置 `PlacesPoi` 周圍n個物件的清單。
 
    ```java
        LocationCallback callback = new LocationCallback() {
@@ -79,7 +79,7 @@ source-git-commit: 5d558755d816f4aa05a7a76cad12bab45c1dc282
            };
    ```
 
-3. 從所獲取的物件擷取資 `PlacesPOI` 料，並開始監控這些POI。
+1. 從所獲取的物件擷取資 `PlacesPOI` 料，並開始監控這些POI。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
