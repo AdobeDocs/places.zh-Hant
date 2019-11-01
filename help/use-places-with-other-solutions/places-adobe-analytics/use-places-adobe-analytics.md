@@ -4,7 +4,7 @@ seo-title: 傳送地點資料至Adobe Analytics
 description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
 seo-description: '本節提供如何將「地標」資料傳送至Analytics的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
+source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ---
 
@@ -33,13 +33,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
    如此，您就可輕鬆辨識規則清單中的規則。 在此範例中，規則為命名 **[!UICONTROL Send Data to Analytics]**。
 
-2. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
-3. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
 
-4. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
+1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
    !["選擇事件"](/help/assets/ad-setEvent_use-analytics-data.png)
 
@@ -54,13 +54,13 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
 
-2. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
 
-3. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Name]**。
+1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Name]**。
 
-4. 在右窗格中的文本欄位中，輸入 **[!UICONTROL My POI]**。
+1. 在右窗格中的文本欄位中，輸入 **[!UICONTROL My POI]**。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
    !["設定條件"](/help/assets/ad-setCondition_use-analytics-data.png)
 
@@ -69,15 +69,15 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
 
-2. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Analytics]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Analytics]**。
 
-3. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Track]**。
+1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Track]**。
 
-4. 在右窗格中，新增您要傳送至Analytics的動作或狀態。
+1. 在右窗格中，新增您要傳送至Analytics的動作或狀態。
 
    您也可以選擇新增任何其他內容資料至此請求。 請記住，您可以使用資料元素從SDK動態取得此資料。
 
-5. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下 **[!UICONTROL Keep Changes]**。
 
    在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他內容資料等 `poi.name` 於觸發此登入事件之POI的名稱：
 
@@ -91,5 +91,5 @@ source-git-commit: 7ca51580a4cfa9c00431ad3972bd10e2a12dfbd1
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
-2. 重建您的Launch屬性，並將它部署至正確的環境。
+1. 重建您的Launch屬性，並將它部署至正確的環境。
 
