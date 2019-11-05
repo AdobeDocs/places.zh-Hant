@@ -2,9 +2,9 @@
 title: 傳送地點資料至Adobe Analytics
 seo-title: 傳送地點資料至Adobe Analytics
 description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
-seo-description: '本節提供如何將「地標」資料傳送至Analytics的相關資訊。 '
+seo-description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -31,7 +31,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 為規則輸入有意義的名稱。
 
-   如此，您就可輕鬆辨識規則清單中的規則。 在此範例中，規則為命名 **[!UICONTROL Send Data to Analytics]**。
+   如此，規則就可在您的規則清單中輕鬆辨識。 在此範例中，規則為命名 **[!UICONTROL Send Data to Analytics]**。
 
 1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
@@ -41,7 +41,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-   !["選擇事件"](/help/assets/ad-setEvent_use-analytics-data.png)
+   !["選擇事件"](/help/assets/pt-selectEvent.png)
 
 
 ## 3.新增條件
@@ -62,7 +62,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-   !["設定條件"](/help/assets/ad-setCondition_use-analytics-data.png)
+   !["設定條件"](/help/assets/pt-setCondition.png)
 
 
 ## 4.定義動作
@@ -81,15 +81,14 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他內容資料等 `poi.name` 於觸發此登入事件之POI的名稱：
 
-   !["設定動作"](/help/assets/ad-setAction_use-analytics-data.png)
+   !["設定動作"](/help/assets/pt-setAction.png)
 
 ## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-!["規則已建立"](/help/assets/ad-ruleComplete_use-analytics-data.png)
+!["規則已建立"](/help/assets/pt-ruleComplete.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
 1. 重建您的Launch屬性，並將它部署至正確的環境。
-
