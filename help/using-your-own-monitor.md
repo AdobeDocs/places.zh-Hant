@@ -4,7 +4,7 @@ seo-title: 使用您自己的螢幕
 description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
 seo-description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -23,16 +23,15 @@ source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 1. 將從iOS的核心位置服務取得的位置更新傳遞至Places擴充功能。
 
-1. 使用 `getNearbyPointsOfInterest` Places擴充功能API取得目前位 *置*`ACPPlacesPoi` 周圍n個物件的陣列。
+1. 使用 `getNearbyPointsOfInterest` Places擴充功能API取得目前位 `ACPPlacesPoi` 置周圍的物件陣列。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
        [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
            [self startMonitoringGeoFences:nearbyPoi];
        }];
-   }
-   ```
-
+   }```
+   
 1. 從獲取的對象中提取信 `ACPPlacesPOI` 息，並開始監控這些POI。
 
    ```objective-c
