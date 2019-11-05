@@ -2,9 +2,9 @@
 title: Adobe Target
 seo-title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
-seo-description: '本節提供如何搭配Adobe Target使用位置服務的相關資訊。 '
+seo-description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -54,7 +54,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Launches]**。
 
-1. 在右窗格中，修改下拉式清單和數字控制項，讓條件為「 **[!UICONTROL使用者已啟動超過或等於5次的應用程式」**。
+1. 在右窗格中，修改下拉式清單和數字控制項，讓條件讀取 **[!UICONTROL User has launched the app greater than or equal to 5 times]**。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
@@ -76,11 +76,11 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 在下列範例中， `poiCity` 會將值 `poiName` 新增至Target事 **[!UICONTROL mboxparameters]** 件中處理的每個請求。 此事件處理時，SDK會動態決定新索引鍵的值。
 
->[!TIP
->]
+>[!TIP]
+>
 >此JSON裝載會對物件使用特殊記 `request` 號。 在原始事件中， `request` 是一組匿名物件。 使用「附加資料」(Attach Data)將資料附加到陣列中的所有對象時，已知包含陣列的鍵上的符號會導致裝載被應用於該陣列中的所有對象。 `[*]`
 >
->對於數 `request[*]` 組中的每個對象，可將符號朗讀為_ `request` for。
+>對於數 `request[*]` 組中的每個對象， _可以朗讀的記`request`號_。
 
 ![新增事件](/help/assets/ad-setAction_target.png)
 
