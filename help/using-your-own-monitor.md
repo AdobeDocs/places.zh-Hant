@@ -1,10 +1,10 @@
 ---
 title: 使用您自己的螢幕
 seo-title: 使用您自己的螢幕
-description: '您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。 '
-seo-description: '您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。 '
+description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
+seo-description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -27,11 +27,9 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
-   
-          [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
-              [self startMonitoringGeoFences:nearbyPoi];
-      }];
-   
+       [ACPPlaces getNearbyPointsOfInterest:currentLocation limit:10 callback: ^ (NSArray<ACPPlacesPoi*>* _Nullable nearbyPoi) {
+           [self startMonitoringGeoFences:nearbyPoi];
+       }];
    }
    ```
 
