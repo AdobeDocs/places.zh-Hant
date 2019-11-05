@@ -4,7 +4,7 @@ seo-title: 在包含Places資料的Adobe Analytics中執行報表
 description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 seo-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 ---
 
@@ -39,7 +39,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有呼叫為 `TrackAction` 基礎。 設定事件後，按一下 **[!UICONTROL Keep Changes]**。
 
-!["建立事件"](/help/assets/pt-selectEvent.png)
+!["建立事件"](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.新增條件
@@ -60,7 +60,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-!["建立條件"](/help/assets/pt-setCondition.png)
+!["建立條件"](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.定義動作
 
@@ -78,13 +78,13 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 在下列範例中， `poi.city` 值 `poi.name` 會新增至Analytics事件的上下文資料。 當此事件處理時，新索引鍵的值會由SDK動態決定。
 
-![「建立動作」](/help/assets/pt-setAction.png)
+![「建立動作」](/help/assets/ad-setAction_use-analytics-data.png)
 
 ## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-!["規則已完成。"](/help/assets/pt-ruleComplete.png)
+!["規則已完成。"](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
