@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 seo-description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 ---
 
@@ -58,7 +58,7 @@ source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-![新增事件](/help/assets/ad-setCondition_target.png)
+![新增條件](/help/assets/ad-setCondition_target.png)
 
 ## 4.定義動作
 
@@ -82,7 +82,7 @@ source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
 >
 >對於數 `request[*]` 組中的每個對象， _可以朗讀的記`request`號_。
 
-![新增事件](/help/assets/ad-setAction_target.png)
+![定義動作](/help/assets/ad-setAction_target.png)
 
 ## 5.儲存規則並重建您的屬性
 
