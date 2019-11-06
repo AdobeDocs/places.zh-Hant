@@ -4,7 +4,7 @@ seo-title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 seo-description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
 translation-type: tm+mt
-source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
+source-git-commit: 2169bcdc5957c2542dd11875223ea96c3d10b0bc
 
 ---
 
@@ -88,7 +88,7 @@ source-git-commit: d12dae0e30fab8639260c2c55accb4b79096382d
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-![已完成規則](/help/assets/ad-ruleComplete_target.png)
+![已完成規則](/help/assets/ad-ruleComplete-target.png)
 
 1. 按一下&#x200B;**[!UICONTROL Save]**
 
