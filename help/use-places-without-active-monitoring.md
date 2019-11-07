@@ -1,10 +1,10 @@
 ---
-title: '使用位置服務而不需進行有效區域監控 '
-seo-title: '使用位置服務而不需進行有效區域監控 '
+title: 使用位置服務而不需進行有效區域監控
+seo-title: 使用位置服務而不需進行有效區域監控
 description: 本節提供如何使用Location servicePlaces而不進行作用中地區監控的資訊。
 seo-description: 本節提供如何在不進行有效區域監控的情況下使用定位服務的資訊。
 translation-type: tm+mt
-source-git-commit: 84b23934a6e9f9fd61c068693bae3daca24de253
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -68,17 +68,18 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
         // ask the Places SDK for the 10 nearest Points of Interest based on the user's location
         Places.getNearbyPointsOfInterest(currentLocation, 10,
-                new AdobeCallback<List<PlacesPOI>>() {
-                    @Override
-                    public void call(List<PlacesPOI> pois) {
-                        // pois is the 10 nearest POIs based on the location
-                    }
-                }, new AdobeCallback<PlacesRequestError>() {
-                    @Override
-                    public void call(PlacesRequestError placesRequestError) {
-                        // Look for the placesRequestError and handle the error accordingly
-                    }
-                });
+            new AdobeCallback<List<PlacesPOI>>() {
+                @Override
+                public void call(List<PlacesPOI> pois) {
+                    // pois is the 10 nearest POIs based on the location
+                }
+            }, new AdobeCallback<PlacesRequestError>() {
+                @Override
+                public void call(PlacesRequestError placesRequestError) {
+                    // Look for the placesRequestError and handle the error accordingly
+                }
+            }
+        );
     }
 }
 ```
@@ -122,8 +123,8 @@ SDK會傳回附近POI的清單，包括使用者目前是否在每個POI中。 �
 >[!IMPORTANT]
 >
 >若要防止應用程式在一次瀏覽中觸發多個參加項目事件，請保留您知道使用者已輸入的地區清單。 當處理來自SDK的附近POI的回應時，只有在您的清單中未列出地區時，才會觸發登入事件。
-
-在下列程式碼范 `NSUserDefaults` 例中，會使 `SharedPreferences` 用(iOS)和(Android):
+>
+>在下列程式碼范 `NSUserDefaults` 例中，(iOS)和 `SharedPreferences` (Android)用於管理地區清單：
 
 ### Android
 
@@ -265,18 +266,19 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
         // ask the Places SDK for the 10 nearest Points of Interest based on the user's location
         Places.getNearbyPointsOfInterest(currentLocation, 10,
-                new AdobeCallback<List<PlacesPOI>>() {
-                    @Override
-                    public void call(List<PlacesPOI> pois) {
-                        // pois is the 10 nearest POIs based on the location
-                        handleUpdatedPOIs(pois);
-                    }
-                }, new AdobeCallback<PlacesRequestError>() {
-                    @Override
-                    public void call(PlacesRequestError placesRequestError) {
-                        // Look for the placesRequestError and handle the error accordingly
-                    }
-                });
+            new AdobeCallback<List<PlacesPOI>>() {
+                @Override
+                public void call(List<PlacesPOI> pois) {
+                    // pois is the 10 nearest POIs based on the location
+                    handleUpdatedPOIs(pois);
+                }
+            }, new AdobeCallback<PlacesRequestError>() {
+                @Override
+                public void call(PlacesRequestError placesRequestError) {
+                    // Look for the placesRequestError and handle the error accordingly
+                }
+            }
+        );
     }
 
     void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
