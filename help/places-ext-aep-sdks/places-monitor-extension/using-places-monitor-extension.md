@@ -2,9 +2,9 @@
 title: 使用Places Monitor擴充功能
 seo-title: 使用Places Monitor擴充功能
 description: 有關如何安裝、配置和使用Places Monitor擴展的資訊。
-seo-description: '有關如何安裝、配置和使用Places Monitor擴展的資訊。 '
+seo-description: 有關如何安裝、配置和使用Places Monitor擴展的資訊。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
 ## 在Experience Platform Launch中安裝Places Monitor擴充功能
 
-1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Extensions]** 簽。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴充 **[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
 1. 按一下 **[!UICONTROL Save]**。
 1. 依照發佈程式更新SDK組態。
@@ -107,7 +107,9 @@ public class MobileApp extends Application {
 }
 ```
 
-**** 重要：位置監控取決於位置擴展。 手動安裝Places Monitor擴充功能時，請確定您也將程式 `places.aar` 庫新增至專案。
+>[!IMPORTANT]
+>
+>位置監控取決於位置擴展。 手動安裝「Places 監視」擴充功能時，請確定您也將 `places.aar` 資料庫新增至專案。
 
 ## iOS
 
@@ -125,7 +127,7 @@ public class MobileApp extends Application {
         [ACPPlacesMonitor start];
     }];
 
-    return YES; 
+    return YES;
 }
 ```
 
@@ -140,7 +142,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
         // do other initialization required for the SDK
         ACPPlacesMonitor.start()
     })
-    
+
     // Override point for customization after application launch.        
     return true
 }
@@ -148,7 +150,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 >[!IMPORTANT]
 >
->位置監控取決於位置擴展。 手動安裝Places Monitor擴充功能時，請確定您也將程式庫 `libACPPlaces_iOS.a` 新增至專案。
+>位置監控取決於位置擴展。 When manually installing the Places Monitor extension, ensure that you also add the `libACPPlaces_iOS.a` library to your project.
 
 
 ## 新增權限至資訊清單
@@ -163,7 +165,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.adobe.placesapp">
   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     // Only for Android apps targeting API level 29 and above
-  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" /> 
+  <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
   <application>        
     ...    
   </application>
@@ -189,4 +191,3 @@ iOS支援將位置事件傳送至已暫停或不再執行的應用程式。 若�
 >如果您的應用程式支援iOS 10及更早版本，則 `NSLocationAlwaysUsageDescription` 也需要金鑰。
 
 ![](/help/assets/using-the-places-monitor_2.png)
-
