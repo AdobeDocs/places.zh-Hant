@@ -4,7 +4,7 @@ seo-title: 使用Places Monitor擴充功能
 description: 有關如何安裝、配置和使用Places Monitor擴展的資訊。
 seo-description: 有關如何安裝、配置和使用Places Monitor擴展的資訊。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
@@ -102,7 +102,7 @@ public class MobileApp extends Application {
             MobileCore.start(null);
         } catch (Exception e) {
             //Log the exception
-         }
+        }
     }
 }
 ```
