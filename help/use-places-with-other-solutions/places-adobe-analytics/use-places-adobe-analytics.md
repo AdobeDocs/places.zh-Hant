@@ -1,15 +1,15 @@
 ---
-title: 傳送地點資料至Adobe Analytics
-seo-title: 傳送地點資料至Adobe Analytics
-description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
-seo-description: 本節提供如何將「地標」資料傳送至Analytics的相關資訊。
+title: 傳送POI登入與退出資料至Analytics
+seo-title: 傳送POI登入與退出資料至Analytics
+description: 本節提供如何傳送POI登入與退出資料至Analytics的相關資訊。
+seo-description: 本節提供如何傳送POI登入與退出資料至Analytics的相關資訊。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# 傳送地點資料至Adobe Analytics {#places-data-analytics}
+# 傳送POI登入與退出資料至Analytics {#places-data-analytics}
 
 
 >[!IMPORTANT]
