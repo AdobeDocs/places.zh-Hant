@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: 終端使用者
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
@@ -66,6 +66,7 @@ source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
    + Adobe Analytics {#places-adobe-analytics}
       + [傳送POI登入與退出資料至Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [新增位置內容至Analytics請求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
+      + [Analytics工作區中位置資料的報告](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
    + Adobe Mobile Services {#places-mobile-svcs-messaging}
       + [Adobe Mobile Services](use-places-with-other-solutions/places-mobile-svcs-for-messaging/use-places-mobie-svcs-messaging.md)
       + [推播通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
