@@ -1,15 +1,15 @@
 ---
-title: 在包含Places資料的Adobe Analytics中執行報表
-seo-title: 在包含Places資料的Adobe Analytics中執行報表
-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
-seo-description: 本節提供如何在包含「位置」資料的Analytics中執行報表的相關資訊。
+title: 新增位置內容至Analytics請求
+seo-title: 新增位置內容至Analytics請求
+description: 本節提供如何新增位置內容至Analytics請求的相關資訊。
+seo-description: 本節提供如何新增位置內容至Analytics請求的相關資訊。
 translation-type: tm+mt
-source-git-commit: 95dd010db8a860ebf489d04c7a70ec9cda8b3fb1
+source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ---
 
 
-# 在包含Places資料的Adobe Analytics中執行報表 {#run-reports-aa-locserv-data}
+# 新增位置內容至Analytics請求 {#run-reports-aa-locserv-data}
 
 >[!IMPORTANT]
 >
