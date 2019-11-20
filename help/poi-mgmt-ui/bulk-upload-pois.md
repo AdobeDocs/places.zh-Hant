@@ -4,7 +4,7 @@ seo-title: 大量上傳POI
 description: 本節提供如何大量上傳POI的相關資訊。
 seo-description: 本節提供如何大量上傳POI的相關資訊。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 3e2bf2ce011f9770209af08bd0abf0b16f84fbc0
 
 ---
 
@@ -45,7 +45,7 @@ source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
 
 * `radius`
 
-   介於10和2000之間的值。
+   值介於10到20,000之間。
 
 ### 欄值
 
