@@ -1,9 +1,9 @@
 ---
 product: Adobe Experience Platform Location Service
-audience: 終端使用者
+audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: a5ac49b0a18ce52fb71b2920d04918539b35294b
 
 ---
 
@@ -14,7 +14,8 @@ source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 + [發行說明](release-notes.md)
 + [入門](getting-started.md)
 + 興趣點管理介面 {#poi-mgmt-ui}
-   + [建立新 POI](poi-mgmt-ui/create-a-poi-ui.md)
+   + [興趣點管理介面總覽](poi-mgmt-ui/poi-mgmt-ui-overview.md)
+   + [建立 POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [管理先前建立的POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [搭配POI使用中繼資料的策略](poi-mgmt-ui/metadata-with-pois.md)
    + [大量上傳POI](poi-mgmt-ui/bulk-upload-pois.md)
@@ -23,6 +24,7 @@ source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
    + [網站服務API概觀](web-service-api/places-web-services.md)
    + [整合先決條件](web-service-api/adobe-i-o-integration.md)
    + API使用 {#api-usage}
+      + [API使用概觀](web-service-api/api-usage/api-usage-overview.md)
       + [標題和參數](web-service-api/api-usage/headers-and-parameters.md)
       + Manage libraries {#manage-libraries}
          + [管理程式庫概觀](web-service-api/api-usage/manage-libraries/manage-libraries.md)
