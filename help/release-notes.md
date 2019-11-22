@@ -4,12 +4,21 @@ seo-title: 發行說明
 description: Adobe Experience Platform Location service的發行說明。
 seo-description: Adobe Experience Platform Location service的發行說明。
 translation-type: tm+mt
-source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
+source-git-commit: 7fd44ab0135ec77f4b235cc65b943b40d535717c
 
 ---
 
 
 # 發行說明 {#release-notes}
+
+## 2019 年 11 月 22 日
+
+* **PlacesMonitor 2.1.1**
+
+   * **Android**
+
+      * 監視器現在可辨識Android裝置的啟動，並視需要根據裝置的目前位置，在作業系統中重新註冊地理柵欄。
+      * 修正有時會導致登入／退出事件被捨棄的競賽條件。
 
 ## 2019 年 10 月 9 日
 
@@ -33,7 +42,7 @@ source-git-commit: a5e5d5792d1a0368936f5f54e86a7ce9726a9122
 
 以下是Places UI的更新清單：
 
-#### 新特性
+#### 新功能
 
 * 已新增清單檢視，顯示不含地圖的POI。
 * 新增城市、州、國家和中繼資料的POI篩選選項。
@@ -210,7 +219,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 * 在POI進入或退出時觸發的規則事件。
 * 建立指向使用者目前POI的資料元素。
 
-如需「地標」延伸功能的詳細資訊，請參閱「地 [標」延伸功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+For more information about the Places extension, see [Places extension](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 #### 地標API
 
