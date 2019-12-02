@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
@@ -67,6 +67,7 @@ source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
    + [建立登入與退出規則](use-places-launch-workflow/create-rule-places-property.md)
 + 與其他Adobe解決方案搭配使用位置服務 {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
+      + [搭配Adobe Analytics使用位置服務](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [傳送POI登入與退出資料至Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
       + [新增位置內容至Analytics請求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)
       + [Analytics工作區中位置資料的報告](use-places-with-other-solutions/places-adobe-analytics/places-in-workspace.md)
@@ -75,6 +76,7 @@ source-git-commit: a34c7a43b867b62646a48b457413ccc8fd3672ad
       + [推播通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-push.md)
       + [應用程式內通知](use-places-with-other-solutions/places-mobile-svcs-for-messaging/mobile-svcs-messaging-inapp.md)
    + Adobe Campaign Standard {#places-acs}
+      + [搭配Adobe Campaign standard使用位置服務](use-places-with-other-solutions/places-acs/places-acs-overview.md)
       + [推播通知](use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
       + [應用程式內訊息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
