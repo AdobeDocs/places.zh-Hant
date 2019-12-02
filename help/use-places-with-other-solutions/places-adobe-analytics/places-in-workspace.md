@@ -4,14 +4,14 @@ seo-title: Analytics工作區中位置資料的報告
 description: 本節提供如何報告Analytics工作區中位置資料的相關資訊。
 seo-description: 本節提供如何報告Analytics工作區中位置資料的相關資訊。
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
 # Analytics工作區中位置資料的報告 {#places-in-workspace}
 
-本檔案顯示如何在Analytics工作區中報告位置資料的範例。 每個步驟都包含高階摘要，其詳細資訊會參照其他檔案頁面。
+本檔案顯示如何在Analytics工作區中報告位置資料的範例。 每個步驟都包含高階摘要，並參考其他檔案頁面提供詳細資訊。
 
 ## 必要條件
 
@@ -38,7 +38,7 @@ source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
 
 ## 2.建立Analytics變數
 
-為了對應上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數\(eVars\)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
+為了映射上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數\(eVars\)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
 
 在此範例中，已建立並 **[!UICONTROL Evar2]**&#x200B;命名轉換變數 **[!UICONTROL Places POI Name]**。 您需要為每個要在報表中公開的位置變數建立其他變數。
 
