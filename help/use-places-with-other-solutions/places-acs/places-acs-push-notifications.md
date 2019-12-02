@@ -4,12 +4,12 @@ seo-title: 推播通知
 description: 本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。
 seo-description: '本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 
 ---
 
 
-# 使用Experience Platform Location service的推播通知 {#push-notifications}
+# 含位置服務的推播通知 {#push-notifications}
 
 在本指南中，我們將說明您如何使用歷史地理位置資訊來定位透過Adobe Campaign standard傳送的推播通知。
 
@@ -42,7 +42,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    !["Campaign Standard中的推送訊息"](/help/assets/ACS_Push1.png)
 
-1. 重複上述步驟1-4，並為「上次輸入POI Latitude *」、「上次輸入POI經度」和「上次輸入* POI Radius」建立資料元素 ****。
+1. Repeat the steps 1-4 above and create data elements for *Last Entered POI Latitude*, *Last Entered POI Longitude*, and *Last Entered POI Radius*.
 
 除了位置服務的資料元素外，請確定您已為應用程式ID和 *Experience Cloud ID建立Mobile Core**資料元素*。
 
@@ -120,7 +120,7 @@ Experience Platform Launch的規則可讓您根據事件觸發程式建立複雜
 
    如果您未看到計數更新，則可能已輸入POI名稱，但沒有設備觸發了該條目。 在這種情況下，使用Slack web掛接變得很有價值，因為您可以看到來自各種測試設備的POI條目清單。
 1. 您可以拖曳其他POI位置篩選器，將多個POI加入訊息中。
-1. 按一 **[!UICONTROL Next]** 下以完成建立傳送的推播通知。
+1. Click **[!UICONTROL Next]** to finish creating the push notification for delivery.
 
    !["ACS中的推送消息3"](/help/assets/ACS_push3.html)
 
