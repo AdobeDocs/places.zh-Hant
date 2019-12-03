@@ -4,12 +4,20 @@ seo-title: 發行說明
 description: Adobe Experience Platform Location service的發行說明。
 seo-description: Adobe Experience Platform Location service的發行說明。
 translation-type: tm+mt
-source-git-commit: 7fd44ab0135ec77f4b235cc65b943b40d535717c
+source-git-commit: ef129b7b168444edaf58ef55331efdf2f55a993f
 
 ---
 
 
 # 發行說明 {#release-notes}
+
+## 2019年12月3日
+
+* **ACPPlaces 1.3.0**
+
+   * **iOS**
+
+      * 已新增新API, `setAuthorizationStatus`以設定位置服務的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 11 月 22 日
 
@@ -223,13 +231,13 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### 地標API
 
-您可以使用Places API執行下列動作：
+您可以使用Places API執行下列作業：
 
 * 允許開發人員填入並更新其POI清單。
 * 建立您自己的UI或與現有POI資料庫整合。
 * 使用「置入API」批次端點來大量匯入POI。
 
-   Python實用程式隨API提供。
+   您可以使用提供的Python實用程式完成批量導入。
 
 如需Places API的詳細資訊，請參閱 [Web service API](/help/web-service-api/places-web-services.md)。
 
@@ -238,4 +246,3 @@ For more information about the Places extension, see [Places extension](/help/pl
 #### Analytics 整合
 
 Analytics擴充功能正在更新，當使用者在POI（被動呼叫）中時，會自動從Places資料庫將位置內容資料新增至所有傳出的Analytics呼叫。 此更新也可讓規則建立在POI登入或退出（作用中呼叫）處直接觸發Analytics追蹤呼叫。
-
