@@ -4,7 +4,7 @@ seo-title: Places API參考
 description: Places中API參考的相關資訊。
 seo-description: Places中API參考的相關資訊。
 translation-type: tm+mt
-source-git-commit: 69173bdbd1a69ae1b75ba70e775a4603d1f1b8fc
+source-git-commit: 77bd510506d950348452eb26386cd25fe570fa65
 
 ---
 
@@ -347,4 +347,39 @@ Places.clear();
 
 ```objectivec
 [ACPPlaces clear];
+```
+
+## 設定位置授權狀態
+
+### setAuthorizationStatus(Android)
+
+即將推出
+
+### setAuthorizationStatus(iOS)
+
+_[從ACPPlaces v1.3.0開始提供]_
+
+在「地點」擴展中設定授權狀態。
+
+提供的狀態會儲存在「地標」共用狀態，且僅供參考。
+呼叫此方法不會影響此設備的實際位置授權狀態。
+
+當裝置授權狀態變更時，會 `locationManager:didChangeAuthorizationStatus:` 呼叫您的 `CLLocationManagerDelegate` 方法。 在此方法中，您應將新值 `CLAuthorizationStatus` 傳遞至ACPPlaces `setAuthorizationStatus:` API。
+
+**語法**
+
+以下是此方法的語法:
+
+```objectivec
++ (void) setAuthorizationStatus: (CLAuthorizationStatus) status;
+```
+
+**範例**
+
+以下是此方法的範例程式碼:
+
+```objectivec
+- (void) locationManager: (CLLocationManager*) manager didChangeAuthorizationStatus: (CLAuthorizationStatus) status {    
+    [ACPPlaces setAuthorizationStatus:status];
+}
 ```
