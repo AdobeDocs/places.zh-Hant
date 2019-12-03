@@ -4,7 +4,7 @@ seo-title: Places API參考
 description: Places中API參考的相關資訊。
 seo-description: Places中API參考的相關資訊。
 translation-type: tm+mt
-source-git-commit: 77bd510506d950348452eb26386cd25fe570fa65
+source-git-commit: 5d4974a341f6d0009ad93a9eea2f940ac9d8e871
 
 ---
 
@@ -357,7 +357,7 @@ Places.clear();
 
 ### setAuthorizationStatus(iOS)
 
-_[從ACPPlaces v1.3.0開始提供]_
+*[從ACPPlaces v1.3.0開始提供]*
 
 在「地點」擴展中設定授權狀態。
 
