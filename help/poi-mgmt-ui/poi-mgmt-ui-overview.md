@@ -1,10 +1,8 @@
 ---
 title: 興趣點管理介面總覽
-seo-title: 興趣點管理介面總覽
 description: 本節提供如何透過位置服務UI建立和管理資料庫和POI的相關資訊。
-seo-description: 本節提供如何透過位置服務UI建立和管理資料庫和POI的相關資訊。
 translation-type: tm+mt
-source-git-commit: 8d6b796326c5fbb3f2af996766fc9c05046ec653
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
