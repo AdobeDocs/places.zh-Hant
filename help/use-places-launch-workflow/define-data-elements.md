@@ -1,10 +1,8 @@
 ---
 title: 定義資料元素
-seo-title: 定義資料元素
 description: 本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。
-seo-description: '本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
