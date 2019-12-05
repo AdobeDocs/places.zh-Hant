@@ -3,7 +3,7 @@ product: Adobe Experience Platform Location Service
 audience: end-user
 user-guide-title: Adobe Experience Platform Location Service
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 967726c02b725d8d7aca657754f1ae30f79a665d
 
 ---
 
@@ -13,6 +13,7 @@ source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
 + [Adobe Experience Platform位置服務總覽](home.md)
 + [發行說明](release-notes.md)
 + [入門](getting-started.md)
++ [存取位置服務](places-gain-access.md)
 + 興趣點管理介面 {#poi-mgmt-ui}
    + [興趣點管理介面總覽](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [建立 POI](poi-mgmt-ui/create-a-poi-ui.md)
