@@ -1,10 +1,8 @@
 ---
 title: 管理現有POI
-seo-title: 管理現有POI
 description: 在位置服務UI中，您可以編輯、刪除或篩選現有POI。
-seo-description: 在位置服務UI中，您可以編輯、刪除或篩選現有POI。
 translation-type: tm+mt
-source-git-commit: 8d6b796326c5fbb3f2af996766fc9c05046ec653
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
