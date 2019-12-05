@@ -1,10 +1,8 @@
 ---
 title: Analytics工作區中位置資料的報告
-seo-title: Analytics工作區中位置資料的報告
 description: 本節提供如何報告Analytics工作區中位置資料的相關資訊。
-seo-description: 本節提供如何報告Analytics工作區中位置資料的相關資訊。
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
