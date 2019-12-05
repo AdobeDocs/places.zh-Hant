@@ -1,8 +1,14 @@
 ---
-source-git-commit: 9b5ed11499da580e48ae27affda238ce6d91f435
+title: 存取Adobe Experience Platform Location Service
+seo-title: 存取Adobe Experience Platform Location Service
+description: 本節提供如何將使用者新增至定位服務和體驗平台啟動的相關資訊，讓使用者能夠存取定位服務。
+seo-description: 本節提供如何將使用者新增至定位服務和體驗平台啟動的相關資訊，讓使用者能夠存取定位服務。
 translation-type: tm+mt
+source-git-commit: 1b4482c8e4cf825c0182421fe00f8b86b411c11b
 
 ---
+
+
 # 存取Adobe Experience Platform Location Service {#adding-user-launch-places}
 
 您可以從 [Adobe Experience cloud首頁的快速存取功能表存取平台位置服務](https://experience.adobe.com)。
