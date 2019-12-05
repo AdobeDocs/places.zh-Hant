@@ -1,10 +1,8 @@
 ---
 title: 地點事件參考
-seo-title: 地點事件參考
 description: '由「地標」擴充功能處理的事件清單。 '
-seo-description: '由「地標」擴充功能處理的事件清單。  '
 translation-type: tm+mt
-source-git-commit: ef720c112bc0de386e070094629c5bab69938e76
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
