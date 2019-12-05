@@ -1,10 +1,8 @@
 ---
 title: 標題和參數
-seo-title: 標題和參數
 description: Places REST API中可用的標題和參數。
-seo-description: Places REST API中可用的標題和參數。
 translation-type: tm+mt
-source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -41,7 +39,7 @@ source-git-commit: 6ae0c8d90cad4c437e1db7f562a0bc9c6b072ce6
 | `data` | Poi資料 | POI詳細資訊陣列 | 不適用 | both |  |
 | `id` | POI的ID | 已分配 | 不適用 | 響應 | `"id": "1455462b-7f9c-4220-9f42-5bbce777a0d1"` |
 | `name` | POI的名稱 | string | 512 個字元 | 兩者皆可，可選\* | `"name": "My Favorite Place"` |
-| `description` | POI的說明 | string | 512 個字元 | 兩者皆可，可選\* | `"description": "This is a very good place."` |
+| `description` | POI說明 | string | 512 個字元 | 兩者皆可，可選\* | `"description": "This is a very good place."` |
 | `location` | POI的類型與座標陣列 | 陣列（混合） | 不適用 | both | `"location": {"type": "Point", "coordinates": [-122.201007, 37.604713]` |
 | `type` | POI類型 | string | 目前僅支援"Point" | 兩者皆需，請求中需要 | `"type": "Point"` |
 | `coordinates` | POI的經緯度陣列 | 陣列（浮點） | 經度：-180到180,latitude -85到85 | 兩者皆需，請求中需要 | `"coordinates": [-122.201007, 37.604713]` |
