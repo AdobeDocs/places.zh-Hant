@@ -1,10 +1,8 @@
 ---
 title: 傳送POI登入與退出資料至Analytics
-seo-title: 傳送POI登入與退出資料至Analytics
 description: 本節提供如何傳送POI登入與退出資料至Analytics的相關資訊。
-seo-description: 本節提供如何傳送POI登入與退出資料至Analytics的相關資訊。
 translation-type: tm+mt
-source-git-commit: 7609711db8b53dfbf0a387632c47133e9b9d0f07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
