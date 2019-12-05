@@ -1,10 +1,8 @@
 ---
 title: 推播通知
-seo-title: 推播通知
 description: 本節將說明如何搭配推播通知使用「地標」。
-seo-description: 本節將說明如何搭配推播通知使用「地標」。
 translation-type: tm+mt
-source-git-commit: 60c274c309a2c86b67d6c19ea28ae300a37d723a
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
