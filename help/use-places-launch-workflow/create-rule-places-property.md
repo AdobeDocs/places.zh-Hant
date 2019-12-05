@@ -1,10 +1,8 @@
 ---
 title: 為「地標」屬性建立規則
-seo-title: 為「地標」屬性建立規則
 description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
-seo-description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -54,14 +52,14 @@ Places SDK會維持下列狀態：
 
 >[!CAUTION]
 >
->此範例假設您已建立美國所有咖啡店的POI資料庫。 如需有關建立POI和程式庫的詳細資訊，請參 [閱「管理多個程式庫」中的「建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)*和建立程式庫* 」 [一節](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)。
+>此範例假設您已建立美國所有咖啡店的 POI 資料庫。For more information about creating POIs and libraries, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md) and *Create a Library* in [Manage multiple libraries](https://docs.adobe.com/content/help/en/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html).
 
 以下程式是如何建立規則的範例，當您進入舊金山的咖啡店時，會將貼文傳回Slack。
 
 事件、條件和動作的定義方式如下：
 
 * **事件**:放置參加項目事件。
-* **條件**:目前的 **POI城市** ，是舊金山
+* **條件**: **「目前 POI」**&#x200B;的城市是舊金山
 * **動作**:將回傳給Slack您客戶輸入的咖啡店名稱。
 
 ### 先決條件
@@ -74,7 +72,7 @@ Places SDK會維持下列狀態：
 1. Click **Add Data Element**.
 1. 鍵入名稱，例如，「當 **前咖啡店名稱」**。
 1. 在「擴 **充功能** 」下拉式清單中，選 **取「位置——測試版」**。
-1. 在「 **資料元素**」中，選 **取「城市」**。
+1. 在&#x200B;**「資料元素」**&#x200B;中，選取&#x200B;**「城市」**。
 1. 在右窗格中，選擇「當 **前POI」**。
 1. 按一下&#x200B;**「儲存」**。
 
@@ -82,7 +80,7 @@ Places SDK會維持下列狀態：
 
 ![建立規則](/help/assets/placesrule.png)
 
-1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Rules]** 簽。
+1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
 1. 按一下 **[!UICONTROL Add Rule]**。
 1. 鍵入規則的名稱，例如 **[!UICONTROL Track entry for coffee shop in SF]**。
 
@@ -91,17 +89,17 @@ Places SDK會維持下列狀態：
 1. 在「事件」區段中，按一下 **[!UICONTROL + Add]**。 事件會決定您要何時觸發規則。
 1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
 1. 在下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
-1. 在 **[!UICONTROL Name]**&#x200B;中，輸入事件的名稱，例如 **[!UICONTROL Entering a coffee shop]**。
+1. In **[!UICONTROL Name]**, enter a name for the event, for example, **[!UICONTROL Entering a coffee shop]**.
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 建立條件
 
 1. 在「條件」區段中，按一下 **[!UICONTROL +Add]**。 條件決定了要採取的動作必須符合哪些標準。
-1. 在中， **[!UICONTROL Logic Type]**&#x200B;選擇「常規」(Regular)，該選項允許在滿足條件時執行操作。
+1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
 1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
 1. 在中 **[!UICONTROL Condition Type]**，選擇 **[!UICONTROL City]**。
 1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-1. 在右窗格中，按一 **[!UICONTROL Current POI]**&#x200B;下，然後在下拉式清單中，選 **[!UICONTROL San Francisco]** 取其中一個城市。
+1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 建立動作
