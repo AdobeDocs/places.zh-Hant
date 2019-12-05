@@ -1,21 +1,19 @@
 ---
-title: Places擴充功能
-seo-title: Places擴充功能
+title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
-seo-description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
 
-# Places擴充功能 {#places-extension}
+# Places 擴充功能 {#places-extension}
 
 Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功能是Places Query Service API的介面。 透過監聽包含GPS座標和地理區域事件的事件，此擴充功能會派送規則引擎處理的新事件。 Places擴充功能也會擷取並傳送從API擷取之應用程式資料的最近POI清單。 API傳回的區域會儲存在快取和永續性中，允許有限的離線處理。
 
 ## 在Adobe Experience Platform Launch中安裝Places擴充功能
 
-1. 在Experience Platform Launch中，按一下標 **[!UICONTROL Extensions]** 簽。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
 1. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
 1. 按一下 **[!UICONTROL Save]**。
