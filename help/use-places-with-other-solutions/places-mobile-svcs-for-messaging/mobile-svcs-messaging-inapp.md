@@ -1,10 +1,8 @@
 ---
 title: 應用程式內通知
-seo-title: 應用程式內通知
 description: 本節將說明如何搭配應用程式內訊息使用「地標」。
-seo-description: 本節將說明如何搭配應用程式內訊息使用「地標」。
 translation-type: tm+mt
-source-git-commit: a76e91775efd92ce56f2dc5cbdcc65786855b5c3
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -62,7 +60,7 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 >[!TIP]
 >
->可以設定「分析處理規則」來擷取此上下文資料。 For more information, see [Processing Rules](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html). 在「建立 *動作*」中的範例中，「動作」會傳送作 `poiname` 為內容，以說明要傳送至Analytics的POI項目事件。
+>可以設定「分析處理規則」來擷取此上下文資料。 如需詳細資訊，請參閱[處理規則](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)。在「建立 *動作*」中的範例中，「動作」會傳送作 `poiname` 為內容，以說明要傳送至Analytics的POI項目事件。
 
 ![建立操作](/help/assets/configure-action.png)
 
