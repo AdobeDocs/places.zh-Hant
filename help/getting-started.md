@@ -4,7 +4,7 @@ seo-title: 入門
 description: 位置服務快速入門。
 seo-description: 位置服務快速入門。
 translation-type: tm+mt
-source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
+source-git-commit: 879c367ea24d8bd0e1f5595a88a97bb1ff47c6da
 
 ---
 
@@ -25,7 +25,7 @@ source-git-commit: 1c5a63b6f7eb56be2240756c31d6ca03a0bfb0da
 
 * 請確定您是在「管理控制台」的「位置服務」和「體驗平台啟動」產品內容下列為使用者。
 
-   如需詳細資訊，請 *參閱「取得位置服務存取權」中的「新增使用者至Experience Platform Launch*[和位置服務」](/help/places-gain-access.md)。
+   如需詳細資訊，請 *參閱常見問題中的「新增使用者至Experience Platform Launch*[和位置服務」](/help/places-gain-access.md)。
 
 
 ### 2.建立您的POI
