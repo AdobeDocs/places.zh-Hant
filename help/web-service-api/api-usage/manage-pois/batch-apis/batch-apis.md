@@ -1,10 +1,8 @@
 ---
 title: 批次API
-seo-title: 批次API
 description: 使用批次API，您可以建立、更新和刪除多個POI。
-seo-description: 使用批次API，您可以建立、更新和刪除多個POI。
 translation-type: tm+mt
-source-git-commit: 6ff72eb72ce3ae1abf805b7b542721a7e4915824
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
