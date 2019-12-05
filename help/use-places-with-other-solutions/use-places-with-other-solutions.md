@@ -1,10 +1,8 @@
 ---
 title: 搭配使用位置服務與其他Adobe解決方案
-seo-title: 搭配使用位置服務與其他Adobe解決方案
 description: 本節將說明如何搭配其他Adobe解決方案使用位置服務。
-seo-description: 本節將說明如何搭配其他Adobe解決方案使用位置服務。
 translation-type: tm+mt
-source-git-commit: 299afc48c5962c3180578d5352b97096ad0395dc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
