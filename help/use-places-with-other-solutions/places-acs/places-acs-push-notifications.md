@@ -1,10 +1,8 @@
 ---
 title: 推播通知
-seo-title: 推播通知
 description: 本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。
-seo-description: '本節提供如何在Campaign Standard中搭配推播通知使用「地標」的相關資訊。 '
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
