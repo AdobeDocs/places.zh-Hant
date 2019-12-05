@@ -1,10 +1,8 @@
 ---
 title: 體驗平台啟動資料元素並放置資料
-seo-title: 體驗平台啟動資料元素並放置資料
 description: '資料元素是資料字典 (或資料地圖) 的建置組塊。 '
-seo-description: '資料元素是資料字典 (或資料地圖) 的建置組塊。 '
 translation-type: tm+mt
-source-git-commit: ef3d77eba407013e1f701ed001ef9ab7b3818e07
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
