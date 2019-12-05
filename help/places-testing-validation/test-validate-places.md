@@ -1,10 +1,8 @@
 ---
 title: 測試和驗證地點
-seo-title: 測試和驗證地點
 description: 本節提供如何測試和驗證「地標」的資訊。
-seo-description: 本節提供如何測試和驗證「地標」的資訊。
 translation-type: tm+mt
-source-git-commit: 181185d441a6a4740b2e8770adcb71e81e2e816e
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
