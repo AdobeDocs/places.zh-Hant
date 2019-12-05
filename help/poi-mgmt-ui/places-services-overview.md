@@ -1,10 +1,8 @@
 ---
 title: 地點服務概觀
-seo-title: 地點服務概觀
 description: '本節提供有關建立和使用興趣點(POI)的資訊。 '
-seo-description: '本節提供有關建立和使用興趣點(POI)的資訊。  '
 translation-type: tm+mt
-source-git-commit: f6c92bbd4fb21999f5c96ea0df8ede6919d1bc79
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
