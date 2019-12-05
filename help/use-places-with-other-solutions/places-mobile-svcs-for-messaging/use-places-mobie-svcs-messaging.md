@@ -1,10 +1,8 @@
 ---
 title: 搭配Mobile services使用地標傳訊
-seo-title: 搭配Mobile services使用地標傳訊
 description: 本節將說明如何搭配Mobile services使用Places進行傳訊。
-seo-description: 本節將說明如何搭配Mobile services使用Places進行傳訊。
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
