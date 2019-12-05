@@ -1,10 +1,8 @@
 ---
 title: 使用您自己的螢幕
-seo-title: 使用您自己的螢幕
 description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
-seo-description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
