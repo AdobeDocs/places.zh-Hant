@@ -1,10 +1,8 @@
 ---
 title: 入門
-seo-title: 入門
 description: 位置服務快速入門。
-seo-description: 位置服務快速入門。
 translation-type: tm+mt
-source-git-commit: 879c367ea24d8bd0e1f5595a88a97bb1ff47c6da
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
