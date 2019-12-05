@@ -1,10 +1,8 @@
 ---
 title: API使用概觀
-seo-title: API使用概觀
 description: 本節提供有關Location service可用REST API的資訊。
-seo-description: 本節提供有關Location service可用REST API的資訊。
 translation-type: tm+mt
-source-git-commit: 885cc8c9b306cf6e25381a355898a0229670a696
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
