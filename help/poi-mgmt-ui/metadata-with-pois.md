@@ -1,10 +1,8 @@
 ---
 title: 搭配POI使用中繼資料
-seo-title: 搭配POI使用中繼資料
 description: 本節提供如何搭配POI使用中繼資料的資訊和策略。
-seo-description: '本節提供如何搭配POI使用中繼資料的資訊和策略。 '
 translation-type: tm+mt
-source-git-commit: 6a01c7c2c573baf572fdc27f47f8fc62322cfd02
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
