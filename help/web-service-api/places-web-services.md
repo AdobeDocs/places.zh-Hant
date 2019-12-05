@@ -1,10 +1,8 @@
 ---
 title: '網站服務API概觀 '
-seo-title: '網站服務API概觀 '
 description: Places是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料，並為適當的人提供適當的體驗。
-seo-description: Places是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料，並為適當的人提供適當的體驗。
 translation-type: tm+mt
-source-git-commit: e2070c629b5a4e4bcf3a364023e0f87b526ed4cb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
