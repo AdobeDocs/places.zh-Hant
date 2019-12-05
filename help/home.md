@@ -4,12 +4,14 @@ seo-title: Adobe Experience Platform Location Service
 description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 seo-description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: 9fd6c1fdd740a021d7612aa33693c392bff53994
+source-git-commit: ecb059400d9203884faab6fd2f627251eeaeea38
 
 ---
 
 
 # Adobe Experience Platform位置服務總覽 {#home}
+
+![「Adobe Experience Platform Location Service」](/help/assets/LocationHeader.png)
 
 位置是瞭解行動使用者並與之互動的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。
 
@@ -18,7 +20,7 @@ Adobe Experience Platform Location Service(Location Service)是地理位置服�
 位置服務可讓您達成下列目標：
 
 * 建立並管理可與其他Adobe Experience cloud解決方案搭配運用的POI資料庫。
-* 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
+* 將自訂中繼資料附加至POI，以指定其他屬性，讓POI更豐富、更有意義。
 * 在地圖上視覺化POI，以輕鬆瞭解空間內容並新增／編輯中繼資料屬性。
 * 在Adobe Experience Platform Launch中設定SDK，以定義您的位置觸發規則和中繼資料條件。
 * 減少監控裝置位置時需要編寫的程式碼，並使用「位置」擴充功能自動觸發特定位置的規則。
@@ -44,7 +46,7 @@ Adobe Experience Platform Location Service(Location Service)是地理位置服�
 
    在地圖上視覺化POI，以瞭解空間內容，並新增／編輯POI及其自訂中繼資料。
 
-* **Places擴充功能**
+* **Places 擴充功能**
 
    多平台行動API介面，可整合行動應用程式中的位置內容。 如需SDK的詳細資訊，請參閱「地 [標擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)」。
 
@@ -72,17 +74,17 @@ Adobe Experience Platform Location Service(Location Service)是地理位置服�
 
    該POI類型是通過發射低功率藍芽信號來表示位置的物理設備。 Beacon支援即將推出。
 
-* 程 **式庫** 是POI的集合，這些POI會分組，以輕鬆將規則附加至規則集，而非一個POI。
+* **資料庫**&#x200B;是 POI 的集合，這些 POI 會分組，以供輕鬆地將規則附加至規則集，而非一個 POI。
 
 * 擴 **充功能** 是Experience Platform Launch擴充功能，您必須將Places SDK整合在行動應用程式中。
 
    與其他行動SDK一起使用的擴充功能，可將位置內容新增至您的體驗。
 
-* 組 **織是** Adobe實體，可在Adobe Experience cloud中識別您的公司。
+* **組織**&#x200B;是 Adobe 實體，可在 Adobe Experience Cloud 中識別您的公司。
 
    通常，組織是您的公司名稱。 但是，公司可以有多個組織。 組織管理員可以設定群組和使用者，以及設定單一登入功能。
 
-* 組 **織ID** 是代表整個Adobe Experience platform中組織的ID。
+* **orgID** 是在整個 Adobe Experience Platform 之中代表您組織的 ID。
 
    如需詳細資訊，請參 [閱尋找組織ID](https://forums.adobe.com/thread/2339895)。
 
