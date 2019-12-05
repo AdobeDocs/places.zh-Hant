@@ -4,7 +4,7 @@ seo-title: 入門
 description: 位置服務快速入門。
 seo-description: 位置服務快速入門。
 translation-type: tm+mt
-source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
+source-git-commit: 66472aa1800bcf36fb1d7f7129da70a573f355ab
 
 ---
 
@@ -27,10 +27,6 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
    如需詳細資訊，請 *參閱常見問題中的「新增使用者至Experience Platform Launch*[和位置服務」](/help/places-faqs.md)。
 
-* 請確定Places擴充功能已安裝在Experience Platform Launch的行動應用程式屬性上。
-
-   若要針對您的地域圍欄使用Adobe提供的地區監控，請安裝Places Monitor擴充功能。 如需詳細資訊，請參閱「置 [入螢幕擴充功能」](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
-
 
 ### 2.建立您的POI
 
@@ -49,5 +45,5 @@ source-git-commit: accfa6ba009ad3419481d9bd3b498143228099fc
 
 如需有關設定Places擴充功能和Monitor擴充功能的詳細資訊，請參閱下列資訊：
 
-* [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)
+* [Places 擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)
 * [放置螢幕擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
