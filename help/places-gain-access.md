@@ -1,10 +1,8 @@
 ---
 title: 存取Adobe Experience Platform Location Service
-seo-title: 存取Adobe Experience Platform Location Service
 description: 本節提供如何將使用者新增至定位服務和體驗平台啟動的相關資訊，讓使用者能夠存取定位服務。
-seo-description: 本節提供如何將使用者新增至定位服務和體驗平台啟動的相關資訊，讓使用者能夠存取定位服務。
 translation-type: tm+mt
-source-git-commit: 1b4482c8e4cf825c0182421fe00f8b86b411c11b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
