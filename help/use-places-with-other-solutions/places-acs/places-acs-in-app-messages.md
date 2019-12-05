@@ -1,10 +1,8 @@
 ---
 title: 包含位置服務的應用程式內訊息
-seo-title: 包含位置服務的應用程式內訊息
 description: 本節提供如何在Campaign Standard中搭配Campaign standard中的應用程式內訊息使用推播訊息的相關資訊。
-seo-description: '本節提供如何在Campaign standard中搭配應用程式內訊息使用「Campaign Standard中的推播訊息」的資訊。 '
 translation-type: tm+mt
-source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -39,7 +37,7 @@ source-git-commit: a2e30282789d9834e5c65502e28ddb25f3c55dfa
 
    ![「應用程式內訊息置入中繼資料」](/help/assets/last-entered-vacation.png)
 
-1. 按一下 **[!UICONTROL Next]** 以完成建立要傳送的應用程式內訊息。
+1. Click the **[!UICONTROL Next]** to finish creating the In-app message for delivery.
 
    !["建立事件"](/help/assets/prepare-ACS.png)
 
