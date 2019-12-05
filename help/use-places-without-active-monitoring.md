@@ -1,10 +1,8 @@
 ---
 title: 使用位置服務而不需進行有效區域監控
-seo-title: 使用位置服務而不需進行有效區域監控
 description: 本節提供如何使用Location servicePlaces而不進行作用中地區監控的資訊。
-seo-description: 本節提供如何在不進行有效區域監控的情況下使用定位服務的資訊。
 translation-type: tm+mt
-source-git-commit: 419df41a0abeac1ac2a77f32bfa818b4edf3baeb
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
@@ -235,8 +233,7 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 >[!IMPORTANT]
 >
->
-這些片段只 **是範例** 。 開發人員必須決定要如何實作功能，而決策應考量目標作業系統建議的最佳實務。
+>這些片段只 **是範例** 。 開發人員必須決定要如何實作功能，而決策應考量目標作業系統建議的最佳實務。
 
 ### Android
 
