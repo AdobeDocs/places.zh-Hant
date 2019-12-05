@@ -1,10 +1,8 @@
 ---
 title: '搭配Adobe Campaign standard使用位置服務 '
-seo-title: 搭配Adobe Campaign standard使用位置服務
 description: '本節概述如何搭配Campaign Standard使用Location Service。 '
-seo-description: 本節概述如何搭配Campaign Standard使用Location Service。
 translation-type: tm+mt
-source-git-commit: 4ee8adb73f6dec15030a160c27edbeca71d3507b
+source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ---
 
