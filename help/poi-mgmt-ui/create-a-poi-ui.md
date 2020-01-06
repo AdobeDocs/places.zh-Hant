@@ -27,7 +27,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    1. 為表徵圖選擇顏色。
    1. 指定POI的類別。
 
-1. 展開該 **[!UICONTROL Location]** 部分。
+1. Expand the **[!UICONTROL Location]**section.
 
    1. 輸入地址。
    1. 輸入城市。
@@ -37,7 +37,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
    1. 按一下 **[!UICONTROL Drop Pin on Map]**。
    如果您不知道確切的經緯度，放下針子很有用。
 
-1. 展開該 **[!UICONTROL Metadata]** 部分並按一下 **[!UICONTROL Add Metadata]**。
+1. 展開該 **[!UICONTROL Metadata]**部分並按一下**[!UICONTROL Add Metadata]**。
 
    中繼資料可協助您進一步定義位置，並可用於其他Adobe解決方案工作流程，以進一步調整您的受眾。
 
