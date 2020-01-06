@@ -39,9 +39,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 | `data` | Poi資料 | POI詳細資訊陣列 | 不適用 | both |  |
 | `id` | POI的ID | 已分配 | 不適用 | 響應 | `"id": "1455462b-7f9c-4220-9f42-5bbce777a0d1"` |
 | `name` | POI的名稱 | string | 512 個字元 | 兩者皆可，可選\* | `"name": "My Favorite Place"` |
-| `description` | POI說明 | string | 512 個字元 | 兩者皆可，可選\* | `"description": "This is a very good place."` |
+| `description` | POI的說明 | string | 512 個字元 | 兩者皆可，可選\* | `"description": "This is a very good place."` |
 | `location` | POI的類型與座標陣列 | 陣列（混合） | 不適用 | both | `"location": {"type": "Point", "coordinates": [-122.201007, 37.604713]` |
-| `type` | POI類型 | string | 目前僅支援"Point" | 兩者皆需，請求中需要 | `"type": "Point"` |
+| `type` | POI類型 | string | 目前僅支援&quot;Point&quot; | 兩者皆需，請求中需要 | `"type": "Point"` |
 | `coordinates` | POI的經緯度陣列 | 陣列（浮點） | 經度：-180到180,latitude -85到85 | 兩者皆需，請求中需要 | `"coordinates": [-122.201007, 37.604713]` |
 | `radius` | POI周圍圓形地震的大小 | 浮水 | 10 - 2000米 | 兩者皆需，請求中需要 | `"radius": 100` |
 | `country` | POI的國家／地區 | string | 32 個字元 | both, optional* | `"country": "United States"` |
