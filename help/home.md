@@ -18,7 +18,7 @@ Adobe Experience Platform Location Service(Location Service)是地理位置服�
 位置服務可讓您達成下列目標：
 
 * 建立並管理可與其他Adobe Experience cloud解決方案搭配運用的POI資料庫。
-* 將自訂中繼資料附加至POI，以指定其他屬性，讓POI更豐富、更有意義。
+* 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
 * 在地圖上視覺化POI，以輕鬆瞭解空間內容並新增／編輯中繼資料屬性。
 * 在Adobe Experience Platform Launch中設定SDK，以定義您的位置觸發規則和中繼資料條件。
 * 減少監控裝置位置時需要編寫的程式碼，並使用「位置」擴充功能自動觸發特定位置的規則。
@@ -27,7 +27,7 @@ Adobe Experience Platform Location Service(Location Service)是地理位置服�
 
 以下是您使用「地標」的一些方式：
 
-* 當有人輸入POI時，傳送即時通 *知，"嘿……歡迎來到體育場。」*
+* 當有人輸入POI時，傳送即時通 *知，&quot;嘿……歡迎來到體育場。」*
 * 分析您自有商店與競爭對手商店的足路流量。
 * 使用具有位置內容的受眾個人檔案，根據離線行為劃分受眾。
 * 在相關時，以店內體驗為目標使用者。
