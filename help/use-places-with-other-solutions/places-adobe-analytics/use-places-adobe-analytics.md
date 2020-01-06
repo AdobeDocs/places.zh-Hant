@@ -18,12 +18,12 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.建立規則
 
-1. 在標籤 **[!UICONTROL Rules]** 上，按一下 **[!UICONTROL Create New Rule]**。
+1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
 
    請記住以下資訊:
 
-   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
-   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]**按鈕就會位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]**則按鈕會位於畫面右上方。
 
 ## 2.選擇事件
 
@@ -31,15 +31,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    如此，規則就可在您的規則清單中輕鬆辨識。 在此範例中，規則為命名 **[!UICONTROL Send Data to Analytics]**。
 
-1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. In the **[!UICONTROL Events]**section, click**[!UICONTROL Add]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places]**。
 
-1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
+1. 從下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Enter POI]**。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-   !["選擇事件"](/help/assets/pt-selectEvent.png)
+   ![&quot;選擇事件&quot;](/help/assets/pt-selectEvent.png)
 
 
 ## 3.新增條件
@@ -50,26 +50,26 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此範例中，會建立條件，僅在目前POI的名稱等於時，才會觸發規則 **[!UICONTROL My POI]**。
 
-1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Conditions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places]**。
 
-1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Name]**。
+1. 從下拉 **[!UICONTROL Condition Type]**式清單中，選取**[!UICONTROL Name]**。
 
 1. 在右窗格中的文本欄位中，輸入 **[!UICONTROL My POI]**。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-   !["設定條件"](/help/assets/pt-setCondition.png)
+   ![&quot;設定條件&quot;](/help/assets/pt-setCondition.png)
 
 
 ## 4.定義動作
 
-1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Actions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Analytics]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Adobe Analytics]**。
 
-1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Track]**。
+1. 從下拉 **[!UICONTROL Action Type]**式清單中，選取**[!UICONTROL Track]**。
 
 1. 在右窗格中，新增您要傳送至Analytics的動作或狀態。
 
@@ -79,14 +79,14 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他內容資料等 `poi.name` 於觸發此登入事件之POI的名稱：
 
-   !["設定動作"](/help/assets/pt-setAction.png)
+   ![&quot;設定動作&quot;](/help/assets/pt-setAction.png)
 
 ## 5.儲存規則並重建您的屬性
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-!["規則已建立"](/help/assets/pt-ruleComplete.png)
+![&quot;規則已建立&quot;](/help/assets/pt-ruleComplete.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**
+1. 按一下 **[!UICONTROL Save]**
 
 1. 重建您的Launch屬性，並將它部署至正確的環境。
