@@ -17,7 +17,7 @@ POI和庫是使用Places UI在Places資料庫中建立和管理的。
 1. 使用您的Adobe ID登入Places服務。
 1. 在右上方，按一下類似項目清單的圖示。
 1. 找出您要編輯的POI。
-1. 按一 **[!UICONTROL ...]** 下並選取 **[!UICONTROL View Details]**。
+1. 按一 **[!UICONTROL ...]**下並選取**[!UICONTROL View Details]**。
 1. 更新資訊，然後按一下 **[!UICONTROL Save]**。
 
 ## 刪除POI
@@ -26,7 +26,7 @@ POI和庫是使用Places UI在Places資料庫中建立和管理的。
 1. 使用您的Adobe ID登入Places服務。
 1. 在右上方，按一下類似項目清單的圖示。
 1. 找到要刪除的POI。
-1. 按一 **[!UICONTROL ...]** 下並選取 **[!UICONTROL Delete]**。
+1. 按一 **[!UICONTROL ...]**下並選取**[!UICONTROL Delete]**。
 
 ## 依城市、州、國家或中繼資料篩選POI
 
@@ -42,11 +42,11 @@ POI和庫是使用Places UI在Places資料庫中建立和管理的。
 
    * 依屬性：
 
-      a.在屬性下拉式清單中，選 **[!UICONTROL Country]**&#x200B;取、 **[!UICONTROL State]**&#x200B;或 **[!UICONTROL City]**。
+      a.在屬性下拉式清單中，選 **[!UICONTROL Country]**取、**[!UICONTROL State]**&#x200B;或 **[!UICONTROL City]**。
 
       b.在下一行中，輸入一個值。
 
-      例如，您可以選取並 **[!UICONTROL State]** 輸入 **[!UICONTROL California]**。
+      例如，您可以選取並 **[!UICONTROL State]**輸入**[!UICONTROL California]**。
 
    * 使用中繼資料：
 
