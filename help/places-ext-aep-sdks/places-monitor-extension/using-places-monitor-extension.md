@@ -13,8 +13,8 @@ source-git-commit: ac1d410a676557064d5390f8392f402541754478
 
 ## 在Experience Platform Launch中安裝Places Monitor擴充功能
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴充 **[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
+1. 在標籤 **[!UICONTROL Catalog]**上，找到擴充**[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
 1. 按一下 **[!UICONTROL Save]**。
 1. 依照發佈程式更新SDK組態。
 
