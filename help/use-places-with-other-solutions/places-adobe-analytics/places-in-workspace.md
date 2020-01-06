@@ -28,17 +28,17 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此範例中，規則的動作具有為Analytics請求定義的下列值：
 
-* **[!UICONTROL Action]** 的值 **[!UICONTROL Places Entry]**。
+* **[!UICONTROL Action]**的值**[!UICONTROL Places Entry]**。
 
-* 上下文資料 **[!UICONTROL poi.name]** 索引鍵設為資料元素的值 **[!UICONTROL {%%POI Name%%}]**。
+* 上下文資料 **[!UICONTROL poi.name]**索引鍵設為資料元素的值**[!UICONTROL {%%POI Name%%}]**。
 
-!["設定動作"](/help/assets/pt-setAction.png)
+![&quot;設定動作&quot;](/help/assets/pt-setAction.png)
 
 ## 2.建立Analytics變數
 
-為了映射上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數\(eVars\)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
+為了對應上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數\(eVars\)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
 
-在此範例中，已建立並 **[!UICONTROL Evar2]**&#x200B;命名轉換變數 **[!UICONTROL Places POI Name]**。 您需要為每個要在報表中公開的位置變數建立其他變數。
+在此範例中，已建立並 **[!UICONTROL Evar2]**命名轉換變數**[!UICONTROL Places POI Name]**。 您需要為每個要在報表中公開的位置變數建立其他變數。
 
 ![「建立分析變數」](/help/assets/aa-evar.png)
 
@@ -46,9 +46,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 此步驟需要將上下文資料（步驟1）對應至Analytics變數（步驟2）。 For more information on creating processing rules, see [Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-在此範例中，已建立處理規則，將上下文資料值對應至 **[!UICONTROL poi.name]** 中 **[!UICONTROL Places POI Name \(eVar2\)]**。 需要為每個建立的位置變數建立其他處理規則。
+在此範例中，已建立處理規則，將上下文資料值對應至 **[!UICONTROL poi.name]**中**[!UICONTROL Places POI Name \(eVar2\)]**。 需要為每個建立的位置變數建立其他處理規則。
 
-!["建立處理規則"](/help/assets/aa-processing-rule.png)
+![&quot;建立處理規則&quot;](/help/assets/aa-processing-rule.png)
 
 ## 4.在工作區中產生報表
 
@@ -56,9 +56,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此範例中，報表具有下列設定：
 
-* Metric - **[!UICONTROL Occurrences]**
+* 量度 - **[!UICONTROL Occurrences]**
 
-* Dimension - **[!UICONTROL Action Name]**
+* 維度 - **[!UICONTROL Action Name]**
 
    * 依維度劃分- **[!UICONTROL Places POI Name]**
 
