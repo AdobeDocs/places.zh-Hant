@@ -17,11 +17,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.建立規則
 
-1. 在標籤 **[!UICONTROL Rules]** 上，按一下 **[!UICONTROL Create New Rule]**。
+1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
 
    請記住以下資訊:
-   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
-   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]**按鈕就會位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]**則按鈕會位於畫面右上方。
 
 ## 2.選擇事件
 
@@ -29,15 +29,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
 
-1. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Events]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Track Action]**。
+1. 從下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Track Action]**。
 
 現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有呼叫為 `TrackAction` 基礎。 設定事件後，按一下 **[!UICONTROL Keep Changes]**。
 
-!["建立事件"](/help/assets/ad-setEvent_use-analytics-data.png)
+![&quot;建立事件&quot;](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
 ## 3.新增條件
@@ -48,27 +48,27 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在此範例中，會建立條件，讓規則僅針對AT&amp;T客戶觸發。
 
-1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Conditions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取「 **[!UICONTORL 行動核心」]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取「**[!UICONTORL &#x200B;行動核心」]**。
 
-1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Carrier Name]**。
+1. 從下拉 **[!UICONTROL Condition Type]**式清單中，選取**[!UICONTROL Carrier Name]**。
 
-1. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]** 。
+1. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]**。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
-!["建立條件"](/help/assets/ad-setCondition_use-analytics-data.png)
+![&quot;建立條件&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.定義動作
 
-1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Actions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
+1. 從下拉 **[!UICONTROL Action Type]**式清單中，選取**[!UICONTROL Attach Data]**。
 
-1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
+1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]**輸入要新增至此事件的資料。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
@@ -82,8 +82,8 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 完成配置後，請確認您的規則看起來與以下映像類似：
 
-!["規則已完成。"](/help/assets/ad-ruleComplete_use-analytics-data.png)
+![&quot;規則已完成。&quot;](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**
+1. 按一下 **[!UICONTROL Save]**
 
 1. 重建您的Launch屬性，並將它部署至正確的環境。
