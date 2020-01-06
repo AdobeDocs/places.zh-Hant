@@ -9,7 +9,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 # 發行說明 {#release-notes}
 
-## 2019年12月3日
+## 2019 年 12 月 3 日
 
 * **ACPPlaces 1.3.0**
 
@@ -156,7 +156,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 此版本已進行下列更新：
 
-**Android Places 1.1.0**
+**Android Places 1.2.0**
 
 * 已新增API以處理個別Geofence。
 * 錯誤修正，以防止多個連續的登入事件。
