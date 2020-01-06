@@ -13,12 +13,12 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 ## 在Adobe Experience Platform Launch中安裝Places擴充功能
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
-1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
+1. 在標籤 **[!UICONTROL Catalog]**上，找到擴**[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
 1. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
 1. 按一下 **[!UICONTROL Save]**。
 
-   當您按一 **[!UICONTROL Save]**&#x200B;下，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，POI資料不會包含在程式庫的下載中，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
+   當您按一 **[!UICONTROL Save]**下，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，POI資料不會包含在程式庫的下載中，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
 
 1. 完成發佈程式以更新SDK組態。
 
