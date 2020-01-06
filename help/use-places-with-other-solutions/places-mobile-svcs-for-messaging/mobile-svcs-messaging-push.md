@@ -27,10 +27,10 @@ Mobile services可讓您傳送推播通知給Adobe Analytics區段。 在「位�
 
 ## 傳送通知
 
-在「建 **[!UICONTROL Audience]** 立推播通知 *」工作流程的標籤上* ，您可以透過下列其中一種方式建立此訊息的對象：
+在「建 **[!UICONTROL Audience]**立推播通知&#x200B;*」工作流程的標籤上*，您可以透過下列其中一種方式建立此訊息的對象：
 
-* 在下拉 **[!UICONTROL Analytics Segments]** 式清單中，選取先前建立的Adobe Analytics區段。
+* 在下拉 **[!UICONTROL Analytics Segments]**式清單中，選取先前建立的Adobe Analytics區段。
 
-* 在區 **[!UICONTROL Custom Segment]** 段中，使用可用的自訂區段參數來建立觀眾。
+* 在區 **[!UICONTROL Custom Segment]**段中，使用可用的自訂區段參數來建立觀眾。
 
 ![設定推播訊息](/help/assets/push-set-up.png)
