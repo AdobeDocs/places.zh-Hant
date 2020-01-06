@@ -51,10 +51,10 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 要建立操作，請執行以下操作：
 
-1. 選取 **擴充功能。[!UICONTROL Adobe Analytics]**
-1. 在下拉 **[!UICONTROL Action type]** 式清單中，選取 **[!UICONTROL Track.]**
+1. 選取 **[!UICONTROL Adobe Analytics]**擴充功能。
+1. 在下拉 **[!UICONTROL Action type]**式清單中，選取**[!UICONTROL Track.]**
 1. 鍵入動作的名稱。
-1. 在右窗格中，選 **[!UICONTROL Context Data]**&#x200B;取鍵值對，以設定將傳送至Analytics的內容資料。
+1. 在右窗格中，選 **[!UICONTROL Context Data]**取鍵值對，以設定將傳送至Analytics的內容資料。
 
 例如，您可以選 `poiname` 擇作為鍵 `{%%Last Entered POI Name}` 和值。
 
@@ -77,7 +77,7 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
    此選項可與特定位置的動作（例如登入）搭配使用，或可當成啟動或按鈕點選等其他事件的上下文。
 
-   以下範例說明如何設定應用程式內訊息以歡迎輸入名稱中包含POI **[!UICONTROL Adobe]** 的使用者：
+   以下範例說明如何設定應用程式內訊息以歡迎輸入名稱中包含POI **[!UICONTROL Adobe]**的使用者：
 
    ![觸發參數](/help/assets/trigger-parameters.png)
 
