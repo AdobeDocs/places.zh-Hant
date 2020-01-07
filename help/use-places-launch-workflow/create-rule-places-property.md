@@ -80,39 +80,39 @@ Places SDK會維持下列狀態：
 
 ![建立規則](/help/assets/placesrule.png)
 
-1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
+1. In Experience Platform Launch, click the **[!UICONTROL Rules]**tab.
 1. 按一下 **[!UICONTROL Add Rule]**。
 1. 鍵入規則的名稱，例如 **[!UICONTROL Track entry for coffee shop in SF]**。
 
 ### 建立事件
 
 1. 在「事件」區段中，按一下 **[!UICONTROL + Add]**。 事件會決定您要何時觸發規則。
-1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
-1. 在下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
-1. In **[!UICONTROL Name]**, enter a name for the event, for example, **[!UICONTROL Entering a coffee shop]**.
+1. 在下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places – Beta]**。
+1. 在下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Enter POI]**。
+1. In **[!UICONTROL Name]**, enter a name for the event, for example,**[!UICONTROL Entering a coffee shop]**.
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 建立條件
 
 1. 在「條件」區段中，按一下 **[!UICONTROL +Add]**。 條件決定了要採取的動作必須符合哪些標準。
 1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
-1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
-1. 在中 **[!UICONTROL Condition Type]**，選擇 **[!UICONTROL City]**。
+1. 在下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places – Beta]**。
+1. 在中 **[!UICONTROL Condition Type]**，選擇**[!UICONTROL City]**。
 1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
+1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select**[!UICONTROL San Francisco]** as one of your cities.
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
 ### 建立動作
 
-1. In the **[!UICONTROL Actions]** section, click **[!UICONTROL + Add]**.
-1. 在下拉 **[!UICONTROL Extension]** 式清單中，保留預設選 **[!UICONTROL Mobile Core]** 項的選取。
+1. In the **[!UICONTROL Actions]**section, click**[!UICONTROL + Add]**.
+1. 在下拉 **[!UICONTROL Extension]**式清單中，保留預設選**[!UICONTROL Mobile Core]** 項的選取。
 1. 選擇操作類型，例如 **[!UICONTROL Send Postback]**。
 
-   a.在 **[!UICONTROL URL]**&#x200B;中，鍵入Slack的回傳URL，例如 `https://hooks.slack.com/services/`。
+   a.在 **[!UICONTROL URL]**中，鍵入Slack的回傳URL，例如`https://hooks.slack.com/services/`。
 
-   b.若要傳送貼文內文，請選取核取 **[!UICONTROL Add Post Body]** 方塊。
+   b.若要傳送貼文內文，請選取核取 **[!UICONTROL Add Post Body]**方塊。
 
-   c.在中 **[!UICONTROL Post Body]**&#x200B;新增貼文內文，例如： `{ "text": "A customer has entered" }`
+   c.在中 **[!UICONTROL Post Body]**新增貼文內文，例如：`{ "text": "A customer has entered" }`
 
    c.例如，鍵入內容類型 **[!UICONTROL application/json]**。
 
