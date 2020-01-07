@@ -15,7 +15,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 1.建立規則
 
-1. 在標籤 **[!UICONTROL Rules]** 上，按一下 **[!UICONTROL Create New Rule]**。
+1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
 
    請記住以下資訊:
 
@@ -28,11 +28,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
    在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Target Content Requested]**。
 
-1. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Events]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Target]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Adobe Target]**。
 
-1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Content Requested]**。
+1. 從下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Content Requested]**。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
@@ -46,11 +46,11 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 在下列範例中，會建立條件，使規則僅針對已啟動應用程式五次以上的使用者觸發。
 
-1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Conditions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Launches]**。
+1. 從下拉 **[!UICONTROL Condition Type]**式清單中，選取**[!UICONTROL Launches]**。
 
 1. 在右窗格中，修改下拉式清單和數字控制項，讓條件讀取 **[!UICONTROL User has launched the app greater than or equal to 5 times]**。
 
@@ -60,19 +60,19 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 4.定義動作
 
-1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
+1. 在區段 **[!UICONTROL Actions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
+1. 從下拉 **[!UICONTROL Action Type]**式清單中，選取**[!UICONTROL Attach Data]**。
 
-1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
+1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]**輸入要新增至此事件的資料。
 
 1. 按一下 **[!UICONTROL Keep Changes]**。
 
 在右窗格中，您可以新增自由格式的JSON裝載，在監聽此事件的副檔名之前，將資料新增至SDK事件。
 
-在下列範例中， `poiCity` 會將值 `poiName` 新增至Target事 **[!UICONTROL mboxparameters]** 件中處理的每個請求。 此事件處理時，SDK會動態決定新索引鍵的值。
+在下列範例中， `poiCity` 會將值 `poiName` 新增至Target事 **[!UICONTROL mboxparameters]**件中處理的每個請求。 此事件處理時，SDK會動態決定新索引鍵的值。
 
 >[!TIP]
 >
@@ -88,6 +88,6 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ![已完成規則](/help/assets/ad-ruleComplete-target.png)
 
-1. 按一下&#x200B;**[!UICONTROL Save]**
+1. 按一下 **[!UICONTROL Save]**
 
 1. 重建您的Launch屬性，並將它部署至正確的環境。
