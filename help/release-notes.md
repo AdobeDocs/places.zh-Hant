@@ -2,12 +2,21 @@
 title: 發行說明
 description: Adobe Experience Platform Location service的發行說明。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
 ---
 
 
 # 發行說明 {#release-notes}
+
+## 2020 年 1 月 9 日
+
+* **ACPPlaces 1.4.0**
+
+   * **Android**
+
+      * 已新增新API, `setAuthorizationStatus`以設定位置服務的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+
 
 ## 2019 年 12 月 3 日
 
