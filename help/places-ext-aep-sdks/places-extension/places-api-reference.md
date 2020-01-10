@@ -2,7 +2,7 @@
 title: Places API參考
 description: Places中API參考的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 23437e28bdfb12f664481d22f9f6df0ba6c30329
 
 ---
 
@@ -351,7 +351,28 @@ Places.clear();
 
 ### setAuthorizationStatus(Android)
 
-即將推出
+*從Places v1.4.0開始提供*
+
+在「地點」擴展中設定授權狀態。
+
+提供的狀態會儲存在「地標」共用狀態，且僅供參考。
+呼叫此方法不會影響此設備的實際位置授權狀態。
+
+**語法**
+
+以下是此方法的語法:
+
+```java
+public static void setAuthorizationStatus(final PlacesAuthorizationStatus status);
+```
+
+**範例**
+
+以下是此方法的範例程式碼:
+
+```java
+Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
+```
 
 ### setAuthorizationStatus(iOS)
 
