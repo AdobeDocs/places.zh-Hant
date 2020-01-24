@@ -1,8 +1,8 @@
 ---
 title: 發行說明
-description: Adobe Experience Platform Location service的發行說明。
+description: Places服務的發行說明。
 translation-type: tm+mt
-source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
    * **Android**
 
-      * 已新增新API, `setAuthorizationStatus`以設定位置服務的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 
 ## 2019 年 12 月 3 日
@@ -24,7 +24,7 @@ source-git-commit: 585bcde256c79b9178a04ff66aa04c92f093c432
 
    * **iOS**
 
-      * 已新增新API, `setAuthorizationStatus`以設定位置服務的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 11 月 22 日
 
@@ -211,13 +211,13 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 
 ### 測試版
 
-這是Places的第一版。Places是一套工具，可讓客戶運用實際位置資料豐富其使用者的體驗。 在第一版中，我們的主要使用案例是讓行動應用程式能夠擷取自訂位置資料，並透過Adobe Experience Platform Launch對該資料採取行動。
+這是Places Service的第一版。Places Service是一套工具，可讓客戶運用實際位置資料豐富其使用者的體驗。 在第一版中，我們的主要使用案例是讓行動應用程式能夠擷取自訂位置資料，並透過Adobe Experience Platform Launch對該資料採取行動。
 
 ### 主要功能
 
 以下是此版本的主要功能：
 
-#### 位置服務UI
+#### Places Service UI
 
 我們已發佈管理UI，您可在其中檢視及管理興趣點(POI)。 您也可以將POI組織到資料庫。 除了標準中繼資料（例如城市、州和類別）外，我們也支援將自訂中繼資料新增至POI的能力。
 
@@ -226,7 +226,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 
 #### Places擴充功能
 
-使用Places Extension，您可以將您的Places資料庫新增至行動應用程式，並對其POI採取行動。 使用Experience Platform Launch中的規則產生器，您可以在使用者進入並退出POI時觸發動作。
+使用Places Extension，您可以將您的Places Service程式庫新增至行動應用程式，並依其POI採取行動。 使用Experience Platform Launch中的規則產生器，您可以在使用者進入並退出POI時觸發動作。
 
 在「地標」擴充功能中：
 
@@ -252,4 +252,4 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### Analytics 整合
 
-Analytics擴充功能正在更新，當使用者在POI（被動呼叫）中時，會自動從Places資料庫將位置內容資料新增至所有傳出的Analytics呼叫。 此更新也可讓規則建立在POI登入或退出（作用中呼叫）處直接觸發Analytics追蹤呼叫。
+Analytics擴充功能正在更新，當使用者在POI（被動呼叫）中時，會自動從Places service資料庫將位置上下文資料新增至所有傳出的Analytics呼叫。 此更新也可讓規則建立在POI登入或退出（作用中呼叫）處直接觸發Analytics追蹤呼叫。
