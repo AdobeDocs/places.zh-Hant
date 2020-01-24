@@ -2,12 +2,12 @@
 title: 閱讀組織中的所有資料庫
 description: 使用Places REST API讀取組織中的所有資料庫。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 閱讀組織中的所有資料庫
+# 閱讀組織中的所有資料庫 {#read-all-lib-in-org}
 
 一種GET方法，可傳回組織中所有程式庫的詳細資料。
 
