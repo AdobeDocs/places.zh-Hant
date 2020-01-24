@@ -2,7 +2,7 @@
 title: 定義資料元素
 description: 本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
@@ -33,7 +33,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * **[!UICONTROL Latitude]**:POI的緯度
 * **[!UICONTROL Longitude]**:POI的經度
 * **[!UICONTROL Metadata]**:POI的自訂中繼資料
-* **[!UICONTROL Name]**:POI地區
+* **[!UICONTROL Name]**:POI的名稱
 * **[!UICONTROL Radius]**:POI半徑
 * **[!UICONTROL Region ID]**:POI的ID
 * **[!UICONTROL Region/State]**:POI的地區、省或州
