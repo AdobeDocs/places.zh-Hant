@@ -2,7 +2,7 @@
 title: Analytics工作區中位置資料的報告
 description: 本節提供如何報告Analytics工作區中位置資料的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -15,11 +15,17 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 本檔案假設：
 
-1. Adobe Places擴充功能已實作在您的應用程式中。 如需實作Adobe Places的詳細資訊，請參閱「地 [標擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)」。
+1. 「地標」擴充功能會實作在您的應用程式中。
 
-1. Adobe Analytics使用者是管理員，可存取處理規則。 如需處理規則的詳細資訊，請參閱[處理規則概述](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+   如需實作「地標」擴充功能的詳細資訊，請參閱「地 [標」擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-1. 在「啟動」屬性中，已針對所要的位置服務變數建立資料元素。 如需Launch中資料元素的詳細資訊，請參 [閱定義資料元素](/help/use-places-launch-workflow/define-data-elements.md)。
+1. Adobe Analytics使用者是管理員，可存取處理規則。
+
+   如需處理規則的詳細資訊，請參閱[處理規則概述](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+
+1. 在Launch屬性中，已為您想要的Places服務變數建立資料元素。
+
+   如需Launch中資料元素的詳細資訊，請參 [閱定義資料元素](/help/use-places-launch-workflow/define-data-elements.md)。
 
 
 ## 1.建立啟動規則
@@ -36,7 +42,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ## 2.建立Analytics變數
 
-為了對應上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數\(eVars\)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
+若要映射上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數(eVar)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
 
 在此範例中，已建立並 **[!UICONTROL Evar2]**命名轉換變數**[!UICONTROL Places POI Name]**。 您需要為每個要在報表中公開的位置變數建立其他變數。
 
@@ -46,7 +52,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 此步驟需要將上下文資料（步驟1）對應至Analytics變數（步驟2）。 For more information on creating processing rules, see [Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-在此範例中，已建立處理規則，將上下文資料值對應至 **[!UICONTROL poi.name]**中**[!UICONTROL Places POI Name \(eVar2\)]**。 需要為每個建立的位置變數建立其他處理規則。
+在此範例中，已建立處理規則，將上下文資料值對應至 **[!UICONTROL poi.name]**中**[!UICONTROL Places POI Name (eVar2)]**。 需要為每個建立的位置變數建立其他處理規則。
 
 ![&quot;建立處理規則&quot;](/help/assets/aa-processing-rule.png)
 
