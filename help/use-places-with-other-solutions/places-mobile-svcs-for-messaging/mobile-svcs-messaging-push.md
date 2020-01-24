@@ -1,21 +1,21 @@
 ---
 title: 推播通知
-description: 本節將說明如何搭配推播通知使用「地標」。
+description: 本節將說明如何搭配推播通知使用Places Service。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 推播通知
 
-Mobile services可讓您傳送推播通知給Adobe Analytics區段。 在「位置服務」中，您可以使用推播訊息與POI的歷史互動來區隔對象。 例如，您可以傳送訊息給過去30天內曾在您其中一家商店中的使用者。
+Mobile services可讓您傳送推播通知給Adobe Analytics區段。 在「地標服務」中，您可以使用推送訊息與POI的歷史互動來區隔其對象。 例如，您可以傳送訊息給過去30天內曾在您其中一家商店中的使用者。
 
 開始之前，請確定您已完成下列工作：
 
-* Adobe Analytics已處理位置服務資料。
+* Places service資料已由Adobe Analytics處理。
 
-   這表示您的行動應用程式已成功將位置服務資料傳送至報表套裝，且該資料可供分段。
+   這表示您的行動應用程式已成功將Places service資料傳送至報表套裝，且該資料可供分段。
 
 * 已設定Mobile services中的推播通知頻道。
 
