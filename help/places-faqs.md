@@ -2,14 +2,14 @@
 title: 常見問題集
 description: 本主題提供一些常見問題的其他資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 常見問題集
 
-以下是有關位置服務的一些資訊和常見問題。
+以下是有關Places服務的一些資訊和常見問題。
 
 ## 大小與可靠性
 
