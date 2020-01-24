@@ -1,15 +1,15 @@
 ---
-title: 為「地標」屬性建立規則
+title: 為Places服務屬性建立規則
 description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
 # 建立登入與退出規則 {#create-entry-exit-rules}
 
-在行動應用程式中安裝Places and Places Monitor擴充功能後，您就可以在Adobe Experience Platform Launch中建立規則，以觸發或限制位置資料，包括位置進入和退出事件。
+在行動應用程式中安裝Places擴充功能和Places Monitor擴充功能後，您就可以在Adobe Experience Platform Launch中建立觸發或條件化位置資料（包括位置進入和退出事件）的規則。
 
 ## 規則
 
@@ -19,14 +19,14 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 * （可選）條件
 * 一個或多個動作
 
-### 放置事件
+### 放置服務事件
 
-「地標」提供下列事件，您可在其中執行規則：
+「放置服務」提供下列事件，您可在其中執行規則：
 
 * **輸入POI**，當您的客戶輸入您設定的POI時，Places SDK會觸發此POI。
 * **退出POI**，當客戶退出您設定的POI時，Places SDK會觸發此POI。
 
-### 地點條件
+### 地點服務條件
 
 條件定義與事件關聯的資料或該例項中擴充功能的共用狀態，必須符合的條件，才能執行動作。 例如，您可以設定條件，只在舊金山市觸發進入咖啡店的動作。
 
@@ -39,7 +39,7 @@ Places SDK會維持下列狀態：
 每個POI都包含下列資料元素：
 
 * ID
-* 名稱:
+* 名稱
 * 經緯度
 * 半徑
 * 中繼資料，例如城市、國家、州、類別
@@ -59,7 +59,7 @@ Places SDK會維持下列狀態：
 事件、條件和動作的定義方式如下：
 
 * **事件**:放置參加項目事件。
-* **條件**: **「目前 POI」**&#x200B;的城市是舊金山
+* **條件**：**「目前 POI」**&#x200B;的城市是舊金山
 * **動作**:將回傳給Slack您客戶輸入的咖啡店名稱。
 
 ### 先決條件
@@ -76,7 +76,7 @@ Places SDK會維持下列狀態：
 1. 在右窗格中，選擇「當 **前POI」**。
 1. 按一下&#x200B;**「儲存」**。
 
-### 在Experience Platform Launch for Places中建立規則
+### 在Experience Platform Launch for Places服務中建立規則
 
 ![建立規則](/help/assets/placesrule.png)
 
@@ -122,10 +122,10 @@ Places SDK會維持下列狀態：
 
 ### 發佈規則
 
-1. 若要啟用規則，您必須發佈規則。 如需有關在Experience Platform Launch中發佈規則的詳細資訊，請參閱發 [布](https://docs.adobelaunch.com/launch-reference/publishing)。
+1. 若要啟用規則，您必須發佈規則。 如需有關在Experience Platform Launch中發佈規則的詳細資訊，請參閱發 [布](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
 
 ### 從進出出出發思考
 
-在Experience Platform Launch中使用位置服務地理柵欄登入和退出來觸發規則功能非常強大，但您也可以使用位置資料作為其他事件觸發的條件。 例如，您可以根據應用程式內的特定trackAction呼叫事件，讓「行動核心追蹤動作」事件觸發器準備好觸發。 根據此事件，您可以在執行動作之前，將其他位置條件置入事件。 例如，當發生購買事件時開啟應用程式內調查，但 `trackAction` 僅在使用者目 **前位置包含特定** 「位置服務」中繼資料時才開啟。
+在Experience Platform Launch中使用Places Service地理圍欄登入和退出來觸發規則功能非常強大，但您也可以使用位置資料作為其他事件觸發的條件。 例如，您可以根據應用程式內的特定trackAction呼叫事件，讓「行動核心追蹤動作」事件觸發器準備好觸發。 根據此事件，您可以在執行動作之前，將其他位置條件置入事件。 例如，當發生購買事件時開啟應用程式內調查，但 `trackAction` 僅在使用者的目 **前位置包含** 「地標服務」中繼資料時。
 
 ![建立條件](/help/assets/places-condition.png)
