@@ -2,12 +2,12 @@
 title: 在您的資料庫上設定排名
 description: 使用Places REST API，在您的資料庫上設定排名。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 在您的資料庫上設定排名
+# 在您的資料庫上設定排名 {#set-rank-on-libraries}
 
 一種PUT方法，可讓您在所有程式庫上設定排名順序。
 
