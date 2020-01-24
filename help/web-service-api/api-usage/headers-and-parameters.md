@@ -1,19 +1,19 @@
 ---
 title: 標題和參數
-description: Places REST API中可用的標題和參數。
+description: Places Service REST API中可用的標題和參數。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 標題和參數 {#headers-and-parameters}
 
-以下是Places REST API中可用標題和參數的詳細資訊：
+以下是Places Service REST API中可用標題和參數的詳細資訊：
 
 ## 支援的標題
 
-| 標題 | 說明 | 方法 | 範例 |
+| Header | 說明 | 方法 | 範例 |
 | :--- | :--- | :--- | :--- |
 | `Authorization` | 您的持牌代號 | 全部 |  |
 | `x-api-key` | 您的API金鑰 | 全部 | `19776964b4cde49e08d8f62e5824f777b` |
