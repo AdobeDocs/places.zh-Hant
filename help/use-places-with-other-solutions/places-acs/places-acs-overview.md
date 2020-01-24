@@ -1,15 +1,15 @@
 ---
-title: '搭配Adobe Campaign standard使用位置服務 '
-description: '本節概述如何搭配Campaign Standard使用Location Service。 '
+title: '搭配Adobe Campaign Standard使用Places服務 '
+description: '本節概述如何搭配Campaign Standard使用Places Service。 '
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# 搭配Adobe Campaign standard使用位置服務 {#location-service-acs}
+# 搭配Adobe Campaign Standard使用Places服務 {#location-service-acs}
 
-當您搭配Campaign standard使用Location Service時，可以使用下列訊息類型：
+當您將Places Service與Campaign Standard搭配使用時，可以使用下列訊息類型：
 
-* [含位置服務的推播通知](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
-* [使用位置服務的應用程式內訊息](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
+* [推播通知與Places服務](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
+* [使用Places服務的應用程式內訊息](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
