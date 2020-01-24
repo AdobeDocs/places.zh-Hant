@@ -1,38 +1,38 @@
 ---
 title: 入門
-description: 位置服務快速入門。
+description: Places Service快速入門。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ---
 
 
 # 入門 {#getting-started}
 
-以下是取得位置服務總覽的實用影片：
+以下是取得Places services總覽的實用影片：
 
 >[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
 
-## 使用位置服務
+## 使用Places服務
 
-若要使用位置服務，請完成下列工作：
+要使用Places服務，請完成以下任務：
 
-### 1.確保您的使用者已布建為使用位置服務
+### 1.確保您的使用者已布建為使用Places服務
 
-所有Experience cloud組織都可使用位置服務產品內容。
+所有Experience cloud組織都可使用Places service產品內容。
 
-* 請確定您是在「管理控制台」的「位置服務」和「體驗平台啟動」產品內容下列為使用者。
+* 請確定您是在「管理控制台」的「放置服務」和「體驗平台啟動」產品內容下列為使用者。
 
-   如需詳細資訊，請 *參閱常見問題中的「新增使用者至Experience Platform Launch*[和位置服務」](/help/places-gain-access.md)。
+   如需詳細資訊，請 *參閱「新增使用者至Experience Platform Launch」，並在常見問題中放*[置服務」](/help/places-gain-access.md)。
 
 
 ### 2.建立您的POI
 
 地標(POI)是您為組織建立的地理圍欄，您可以透過下列其中一種方式建立POI:
 
-* 使用位置服務使用者介面。
+* 使用Places Service使用者介面。
 
-   如需詳細資訊，請參 [閱Places Service總覽](/help/poi-mgmt-ui/places-services-overview.md)。
+   如需詳細資訊，請參 [閱Places Service總覽](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md)。
 
 * 使用Places web服務的API。
 
@@ -44,4 +44,4 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 如需有關設定Places擴充功能和Monitor擴充功能的詳細資訊，請參閱下列資訊：
 
 * [Places 擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)
-* [放置螢幕擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+* [Places Monitor擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)
