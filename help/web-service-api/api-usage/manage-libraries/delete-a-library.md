@@ -2,12 +2,12 @@
 title: 刪除程式庫
 description: 使用Places REST API刪除程式庫。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 刪除程式庫
+# 刪除程式庫 {#delete-a-library}
 
 可讓您刪除程式庫的DELETE方法。
 
