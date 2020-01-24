@@ -1,23 +1,23 @@
 ---
 title: Adobe Target
-description: 本節提供如何搭配Adobe Target使用位置服務的相關資訊。
+description: 本節提供如何搭配Adobe Target使用Places Service的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# 搭配Adobe Target使用位置服務 {#places-target}
+# 搭配Adobe Target使用Places服務 {#places-target}
 
 本檔案假設您已在應用程式中實作「位置」擴充功能。 如果您需要實作Places擴充功能的協助，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在「地標」延伸模組傳送登入和退出的事件後，您可以利用「啟動」中的「規則」，將您的「地標」資料附加至您的Adobe Target SDK事件。 在啟動中選取您想要的屬性後，您可以完成下列工作以建立此類型的規則：
+在Places擴充功能傳送登入和退出的事件後，您可以利用Launch中的規則，將您的Places服務資料附加至Adobe Target SDK事件。 在啟動中選取您想要的屬性後，您可以完成下列工作以建立此類型的規則：
 
 ## 1.建立規則
 
 1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
 
-   請記住以下資訊:
+   請記住以下資訊：
 
    * 如果您沒有此屬性的現有規則，則按鈕會位於畫面中間。
    * 如果您的屬性有規則，則按鈕會位於畫面的右上方。
@@ -26,7 +26,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。
 
-   在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Target Content Requested]**。
+   在此範例中，規則為命名 **[!UICONTROL Attach Places Service Data to Target Content Requested]**。
 
 1. 在區段 **[!UICONTROL Events]**下，按一下**[!UICONTROL Add]**。
 
