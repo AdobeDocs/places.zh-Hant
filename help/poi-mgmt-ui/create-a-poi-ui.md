@@ -1,8 +1,8 @@
 ---
 title: 建立 POI
-description: 使用「地標」UI建立POI。
+description: 使用Places服務UI建立POI。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 興趣點(POI)是地圖上對您的組織或公司而言很重要的位置或點。 酒店可包括咖啡館、餐館、零售場所、體育場等。 當公司進入地理圍欄地區以取得特定興趣點時，可定義興趣點，以協助個人化使用者的行動體驗。 除了個人化的體驗，公司也可能建立興趣點，以協助他們分析並更瞭解位置流量模式。 大型零售連鎖店可能會選擇為其所有商店位置建立POI，以便分析使用者的行動應用程式，並造訪商店位置。
 
-1. 使用您的Adobe ID登入位置服務。
+1. 使用您的Adobe ID登入Places Service UI。
 1. 在右上方，按一下 **[!UICONTROL New]**。
 1. 鍵入POI的名稱。
 1. 輸入或選擇半徑。
