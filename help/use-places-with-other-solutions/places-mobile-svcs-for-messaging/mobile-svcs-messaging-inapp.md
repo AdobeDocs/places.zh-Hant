@@ -1,15 +1,15 @@
 ---
 title: 應用程式內通知
-description: 本節將說明如何搭配應用程式內訊息使用「地標」。
+description: 本節將說明如何將Places Service與應用程式內訊息搭配使用。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
-# 應用程式內通知(#places-push-messaging)
+# 應用程式內通知 {#places-push-messaging}
 
-下列資訊將說明如何設定「應用程式內訊息」，以便從「位置」事件觸發。
+以下資訊說明如何設定「應用程式內訊息」，以從「位置服務」事件觸發。
 
 >[!IMPORTANT]
 >
@@ -35,7 +35,7 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 ##  Experience Platform Launch 中的規則
 
-您可以建立「啟動」規則，將您想要能用作應用程式內訊息「觸發規則」一部分的資料傳送至Analytics。 您可以根據使用案例，將Launch規則中Places擴充功能的資料當做事件和／或條件使用。
+您可以建立Experience Platform Launch規則，將您想要用作應用程式內訊息觸發規則一部分的資料傳送至Analytics。 您可以根據使用案例，將Experience Platform Launch規則中Places擴充功能的資料當做事件和／或條件使用。
 
 * 使用位置資料作為觸發事件。
 
@@ -43,7 +43,7 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 * 使用位置資料作為觸發事件的條件。
 
-   例如，如果您在位置服務中針對不同POI的天氣建立自訂中繼資料標籤，則可將該中繼資料用作規則條件的參數。 雖然您可以將此條件與前面所述的POI參加項目事件搭配使用，但您也可以將該條件用作任何事件的上下文。
+   例如，如果您在Places Service中針對不同POI的天氣建立自訂中繼資料標籤，則可將該中繼資料用作規則條件的參數。 雖然您可以將此條件與前面所述的POI參加項目事件搭配使用，但您也可以將該條件用作任何事件的上下文。
 
 設定規則時，請設定動作，將資料傳送至Analytics，以完成規則設定。
 
@@ -70,7 +70,7 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 ## 在Mobile services中建立應用程式內訊息
 
-在觸發器參數中，您可以透過下列其中一種方式，使用位置服務的資料來建立訊息的對象：
+在觸發器參數中，您可以透過下列其中一種方式，使用「放置服務」的資料來建立訊息的對象：
 
 * 使用特定位置的動作，例如登入或退出。
 * 使用以內容資料傳送的POI中繼資料，以縮小對象的目標。
@@ -81,6 +81,6 @@ Mobile services可讓您使用傳送至Analytics的位置資料作為應用程�
 
    ![觸發參數](/help/assets/trigger-parameters.png)
 
-* Mobile services中「觸發器」和「特 *徵」頁面中* ,「置入」標題的參數無法與「位置服務」中的資料搭配使用。
+* Mobile services的「觸發程式」和「特 *徵」頁面中* ,「置入服務」標題中的參數無法與「置入服務」中的資料搭配使用。
 
-   這些參數僅適用於在Mobile services中建立的舊版Places資料庫。
+   這些參數僅適用於在Mobile services中建立的舊版Places Service資料庫。
