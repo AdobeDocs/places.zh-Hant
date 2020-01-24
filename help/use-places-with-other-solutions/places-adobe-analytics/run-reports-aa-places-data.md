@@ -2,7 +2,7 @@
 title: 新增位置內容至Analytics請求
 description: 本節提供如何新增位置內容至Analytics請求的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
@@ -11,15 +11,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->本檔案假設您已在應用程式中實作Adobe Places。 如需實作Adobe Places的詳細資訊，請參閱「地 [標擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)」。
+>本檔案假設您已在應用程式中實施Places服務。 如需實作Places服務的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，並將您的Places資料附加至所有Adobe Analytics事件。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
+在Places service傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，並將您的Places service資料附加至所有Adobe Analytics事件。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
 
 ## 1.建立規則
 
 1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
 
-   請記住以下資訊:
+   請記住以下資訊：
    * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]**按鈕就會位於畫面中間。
    * 如果您的屬性有規則， **[!UICONTROL Create New Rule]**則按鈕會位於畫面右上方。
 
@@ -27,7 +27,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。
 
-   在此範例中，規則為命名 **[!UICONTROL Attach Places Data to Analytics Track Action Events]**。
+   在此範例中，規則為命名 **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**。
 
 1. 在區段 **[!UICONTROL Events]**下，按一下**[!UICONTROL Add]**。
 
@@ -50,7 +50,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 在區段 **[!UICONTROL Conditions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]**式清單中，選取「**[!UICONTORL &#x200B;行動核心」]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
 
 1. 從下拉 **[!UICONTROL Condition Type]**式清單中，選取**[!UICONTROL Carrier Name]**。
 
