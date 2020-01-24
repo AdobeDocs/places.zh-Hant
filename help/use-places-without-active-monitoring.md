@@ -1,15 +1,15 @@
 ---
-title: 使用位置服務而不需進行有效區域監控
-description: 本節提供如何使用Location servicePlaces而不進行作用中地區監控的資訊。
+title: 不使用活動區域監控的地點服務
+description: 本節提供如何使用Places service而不進行作用中地區監控的資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
 
-# 使用位置服務而不需進行有效區域監控 {#use-places-without-active-monitoring}
+# 不使用活動區域監控的地點服務 {#use-places-without-active-monitoring}
 
-您應用程式的使用案例可能不需要主動監視區域。 Adobe Places仍可用來取得使用者的位置資料，並與其他Experience platform產品整合。
+您應用程式的使用案例可能不需要主動監視區域。 Places Service仍可用來取得使用者的位置資料，並與其他Experience platform產品整合。
 
 本節說明如何僅在收集使用者位置（經緯度）時完成POI會籍檢查。
 
@@ -19,9 +19,9 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!TIP]
 >
->如果您應用程式的使用案例需要使用活動區域監控，請使 [用位置監控擴充功能閱讀](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+>如果您應用程式的使用案例需要使用中的地區監控，請參 [閱「使用位置監控擴充功能」](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
-要使用「地點」而不監視活動區域，請執行以下操作：
+要使用「地點服務」而不監視活動區域，請執行以下操作：
 
 ## 1.收集使用者的位置
 
@@ -396,6 +396,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-除了觸發SDK中的「置入」項目事件外，由於觸發項目事件，SDK的其他人也可在Launch中使用定義POI的所有資 `data elements` 料。 有了Launch `rules`，您就可以將Places資料動態附加至SDK處理的傳入事件。 例如，您可以附加使用者所在之POI的中繼資料，並將資料以內容資料的形式傳送至Analytics。
+除了在SDK中觸發Places Service項目事件外，由於觸發項目事件，SDK的其餘成員也可透過Experience Platform Launch使用定義您POI的所 `data elements` 有資料。 有了Experience Platform Launch，您 `rules`就可以將Places service資料動態附加至SDK處理的傳入事件。 例如，您可以附加使用者所在之POI的中繼資料，並將資料以內容資料的形式傳送至Analytics。
 
-如需詳細資訊，請參 [閱「搭配使用地標與其他Adobe解決方案」](/help/use-places-with-other-solutions/use-places-with-other-solutions.md)。
+如需詳細資訊，請參 [閱搭配使用Places Service和其他Adobe解決方案](/help/use-places-with-other-solutions/use-places-with-other-solutions.md)。
