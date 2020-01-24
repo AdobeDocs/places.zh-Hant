@@ -1,25 +1,21 @@
 ---
-title: 測試和驗證地點
-description: 本節提供如何測試和驗證「地標」的資訊。
+title: 測試和驗證Places服務
+description: 本節提供如何測試和驗證Places服務的資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
 
-# 測試位置服務的建議 {#test-validate-loc-svc}
+# 測試地點服務的建議 {#test-validate-loc-svc}
 
-許多客戶和組織都將定義全球範圍內的POI，因此，請務必以一種方式模擬並測試位置服務與您應用程式的互動方式。
+許多客戶和組織將定義全球範圍內的POI，因此，有一種方法來模擬和測試Places service如何與您的應用程式互動非常重要。 這些資訊可協助您瞭解如何測試和驗證根據已定義的POI和使用者目前位置正確觸發的Places Service登入與退出點。
 
-這些資訊可協助您瞭解如何測試和驗證根據定義的POI和使用者目前位置正確觸發的位置服務登入與退出點。
-
-由於環境變數可能是位置訊號和準確度的因素，因此我們建議您先使用開發人員工具和模擬位置項目，在本機建立基準結果。 此處的目標是驗證所有位置事件是否都正常運作。
-
-在正確驗證位置事件後，可測試解決方案整合（例如Analytics、Target和Campaign）。 為協助您的測試活動，您應在個別開發環境中設定Slack Webhook，並加上回傳並載入GPX檔案。
+由於環境變數可能是位置訊號和準確度的因素，因此我們建議您先使用開發人員工具和模擬位置項目，在本機建立基準結果。 其目標是驗證所有位置事件皆正確運作。 在正確驗證位置事件後，可測試解決方案整合（例如Analytics、Target和Campaign）。 為協助您的測試活動，您應在個別開發環境中設定Slack Webhook，並加上回傳並載入GPX檔案。
 
 >[!IMPORTANT]
 >
->此計畫假設POI已在 [Location Service Management UI中建立](https://places.adobe.com) ，且已安裝並正確設定Places擴充功能和Places Monitor擴充功能的最新版本。
+>此計畫假設已在 [Places Service UI中建立POI](https://places.adobe.com) ，且已安裝並正確設定Places擴充功能和Places Monitor擴充功能的最新版本。 如需詳細資訊，請參 [閱「放置擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md) 」 [和「放置監視器擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)」。
 
 | 步驟 | 說明 | 預期結果 |
 |--- |--- |--- |
@@ -42,7 +38,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 | 10f | 請確定您在Launch中發佈所有新資料元素和規則變更。 （您應在Launch介面的右上方選取一個工作開發程式庫。） |  |
 | 11 | 在開發人員IDE中切換GPX位置，以再次啟動並測試您的應用程式。 | 您現在在開發環境中選擇不同位置時，應會看到Slack通知，顯示每個POI的登入點。 |
 |  | **快速摘**<br>&#x200B;要點此測試的所有內容都可在本機執行，而不需前往特定的POI位置。 驗證測試有助於確保您的應用程式已正確設定，且已收到正確的位置權限。 <br><br>此驗證也可讓您確信已定義的POI可以正確使用Places monitor擴充功能。  在此步驟後，我們將開始測試Campaign中的訊息，以檢視是否根據POI登入和退出顯示正確的訊息。 |  |
-|  | **使用位置服務測試Adobe Campaign Standard應用程式內訊息。** |  |
+|  | **使用Places服務測試Adobe Campaign Standard應用程式內訊息。** |  |
 | 12 | 在主「促銷活動」控制面板上，設定新的「應用程式內訊息」（類型= broadcast） |  |
 | 12a | 在觸發器中，選 **擇置入事件類型——輸入作為觸發器**。 |  |
 | 12b | 選擇「 **[UICONTROL置入自訂中繼資料]**」作為其他篩選條件——使用「POI類型=上次輸入的POI」。<br>我們使**[!UICONTROL Last Entered]** 用POI類型，因為在大多數情況 **[!UICONTROL Last Entered]**下，會與相同**[!UICONTROL Current POI]**。 <br><br>**[!UICONTROL Current POI]** 只能用於POI地域圍欄重疊的情況。 在這種情況下，這些POI必須是「排名」, **[!UICONTROL Current POI]**然後在使用者目前可能在的2或3個地理圍欄中，顯示排名最前的POI。 |  |
@@ -63,7 +59,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 | 16f | 對於顯示類型，選擇 **[!UICONTROL Local Notification]**。 |  |
 | 16g | 準備／確認並部署應用程式內訊息。 |  |
 | 17 | 在開發人員環境中，連接您的裝置並按 **[!UICONTROL Play]**建置版本。 在您建立該位置運作後，請在應用程式背景設定，並繼續在Xcode或Android studio中切換位置。 您仍應看到指示位置變更的主控台讀出畫面，而且您也應看到顯示的本機通知，視觸發器中設定的標準而定。 （可能會有1-2秒的延遲。） | 預期結果是，每次符合符合符合標準時，就會顯示本機通知。 |
-|  | **摘要** ：在 <br>此階段，我們應該看到本地環境中的POI條目。 我們也應該會根據POI工作，看到Campaign傳送的訊息。 如果出現故障，請檢查Slack通知是否未發出。 如果沒有Slack消息，請檢查應用程式控制台，因為可能沒有記錄新位置條目。 如果結果成功，我們可以相當確定應用程式是否正常運作，以及「位置服務」和「促銷活動」訊息服務是否也正常運作。 |  |
+|  | **摘要** ：在 <br>此階段，我們應該看到本地環境中的POI條目。 我們也應該會根據POI工作，看到Campaign傳送的訊息。 如果出現故障，請檢查Slack通知是否未發出。 如果沒有Slack消息，請檢查應用程式控制台，因為可能沒有記錄新位置條目。 如果結果成功，我們可以相當確定應用程式是否正常運作，以及Places Service和Campaign傳訊服務是否也正常運作。 |  |
 |  | **現場測試** ：在 <br>位置測試時，應該不會有太大改變。 保持鬆弛回傳活動有助於瞭解設備是否進入和退出該位置。 |  |
 | 18 | 在裝置上進行測試，先停用wifi和行動電話，然後在POI區啟用一次。 | 如果發生故障，請記住是否在Slack中獲得地理圍欄條目和通知。 Slack通知的時間戳記是什麼？ |
 | 19 | 只要啟用蜂窩功能，並關閉wifi，即可進行測試。 |  |
