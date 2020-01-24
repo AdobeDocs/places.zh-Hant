@@ -1,27 +1,27 @@
 ---
-title: '存取Adobe Experience Platform Location Service '
-description: 本節提供如何將使用者新增至定位服務和體驗平台啟動的相關資訊，讓使用者能夠存取定位服務。
+title: '存取Places服務 '
+description: 本節提供如何將使用者新增至Places Service和Experience Platform Launch，讓使用者存取Places Service的相關資訊。
 translation-type: tm+mt
-source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
-# 存取位置服務 {#adding-user-launch-places}
+# 存取Places服務 {#adding-user-launch-places}
 
-您可以從 [Adobe Experience cloud首頁的快速存取功能表存取平台位置服務](https://experience.adobe.com)。
-如果您的使用者ID有存取權，您會看到「位置服務」圖示，如下所示：
+您可從 [Adobe Experience cloud首頁的快速存取功能表存取「放置服務」](https://experience.adobe.com)。
+如果您的使用者ID有存取權，您會看到「Places Service」圖示，如下所示：
 
 ![快速存取選單](/help/assets/quick-access.png)
 
-您也可以從Adobe Experience platform選單存取平台位置服務：
+您也可以從Adobe Experience platform功能表存取Places服務：
 
 ![體驗平台功能表](/help/assets/exp-platform-menu-sm.png)
 
-如果您在其中任一功能表中都未看到平台位置服務，您將需要連絡組織內的管理員，以將您的使用者ID新增至管理控制台中的Places核心服務。
+如果您在其中任一功能表中都未看到「置入服務」，請連絡您組織中的管理員，將您的使用者ID新增至「管理控制台」中的「置入核心服務」。
 
-## 新增使用者至位置服務與體驗平台啟動
+## 新增使用者至Places Service and Experience Platform Launch
 
-若要允許使用者存 [取Launch Service UI](https://places.adobe.com)，他們必須以使用者身分新增至Admin Console的Places Core Service。 若要讓使用者能夠存取Experience Platform Launch、設定行動裝置屬性，以及搭配Adobe Experience Platform SDK使用Places，他們必須新增至Admin Console的Experience Platform Launch，並獲得下列Experience Platform Launch權限：
+若要允許使用者存 [取Experience Platform Launch UI](https://launch.adobe.com)，他們必須以使用者身分新增至Admin Console的Places Core Service。 若要讓使用者能夠存取Experience Platform Launch、設定行動裝置屬性，以及搭配Adobe Experience Platform SDK使用Places，他們必須新增至Admin Console的Experience Platform Launch，並獲得下列Experience Platform Launch權限：
 
 * 所有產權：
    * 開發
@@ -31,15 +31,13 @@ source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
    * 管理環境
 * 管理公司權限下的屬性權限
 
-如果這是您第一次新增使用者，請完成下列步驟，將使用者新增至Experience Platform Launch and Location Service。 如果您之前已新增使用者，可能會顯示多個描述檔，因此請確定您選取的是正確的描述檔。
+如果這是您第一次新增使用者，請完成下列步驟，將使用者新增至Experience Platform Launch and Places服務。 如果您之前已新增使用者，可能會顯示多個描述檔，因此請確定您選取的是正確的描述檔。
 
 >[!IMPORTANT]
 >
 >只有組織管理員才能存取Admin Console並新增使用者。
 
-### 1.確認已布建位置服務和體驗平台啟動
-
-若要確認已布建位置服務和體驗平台啟動：
+### 1.確認已布建Places Service and Experience Platform Launch
 
 1. 登入您的Experience cloud組織。
 1. 在右上方，按一下Experience cloud殼層切換器。
@@ -64,12 +62,10 @@ source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
 
    ![](/help/assets/places_provisioned1.png)
 
-   如果顯示，您的組織已布建「位置服務」和「體驗平台啟動」。 如果未顯示，則需要為您的組織布建。
+   如果顯示，您的組織已布建「放置服務」和「體驗平台啟動」。 如果未顯示，則需要為您的組織布建。
 
 
 ### 2.設定描述檔並新增權限
-
-若要設定描述檔並新增權限：
 
 1. 設定Experience Platform Launch設定檔，讓已新增至設定檔的使用者可透過Experience Platform SDK使用Experience Platform Launch及其行動裝置屬性。
 
@@ -102,17 +98,17 @@ source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
 
 >[!IMPORTANT]
 >
->對於位置服務，有預設的描述檔，但您不需要新增任何權限。
+>對於「地標服務」，有預設的描述檔，但您不需要新增任何權限。
 
 您已成功新增權限至您建立的描述檔。
 
-### 3.將使用者或開發人員新增至您的位置服務與體驗平台啟動設定檔
+### 3.將使用者或開發人員新增至您的Places Service and Experience Platform Launch設定檔
 
-您可以將使用者和／或開發人員新增至您的位置服務和體驗平台啟動設定檔。
+您可以將使用者和／或開發人員新增至您的Places Service和Experience Platform Launch設定檔。
 
 ### 新增使用者
 
-若要將使用者新增至您的位置服務與體驗平台啟動設定檔：
+若要將使用者新增至您的Places Service and Experience Platform Launch設定檔：
 
 1. 新增使用者至Experience Platform Launch設定檔。
 
@@ -140,7 +136,7 @@ source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
 
    >[!TIP]
    >
-   >目前，所有位置服務使用者都有相同的權限，因此您不需要編輯權限。
+   >目前，所有Places service使用者都有相同的權限，因此您不需要編輯權限。
 
    a.在卡 **[!UICONTROL Places Core Services]**上驗證以下內容：
 
@@ -167,19 +163,19 @@ source-git-commit: e5d6c7f9ad1e2c9c37c1537aadc309ee20757156
 1. 在卡 **[!UICONTROL Places Core Services]**上驗證以下內容：
 
    * 卡片底部會顯示兩個點。
-   * 按一下右側的點， **[!UICONTROL Assign Developers]**卡片底部便會出現。
+   * 按一下右側的點， **[!UICONTROL Assign Developers]**卡片底部就會出現。
 
 1. 按一下 **[!UICONTROL + Assign Developers]**。
 
 1. 輸入使用者的 Adobe ID。
 
-1. 完成下列其中一個步驟:
+1. 完成下列其中一個步驟：
 
    * 如果您要新增使用者，請按一 **[!UICONTROL New user]**下並輸入使用者的名字和姓氏。
    * 如果您要新增現有使用者，請按一下所顯示的使用者名稱。
 
-1. 在下拉 **[!UICONTROL Please select a profile for this product]**式清單中，選取「位置服務」描述檔。
+1. 在下拉 **[!UICONTROL Please select a profile for this product]**式清單中，選取「放置服務」描述檔。
 
 1. 按一下&#x200B;**「儲存」**。
 
-使用者會收到電子郵件，通知他們具有 Experience Platform Launch 的存取權。他們可以登入此組織的 [Experience Platform Launch](https://launch.adobe.com) 或 [Places](https://places.adobe.com) 使用者介面。如果您完成&#x200B;**「新增開發人員」**&#x200B;程序中的步驟 4，則使用者也可登入 [Adobe I/O 主控台](https://console.adobe.io)，以建立 Places 整合，並使用 Places REST API。
+使用者會收到電子郵件，通知他們具有 Experience Platform Launch 的存取權。They can can log in to the [Experience Platform Launch](https://launch.adobe.com) or the [Places Service](https://places.adobe.com) UIs for this organization. 如果您完成&#x200B;**「新增開發人員」**&#x200B;程序中的步驟 4，則使用者也可登入 [Adobe I/O 主控台](https://console.adobe.io)，以建立 Places 整合，並使用 Places REST API。
