@@ -2,12 +2,12 @@
 title: 建立程式庫
 description: 使用Places REST API建立資料庫。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
 
-# 建立程式庫
+# 建立程式庫 {#create-a-library}
 
 可讓您建立程式庫的POST方法。
 
