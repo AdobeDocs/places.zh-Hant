@@ -2,7 +2,7 @@
 title: 傳送POI登入與退出資料至Analytics
 description: 本節提供如何傳送POI登入與退出資料至Analytics的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -12,15 +12,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 >[!IMPORTANT]
 >
->本節假設您已在應用程式中實作「地點」。 如需實作「地標」的詳細資訊，請參閱「地 [標」擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本節假設您已在應用程式中實作Places服務。 如需實作Places服務的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，將Places資料傳送至Adobe Analytics。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
+在Places service傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，將Places service資料傳送至Adobe Analytics。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
 
 ## 1.建立規則
 
 1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
 
-   請記住以下資訊:
+   請記住以下資訊：
 
    * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]**按鈕就會位於畫面中間。
    * 如果您的屬性有規則， **[!UICONTROL Create New Rule]**則按鈕會位於畫面右上方。
@@ -33,7 +33,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. In the **[!UICONTROL Events]**section, click**[!UICONTROL Add]**.
 
-1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places Service]**。
 
 1. 從下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Enter POI]**。
 
@@ -52,7 +52,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 在區段 **[!UICONTROL Conditions]**下，按一下**[!UICONTROL Add]**。
 
-1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places]**。
+1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places Service]**。
 
 1. 從下拉 **[!UICONTROL Condition Type]**式清單中，選取**[!UICONTROL Name]**。
 
