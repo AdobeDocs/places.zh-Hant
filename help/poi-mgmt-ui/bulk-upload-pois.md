@@ -2,7 +2,7 @@
 title: 大量上傳POI
 description: 本節提供如何大量上傳POI的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
 
 ---
 
@@ -47,15 +47,15 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 ### 欄值
 
-「位置服務」UI中使用下列欄的值：
+Places Service UI中使用下列欄的值：
 
-* color，此顏色用作PIN的顏色，代表POI在位置服務UI映射中的位置。
+* color，此顏色用作Places服務UI映射中POI位置的PIN顏色。
    * 有效值為「」、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56b和#3DC8DE和&quot;&quot;。
-   * 如果值保留為空白，則定位服務UI會使用藍色作為預設顏色。
+   * 如果值保留為空白，則Places Service UI使用藍色作為預設顏色。
 
       這些值對應藍色(#3E76D0)、紫色(#AA99E8)、fuschia(#DC2ABA)、橘色(#FC685B)、淡橙(#FC962E)、黃色(#F6C436)、淡綠色(#BECE5D)、綠色(#61B56B)和淺藍色(#3DC8DE)。
 
-* 表徵圖，此表徵圖用作PIN上的表徵圖，該表徵圖代表POI在位置服務UI映射上的位置
+* 表徵圖，此表徵圖用作PIN上的表徵圖，該表徵圖代表POI在Places服務UI映射上的位置。
 
    * 有效值為&quot;&quot;、商店、旅館、汽車、火車、船、體育場、娛樂園、錨、燒杯、鐘、投標、書、箱、公事包、瀏覽、筆刷、建築、計算器、相機、鐘、教育、手電筒、追隨者、遊戲、男性、禮物、錘、心、家、鑰匙、啟動、燈泡、郵箱、銷、促銷、緞帶、購物車、星目標，茶壺，拇指向下，拇指向上，陷阱，獎杯，扳手。
 
