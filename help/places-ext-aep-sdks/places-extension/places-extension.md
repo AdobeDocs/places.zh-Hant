@@ -2,7 +2,7 @@
 title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -22,7 +22,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 1. 完成發佈程式以更新SDK組態。
 
-   如需有關在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobelaunch.com/launch-reference/publishing)。
+   如需有關在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -61,7 +61,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您不使用Cocoapods，則可以從Github的發行頁面手動加入Mobile Core [和](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Places程式庫。
+   或者，如果您不使用Cocoapods，則可從Github的發行頁面手動加入Mobile Core和 [Places程式庫](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
 
 1. 更新您的Cocoapod:
 
@@ -85,13 +85,13 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    import ACPPlaces
    ```
 
-### 使用行動核心註冊地標 {#register-places-mobile-core}
+### 使用Mobile Core註冊Places擴充功能 {#register-places-mobile-core}
 
-您必須在Android和iOS中使用Mobile Core註冊地標。
+您必須在Android和iOS中使用Mobile Core註冊Places擴充功能。
 
 #### Android
 
-在您應用程式的方 `OnCreate` 法中註冊位置服務擴充功能：
+在您應用程式的方 `OnCreate` 法中，註冊Places擴充功能：
 
 ```java
 public class PlacesTestApp extends Application {
@@ -137,10 +137,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ## 配置密鑰
 
-若要在執行時期以程式設計方式更新SDK組態，請使用下列資訊來變更您的Places組態值。 如需詳細資訊，請參 [閱設定API參考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
+若要在執行時期以程式設計方式更新SDK組態，請使用下列資訊來變更您的Places擴充功能組態值。 如需詳細資訊，請參 [閱設定API參考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
 
 | 代碼 | 必填 | 說明 |
 | :--- | :--- | :--- |
-| `places.libraries` | 是 | 行動應用程式的位置資料庫。 它會指定行動應用程式支援的程式庫ID和程式庫名稱。 |
-| `places.endpoint` | 是 | 預設的Experience Platform位置查詢服務端點，用來取得資料庫和POI的相關資訊。 |
+| `places.libraries` | 是 | 行動應用程式的Places擴充功能程式庫。 它會指定行動應用程式支援的程式庫ID和程式庫名稱。 |
+| `places.endpoint` | 是 | 預設的Places Query service端點，用於獲取有關庫和POI的資訊。 |
 
