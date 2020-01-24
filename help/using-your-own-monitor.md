@@ -1,15 +1,15 @@
 ---
 title: 使用您自己的螢幕
-description: 您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
+description: 您也可以使用Places Service擴充功能API，使用您的監控服務並與Places Service整合。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ---
 
 
 # 使用您自己的螢幕 {#using-your-monitor}
 
-您也可以使用Places擴充功能API，使用您的監控服務並與Places整合。
+您也可以使用Places擴充功能API，使用您的監控服務並與Places服務整合。
 
 ## 註冊地理柵欄
 
