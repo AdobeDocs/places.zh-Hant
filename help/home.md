@@ -1,21 +1,21 @@
 ---
-title: Adobe Experience Platform Location Service
-description: '位置服務是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
+title: Places服務
+description: '「地標服務」是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
-source-git-commit: c20e720d23121970bb2fa1c63a2fd1e81c84b977
+source-git-commit: 3b78f68d8c5eb79ccf842b629510cc60f4ac52d2
 
 ---
 
 
-# Adobe Experience Platform位置服務總覽 {#home}
+# Places服務 {#home}
 
-![「Adobe Experience Platform Location Service」](/help/assets/LocationHeader.png)
+![&quot;地點服務&quot;](/help/assets/LocationHeader.png)
 
 位置是瞭解行動使用者並與之互動的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。
 
-Adobe Experience Platform Location Service(Location Service)是地理位置服務，可讓具備位置感知的行動應用程式使用豐富且簡單易用的SDK介面，加上有彈性的興趣點資料庫(POI)，來瞭解位置環境。
+Places Service（先前稱為Adobe Experience Platform Location Service）是地理位置服務，可讓具備位置感知的行動應用程式使用豐富且簡單易用的SDK介面，加上有彈性的興趣點資料庫(POI)，來瞭解位置環境。
 
-位置服務可讓您達成下列目標：
+Places Service可讓您達成下列目標：
 
 * 建立並管理可與其他Adobe Experience cloud解決方案搭配運用的POI資料庫。
 * 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
@@ -32,9 +32,9 @@ Adobe Experience Platform Location Service(Location Service)是地理位置服�
 * 使用具有位置內容的受眾個人檔案，根據離線行為劃分受眾。
 * 在相關時，以店內體驗為目標使用者。
 
-## 位置服務元件
+## 放置服務元件
 
-位置服務包含下列元件：
+Places Service包含下列元件：
 
 * **Web服務**
 
