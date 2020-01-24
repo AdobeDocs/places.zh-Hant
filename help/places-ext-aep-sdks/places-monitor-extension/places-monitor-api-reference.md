@@ -2,7 +2,7 @@
 title: Places Monitor API參考
 description: Places Monitor的API清單。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -139,7 +139,7 @@ PlacesMonitor.start();
 >
 >要開始監視，位置服務必須具有必要的授權：
 >
->* 如果位置服務的授權尚未提供給應用程式，則對 `start` API的第一次呼叫會要求授權使用為應用程式設定的位置服務。
+>* 如果尚未向應用程式提供Places服務的授權， `start` API的第一次呼叫會要求授權使用為應用程式設定的Places服務。
 >* 根據您裝置的功能，如果已提供授權，「位置監視器」會根據目前設定來追蹤使用者的位置 `ACPPlacesMonitorMode`。 依預設，螢幕會使用 `ACPPlacesMonitorModeSignificantChanges`。
 
 
@@ -245,7 +245,7 @@ PlacesMonitor.updateLocation();
 
 ## 應用程式位置權限
 
-您可以使用此API來設定使用者收到提示並授權用於位置服務的位置權限類型。
+您可以使用此API來設定使用者收到提示並授權用於Places服務的位置權限類型。
 
 ### SetLocationPermission(Android)
 
@@ -317,17 +317,17 @@ PlacesMonitor.setLocationPermission(PlacesMonitorLocationPermission.ALWAYS_ALLOW
 
 * `ACPPlacesRequestAuthorizationLevelWhenInUse`
 
-   要求使用者在應用程式使用中時使用位置服務的權限。 使用者提示會包含應用程式Info. `NSLocationWhenInUseUsageDescription` plist檔案中索引鍵的文字，而呼叫此方法時，需要有該索引鍵。 如需詳細資訊，請參 [閱requestWhenInUseAuthorization的Apple檔案](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)。
+   在應用程式使用中，要求使用者使用Places Service的權限。 使用者提示會包含應用程式Info. `NSLocationWhenInUseUsageDescription` plist檔案中索引鍵的文字，而呼叫此方法時，需要有該索引鍵。 如需詳細資訊，請參 [閱requestWhenInUseAuthorization的Apple檔案](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620562-requestwheninuseauthorization)。
 
 * `ACPPlacesRequestMonitorAuthorizationLevelAlways`
 
-   使用此列舉即使應用程式在背景，也可要求位置服務。 您必須在應 `NSLocationAlwaysUsageDescription` 用程 `NSLocationWhenInUseUsageDescription` 式的Info.plist中擁有和金鑰。 這些鍵定義了在用戶提示期間將顯示的文本。 如需詳細資訊，請參閱 [requestAlwaysAuthorization的Apple檔案](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
+   使用此列舉即使應用程式在背景，也可以要求Places服務。 您必須在應 `NSLocationAlwaysUsageDescription` 用程 `NSLocationWhenInUseUsageDescription` 式的Info.plist中擁有和金鑰。 這些鍵定義了在用戶提示期間將顯示的文本。 如需詳細資訊，請參閱 [requestAlwaysAuthorization的Apple檔案](https://developer.apple.com/documentation/corelocation/cllocationmanager/1620551-requestalwaysauthorization)。
 
 `ACPPlacesRequestAuthorizationLevelAlways` 是預設的請求授權值。
 
 >[!IMPORTANT]
 >
->授權使用權限的應用 `ACPPlacesRequestAuthorizationLevelWhenInUse` 程式將無法觸發背景發生之地區的進入／退出事件。
+>授權使用權限的應用程 `ACPPlacesRequestAuthorizationLevelWhenInUse` 式不會在背景發生的地區觸發進入／退出事件。
 
 以下是此API的語法和范常式式碼：
 
