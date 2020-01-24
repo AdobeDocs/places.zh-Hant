@@ -1,8 +1,8 @@
 ---
 title: 管理現有POI
-description: 在位置服務UI中，您可以編輯、刪除或篩選現有POI。
+description: 在「放置服務」UI中，您可以編輯、刪除或篩選現有POI。
 translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ---
 
@@ -32,7 +32,7 @@ POI和庫是使用Places UI在Places資料庫中建立和管理的。
 
 ![篩選POI](/help/assets/filter_poi.png)
 
-1. 使用您的Adobe ID登入位置服務UI。
+1. 使用您的Adobe ID登入Places Service UI。
 1. 在右上方，按一下篩選圖示。
 1. 您可透過下列其中一種方式來篩選POI:
 
@@ -61,6 +61,7 @@ Geoffences是POI的一種類型，在資料庫中按以下鍵定義：
 | ID | 分配給每個POI的唯一標識符 | 是 |
 | 名稱 | 為POI提供好記名稱。 | 是 |
 | 庫 | 每個POI都必須指派一個程式庫給組織。 | 是 |
+| 半徑 | POI的半徑（以米為單位）。 | 是 |
 | 圖示 | 協助POI的視覺化。 | 是（已指派預設值） |
 | 色彩 | 協助POI的視覺化。 | 是（已指派預設值） |
 | 類別 | 指定所有資料庫中所有POI共用的共同類別架構。 | 無 |
