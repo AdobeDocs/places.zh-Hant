@@ -2,12 +2,21 @@
 title: 發行說明
 description: Places服務的發行說明。
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
 ---
 
 
 # 發行說明 {#release-notes}
+
+## 2020 年 1 月 27 日
+
+* **PlacesMonitor 2.2.0**
+
+   * **Android**
+
+      * 呼叫新的Places API，以收集應用程式啟動時和應用程式執行時授權變更的位置授權狀態。
+      * 已新增setRequestLocationPermission API和已過時的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
 
@@ -15,8 +24,15 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
    * **Android**
 
-      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
+## 2019 年 12 月 4 日
+
+* **PlacesMonitor 2.1.2**
+
+   * **iOS**
+
+      * 呼叫Places API，在裝置變更時從裝置收集CLAuthorizationStatus。
 
 ## 2019 年 12 月 3 日
 
@@ -25,6 +41,14 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
    * **iOS**
 
       * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+
+## 2019 年 11 月 25 日
+
+* **PlacesMonitor 2.1.1**
+
+   * **iOS**
+
+      * 修正使用多個pod專案選項的Cocoapods專案匯入陳述式。
 
 ## 2019 年 11 月 22 日
 
