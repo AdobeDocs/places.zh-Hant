@@ -2,7 +2,7 @@
 title: 發行說明
 description: Places服務的發行說明。
 translation-type: tm+mt
-source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
+source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
    * **Android**
 
-      * 呼叫新的Places API，以收集應用程式啟動時和應用程式執行時授權變更的位置授權狀態。
+      * 呼叫新的Places API，以在應用程式啟動時以及在應用程式執行時授權變更時收集位置授權狀態。
       * 已新增setRequestLocationPermission API和已過時的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
@@ -24,7 +24,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
    * **Android**
 
-      * 已新增新API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 12 月 4 日
 
@@ -40,7 +40,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 
    * **iOS**
 
-      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 11 月 25 日
 
@@ -170,7 +170,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 * 修正首次啟動後，有時會因網路狀況不佳而遺失「地標」事件的問題。
 * 修正在快速接續處理POI項目事件時，透過規則引擎取代代號有時會參照錯誤POI的問題。
 
-## 2019年5月30日（地）
+## 2019 年 5 月 30 日
 
 **Android Places Monitor 1.0.1**
 
@@ -185,7 +185,7 @@ source-git-commit: 04644763a40898432c4b821ca24366c19dda0437
 * 將UI中允許的最小半徑提高至10米。
 * 修正如果刪除欄位中的所有數字，半徑欄位會重設回20米的問題。
 
-## 2019年5月17日（地）
+## 2019 年 5 月 17 日
 
 此版本已進行下列更新：
 
