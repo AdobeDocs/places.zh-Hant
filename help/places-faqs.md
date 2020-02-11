@@ -2,7 +2,7 @@
 title: 常見問題集
 description: 本主題提供一些常見問題的其他資訊。
 translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+source-git-commit: 8691dbf061ac020a60d3880fe16951dcc79040cb
 
 ---
 
@@ -22,3 +22,16 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 當Places Monitor(SDK)取得附近POI的新清單時，會在每個POI的作業系統中註冊地區。 現在，作業系統負責在裝置跨越其中一個受監控區域的邊界（進入或退出）時通知SDK。 SDK只會在作業系統通知SDK發生該事件時觸發退出事件。 此通知的主要原因是位置資料的時間敏感性。
 
 如果作業系統無法在裝置離開地區時傳送退出事件，則SDK僅略過退出事件會更安全。 如果SDK製作退出事件而未由作業系統觸發，則可能會在裝置接近POI的時段之外，充分處理退出事件。
+
+## POI數
+
+在Places Service POI管理介面中，客戶可在特定資料庫中新增多達15萬個興趣點。 客戶可視需要定義多個程式庫，以區隔POI群組。
+
+## 關於位置變更和主動區域監控的幾點注意事項
+
+在註冊授權應用程式後，就會立即開始監視地理區域。 但是，不要期望立即收到事件，因為只有邊界交叉點才會產生事件。 尤其是，如果使用者的位置已在註冊時位於地區內部，位置管理員不會自動產生事件。 您的應用程式必須等到使用者跨越地區邊界後，才會產生事件並傳送至委派。
+
+指定要監控的區域集時，請謹慎。 區域是共用的系統資源，系統可用區域的總數有限。 因此，「核心位置」限制為20個區域，可同時由單一應用程式監控。 若要繞過此限制工作，請考慮僅在使用者附近註冊這些地區。
+
+[請參閱Apple開發人員網站的其他資訊] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)
+
