@@ -2,12 +2,25 @@
 title: 發行說明
 description: Places服務的發行說明。
 translation-type: tm+mt
-source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
+source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ---
 
 
 # 發行說明 {#release-notes}
+
+## 2020年2月20日
+
+* **ACPPlaces 1.3.1(iOS)**
+
+   * 現在，放置擴充功能會將版本資訊報告至核心SDK中的事件中心。
+   * 裝置POI會籍資訊目前的預設上線時間為收集後一小時。 如需詳細資訊，請 [參閱修改地點會籍的上線時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+
+
+* **Places 1.4.1(Android)**
+
+   * 現在，放置擴充功能會將版本資訊報告至核心SDK中的事件中心。
+   * 裝置POI會籍資訊目前的預設上線時間為收集後一小時。 如需詳細資訊，請 [參閱修改地點會籍的上線時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 2020 年 1 月 27 日
 
@@ -15,16 +28,16 @@ source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
    * **Android**
 
-      * 呼叫新的Places API，以在應用程式啟動時以及在應用程式執行時授權變更時收集位置授權狀態。
+      * 呼叫新的Places API，以收集應用程式啟動時和應用程式執行時授權變更的位置授權狀態。
       * 已新增setRequestLocationPermission API和已過時的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
 
-* **ACPPlaces 1.4.0**
+* **Places 1.4.0**
 
    * **Android**
 
-      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 12 月 4 日
 
@@ -40,7 +53,7 @@ source-git-commit: 4038972cc56c144c0e7d702d0f80c7f76f275aa4
 
    * **iOS**
 
-      * 已新增新API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 11 月 25 日
 
