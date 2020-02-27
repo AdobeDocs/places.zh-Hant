@@ -2,7 +2,7 @@
 title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 ---
 
@@ -13,12 +13,12 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 ## 在Adobe Experience Platform Launch中安裝Places擴充功能
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
-1. 在標籤 **[!UICONTROL Catalog]**上，找到擴**[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
 1. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
 1. 按一下 **[!UICONTROL Save]**。
 
-   當您按一 **[!UICONTROL Save]**下，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，POI資料不會包含在程式庫的下載中，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
+   當您按一 **[!UICONTROL Save]**&#x200B;下，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，POI資料不會包含在程式庫的下載中，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
 
 1. 完成發佈程式以更新SDK組態。
 
@@ -135,6 +135,88 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
+### 修改「地點」會籍的上線時間 {#places-ttl}
+
+位置資料可能會很快過時，尤其是當裝置未收到背景位置更新時。
+
+設定設定，以控制裝置上放置會籍資料的上線 `places.membershipttl` 時間。 傳入的值代表「置入」狀態對裝置維持有效的秒數。
+
+#### Android
+
+在回呼中， `MobileCore.start()` 在呼叫前使用必要的變更更新設定 `lifecycleStart`:
+
+```java
+public class PlacesTestApp extends Application {
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        MobileCore.setApplication(this);
+
+        try {
+            Places.registerExtension();
+            MobileCore.start(new AdobeCallback() {
+                @Override
+                public void call(Object o) {
+                    // switch to your App ID from Launch
+                    MobileCore.configureWithAppID("my-app-id");
+
+                    final Map<String, Object> config = new HashMap<>();
+                    config.put("places.membershipttl", 30);
+                    MobileCore.updateConfiguration(config);
+
+                    MobileCore.lifecycleStart(null);
+                }
+            });
+        } catch (Exception e) {
+            Log.e("PlacesTestApp", e.getMessage());
+        }
+    }
+}
+```
+
+#### iOS
+
+在回呼方法的第一行 `ACPCore`中， `start:` 調用 `updateConfiguration:`
+
+**Objective-C**
+
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // make other sdk registration calls
+
+    const UIApplicationState appState = application.applicationState;
+    [ACPCore start:^{
+        [ACPCore updateConfiguration:@{@"places.membershipttl":@(30)}];
+
+        if (appState != UIApplicationStateBackground) {
+            [ACPCore lifecycleStart:nil];            
+        }
+    }];
+
+    return YES;
+}
+```
+
+**Swift**
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // make other sdk registration calls
+
+    let appState = application.applicationState;            
+    ACPCore.start {
+        ACPCore.updateConfiguration(["places.membershipttl" : 30])
+
+        if appState != .background {
+            ACPCore.lifecycleStart(nil)
+        }    
+    }
+
+    return true;
+}
+```
+
 ## 配置密鑰
 
 若要在執行時期以程式設計方式更新SDK組態，請使用下列資訊來變更您的Places擴充功能組態值。 如需詳細資訊，請參 [閱設定API參考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference)。
@@ -143,4 +225,4 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 | :--- | :--- | :--- |
 | `places.libraries` | 是 | 行動應用程式的Places擴充功能程式庫。 它會指定行動應用程式支援的程式庫ID和程式庫名稱。 |
 | `places.endpoint` | 是 | 預設的Places Query service端點，用於獲取有關庫和POI的資訊。 |
-
+| `places.membershipttl` | 無 | 預設值3600（一小時內的秒數）。 指出裝置的「置入」會籍資訊的有效期（以秒為單位）。 |
