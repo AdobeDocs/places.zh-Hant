@@ -2,7 +2,7 @@
 title: 不使用活動區域監控的地點服務
 description: 本節提供如何使用Places Service而不進行作用中地區監控的資訊。
 translation-type: tm+mt
-source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
+source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
 
 ---
 
@@ -10,8 +10,6 @@ source-git-commit: d123d16c822c48d8727de3c0c22bff8ea7c66981
 # 不使用活動區域監控的地點服務 {#use-places-without-active-monitoring}
 
 您應用程式的使用案例可能不需要主動監視區域。 Places Service仍可用來取得使用者的位置資料，並與其他Experience Platform產品整合。
-
-本節說明如何僅在收集使用者位置（經緯度）時完成POI會籍檢查。
 
 ## 先決條件
 
@@ -84,7 +82,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-以下是iOS中從方法實作的范 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc) 例 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc):
+以下是iOS的範例實作。 此代碼顯示以下方法 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc)[`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc)的實現：
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +98,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Swift
 
-以下是iOS中從方法實作的范 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager) 例 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager):
+以下是iOS的範例實作。 此代碼顯示以下方法 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager)[`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager)的實現：
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -114,9 +112,21 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3.當使用者在POI中時觸發參加事件
+## 3.將地標資料附加至Analytics請求
 
-SDK會傳回附近POI的清單，包括使用者目前是否在每個POI中。 如果使用者位於POI中，您可讓SDK觸發該地區的登入事件。
+透過呼叫 `getNearbyPointsOfInterest` API,Places SDK將透過Launch中的資料元素，提供與裝置相關的所有POI資料。 使用「附 [加資料](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 」規則，「置入」資料會自動新增至Analytics的未來請求。 如此，在收集裝置位置時，就不需要對Analytics進行一次性呼叫。
+
+如需 [此主題的詳細資訊，請參閱新增位置內容](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) 至Analytics請求。
+
+## 可選——當使用者在POI中時觸發參加事件
+
+>[!TIP]
+>
+>擷取「地標」資料的建議方式是將「地 [標」資料附加至您的Analytics請求](#attach-places-data-to-your-analytics-requests)。
+>
+>如果使用案例需要 [SDK觸發地區登入事件](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) ，則需要依下列說明手動完成。
+
+API傳回的清單 `getNearbyPointsOfInterest` 包含自 [訂物件](places-ext-aep-sdks/places-extension/cust-places-objects.md) ，指出使用者目前是否在POI中。 如果使用者位於POI中，您可讓SDK觸發該地區的登入事件。
 
 >[!IMPORTANT]
 >
@@ -126,7 +136,7 @@ SDK會傳回附近POI的清單，包括使用者目前是否在每個POI中。 �
 
 ### Android
 
-下列程式碼範例顯示回呼中提供結果的處 `getNearbyPointsOfInterest`理方式 `List<PlacesPOI>`:
+下列程式碼範例顯示回呼中提供之結果的處 `getNearbyPointsOfInterest`理方式 `List<PlacesPOI>`:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -229,7 +239,9 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 ## 完整的範例實作
 
-以下程式碼範例將示範如何擷取裝置的目前位置、觸發必要事件，並確保一次瀏覽時不會收到相同位置的多個項目。
+以下程式碼範例將示範如何擷取裝置的目前位置、觸發必要的登入事件，並確保一次瀏覽時不會取得相同位置的多個登入項目。
+
+此程式碼範例包含當使 [用者在POI中時觸發參加事件的選用步驟](#trigger-entry-events-when-the-user-is-in-a-poi)。
 
 >[!IMPORTANT]
 >
