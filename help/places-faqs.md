@@ -2,7 +2,7 @@
 title: 常見問題集
 description: 本主題提供一些常見問題的其他資訊。
 translation-type: tm+mt
-source-git-commit: 8691dbf061ac020a60d3880fe16951dcc79040cb
+source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
 
 ---
 
@@ -10,6 +10,10 @@ source-git-commit: 8691dbf061ac020a60d3880fe16951dcc79040cb
 # 常見問題集
 
 以下是有關Places服務的一些資訊和常見問題。
+
+## 從v4 SDK中的trackLocation移轉
+
+如果您要從v4 SDK移轉，並正在尋找 `trackLocation` API的替代項目，請參閱主題「不使用作用中地 [區監控的使用地點服務」](use-places-without-active-monitoring.md)。
 
 ## 大小與可靠性
 
@@ -34,4 +38,3 @@ source-git-commit: 8691dbf061ac020a60d3880fe16951dcc79040cb
 指定要監控的區域集時，請謹慎。 區域是共用的系統資源，系統可用區域的總數有限。 因此，「核心位置」限制為20個區域，可同時由單一應用程式監控。 若要繞過此限制工作，請考慮僅在使用者附近註冊這些地區。
 
 [請參閱Apple開發人員網站的其他資訊] (https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/LocationAwarenessPG/RegionMonitoring/RegionMonitoring.html#//apple_ref/doc/uid/TP40009497-CH9-SW11)
-
