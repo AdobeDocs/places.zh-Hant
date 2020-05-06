@@ -2,14 +2,34 @@
 title: 發行說明
 description: Places服務的發行說明。
 translation-type: tm+mt
-source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
+source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+workflow-type: tm+mt
+source-wordcount: '1419'
+ht-degree: 3%
 
 ---
 
 
 # 發行說明 {#release-notes}
 
-## 2020年2月20日
+## 2020年5月6日
+
+* **PlacesMonitor 2.2.1**
+
+   * **Android**
+
+      * 改善的記錄功能
+
+## 2020年5月5日
+
+
+* **PlacesMonitor 2.1.3**
+
+   * **iOS**
+
+      * 改善的記錄功能
+
+## 2020 年 2 月 20 日
 
 * **ACPPlaces 1.3.1(iOS)**
 
@@ -28,7 +48,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
    * **Android**
 
-      * 呼叫新的Places API，以收集應用程式啟動時和應用程式執行時授權變更的位置授權狀態。
+      * 呼叫新的Places API，以在應用程式啟動時以及在應用程式執行時授權變更時收集位置授權狀態。
       * 已新增setRequestLocationPermission API和已過時的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
@@ -37,7 +57,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
    * **Android**
 
-      * 已新增新API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新API, `setAuthorizationStatus`以設定Places Services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 12 月 4 日
 
@@ -53,7 +73,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
    * **iOS**
 
-      * 已新增新的API, `setAuthorizationStatus`以設定Places services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
+      * 已新增新API, `setAuthorizationStatus`以設定Places Services的裝置授權狀態。 值會儲存並用於「位置」共用狀態。
 
 ## 2019 年 11 月 25 日
 
@@ -69,8 +89,8 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
    * **Android**
 
-      * 監視器現在可辨識Android裝置的啟動，並視需要根據裝置的目前位置，在作業系統中重新註冊地理柵欄。
-      * 修正有時會導致登入／退出事件被捨棄的競賽條件。
+      * 監視器現在會辨識Android裝置的啟動，並視需要根據裝置的目前位置，在作業系統中重新註冊地理柵欄。
+      * 修正有時候會捨棄登入／退出事件的競賽條件。
 
 ## 2019 年 10 月 9 日
 
@@ -86,7 +106,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 
 
-## 2019年8月8日
+## 2019 年 8 月 8 日
 
 此版本已進行下列更新：
 
@@ -109,7 +129,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 * 將程式庫管理移至快顯視窗。
 * 在篩選器旁新增POI計數。
 
-## 2019年8月6日
+## 2019 年 8 月 6 日
 
 此版本已進行下列更新：
 
@@ -129,7 +149,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
    舊API: `public static void stop();`
 
-   新API: `public static void stop (final boolean clearData);`
+   New API: `public static void stop (final boolean clearData);`
 
 * 更新API的使用 `getNearbyPointsOfInterest` ，以更有效率地處理錯誤案例。
 
@@ -193,9 +213,9 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 已修正「地標」UI中的下列問題：
 
-* 更新Places中的Solution Switcher，使其與Experience cloud的其他部分一致。
+* 更新Places中的Solution Switcher，使其與Experience Cloud的其他部分一致。
 * 修正在未進行排名變更的例項中儲存排名的問題。
-* 將UI中允許的最小半徑提高至10米。
+* 將UI中允許的最小半徑增加到10米。
 * 修正如果刪除欄位中的所有數字，半徑欄位會重設回20米的問題。
 
 ## 2019 年 5 月 17 日
@@ -209,7 +229,7 @@ source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
 
 **Android Places Monitor 1.0.0**
 
-Places Monitor for android的初始版本。
+Places Monitor for Android的初始版本。
 
 Places Monitor會管理作業系統層級的位置API，並直接與Places擴充功能通訊。 在安裝這兩個擴充功能後，客戶就可以在其應用程式中進行立即可用的區域監控。
 有關「Places Monitor（位置監視器）」的詳細資訊，請按一下這裡。
@@ -222,7 +242,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 * 引入getNearByPlaces的新API，其中包含errorCallback，並以errorCode呼叫，指出錯誤的原因。
 * Places擴充功能現在會將事件排入佇列，直到取得設定為止。
 * 新增對環境感知組態的支援。
-* 錯誤修正：更正了區域進入／退出事件的鍵
+* 錯誤修正： 更正了區域進入／退出事件的鍵
 * 儲存最後一個已知位置現在會正確遵守使用者的隱私權狀態
 
 
@@ -240,7 +260,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 
 iOS Places Monitor 1.0.0
 
-iOS版Places Monitor的初次發行。
+iOS版Places Monitor的初始發行。
 
 Places Monitor會管理作業系統層級的位置API，並直接與Places擴充功能通訊。 在安裝這兩個擴充功能後，客戶就可以在其應用程式中進行立即可用的區域監控。 有關Places Monitor的詳細資訊，請參 [閱Places Monitor擴展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
 
@@ -289,4 +309,4 @@ For more information about the Places extension, see [Places extension](/help/pl
 
 #### Analytics 整合
 
-Analytics擴充功能正在更新，當使用者在POI（被動呼叫）中時，會自動從Places service資料庫將位置上下文資料新增至所有傳出的Analytics呼叫。 此更新也可讓規則建立在POI登入或退出（作用中呼叫）處直接觸發Analytics追蹤呼叫。
+Analytics擴充功能正在更新，當使用者在POI（被動呼叫）中時，會自動從Places Service資料庫將位置上下文資料新增至所有傳出的Analytics呼叫。 此更新也可讓規則建立在POI登入或退出（作用中呼叫）處直接觸發Analytics追蹤呼叫。
