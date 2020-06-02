@@ -2,21 +2,25 @@
 product: Places Service
 audience: end-user
 user-guide-title: Places Service
+user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
 translation-type: tm+mt
-source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
+source-git-commit: 43b1eb0d384e2e75e444b737c0ab15798492d0a8
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 14%
 
 ---
 
 
-# Places服務 {#using}
+# Places Service {#using}
 
 + [地點服務概觀](home.md)
 + [發行說明](release-notes.md)
-+ [入門](getting-started.md)
++ [快速入門](getting-started.md)
 + [存取Places服務](places-gain-access.md)
 + Places Service UI {#poi-mgmt-ui}
    + [Places Service UI總覽](poi-mgmt-ui/poi-mgmt-ui-overview.md)
-   + [建立 POI](poi-mgmt-ui/create-a-poi-ui.md)
+   + [建立POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [管理先前建立的POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [搭配POI使用中繼資料的策略](poi-mgmt-ui/metadata-with-pois.md)
    + [大量上傳POI](poi-mgmt-ui/bulk-upload-pois.md)
@@ -27,7 +31,7 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
    + API使用 {#api-usage}
       + [API使用概觀](web-service-api/api-usage/api-usage-overview.md)
       + [標題和參數](web-service-api/api-usage/headers-and-parameters.md)
-      + Manage libraries {#manage-libraries}
+      + 管理程式庫 {#manage-libraries}
          + [管理程式庫概觀](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [建立程式庫](web-service-api/api-usage/manage-libraries/create-a-library.md)
          + [閱讀資料庫](web-service-api/api-usage/manage-libraries/read-a-library.md)
@@ -38,7 +42,7 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
          + [取得資料庫的排名](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
       + 管理地標 {#manage-pois}
          + [管理POI概觀](web-service-api/api-usage/manage-pois/manage-pois.md)
-         + [建立 POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
+         + [建立POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
          + [閱讀POI](web-service-api/api-usage/manage-pois/read-a-poi.md)
          + [更新POI](web-service-api/api-usage/manage-pois/update-a-poi.md)
          + [刪除POI](web-service-api/api-usage/manage-pois/delete-a-poi.md)
@@ -62,8 +66,8 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
       + [Places Monitor API參考](places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.md)
 + [將Places服務與您自己的監控解決方案搭配使用](using-your-own-monitor.md)
 + [不使用活動區域監控的地點服務](use-places-without-active-monitoring.md)
-+ 將Places service當做Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
-   + [將Places service當做Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
++ 將Places Service當做Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
+   + [將Places Service當做Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定義資料元素](use-places-launch-workflow/define-data-elements.md)
    + [建立登入與退出規則](use-places-launch-workflow/create-rule-places-property.md)
 + 搭配使用Places服務與其他Adobe解決方案 {#use-places-with-other-solutions}
@@ -82,6 +86,6 @@ source-git-commit: b0b48dcc7179e603ae403449a0f7c5441c987767
       + [應用程式內訊息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
       + [搭配Adobe Target使用Places服務](use-places-with-other-solutions/places-target/places-target.md)
-+ Testing and validation {#places-testing-validation}
++ 測試和驗證 {#places-testing-validation}
    + [測試和驗證Places服務](places-testing-validation/test-validate-places.md)
 + [常見問題集](places-faqs.md)
