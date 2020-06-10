@@ -2,7 +2,10 @@
 title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: 36ea8616aa05f5b825a2a4c791a00c5b3f332e9f
+source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 5%
 
 ---
 
@@ -16,13 +19,13 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
 1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴 **[!UICONTROL Places]** 展名，然後按一下 **[!UICONTROL Install]**。
 1. 選擇要在此屬性中使用的「置入」庫。 這些是您應用程式中可存取的資料庫。
-1. 按一下 **[!UICONTROL Save]**。
+1. 按一下「**[!UICONTROL Save]**」。
 
-   當您按一 **[!UICONTROL Save]**&#x200B;下，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，POI資料不會包含在程式庫的下載中，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
+   當您按一下 **[!UICONTROL Save]**&#x200B;時，Experience Platform SDK會在您選取的程式庫中，搜尋Places Services中的POI。 當您建立應用程式時，程式庫的下載中不會包含POI資料，但POI的位置子集會在執行時期下載至使用者裝置，並以使用者的GPS座標為基礎。
 
 1. 完成發佈程式以更新SDK組態。
 
-   如需有關在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
+   如需有關在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/publish/overview.html)。
 
 ### Configure the Places extension {#configure-places-extension}
 
@@ -30,7 +33,11 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 ## 將Places擴充功能新增至您的應用程式 {#add-places-to-app}
 
-您可以將Places擴充功能新增至Android和iOS應用程式。
+您可以將Places擴充功能新增至Android和iOS應用程式。 將「位置」新增至iOS或Android應用程式的步驟如下所示。 Cordova和React Native也可在此取得。 如需在使用其中一種平台進行開發時新增「地標」至您的應用程式，請參閱隨附的連結：
+
+**Cordova ACPPlakes**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+
+**反應原生ACPPlace**: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
 
 ### Android
 
@@ -61,7 +68,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您不使用Cocoapods，則可從Github的發行頁面手動加入Mobile Core和 [Places程式庫](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
+   或者，如果您不使用Cocoapods，則可從Github的發行頁面手動加入Mobile Core [和](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Places程式庫。
 
 1. 更新您的Cocoapod:
 
@@ -137,7 +144,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ### 修改「地點」會籍的上線時間 {#places-ttl}
 
-位置資料可能會很快過時，尤其是當裝置未收到背景位置更新時。
+位置資料可能會很快變成過時，尤其是當裝置未收到背景位置更新時。
 
 設定設定，以控制裝置上放置會籍資料的上線 `places.membershipttl` 時間。 傳入的值代表「置入」狀態對裝置維持有效的秒數。
 
@@ -224,5 +231,5 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 | 代碼 | 必填 | 說明 |
 | :--- | :--- | :--- |
 | `places.libraries` | 是 | 行動應用程式的Places擴充功能程式庫。 它會指定行動應用程式支援的程式庫ID和程式庫名稱。 |
-| `places.endpoint` | 是 | 預設的Places Query service端點，用於獲取有關庫和POI的資訊。 |
+| `places.endpoint` | 是 | 預設的Places Query Service端點，用於獲取有關庫和POI的資訊。 |
 | `places.membershipttl` | 無 | 預設值3600（一小時內的秒數）。 指出裝置的「置入」會籍資訊的有效期（以秒為單位）。 |
