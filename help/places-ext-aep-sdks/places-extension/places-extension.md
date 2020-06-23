@@ -2,9 +2,9 @@
 title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: 0a9a4a713e7e7a49495d11cf26da8981e91b8ed2
+source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '678'
 ht-degree: 5%
 
 ---
@@ -35,9 +35,9 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 您可以將Places擴充功能新增至Android和iOS應用程式。 將「位置」新增至iOS或Android應用程式的步驟如下所示。 Cordova和React Native也可在此取得。 如需在使用其中一種平台進行開發時新增「地標」至您的應用程式，請參閱隨附的連結：
 
-**Cordova ACPPlakes**: https://github.com/adobe/cordova-acpplaces/blob/master/README.md
+**[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
-**反應原生ACPPlace**: https://github.com/adobe/react-native-acpplaces/blob/master/README.md
+**[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
 
 ### Android
 
