@@ -2,9 +2,9 @@
 title: 發行說明
 description: Places服務的發行說明。
 translation-type: tm+mt
-source-git-commit: f5fa6005396e3c5b5b8eb92c7c920d2d0d974743
+source-git-commit: 3f986697179eb9c0af1d9b54daf67793a99b8491
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1503'
 ht-degree: 3%
 
 ---
@@ -12,7 +12,23 @@ ht-degree: 3%
 
 # 發行說明 {#release-notes}
 
-## 2020年5月6日
+## 2020 年 7 月 8 日
+
+* **Places and Places Monitor Extensions**
+
+   * 已為React Native應用程式新增Places和Places Monitor [擴充功能](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
+   * 已為 [Cordova應用程式新增「位置」和「位置」監控擴充功能](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * 如需詳細資訊，請參閱： [使用Places延伸功能](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+
+
+## 2020 年 5 月 12 日
+
+* **Places Service**
+
+   * 使用「匯入POI」按鈕，從CSV檔案大量匯入POI
+   * 選取多個POI並大量編輯或新增中繼資料值
+
+## 2020 年 5 月 6 日
 
 * **PlacesMonitor 2.2.1**
 
@@ -20,7 +36,7 @@ ht-degree: 3%
 
       * 改善的記錄功能
 
-## 2020年5月5日
+## 2020 年 5 月 5 日
 
 
 * **PlacesMonitor 2.1.3**
