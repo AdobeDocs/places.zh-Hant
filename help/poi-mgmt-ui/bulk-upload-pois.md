@@ -2,12 +2,25 @@
 title: 大量上傳POI
 description: 本節提供如何大量上傳POI的相關資訊。
 translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 0%
 
 ---
 
 
 # 大量上傳POI {#bulk-upload-pois}
+
+Places Service **中的** 「匯入POI」按鈕可用來使用CSV檔案大量上傳新的POI。 提供範例試算表範本，以顯示需要哪些資料欄，以及如何新增可選的自訂中繼資料。
+
+![批量導入螢幕](/help/assets/Bulk-import.png)
+
+顯示大量匯入和大量編輯程式的影片如下：
+
+>[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+
+## Python API指令碼
 
 已建立一組Python指令碼，以利使用Web服務API，將POI從。csv檔案批次匯入POI資料庫。 這些指令碼可從此開放原始碼 [git repo下載](https://github.com/adobe/places-scripts)。
 
@@ -72,7 +85,7 @@ Places Service UI中使用下列欄的值：
 1. 從Git repo下載 [檔案](https://github.com/adobe/places-scripts) ，到您的本機目錄。
 1. 在文字編輯器中，開啟 `config.py` 檔案並完成下列工作：
 
-   a.將下列變數值編輯為字串：
+   a. 將下列變數值編輯為字串：
 
    * `csv_file_path`
 
@@ -84,15 +97,15 @@ Places Service UI中使用下列欄的值：
 
    * `org_id`
 
-      要匯入POI的Experience cloud組織ID。 如需如何取得組織ID的詳細資訊，請參閱「整合概 *述」中的使用者存取*[必要條件和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
+      要匯入POI的Experience Cloud組織ID。 如需如何取得組織ID的詳細資訊，請參閱「整合概 *述」中的使用者存取*[必要條件和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `api_key`
 
       這是您從Adobe I/O Places整合取得的Places REST API金鑰。 如需如何取得API金鑰的詳細資訊，請參閱「整合概 *述」中的使用者存取*[必要條件和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
-   b.儲存您的變更。
+   b. 儲存您的變更。
 
 1. 在終端窗口中，導航到該 `…/places-scripts/import/` 目錄。
-1. 輸 `python ./places_import.py` 入並按 **[!UICONTROL enter]**(**[!UICONTROL return]**)鍵。
+1. 輸 `python ./places_import.py` 入並按 **[!UICONTROL enter]** (**[!UICONTROL return]**)鍵。
 
 
 ## 預先匯入CSV檢查
