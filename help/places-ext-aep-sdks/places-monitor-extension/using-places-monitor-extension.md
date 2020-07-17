@@ -2,7 +2,10 @@
 title: 使用Places Monitor擴充功能
 description: 有關如何安裝、配置和使用Places Monitor擴展的資訊。
 translation-type: tm+mt
-source-git-commit: ac1d410a676557064d5390f8392f402541754478
+source-git-commit: 7fdaace59886225b7fd9b0eba8cc6c2a139fa2d7
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 6%
 
 ---
 
@@ -13,20 +16,28 @@ source-git-commit: ac1d410a676557064d5390f8392f402541754478
 
 ## 在Experience Platform Launch中安裝Places Monitor擴充功能
 
-1. In Experience Platform Launch, click the **[!UICONTROL Extensions]**tab.
-1. 在標籤 **[!UICONTROL Catalog]**上，找到擴充**[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
-1. 按一下 **[!UICONTROL Save]**。
+1. In Experience Platform Launch, click the **[!UICONTROL Extensions]** tab.
+1. 在標籤 **[!UICONTROL Catalog]** 上，找到擴充 **[!UICONTROL Places Monitor]** 功能，然後按一下 **安裝**。
+1. 按一下「**[!UICONTROL Save]**」。
 1. 依照發佈程式更新SDK組態。
 
 ### 配置Places Monitor擴展 {#configure-places-monitor-extension}
 
-Places Monitor擴展沒有配置任務。
+Places Monitor副檔名沒有配置任務。
 
 ![配置Places Monitor](/help/assets/configure_places_monitor.png)‌
 
 ## 將Places Monitor擴充功能新增至您的應用程式 {#add-monitor-extension-to-app}
 
-您必須將Places Monitor擴充功能新增至Android或iOS應用程式。
+以下說明如何將Places Monitor擴充功能新增至Android或iOS應用程式。
+
+Places Monitor擴充功能的其他平台支援包括：
+**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+
+**[React Native Places Monitor](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
+
+**[顫振位置監視器](https://github.com/adobe/flutter_acpplaces_monitor/blob/master/README.md)**
+
 
 ### Android
 
@@ -55,7 +66,7 @@ Places Monitor擴展沒有配置任務。
 
 在iOS中，完成下列步驟：
 
-1. 透過Cocoapods新增程式庫至您的專 `Podfile` 案 `pod 'ACPPlacesMonitor'`。
+1. Add the library to your project via your Cocoapods `Podfile` by adding `pod 'ACPPlacesMonitor'`.
 1. 匯入「位置」和「位置」監控程式庫：
 
 #### Objective-C
@@ -172,7 +183,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 ```
 
 
-## 在背景啟用位置更新 {#enable-location-updates-background}
+## 在背景啟用位置更新  {#enable-location-updates-background}
 
 iOS支援將位置事件傳送至已暫停或不再執行的應用程式。 若要在背景接收Places Monitor擴充功能的位置更新，請在中設定您應用程式的位置更新功能 `Xcode.background-location-updates`。
 
@@ -182,7 +193,7 @@ iOS支援將位置事件傳送至已暫停或不再執行的應用程式。 若�
 
 您的應用程式檔案中必須包含下列金 `Info.plist` 鑰：
 
-* `NSLocationWhenInUseUsageDescription` -文字應說明應用程式在前景中執行時要求存取使用者位置資訊的原因。
+* `NSLocationWhenInUseUsageDescription` -文字應說明應用程式在前景執行時，要求存取使用者位置資訊的原因。
 * `NSLocationAlwaysAndWhenInUseUsageDescription` -文字應說明應用程式為何會隨時要求存取使用者的位置資訊。
 
 >[!TIP]
