@@ -2,9 +2,9 @@
 title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 translation-type: tm+mt
-source-git-commit: 0ac139fce666540b36a8c82fe4c05974e12e987f
+source-git-commit: a7dddb78e1e00a0bde01ea668334932759a9dae8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '694'
 ht-degree: 5%
 
 ---
@@ -33,11 +33,16 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 ## 將Places擴充功能新增至您的應用程式 {#add-places-to-app}
 
-您可以將Places擴充功能新增至Android和iOS應用程式。 將「位置」新增至iOS或Android應用程式的步驟如下所示。 Cordova和React Native也可在此取得。 如需在使用其中一種平台進行開發時新增「地標」至您的應用程式，請參閱隨附的連結：
+您可以將Places擴充功能新增至Android和iOS應用程式。 將「位置」新增至iOS或Android應用程式的步驟如下所示。 下列平台也提供Places擴充功能。 如需在使用其中一種平台進行開發時新增「地標」至您的應用程式，請參閱隨附的連結：
 
 **[Cordova Places Plugin](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
 **[React Native Places Plugin](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+
+**[Fluggr Places Plugin](https://github.com/adobe/flutter-acpplaces_monitor)**
+
+**[Xamarin Places Plugin](https://github.com/adobe/xamarin-acpcore)**
+
 
 ### Android
 
@@ -144,7 +149,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ### 修改「地點」會籍的上線時間 {#places-ttl}
 
-位置資料可能會很快變成過時，尤其是當裝置未收到背景位置更新時。
+位置資料可能會很快過時，尤其是當裝置未收到背景位置更新時。
 
 設定設定，以控制裝置上放置會籍資料的上線 `places.membershipttl` 時間。 傳入的值代表「置入」狀態對裝置維持有效的秒數。
 
