@@ -2,20 +2,23 @@
 title: '存取Places服務 '
 description: 本節提供如何將使用者新增至Places Service和Experience Platform Launch，讓使用者存取Places Service的相關資訊。
 translation-type: tm+mt
-source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+source-git-commit: 26538602a73e806a4822705c7a3aa44d76351030
+workflow-type: tm+mt
+source-wordcount: '1079'
+ht-degree: 7%
 
 ---
 
 # 存取Places服務 {#adding-user-launch-places}
 
-您可從 [Adobe Experience cloud首頁的快速存取功能表存取「放置服務」](https://experience.adobe.com)。
+您可從 [Adobe Experience Cloud首頁的快速存取功能表存取「放置服務」](https://experience.adobe.com)。
 如果您的使用者ID有存取權，您會看到「Places Service」圖示，如下所示：
 
-![快速存取選單](/help/assets/quick-access.png)
+![快速存取選單](/help/assets/quickaccess.png)
 
-您也可以從Adobe Experience platform功能表存取Places服務：
+您也可以從Adobe Experience Platform功能表存取Places服務：
 
-![體驗平台功能表](/help/assets/exp-platform-menu-sm.png)
+![體驗平台功能表](/help/assets/solutionaccessmenu.png)
 
 如果您在其中任一功能表中都未看到「置入服務」，請連絡您組織中的管理員，將您的使用者ID新增至「管理控制台」中的「置入核心服務」。
 
@@ -26,7 +29,7 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 * 所有產權：
    * 開發
    * 核准
-   * Publish
+   * 發佈
    * 管理擴充功能
    * 管理環境
 * 管理公司權限下的屬性權限
@@ -39,16 +42,16 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 ### 1.確認已布建Places Service and Experience Platform Launch
 
-1. 登入您的Experience cloud組織。
-1. 在右上方，按一下Experience cloud殼層切換器。
+1. 登入您的Experience Cloud組織。
+1. 在右上方，按一下Experience Cloud殼層切換器。
 
    ![殼切換器](/help/assets/places_shell_switcher1.png)
 
-1. 在「**[!UICONTROL Platform]**」下，按一下**[!UICONTROL Administration]**「」。
+1. 在「**[!UICONTROL Platform]**」下，按一下&#x200B;**[!UICONTROL Administration]**「」。
 
    如果您未在清單中 **看到** 「管理」，表示您不是管理員。 您必須連絡組織管理員才能完成此程式。
 
-1. 在「Experience cloud管理」頁面中，按一 **[!UICONTROL Admin Console]**下卡片上的**[!UICONTROL Take me there]**。
+1. 在「Experience Cloud管理」頁面中，按一 **[!UICONTROL Admin Console]** 下卡片上的 **[!UICONTROL Take me there]**。
 
 1. 在「管理控制台」中，如果您有權存取數個組織，請確認在頁面的右上方選取了正確的組織。
 
@@ -58,7 +61,7 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
    >
    >如果您沒有組織的存取權，表示您沒有該組織的管理員存取權。
 
-1. 驗證是否顯示 **[!UICONTROL Adobe Experience Platform Launch]**和**[!UICONTROL Places Core Services]** 的卡。
+1. 驗證是否顯示 **[!UICONTROL Adobe Experience Platform Launch]** 和 **[!UICONTROL Places Core Services]** 的卡。
 
    ![](/help/assets/places_provisioned1.png)
 
@@ -82,19 +85,19 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
    a.按一下預設配置檔案的名稱。
 
-   b.按一下標 **[!UICONTROL Permissions]**簽。
+   b. Click the **[!UICONTROL Permissions]** tab.
 
-   c.按一 **[!UICONTROL Edit]**下旁邊**[!UICONTROL Property Rights]**。
+   c.按一 **[!UICONTROL Edit]** 下旁邊 **[!UICONTROL Property Rights]**。
 
    d.在左窗格中，按一下 **[!UICONTROL + Add all]**。
 
    此步驟會將所有可用權限移至包含的權限清單。
 
-   e.按一 **[!UICONTROL Company Rights]**下。
+   e.按一 **[!UICONTROL Company Rights]**&#x200B;下。
 
    f.在左窗格中，按一下 **[!UICONTROL + Manage Properties]**。
 
-   g.按一 **[!UICONTROL Save]**下。
+   g.按一 **[!UICONTROL Save]**&#x200B;下。
 
 >[!IMPORTANT]
 >
@@ -114,45 +117,48 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
    a.在菜單欄中，按一下 **[!UICONTROL Overview]**。
 
-   b.在卡 **[!UICONTROL Adobe Experience Platform Launch]**上驗證以下內容：
+   b.在卡 **[!UICONTROL Adobe Experience Platform Launch]** 上驗證以下內容：
 
    * 卡片底部會顯示兩個點。
    * 左邊的圓點是黑色的。
 
       如果右邊的點是黑色，則只能新增開發人員。 若要新增使用者，請按一下左側的點。
-   c.按一 **[!UICONTROL + Add Users]**下。
+   c.按一 **[!UICONTROL + Add Users]**&#x200B;下。
 
    d.輸入使用者的Adobe ID。
 
    e.完成下列步驟之一：
 
-   * 如果您要新增使用者，請按一 **[!UICONTROL New user]**下，然後輸入使用者的名字和姓氏。
+   * 如果您要新增使用者，請按一 **[!UICONTROL New user]**&#x200B;下，然後輸入使用者的名字和姓氏。
    * 如果您要新增現有使用者，請按一下所顯示的使用者名稱。
-   f.在下拉 **[!UICONTROL Please select a profile for this product]**式清單中，選取您先前編輯的描述檔。
 
-   g.按一 **[!UICONTROL Save]**下。
+   f.在下拉 **[!UICONTROL Please select a profile for this product]** 式清單中，選取您先前編輯的描述檔。
+
+   g.按一 **[!UICONTROL Save]**&#x200B;下。
 
 1. 新增使用者至 **[!UICONTROL Places Core Services]**。
 
    >[!TIP]
    >
-   >目前，所有Places service使用者都有相同的權限，因此您不需要編輯權限。
+   >目前，所有Places Service使用者都有相同的權限，因此您不需要編輯權限。
 
-   a.在卡 **[!UICONTROL Places Core Services]**上驗證以下內容：
+   a.在卡 **[!UICONTROL Places Core Services]** 上驗證以下內容：
 
    * 卡片底部會顯示兩個點。
    * 左邊的圓點是黑色的。
-   b.按一 **[!UICONTROL + Assign Users]**下。
+
+   b.按一 **[!UICONTROL + Assign Users]**&#x200B;下。
 
    c.輸入使用者的Adobe ID。
 
    d.完成下列步驟之一：
 
-   * 如果您要新增使用者，請按一 **[!UICONTROL New user]**下，然後輸入使用者的名字和姓氏。
+   * 如果您要新增使用者，請按一 **[!UICONTROL New user]**&#x200B;下，然後輸入使用者的名字和姓氏。
    * 如果您要新增現有使用者，請按一下所顯示的使用者名稱。
-   e.在下拉 **[!UICONTROL Please select a profile for this product]**式清單中，選取「位置」描述檔。
 
-   f.按一 **[!UICONTROL Save]**下。
+   e.在下拉 **[!UICONTROL Please select a profile for this product]** 式清單中，選取「位置」描述檔。
+
+   f.按一 **[!UICONTROL Save]**&#x200B;下。
 
 ### 新增開發人員
 
@@ -160,21 +166,21 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
 若要新增開發人員：
 
-1. 在卡 **[!UICONTROL Places Core Services]**上驗證以下內容：
+1. 在卡 **[!UICONTROL Places Core Services]** 上驗證以下內容：
 
    * 卡片底部會顯示兩個點。
-   * 按一下右側的點， **[!UICONTROL Assign Developers]**卡片底部就會出現。
+   * 按一下右側的點， **[!UICONTROL Assign Developers]** 卡片底部便會出現。
 
-1. 按一下 **[!UICONTROL + Assign Developers]**。
+1. 按一下「**[!UICONTROL + Assign Developers]**」。
 
 1. 輸入使用者的 Adobe ID。
 
 1. 完成下列其中一個步驟：
 
-   * 如果您要新增使用者，請按一 **[!UICONTROL New user]**下並輸入使用者的名字和姓氏。
+   * 如果您要新增使用者，請按一 **[!UICONTROL New user]** 下並輸入使用者的名字和姓氏。
    * 如果您要新增現有使用者，請按一下所顯示的使用者名稱。
 
-1. 在下拉 **[!UICONTROL Please select a profile for this product]**式清單中，選取「放置服務」描述檔。
+1. 在下拉 **[!UICONTROL Please select a profile for this product]** 式清單中，選取「放置服務」描述檔。
 
 1. 按一下&#x200B;**「儲存」**。
 
