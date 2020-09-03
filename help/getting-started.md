@@ -1,17 +1,24 @@
 ---
-title: 入門
-description: Places Service快速入門。
+title: 快速入門
+description: 快速入門 搭配Places服務。
 translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+source-git-commit: 30650c1e11a52f6bbc118d374b8ff6050b5d80ce
+workflow-type: tm+mt
+source-wordcount: '180'
+ht-degree: 4%
 
 ---
 
 
-# 入門 {#getting-started}
+# 快速入門 {#getting-started}
 
-以下是取得Places services總覽的實用影片：
+以下是取得Places Services總覽的實用影片：
 
->[!VIDEO](https://www.youtube.com/watch?v=aV6i_ayxWCw)
+<!--
+Test of different youtube link for exl
+-->
+
+>[!VIDEO](https://youtu.be/aV6i_ayxWCw)
 
 ## 使用Places服務
 
@@ -19,7 +26,7 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ### 1.確保您的使用者已布建為使用Places服務
 
-所有Experience cloud組織都可使用Places service產品內容。
+所有Experience Cloud組織都可使用Places Service產品內容。
 
 * 請確定您是在「管理控制台」的「放置服務」和「體驗平台啟動」產品內容下列為使用者。
 
@@ -34,7 +41,7 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
    如需詳細資訊，請參 [閱Places Service總覽](/help/poi-mgmt-ui/poi-mgmt-ui-overview.md)。
 
-* 使用Places web服務的API。
+* 使用Places Web服務的API。
 
    如需詳細資訊，請參 [閱網站服務API](/help/web-service-api/places-web-services.md)。
 
