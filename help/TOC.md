@@ -1,13 +1,13 @@
 ---
 product: Places Service
 audience: end-user
-user-guide-title: 地點服務指南
-user-guide-description: Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context.
+user-guide-title: Places Service 指南
+user-guide-description: Places Service 是地理位置服務，可讓具備位置感知功能的行動應用程式了解位置內容。
 translation-type: tm+mt
 source-git-commit: f9215fa3871d91166ad109a0708105f79536213c
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 13%
+source-wordcount: '316'
+ht-degree: 19%
 
 ---
 
