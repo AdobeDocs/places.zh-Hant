@@ -2,9 +2,9 @@
 title: 大量上傳POI
 description: 本節提供如何大量上傳POI的相關資訊。
 translation-type: tm+mt
-source-git-commit: 1ffc1f4237dfb872614a4bffd43d3fdaefc62fa9
+source-git-commit: 462df20bb351795dc72009cc18d390cb45e262a8
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '859'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,11 @@ Places Service **中的** 「匯入POI」按鈕可用來使用CSV檔案大量上
 
 ![批量導入螢幕](/help/assets/Bulk-import.png)
 
-顯示大量匯入和大量編輯程式的影片如下：
+請參閱此影片，其中顯示大量匯入和大量編輯的程式：
 
->[!VIDEO](https://www.youtube.com/watch?v=75qVtirsXhg)
+<!--I changed this embed to a link to pass validation. We should not link to youtube videos, so please upload this to MCP-->
+
+[放置服務批量導入和編輯POI](https://www.youtube.com/watch?v=75qVtirsXhg)
 
 ## Python API指令碼
 
@@ -85,7 +87,7 @@ Places Service UI中使用下列欄的值：
 1. 從Git repo下載 [檔案](https://github.com/adobe/places-scripts) ，到您的本機目錄。
 1. 在文字編輯器中，開啟 `config.py` 檔案並完成下列工作：
 
-   a. 將下列變數值編輯為字串：
+   a.將下列變數值編輯為字串：
 
    * `csv_file_path`
 
@@ -93,7 +95,7 @@ Places Service UI中使用下列欄的值：
 
    * `access_code`
 
-      這是您從呼叫Adobe IMS所取得的存取代碼。 如需如何取得此存取程式碼的詳細資訊，請參閱「整合概 *述」中的「使用者存取的必要條件* 」 [和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
+      這是您從呼叫Adobe IMS所取得的存取代碼。 如需如何取得此存取程式碼的詳細資訊，請參閱「整合概 *述」中的「使用者存取*[的必要條件」和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
 
    * `org_id`
 
@@ -102,7 +104,7 @@ Places Service UI中使用下列欄的值：
    * `api_key`
 
       這是您從Adobe I/O Places整合取得的Places REST API金鑰。 如需如何取得API金鑰的詳細資訊，請參閱「整合概 *述」中的使用者存取*[必要條件和必要條件](/help/web-service-api/adobe-i-o-integration.md)。
-   b. 儲存您的變更。
+   b.儲存您的變更。
 
 1. 在終端窗口中，導航到該 `…/places-scripts/import/` 目錄。
 1. 輸 `python ./places_import.py` 入並按 **[!UICONTROL enter]** (**[!UICONTROL return]**)鍵。
