@@ -1,9 +1,16 @@
 ---
-source-git-commit: acbe79b1a66cb8a439f3cb223d3006128aaca457
+source-git-commit: ca711e5f9d05ff01ab87a39377b09fad258fbb90
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '517'
+ht-degree: 82%
 
 ---
 # 貢獻文章
+
+| EXL-PR | EXL | 預覽 | 啟動 | 已發佈 | 說明 |
+|--- |--- |--- |--- |--- |--- |
+| [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_pr-exl/lastBuild/) | [![建置狀態](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/places.en_exl/lastBuild/lastBuild) | [預覽URL](https://experienceleague.corp.adobe.com/docs/places/using/home.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [即時URL](https://experienceleague.adobe.com/docs/places/using/home.html?lang=en) | [Authoring 指南](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
 
 歡迎說明文件編撰團隊以外的社群成員和 Adobe 員工貢獻相關內容。
 
@@ -15,7 +22,7 @@ translation-type: tm+mt
 
 請參閱 [Adobe Docs 貢獻者指南](https://docs.adobe.com/help/en/contributor/contributor-guide/introduction.html)。
 
-貢獻方式取決於您的身分和您要貢獻的變更類型:
+貢獻方式取決於您的身分和您要貢獻的變更類型：
 
 ### 微幅變更或請求
 
@@ -47,14 +54,14 @@ If you submit a pull request with significant changes to documentation and code 
 
 ## 如何使用 Markdown 設定主題格式
 
-此存放庫中的所有文章皆使用 GitHub 精選的 Markdown 語言撰寫而成。若不熟悉 Markdown，請參閱:
+此存放庫中的所有文章皆使用 GitHub 精選的 Markdown 語言撰寫而成。若不熟悉 Markdown，請參閱：
 
 * [Markdown 基本介紹](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [列印版 Markdown 速查表](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## 標籤
 
-在公開存放庫中，系統會為提取請求指派自動化標籤，協助我們管理提取請求工作流程，同時協助您瞭解提取請求的最新狀況:
+在公開存放庫中，系統會為提取請求指派自動化標籤，協助我們管理提取請求工作流程，同時協助您瞭解提取請求的最新狀況：
 
-* **變更已傳送給作者**: 作者已收到處理提取請求的通知。
-* **準備合併**: 一切準備就緒，可供提取請求審核團隊審核。
+* **變更已傳送給作者**：作者已收到處理提取請求的通知。
+* **準備合併**：一切準備就緒，可供提取請求審核團隊審核。
