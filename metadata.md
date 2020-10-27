@@ -1,16 +1,21 @@
 ---
 cloud: experience-cloud
 product: adobe experience platform
+solution: Experience Platform, Data Collection
+type: Documentation
 solution-title: 學習與支援
 solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud.html
 getting-started-title: 快速入門
 getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
 tutorials-title: 教學課程
 tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
-git-repo: https://git.corp.adobe.com/AdobeDocs/places.en
+git-repo: https://git.corp.adobe.com/AdobeDocs/places.zh-Hant
 index: true
 translation-type: tm+mt
-source-git-commit: 671f807f4ecf23271b1c66d3ac021788f1fba4f3
+source-git-commit: 0f3c43c8eb62fc620a71096c92a673bcf8407f94
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +26,7 @@ source-git-commit: 671f807f4ecf23271b1c66d3ac021788f1fba4f3
 
 metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中的使用手冊 TOC.md 檔案。如果您想變更任何使用手冊的 metadata.md 內容，可以在任何 TOC.md 檔案中進行更改。
 
-| 中繼資料 | 作用 |
+| 中繼資料您應留意但不影響分數的問題。 | 作用 |
 |--- |--- |
 | solution-title | 在文章標題中作為連結使用 |
 | solution-hub-url | 開啟 helpx 中樞頁面 |
