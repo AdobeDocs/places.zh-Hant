@@ -3,6 +3,9 @@ title: Places Monitor API參考
 description: Places Monitor的API清單。
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+workflow-type: tm+mt
+source-wordcount: '1090'
+ht-degree: 2%
 
 ---
 
