@@ -18,7 +18,7 @@ ht-degree: 3%
 
    * 已為React Native應用程式新增Places和Places Monitor [擴充功能](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
    * 已為 [Cordova應用程式新增「位置」和「位置」監控擴充功能](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
-   * 如需詳細資訊，請參閱： [使用Places延伸功能](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
+   * 如需詳細資訊，請參閱： [使用Places延伸功能](https://docs.adobe.com/content/help/zh-Hant/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 2020 年 5 月 12 日
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ## 2020 年 5 月 6 日
 
-* **PlacesMonitor 2.2.1**
+* **PlacesMonitor 2.1.1**
 
    * **Android**
 
@@ -64,7 +64,7 @@ ht-degree: 3%
 
    * **Android**
 
-      * 呼叫新的Places API，以在應用程式啟動時以及在應用程式執行時授權變更時收集位置授權狀態。
+      * 呼叫新的Places API，以收集應用程式啟動時和應用程式執行時授權變更的位置授權狀態。
       * 已新增setRequestLocationPermission API和已過時的setLocationPermission API。
 
 ## 2020 年 1 月 9 日
@@ -106,9 +106,9 @@ ht-degree: 3%
    * **Android**
 
       * 監視器現在會辨識Android裝置的啟動，並視需要根據裝置的目前位置，在作業系統中重新註冊地理柵欄。
-      * 修正有時候會捨棄登入／退出事件的競賽條件。
+      * 修正有時會導致登入／退出事件被捨棄的競賽條件。
 
-## 2019 年 10 月 9 日
+## 2019年10月9日
 
 * **PlacesMonitor 2.1.0**
 
@@ -149,7 +149,7 @@ ht-degree: 3%
 
 此版本已進行下列更新：
 
-### Monitor Launch Extension 2.0.0
+### 螢幕啟動擴充功能2.0.0
 
 * 已更新Places Monitor 2.0的Android和iOS安裝指示。
 
@@ -231,7 +231,7 @@ ht-degree: 3%
 
 * 更新Places中的Solution Switcher，使其與Experience Cloud的其他部分一致。
 * 修正在未進行排名變更的例項中儲存排名的問題。
-* 將UI中允許的最小半徑增加到10米。
+* 將UI中允許的最小半徑提高至10米。
 * 修正如果刪除欄位中的所有數字，半徑欄位會重設回20米的問題。
 
 ## 2019 年 5 月 17 日
@@ -258,7 +258,7 @@ Places Monitor會管理作業系統層級的位置API，並直接與Places擴充
 * 引入getNearByPlaces的新API，其中包含errorCallback，並以errorCode呼叫，指出錯誤的原因。
 * Places擴充功能現在會將事件排入佇列，直到取得設定為止。
 * 新增對環境感知組態的支援。
-* 錯誤修正： 更正了區域進入／退出事件的鍵
+* 錯誤修正：更正了區域進入／退出事件的鍵
 * 儲存最後一個已知位置現在會正確遵守使用者的隱私權狀態
 
 
