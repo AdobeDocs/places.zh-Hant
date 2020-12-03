@@ -23,7 +23,7 @@ ht-degree: 2%
 | 步驟 ： | 說明 | 預期結果 |
 |--- |--- |--- |
 | 1 | 確認已為Android輸入正確的資訊清單金鑰，以授與追蹤位置的存取權。 如需詳細資訊，請參 [閱新增資訊清單權限](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.html#add-permissions-to-the-manifest)。 | 已確認 |
-| 1a | 確認iOS中已設定位置更新。 此外，請確定您已在iOS中設定適當的plist金鑰，以要求使用者追蹤位置的權限。 如需詳細資訊，請 [參閱在背景啟用位置更新。](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.html#enable-location-updates-background) | 已確認 |
+| 1a | 確認iOS中已設定位置更新。 此外，請確定您在iOS中已設定適當的plist金鑰，以要求使用者追蹤位置的權限。 如需詳細資訊，請 [參閱在背景啟用位置更新。](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/using-places-monitor-extension.html#enable-location-updates-background) | 已確認 |
 | 2 | 確認為iOS設定了哪個監控模式。 連續模式允許更高的準確性和持久性，同時也允許更大的耗電量。 如需詳細資訊，請參 [閱監視模式（僅限iOS）。](https://docs.adobe.com/content/help/en/places/using/places-ext-aep-sdks/places-monitor-extension/places-monitor-api-reference.html#monitoring-mode-ios-only) | 重大變更或持續 |
 | 3 | 如果使用多個POI程式庫，請確認已在Experience Platform Launch的Places擴充功能中選取了適當的程式庫。 | 已確認 |
 | 4 | 確認最新版的Mobile Core和Places/Places Monitor擴充功能已透過Gradle或CocoaPods與應用程式搭售。 | 已確認——如需最近更新的詳細資訊，請參閱版 [本說明。](/help/release-notes.md) |
