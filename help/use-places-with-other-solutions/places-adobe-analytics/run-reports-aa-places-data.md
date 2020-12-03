@@ -3,6 +3,9 @@ title: 新增位置內容至Analytics請求
 description: 本節提供如何新增位置內容至Analytics請求的相關資訊。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 1%
 
 ---
 
@@ -13,15 +16,15 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 >
 >本檔案假設您已在應用程式中實施Places服務。 如需實作Places服務的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places service傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，並將您的Places service資料附加至所有Adobe Analytics事件。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
+在Places Service傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，並將您的Places Service資料附加至所有Adobe Analytics事件。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
 
 ## 1.建立規則
 
-1. 在標籤 **[!UICONTROL Rules]**上，按一下**[!UICONTROL Create New Rule]**。
+1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
 
    請記住以下資訊：
-   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]**按鈕就會位於畫面中間。
-   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]**則按鈕會位於畫面右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
 
 ## 2.選擇事件
 
@@ -29,11 +32,11 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
    在此範例中，規則為命名 **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**。
 
-1. 在區段 **[!UICONTROL Events]**下，按一下**[!UICONTROL Add]**。
+1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 
-1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Track Action]**。
+1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Track Action]**。
 
 現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有呼叫為 `TrackAction` 基礎。 設定事件後，按一下 **[!UICONTROL Keep Changes]**。
 
@@ -48,29 +51,29 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 在此範例中，會建立條件，讓規則僅針對AT&amp;T客戶觸發。
 
-1. 在區段 **[!UICONTROL Conditions]**下，按一下**[!UICONTROL Add]**。
+1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
 
-1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Condition Type]**式清單中，選取**[!UICONTROL Carrier Name]**。
+1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Carrier Name]**。
 
-1. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]**。
+1. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]** 。
 
-1. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下「**[!UICONTROL Keep Changes]**」。
 
 ![&quot;建立條件&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
 ## 4.定義動作
 
-1. 在區段 **[!UICONTROL Actions]**下，按一下**[!UICONTROL Add]**。
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
 
-1. 從下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Mobile Core]**。
+1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 
-1. 從下拉 **[!UICONTROL Action Type]**式清單中，選取**[!UICONTROL Attach Data]**。
+1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
 
-1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]**輸入要新增至此事件的資料。
+1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
 
-1. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下「**[!UICONTROL Keep Changes]**」。
 
 在右窗格中，您可以新增自由格式的JSON裝載，將資料新增至SDK事件，然後監聽此事件的副檔名才能聽到該事件。 在此範例中，有些上下文資料會在Analytics擴充功能處理前新增至此事件。 新增的上下文資料現在會出現在傳出的Analytics點擊上。
 
