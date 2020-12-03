@@ -1,8 +1,11 @@
 ---
-title: 搭配使用Places service與其他Adobe解決方案
+title: 搭配使用Places Service與其他Adobe解決方案
 description: 本節將說明如何搭配其他Adobe解決方案使用Places Service。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '103'
+ht-degree: 0%
 
 ---
 
