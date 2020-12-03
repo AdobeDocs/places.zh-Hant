@@ -3,6 +3,9 @@ title: 不使用活動區域監控的地點服務
 description: 本節提供如何使用Places Service而不進行作用中地區監控的資訊。
 translation-type: tm+mt
 source-git-commit: 5846577f10eb1d570465ad7f888feba6dd958ec9
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 1%
 
 ---
 
@@ -136,7 +139,7 @@ API傳回的清單 `getNearbyPointsOfInterest` 包含自 [訂物件](places-ext-
 
 ### Android
 
-下列程式碼範例顯示回呼中提供之結果的處 `getNearbyPointsOfInterest`理方式 `List<PlacesPOI>`:
+下列程式碼範例顯示回呼中提供結果的處 `getNearbyPointsOfInterest`理方式 `List<PlacesPOI>`:
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
