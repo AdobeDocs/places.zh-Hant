@@ -1,15 +1,18 @@
 ---
-title: Places服務
+title: Places Service
 description: '「地標服務」是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
 translation-type: tm+mt
 source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 10%
 
 ---
 
 
-# Places服務 {#home}
+# Places Service {#home}
 
-![&quot;地點服務&quot;](/help/assets/places-service-header.png)
+![&quot;Places Service&quot;](/help/assets/places-service-header.png)
 
 位置是瞭解行動使用者並與之互動的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。
 
@@ -17,7 +20,7 @@ Places Service（先前稱為Adobe Experience Platform Location Service）是地
 
 Places Service可讓您達成下列目標：
 
-* 建立並管理可與其他Adobe Experience cloud解決方案搭配運用的POI資料庫。
+* 建立並管理可與其他Adobe Experience Cloud解決方案搭配運用的POI資料庫。
 * 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
 * 在地圖上視覺化POI，以輕鬆瞭解空間內容並新增／編輯中繼資料屬性。
 * 在Adobe Experience Platform Launch中設定SDK，以定義您的位置觸發規則和中繼資料條件。
@@ -86,6 +89,6 @@ Places Service包含下列元件：
 
    如需詳細資訊，請參 [閱尋找組織ID](https://forums.adobe.com/thread/2339895)。
 
-* **Experience Cloud ID服務提供通用、永續性的ID** ，可識別Experience cloud中所有解決方案的訪客。
+* **Experience Cloud ID服務提供通用、永續性的ID** ，可識別Experience Cloud中所有解決方案的訪客。
 
-   For more information, see [Overview](https://docs.adobe.com/content/help/en/id-service/using/intro/overview.html).
+   如需詳細資訊，請參閱[概覽](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/overview.html)。
