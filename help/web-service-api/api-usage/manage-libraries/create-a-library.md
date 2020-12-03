@@ -3,6 +3,9 @@ title: 建立程式庫
 description: 使用Places REST API建立資料庫。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '48'
+ht-degree: 18%
 
 ---
 
@@ -23,7 +26,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/libraries
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## 內文
+## 身體
 
 ```text
 {"name": "<LIBRARY_NAME>"}
