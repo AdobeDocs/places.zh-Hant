@@ -3,6 +3,9 @@ title: 搭配Adobe Analytics使用Places服務
 description: 本節提供如何搭配Adobe Analytics使用Places Service的相關資訊。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '60'
+ht-degree: 0%
 
 ---
 
