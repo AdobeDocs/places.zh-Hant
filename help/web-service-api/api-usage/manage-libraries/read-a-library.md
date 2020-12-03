@@ -3,6 +3,9 @@ title: 閱讀資料庫
 description: 使用Places REST API讀取資料庫。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '45'
+ht-degree: 6%
 
 ---
 
