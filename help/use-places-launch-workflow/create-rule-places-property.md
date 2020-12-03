@@ -3,6 +3,9 @@ title: 為Places服務屬性建立規則
 description: 'Places SDK會追蹤目前位置、監視目前位置周圍已設定的POI，並追蹤這些POI的登入與退出事件。 '
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '866'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +36,7 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 Places SDK會維持下列狀態：
 
 * 目前的POI，指您的客戶目前所在的POI。
-* 上次退出POI，這是指客戶退出的最近POI。
+* 上次退出POI，這是指您的客戶退出的最近POI。
 * 上次輸入的POI，是指您的客戶最近輸入的POI。
 
 每個POI都包含下列資料元素：
@@ -69,7 +72,7 @@ Places SDK會維持下列狀態：
 若要在Experience Platform Launch中建立資料元素：
 
 1. 按一下「 **資料元素** 」標籤。
-1. Click **Add Data Element**.
+1. 按一下&#x200B;**新增資料元素**.
 1. 鍵入名稱，例如，「當 **前咖啡店名稱」**。
 1. 在「擴 **充功能** 」下拉式清單中，選 **取「位置——測試版」**。
 1. 在&#x200B;**「資料元素」**&#x200B;中，選取&#x200B;**「城市」**。
@@ -80,52 +83,52 @@ Places SDK會維持下列狀態：
 
 ![建立規則](/help/assets/placesrule.png)
 
-1. In Experience Platform Launch, click the **[!UICONTROL Rules]**tab.
-1. 按一下 **[!UICONTROL Add Rule]**。
+1. In Experience Platform Launch, click the **[!UICONTROL Rules]** tab.
+1. 按一下「**[!UICONTROL Add Rule]**」。
 1. 鍵入規則的名稱，例如 **[!UICONTROL Track entry for coffee shop in SF]**。
 
 ### 建立事件
 
 1. 在「事件」區段中，按一下 **[!UICONTROL + Add]**。 事件會決定您要何時觸發規則。
-1. 在下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places – Beta]**。
-1. 在下拉 **[!UICONTROL Event Type]**式清單中，選取**[!UICONTROL Enter POI]**。
-1. In **[!UICONTROL Name]**, enter a name for the event, for example,**[!UICONTROL Entering a coffee shop]**.
-1. 按一下 **[!UICONTROL Keep Changes]**。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
+1. 在下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
+1. In **[!UICONTROL Name]**, enter a name for the event, for example, **[!UICONTROL Entering a coffee shop]**.
+1. 按一下「**[!UICONTROL Keep Changes]**」。
 
 ### 建立條件
 
 1. 在「條件」區段中，按一下 **[!UICONTROL +Add]**。 條件決定了要採取的動作必須符合哪些標準。
 1. In **[!UICONTROL Logic Type]**, select Regular, which allows actions to execute if the condition is met.
-1. 在下拉 **[!UICONTROL Extension]**式清單中，選取**[!UICONTROL Places – Beta]**。
-1. 在中 **[!UICONTROL Condition Type]**，選擇**[!UICONTROL City]**。
-1. Type a condition name, for example, **[!UICONTROL Coffee shop in SF]**.
-1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select**[!UICONTROL San Francisco]** as one of your cities.
-1. 按一下 **[!UICONTROL Keep Changes]**。
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places – Beta]**。
+1. 在 **[!UICONTROL Condition Type]** 中選取 **[!UICONTROL City]**。
+1. 鍵入條件名稱，例如 **[!UICONTROL Coffee shop in SF]**。
+1. In the right pane, click **[!UICONTROL Current POI]**, and in the drop-down list, select **[!UICONTROL San Francisco]** as one of your cities.
+1. 按一下「**[!UICONTROL Keep Changes]**」。
 
 ### 建立動作
 
-1. In the **[!UICONTROL Actions]**section, click**[!UICONTROL + Add]**.
-1. 在下拉 **[!UICONTROL Extension]**式清單中，保留預設選**[!UICONTROL Mobile Core]** 項的選取。
+1. In the **[!UICONTROL Actions]** section, click **[!UICONTROL + Add]**.
+1. 在下拉 **[!UICONTROL Extension]** 式清單中，保留預設選 **[!UICONTROL Mobile Core]** 項的選取。
 1. 選擇操作類型，例如 **[!UICONTROL Send Postback]**。
 
-   a.在 **[!UICONTROL URL]**中，鍵入Slack的回傳URL，例如`https://hooks.slack.com/services/`。
+   a.在 **[!UICONTROL URL]**&#x200B;中，鍵入Slack的回傳URL，例如 `https://hooks.slack.com/services/`。
 
-   b.若要傳送貼文內文，請選取核取 **[!UICONTROL Add Post Body]**方塊。
+   b.若要傳送貼文內文，請選取核取 **[!UICONTROL Add Post Body]** 方塊。
 
-   c.在中 **[!UICONTROL Post Body]**新增貼文內文，例如：`{ "text": "A customer has entered" }`
+   c.在中 **[!UICONTROL Post Body]**&#x200B;新增貼文內文，例如： `{ "text": "A customer has entered" }`
 
    c.例如，鍵入內容類型 **[!UICONTROL application/json]**。
 
    d.選擇超時值，例如 **[!UICONTROL 5]**。
 
-1. 按一下 **[!UICONTROL Keep Changes]**。
+1. 按一下「**[!UICONTROL Keep Changes]**」。
 
 ### 發佈規則
 
-1. 若要啟用規則，您必須發佈規則。 如需有關在Experience Platform Launch中發佈規則的詳細資訊，請參閱發 [布](https://docs.adobe.com/content/help/en/launch/using/reference/publish/overview.html)。
+1. 若要啟用規則，您必須發佈規則。 如需有關在Experience Platform Launch中發佈規則的詳細資訊，請參閱發 [布](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/publish/overview.html)。
 
 ### 從進出出出發思考
 
-在Experience Platform Launch中使用Places Service地理圍欄登入和退出來觸發規則功能非常強大，但您也可以使用位置資料作為其他事件觸發的條件。 例如，您可以根據應用程式內的特定trackAction呼叫事件，讓「行動核心追蹤動作」事件觸發器準備好觸發。 根據此事件，您可以在執行動作之前，將其他位置條件置入事件。 例如，當發生購買事件時開啟應用程式內調查，但 `trackAction` 僅在使用者的目 **前位置包含** 「地標服務」中繼資料時。
+在Experience Platform Launch中使用Places Service地理圍欄登入和退出來觸發規則功能非常強大，但您也可以使用位置資料作為其他事件觸發的條件。 例如，您可以根據應用程式內的特定trackAction呼叫事件，讓「行動核心追蹤動作」事件觸發器準備好觸發。 根據此事件，您可以在執行動作之前，將其他位置條件置入事件。 例如，當發生購買事件時開啟應用程式內調查，但 `trackAction` 僅在使用者的目 **前位置包含** 「地點服務」特定中繼資料時。
 
 ![建立條件](/help/assets/places-condition.png)
