@@ -3,6 +3,9 @@ title: 閱讀您組織中的所有POI
 description: 使用Places REST API，閱讀您組織中的所有POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '54'
+ht-degree: 5%
 
 ---
 
