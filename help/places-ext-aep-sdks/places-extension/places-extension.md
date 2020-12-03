@@ -73,7 +73,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您不使用Cocoapods，則可從Github的發行頁面手動加入Mobile Core [和](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) Places程式庫。
+   或者，如果您不使用Cocoapods，則可從Github的發行頁面手動加入Mobile Core和 [Places程式庫](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 。
 
 1. 更新您的Cocoapod:
 
@@ -103,7 +103,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 #### Android
 
-在您應用程式的方 `OnCreate` 法中，註冊Places擴充功能：
+在您應用程式的方法中， `OnCreate` 註冊「地標」擴充功能：
 
 ```java
 public class PlacesTestApp extends Application {
