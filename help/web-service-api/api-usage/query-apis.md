@@ -3,6 +3,9 @@ title: 概述
 description: 瞭解和使用查詢API。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 4%
 
 ---
 
