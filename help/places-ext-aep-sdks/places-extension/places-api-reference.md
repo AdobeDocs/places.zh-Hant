@@ -3,6 +3,9 @@ title: Places API參考
 description: Places中API參考的相關資訊。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '583'
+ht-degree: 32%
 
 ---
 
@@ -23,7 +26,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```java
 public static void processGeofence(final Geofence geofence, final int transitionType);
@@ -33,7 +36,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 在已註冊接收Android地 `IntentService` 理序列事件的您中呼叫此方法。
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -61,7 +64,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```objectivec
 + (void) processRegionEvent: (nonnull CLRegion*) region forRegionEventType: (ACPRegionEventType) eventType;
@@ -69,7 +72,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 
 ```objectivec
@@ -117,7 +120,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### GetOnnexerPointsOfInterest(Android)
 
-以下是此方法的語法:
+此方法的語法如下：
 
 **語法**
 
@@ -132,7 +135,7 @@ public static void getNearbyPointsOfInterest(final Location location, final int 
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```java
 // getNearbyPointsOfInterest without an error callback
@@ -206,7 +209,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 
 ### GetCurrentPointsOfInterest(Android)
 
-以下是此方法的語法:
+此方法的語法如下：
 
 **語法**
 
@@ -216,7 +219,7 @@ public static void getCurrentPointsOfInterest(final AdobeCallback<List<PlacesPOI
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```java
 Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
@@ -232,7 +235,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```objectivec
 + (void) getCurrentPointsOfInterest: (nullable void (^) (NSArray<ACPPlacesPoi*>* _Nullable userWithinPoi)) callback;
@@ -240,7 +243,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```objectivec
 [ACPPlaces getCurrentPointsOfInterest:^(NSArray<ACPPlacesPoi*>* userWithinPoi) {
@@ -263,7 +266,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```java
 public static void getLastKnownLocation(final AdobeCallback<Location> callback);
@@ -271,7 +274,7 @@ public static void getLastKnownLocation(final AdobeCallback<Location> callback);
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```java
 Places.getLastKnownLocation(new AdobeCallback<Location>() {
@@ -287,7 +290,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```objectivec
 + (void) getLastKnownLocation: (nullable void (^) (CLLocation* _Nullable lastLocation)) callback;
@@ -295,7 +298,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```objectivec
 [ACPPlaces getLastKnownLocation:^(CLLocation* lastLocation) {
@@ -313,7 +316,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```java
 public static void clear();
@@ -321,7 +324,7 @@ public static void clear();
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```java
 Places.clear();
@@ -333,7 +336,7 @@ Places.clear();
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```objectivec
 + (void) clear;
@@ -341,7 +344,7 @@ Places.clear();
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```objectivec
 [ACPPlaces clear];
@@ -360,7 +363,7 @@ Places.clear();
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```java
 public static void setAuthorizationStatus(final PlacesAuthorizationStatus status);
@@ -368,7 +371,7 @@ public static void setAuthorizationStatus(final PlacesAuthorizationStatus status
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```java
 Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
@@ -387,7 +390,7 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 **語法**
 
-以下是此方法的語法:
+此方法的語法如下：
 
 ```objectivec
 + (void) setAuthorizationStatus: (CLAuthorizationStatus) status;
@@ -395,7 +398,7 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 **範例**
 
-以下是此方法的範例程式碼:
+此方法的程式碼範例如下：
 
 ```objectivec
 - (void) locationManager: (CLLocationManager*) manager didChangeAuthorizationStatus: (CLAuthorizationStatus) status {    
