@@ -3,6 +3,9 @@ title: 搭配POI使用中繼資料
 description: 本節提供如何搭配POI使用中繼資料的資訊和策略。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '293'
+ht-degree: 0%
 
 ---
 
@@ -25,6 +28,6 @@ POI中繼資料可以以多種方式使用。 從POI管理的角度來看，新�
 
 ## Adobe Campaign中的應用程式內訊息
 
-中繼資料可用作Adobe Campaign standard中定義之本機通知和應用程式內訊息的篩選。 使用中繼資料做為篩選，可讓您建立與實際位置相關的更相關訊息。
+中繼資料可用作Adobe Campaign Standard中定義之本機通知和應用程式內訊息的篩選。 使用中繼資料做為篩選，可讓您建立與實際位置相關的更相關訊息。
 
 ![在ACS中過濾本地通知和應用程式內消息](/help/assets/ACS_gym_metadata.png)
