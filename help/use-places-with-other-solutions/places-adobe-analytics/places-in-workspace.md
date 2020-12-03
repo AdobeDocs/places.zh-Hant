@@ -3,6 +3,9 @@ title: Analytics工作區中位置資料的報告
 description: 本節提供如何報告Analytics工作區中位置資料的相關資訊。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '431'
+ht-degree: 9%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 1. Adobe Analytics使用者是管理員，可存取處理規則。
 
-   如需處理規則的詳細資訊，請參閱[處理規則概述](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
+   如需處理規則的詳細資訊，請參閱[處理規則概述](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html)。
 
 1. 在Launch屬性中，已為您想要的Places服務變數建立資料元素。
 
@@ -30,13 +33,13 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ## 1.建立啟動規則
 
-建立規則，當裝置輸入POI時，SDK會傳送資料至Analytics。 「傳送POI登入和退出資料至Analytics」頁面 [上會說明建立此類規則](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) 。
+建立規則，當裝置輸入POI時，SDK會傳送資料至Analytics。 建立此類規則的說明會在「傳送POI登入 [及退出資料至Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md) 」頁面上。
 
 在此範例中，規則的動作具有為Analytics請求定義的下列值：
 
-* **[!UICONTROL Action]**的值**[!UICONTROL Places Entry]**。
+* **[!UICONTROL Action]** 的值 **[!UICONTROL Places Entry]**。
 
-* 上下文資料 **[!UICONTROL poi.name]**索引鍵設為資料元素的值**[!UICONTROL {%%POI Name%%}]**。
+* 上下文資料 **[!UICONTROL poi.name]** 索引鍵設為資料元素的值 **[!UICONTROL {%%POI Name%%}]**。
 
 ![&quot;設定動作&quot;](/help/assets/pt-setAction.png)
 
@@ -44,21 +47,21 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 若要映射上下文資料（在步驟1中傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參 [閱轉換變數(eVar)](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-conversion-variables-evar.html)。
 
-在此範例中，已建立並 **[!UICONTROL Evar2]**命名轉換變數**[!UICONTROL Places POI Name]**。 您需要為每個要在報表中公開的位置變數建立其他變數。
+在此範例中，已建立並 **[!UICONTROL Evar2]**&#x200B;命名轉換變數 **[!UICONTROL Places POI Name]**。 您需要為每個要在報表中公開的位置變數建立其他變數。
 
 ![「建立分析變數」](/help/assets/aa-evar.png)
 
 ## 3.建立處理規則
 
-此步驟需要將上下文資料（步驟1）對應至Analytics變數（步驟2）。 For more information on creating processing rules, see [Processing rules overview](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules.html).
+此步驟需要將上下文資料（步驟1）對應至Analytics變數（步驟2）。 For more information on creating processing rules, see [Processing rules overview](https://docs.adobe.com/content/help/zh-Hant/analytics/admin/admin-tools/processing-rules/processing-rules.html).
 
-在此範例中，已建立處理規則，將上下文資料值對應至 **[!UICONTROL poi.name]**中**[!UICONTROL Places POI Name (eVar2)]**。 需要為每個建立的位置變數建立其他處理規則。
+在此範例中，已建立處理規則，將上下文資料值對應至 **[!UICONTROL poi.name]** 中 **[!UICONTROL Places POI Name (eVar2)]**。 需要為每個建立的位置變數建立其他處理規則。
 
 ![&quot;建立處理規則&quot;](/help/assets/aa-processing-rule.png)
 
 ## 4.在工作區中產生報表
 
-此步驟顯示Analytics工作區中的基本報表，以檢視步驟1-3中收集的資料。 如需如何使用Analytics工作區的詳細資訊，請參閱 [Analytics工作區概述](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/analysis-workspace-features.html)。
+此步驟顯示Analytics工作區中的基本報表，以檢視步驟1-3中收集的資料。 如需如何使用Analytics工作區的詳細資訊，請參閱 [Analytics工作區概述](https://docs.adobe.com/content/help/zh-Hant/analytics/analyze/analysis-workspace/analysis-workspace-features.html)。
 
 在此範例中，報表具有下列設定：
 
