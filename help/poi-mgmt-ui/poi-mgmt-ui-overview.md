@@ -1,8 +1,11 @@
 ---
 title: 興趣點管理介面總覽
-description: 本節提供如何透過Places Service UI建立和管理資料庫和POI的資訊。
+description: 本節提供如何透過Places Service UI建立和管理資料庫和POI的相關資訊。
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '86'
+ht-degree: 0%
 
 ---
 
