@@ -3,6 +3,9 @@ title: Places Monitor擴充功能
 description: Places Monitor擴充功能可處理與作業系統的互動，以註冊和監控離使用者最近的POI。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '146'
+ht-degree: 0%
 
 ---
 
