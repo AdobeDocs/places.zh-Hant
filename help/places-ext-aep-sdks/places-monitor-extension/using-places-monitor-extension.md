@@ -23,7 +23,7 @@ ht-degree: 6%
 
 ### 配置Places Monitor擴展 {#configure-places-monitor-extension}
 
-Places Monitor副檔名沒有配置任務。
+Places Monitor擴展沒有配置任務。
 
 ![配置Places Monitor](/help/assets/configure_places_monitor.png)‌
 
@@ -31,8 +31,7 @@ Places Monitor副檔名沒有配置任務。
 
 以下說明如何將Places Monitor擴充功能新增至Android或iOS應用程式。
 
-Places Monitor擴充功能的其他平台支援包括：
-**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
+Places Monitor擴充功能的其他平台支援包括：**[Cordova Places Monitor](https://github.com/adobe/cordova-acpplaces-monitor/blob/master/README.md)**
 
 **[React Native Places Monitor](https://github.com/adobe/react-native-acpplaces-monitor/blob/master/README.md)**
 
@@ -193,7 +192,7 @@ iOS支援將位置事件傳送至已暫停或不再執行的應用程式。 若�
 
 您的應用程式檔案中必須包含下列金 `Info.plist` 鑰：
 
-* `NSLocationWhenInUseUsageDescription` -文字應說明應用程式在前景執行時，要求存取使用者位置資訊的原因。
+* `NSLocationWhenInUseUsageDescription` -文字應說明應用程式在前景中執行時要求存取使用者位置資訊的原因。
 * `NSLocationAlwaysAndWhenInUseUsageDescription` -文字應說明應用程式為何會隨時要求存取使用者的位置資訊。
 
 >[!TIP]
