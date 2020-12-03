@@ -3,6 +3,9 @@ title: 管理程式庫
 description: 管理Places Service REST API庫。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '53'
+ht-degree: 5%
 
 ---
 
