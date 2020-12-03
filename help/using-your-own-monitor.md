@@ -3,6 +3,9 @@ title: 使用您自己的螢幕
 description: 您也可以使用Places Service擴充功能API，使用您的監控服務並與Places Service整合。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +58,7 @@ source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
 
 ### Android
 
-1. 將從Google play服務或Android位置服務取得的位置更新傳遞至Places延伸功能。
+1. 將從Google Play服務或Android位置服務取得的位置更新傳遞至Places延伸功能。
 
 1. 使用 `getNearbyPointsOfInterest` Places Extension API取得目前位置 `PlacesPoi` 周圍的物件清單。
 
