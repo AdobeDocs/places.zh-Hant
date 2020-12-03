@@ -1,21 +1,24 @@
 ---
-title: 將Places service與Mobile services搭配使用以傳訊
-description: 本節將說明如何搭配Mobile services使用Places Services進行訊息傳送。
+title: 將Places Service與Mobile Services搭配使用以傳訊
+description: 本節將說明如何搭配Mobile Services使用Places Services進行訊息傳送。
 translation-type: tm+mt
 source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 1%
 
 ---
 
 
 # Adobe Mobile Services {#places-mobile-services}
 
-在您可以使用Mobile services擴充功能進行傳訊之前，請先檢閱下列必要條件：
+在您可以使用Mobile Services擴充功能進行傳訊之前，請先檢閱下列必要條件：
 
 * 地標服務已建立興趣點。 For more information, see [Create a POI](/help/poi-mgmt-ui/create-a-poi-ui.md).
 
    >[!IMPORTANT]
    >
-   >Places service為您的組織提供新的、改良的POI資料庫，該資料庫位於舊版Mobile Services UI之外。 位於「Mobile Service *Manage Placess* 」頁面導覽的POI僅適用於SDK第4版。
+   >Places Service為您的組織提供全新和改良的POI資料庫，其存在於舊版Mobile Services UI之外。 位於「Mobile Service *Manage Placess* 」頁面導覽的POI僅適用於SDK第4版。
 
 * 以下是舊 *版SDK舊版Mobile Services UI中的「管理位置* POI」管理頁面：
 
@@ -45,13 +48,13 @@ source-git-commit: 5a21e734c0ef56c815389a9f08b445bedaae557a
 
    如需詳細資訊，請 [參閱「搭配Adobe Analytics使用地標服務」](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)。
 
-* 熟悉Mobile services報告。
+* 熟悉Mobile Services報告。
 
    For more information, see [Reports](https://docs.adobe.com/content/help/en/mobile-services/using/reports-ug/usage.html).
 
 ## 報告視覺化
 
-您可以使用傳送至Adobe Analytics的Places service資料來執行Mobile Service報表。 在下列範例中，當使用者在其中一個POI中有項目時，會傳送事件。 在此報告中，POI項目事件的篩選器已新增至現成可用的使用者報告：
+您可以使用傳送至Adobe Analytics的Places Service資料來執行Mobile Service報表。 在下列範例中，當使用者在其中一個POI中有項目時，會傳送事件。 在此報告中，POI項目事件的篩選器已新增至現成可用的使用者報告：
 
 ![報表視覺化](/help/assets/report-visualize.png)
 
