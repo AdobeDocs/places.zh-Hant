@@ -3,6 +3,9 @@ title: 定義資料元素
 description: 本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。
 translation-type: tm+mt
 source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+workflow-type: tm+mt
+source-wordcount: '456'
+ht-degree: 1%
 
 ---
 
@@ -40,13 +43,13 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ### 建立資料元素
 
-1. 在應用程式的「屬性」頁面中，按一下標 **[!UICONTROL Data Elements]**簽。
+1. 在應用程式的「屬性」頁面中，按一下標 **[!UICONTROL Data Elements]** 簽。
 
-1. 按一下 **[!UICONTROL Create New Data Element]**。
+1. 按一下「**[!UICONTROL Create New Data Element]**」。
 
 1. 在已安裝的擴充功能清單中，尋找 **[!UICONTROL Places]**。
 
-1. 在下拉 **[!UICONTROL Data Element Type]**式清單中，選取此資料元素的資料參考。
+1. 在下拉 **[!UICONTROL Data Element Type]** 式清單中，選取此資料元素的資料參考。
 
 1. 選擇POI目標。
 
@@ -63,8 +66,8 @@ source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
 
 ![使用資料元素](/help/assets/use-de-v2.png)
 
-如果規則元件中沒有資料元素選擇器，您可以使用Token來封裝資料元素名稱，以使用資料 **[!UICONTROL %%]**元素。
-例如，如果資料元素名稱為**[!UICONTROL Last POI City]**，您可以新增 **[!UICONTROL LAST POI City]**至文字輸入。
+如果規則元件中沒有資料元素選擇器，您可以使用Token來封裝資料元素名稱，以使用資料 **[!UICONTROL %%]** 元素。
+例如，如果資料元素名稱為 **[!UICONTROL Last POI City]**，您可以新增 **[!UICONTROL LAST POI City]** 至文字輸入。
 
 
 ## 發佈資料元素
