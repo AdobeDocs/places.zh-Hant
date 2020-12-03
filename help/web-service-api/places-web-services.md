@@ -1,15 +1,18 @@
 ---
 title: '網站服務API概觀 '
-description: Places Service是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience cloud和Adobe Experience platform解決方案加入位置資料和適當的體驗，以供適當的人使用。
+description: Places Service是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Experience Cloud和Adobe Experience Platform解決方案加入位置資料和適當的體驗，以供適當的人使用。
 translation-type: tm+mt
 source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 1%
 
 ---
 
 
 # 網站服務API概觀 {#places-web-services-api}
 
-Places Service是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Cloud platform和Adobe Experience platform解決方案的位置資料和適當的體驗加到適當的人。
+Places Service是一套服務，可讓Adobe客戶更輕鬆地在適當的時間和地點，將Adobe Cloud Platform和Adobe Experience Platform解決方案的位置資料和適當的體驗加到適當的人。
 
 web services API可讓您執行下列動作：
 
@@ -33,7 +36,7 @@ Places Service REST API可讓您以程式設計方式與組織的POI搭配運作
 
    如需詳細資訊，請參 *閱「整合」總覽和必要條件中*[的「建立Places服務」整合](/help/web-service-api/adobe-i-o-integration.md)。
 
-其他資訊:
+其他資訊：
 
 * 如需可用API的詳細資訊以及如何使用這些API的詳細資訊，請參 [閱管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 * 如需這些API中標題和參數的詳細資訊，請參閱標 [題和參數](/help/web-service-api/api-usage/headers-and-parameters.md)。
