@@ -3,6 +3,9 @@ title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用Places Service的相關資訊。
 translation-type: tm+mt
 source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
+workflow-type: tm+mt
+source-wordcount: '477'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 
 ## 1.建立規則
 
-1. 在標籤 **[!UICONTROL Rules]** 上，按一下 **[!UICONTROL Create New Rule]**。
+1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
 
    請記住以下資訊：
 
@@ -28,7 +31,7 @@ source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 
    在此範例中，規則為命名 **[!UICONTROL Attach Places Service Data to Target Content Requested]**。
 
-1. 在區段 **[!UICONTROL Events]** 下，按一下 **[!UICONTROL Add]**。
+1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
 1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Target]**。
 1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Content Requested]**。
 1. 按一下「**[!UICONTROL Keep Changes]**」。
@@ -43,7 +46,7 @@ source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 
 在下列範例中，會建立條件，使規則僅針對已啟動應用程式五次以上的使用者觸發。
 
-1. 在區段 **[!UICONTROL Conditions]** 下，按一下 **[!UICONTROL Add]**。
+1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
 1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Launches]**。
 1. 在右窗格中，修改下拉式清單和數字控制項，讓條件讀取 **[!UICONTROL User has launched the app greater than or equal to 5 times]**。
@@ -53,7 +56,7 @@ source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 
 ## 4.定義動作
 
-1. 在區段 **[!UICONTROL Actions]** 下，按一下 **[!UICONTROL Add]**。
+1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
 1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
 1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
 1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
@@ -67,7 +70,7 @@ source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
 >
 >此JSON裝載會對物件使用特殊記 `request` 號。 在原始事件中， `request` 是一組匿名物件。 使用「附加資料」(Attach Data)將資料附加到陣列中的所有對象時，已知包含陣列的鍵上的符號會導致裝載被應用於該陣列中的所有對象。 `[*]`
 >
->對於數 `request[*]` 組中的每個對象， _可以朗讀的記`request`號_。
+>對於數 `request[*]` 組中的每個對象， _可以朗讀的記 `request` 號_。
 
 ![定義動作](/help/assets/ad-setAction-target.png)
 
