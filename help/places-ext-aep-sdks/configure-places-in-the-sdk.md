@@ -3,6 +3,9 @@ title: 使用Places擴充功能設定SDK
 description: '您可以使用Places擴充功能來設定SDK，以在行動應用程式中啟用位置感知。 '
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '218'
+ht-degree: 9%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 1. 在Launch中設定Places擴充功能。
 
-   如需詳細資訊，請參 *閱在Launch in* Places擴充功能中設定Places擴充功能 [](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+   如需詳細資訊，請參 *閱在Launch in* Places擴充功能中設定Places [](/help/places-ext-aep-sdks/places-extension/places-extension.md)擴充功能。
 
 1. 將Places擴充功能新增至您的行動應用程式。
 
