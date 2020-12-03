@@ -3,6 +3,9 @@ title: 刪除多個POI
 description: 使用批次API刪除多個POI。
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '56'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +27,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois/batchDelete
 -H' Content-Type: application/json'  -H 'Authorization: Bearer <TOKEN>'  -H 'x-api-key: <API KEY>'  -H 'x-gw-ims-org-id: <ORGID>'  -H 'Accept-Language: en-US'
 ```
 
-## 內文
+## 身體
 
 ```text
 {  "ids": [    "<POIID>",    "<POIID>",    .    .    .    "<POIID>",    "<POIID>"  ]}
