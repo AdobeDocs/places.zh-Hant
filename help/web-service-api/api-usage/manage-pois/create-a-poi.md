@@ -1,13 +1,16 @@
 ---
-title: 建立 POI
+title: 建立POI
 description: 使用Places REST API建立POI。
 translation-type: tm+mt
 source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+workflow-type: tm+mt
+source-wordcount: '47'
+ht-degree: 6%
 
 ---
 
 
-# 建立 POI {#create-a-poi}
+# 建立POI {#create-a-poi}
 
 可讓您建立POI的POST方法。
 
@@ -27,7 +30,7 @@ POST https://api-places.adobe.io/places/placesapi/v1/pois
 -H 'Accept-Language: en-US'
 ```
 
-## 內文
+## 身體
 
 ```text
 {
