@@ -3,6 +3,9 @@ title: 地點事件參考
 description: '由「地標」擴充功能處理的事件清單。 '
 translation-type: tm+mt
 source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 24%
 
 ---
 
@@ -25,7 +28,7 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 **資料裝載定義**
 
-不適用
+n/a
 
 ## GetOnnexterPointsOfInterest
 
@@ -43,10 +46,10 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 | 代碼 | 值類型 | 必填 | 預設值 | 說明 |
 | :--- | :--- | :--- | :--- | :--- |
-| 緯度 | 雙倍 | true | 不適用 | 保留搜索附近POI中心的緯度值。 |
-| 經度 | 雙倍 | true | 不適用 | 保存附近POI搜索中心的經度值。 |
-| 半徑 | 整數 | false | 不適用 | 半徑（以米為單位），用於搜索附近的POI。 |
-| 計數 | 整數 | false | 10 | 在結果回應事件中返回的POI的最大數量。 |
+| latitude | 雙倍 | true | n/a | 保留搜索附近POI中心的緯度值。 |
+| longitude | 雙倍 | true | n/a | 保存附近POI搜索中心的經度值。 |
+| 半徑 | 整數 | false | n/a | 半徑（以米為單位），用於搜索附近的POI。 |
+| count | 整數 | false | 10 | 在結果回應事件中返回的POI的最大數量。 |
 
 ## ProcessRegionEvent
 
@@ -64,10 +67,10 @@ source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
 
 | 代碼 | 值類型 | 必填 | 說明 |
 | :--- | :--- | :--- | :--- |
-| regionid | string | true | 產生事件之地區的ID。 |
+| regionid | 字串 | true | 產生事件之地區的ID。 |
 | regioneventtype | int | true | 正在產生的地區事件類型。 1代表進入，2代表退出。 |
 
-## Places延伸模組所傳送的事件
+## Places延伸功能所傳送的事件
 
 此資訊目前正在進行中。
 
