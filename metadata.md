@@ -1,10 +1,10 @@
 ---
-cloud: experience-cloud
+cloud: Experience Cloud
 product: adobe experience platform
 solution: Experience Platform, Data Collection
-type: Documentation
+type: 文件
 solution-title: 學習與支援
-solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: 快速入門
 getting-started-url: https://docs.adobe.com/content/help/en/places/using/getting-started.html
 tutorials-title: 教學課程
@@ -12,10 +12,10 @@ tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experie
 git-repo: https://git.corp.adobe.com/AdobeDocs/places.zh-Hant
 index: true
 translation-type: tm+mt
-source-git-commit: 0f3c43c8eb62fc620a71096c92a673bcf8407f94
+source-git-commit: b9ee84f7a1fa262611a8bf2b5ae0dd9be9341ce5
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 87%
 
 ---
 
