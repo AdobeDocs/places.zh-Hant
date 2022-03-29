@@ -4,8 +4,8 @@ description: 「位置」(Places)擴展允許您根據用戶的位置執行操�
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
 source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,14 +65,14 @@ ht-degree: 5%
 
 要使用Objective-C或Swift將「位置」擴展添加到您的應用：
 
-1. 添加位置和 [移動核心](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 庫。 您需要將以下Pod添加到 `Podfile`:
+1. 添加位置和 [Mobile核心](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 庫。 您需要將以下Pod添加到 `Podfile`:
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
    pod 'ACPCore', '~> 2.0'    # minimum Core version for Places is 2.0.3
    ```
 
-   或者，如果您不使用Cocoapods，則可以從我們的 [發佈頁](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在吉圖布。
+   或者，如果您不使用Cocoapods，則可以手動包括我們的Mobile核心和Places庫 [發佈頁](https://github.com/Adobe-Marketing-Cloud/acp-sdks/releases/) 在吉圖布。
 
 1. 更新Cocoapod:
 
@@ -96,9 +96,9 @@ ht-degree: 5%
    import ACPPlaces
    ```
 
-### 使用移動核心註冊位置擴展 {#register-places-mobile-core}
+### 向Mobile核心註冊位置擴展 {#register-places-mobile-core}
 
-您需要在Android和iOS的Mobile Core中註冊Places擴展。
+您需要在Android和iOS的MobileCore中註冊Places擴展。
 
 #### 安卓
 
