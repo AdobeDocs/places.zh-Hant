@@ -1,94 +1,91 @@
 ---
 title: Places Service
-description: '「地標服務」是瞭解行動使用者參與度的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。 '
-translation-type: tm+mt
-source-git-commit: 05b4d29aa7925f7a43e70c644e3cb88045cbe446
+description: Places Service是了解行動使用者參與度的重要內容。 使用此內容，行動應用程式開發人員就能增強應用程式設計，提供更個人化且吸引人的體驗。
+exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
+source-git-commit: c13da9ea3dc0cd574f2f9a496405867f7d36eae0
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '706'
 ht-degree: 10%
 
 ---
 
-
 # Places Service {#home}
 
-![&quot;Places Service&quot;](/help/assets/places-service-header.png)
+位置是了解並與行動使用者互動的重要內容。 使用此內容，行動應用程式開發人員就能增強應用程式設計，提供更個人化且吸引人的體驗。
 
-位置是瞭解行動使用者並與之互動的重要內容。 運用這個情境，行動應用程式開發人員就可以增強應用程式設計，讓它成為更個人化、更吸引人的體驗。
-
-Places Service（先前稱為Adobe Experience Platform Location Service）是地理位置服務，可讓具備位置感知的行動應用程式使用豐富且簡單易用的SDK介面，加上有彈性的興趣點資料庫(POI)，來瞭解位置環境。
+Places Service(舊稱Adobe Experience Platform Location Service)是一項地理位置服務，可讓具備位置感知功能的行動應用程式使用豐富且簡單易用的SDK介面，搭配有彈性的興趣點資料庫(POI)來了解位置環境。
 
 Places Service可讓您達成下列目標：
 
 * 建立並管理可與其他Adobe Experience Cloud解決方案搭配運用的POI資料庫。
-* 將自訂中繼資料附加至POI，透過指定其他屬性，讓POI更豐富、更有意義。
-* 在地圖上視覺化POI，以輕鬆瞭解空間內容並新增／編輯中繼資料屬性。
-* 在Adobe Experience Platform Launch中設定SDK，以定義您的位置觸發規則和中繼資料條件。
-* 減少監控裝置位置時需要編寫的程式碼，並使用「位置」擴充功能自動觸發特定位置的規則。
+* 將自訂中繼資料附加至POI，透過指定其他屬性讓POI更豐富、更有意義。
+* 將地圖上的POI視覺化，以便輕鬆了解空間內容，並新增/編輯中繼資料屬性。
+* 在Adobe Experience Platform Launch中設定SDK，以定義您的位置觸發規則和中繼資料基礎條件。
+* 減少監控裝置位置所需寫入的程式碼，並使用Places擴充功能自動觸發位置特定規則。
 
-這可讓您即時、在何時、何地從位置訊號採取動作。 正確的情境可提供更豐富的行動互動體驗。
+這可讓您即時、在何時、何處從位置訊號採取動作。 正確的內容可提供更豐富的行動參與體驗。
 
-以下是您使用「地標」的一些方式：
+以下是一些使用Places的方式：
 
-* 當有人輸入POI時，傳送即時通 *知，&quot;嘿……歡迎來到體育場。」*
-* 分析您自有商店與競爭對手商店的足路流量。
-* 使用具有位置內容的受眾個人檔案，根據離線行為劃分受眾。
-* 在相關時，以店內體驗為目標使用者。
+* 當有人進入POI時傳送即時通知， *「嘿……歡迎來到體育場。」*
+* 分析您自己商店與競爭者商店的足流量。
+* 使用受眾設定檔搭配位置內容，根據離線行為劃分受眾。
+* 在相關時，使用店內體驗來定位使用者。
 
-## 放置服務元件
+## Places Service元件
 
 Places Service包含下列元件：
 
-* **Web服務**
+* **網站服務**
 
-   您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參 [閱管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)[和管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
+   您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參閱 [管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) 和 [管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
 
 * **POI管理介面**
 
-   在地圖上視覺化POI，以瞭解空間內容，並新增／編輯POI及其自訂中繼資料。
+   在地圖上視覺化POI，以了解空間內容，以及新增/編輯POI及其自訂中繼資料。
 
 * **Places 擴充功能**
 
-   多平台行動API介面，可整合行動應用程式中的位置內容。 如需SDK的詳細資訊，請參閱「地 [標擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)」。
+   多平台行動API介面，可整合您行動應用程式中的位置內容。 如需SDK的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
 * **啟動規則**
 
-   地理智慧型啟動規則，可讓您使用登入和退出事件觸發動作。 這些規則也可讓您在條件中使用地理屬性來個人化體驗。
+   地理智慧型Launch規則，可讓您觸發包含登入和退出事件的動作。 規則也可讓您在條件中使用地理屬性，以個人化體驗。
 
-* **Places Monitor擴充功能**
+* **Places監視擴展**
 
-   多平台行動SDK可內嵌在您的行動應用程式中，以自動監控使用者的位置變更並觸發「地標」規則。 如需詳細資訊，請參 [閱Places Monitor擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)。
+   多平台行動SDK可內嵌於您的行動應用程式中，以自動監控使用者的位置變更並觸發Places規則。 如需詳細資訊，請參閱 [Places監視擴展](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md).
 
 ## 術語
 
-以下是本檔案中使用的一些常見術語：
+以下是本檔案中使用的一些常見辭彙：
 
-* 興 **趣點(POI)** ，是您組織感興趣的地理位置。
+* A **興趣點(POI)** 是貴組織感興趣的地理位置。
 
-   您可以定義具有名稱、半徑、地址、類別和中繼資料標籤等屬性的POI。
+   您可以使用名稱、半徑、位址、類別和中繼資料標籤等屬性來定義POI。
 
-* 地 **緣** ，是POI的一種類型。
+* A **地理** 是POI的類型。
 
-   此POI類型是由經緯度坐標定義的虛擬地理邊界。
+   此POI類型是由經緯度座標定義的虛擬地理邊界。
 
-* 信 **標是** POI的一種類型。
+* A **信標** 是POI的類型。
 
-   該POI類型是通過發射低功率藍芽信號來表示位置的物理設備。 Beacon支援即將推出。
+   此POI類型是物理裝置，可透過發出低功耗藍芽訊號來代表位置。 信標支援即將推出。
 
 * **資料庫**&#x200B;是 POI 的集合，這些 POI 會分組，以供輕鬆地將規則附加至規則集，而非一個 POI。
 
-* 擴 **充功能** 是Experience Platform Launch擴充功能，您必須將Places SDK整合在行動應用程式中。
+* 安 **擴充功能** 是將Places SDK整合至行動應用程式所需的Experience Platform Launch擴充功能。
 
-   與其他行動SDK一起使用的擴充功能，可將位置內容新增至您的體驗。
+   與其他行動SDK搭配使用的擴充功能，可將位置內容新增至您的體驗。
 
 * **組織**&#x200B;是 Adobe 實體，可在 Adobe Experience Cloud 中識別您的公司。
 
-   通常，組織是您的公司名稱。 但是，公司可以有多個組織。 組織管理員可以設定群組和使用者，以及設定單一登入功能。
+   通常，組織就是您的公司名稱。 但是，公司可以有多個組織。 組織管理員可設定群組和使用者，以及設定單一登入功能。
 
-* **orgID** 是在整個 Adobe Experience Platform 之中代表您組織的 ID。
+* **orgID** 是在整個 Adobe Experience 平台之中代表您組織的 ID。
 
-   如需詳細資訊，請參 [閱尋找組織ID](https://forums.adobe.com/thread/2339895)。
+   如需詳細資訊，請參閱 [尋找您的orgID](https://forums.adobe.com/thread/2339895).
 
-* **Experience Cloud ID服務提供通用、永續性的ID** ，可識別Experience Cloud中所有解決方案的訪客。
+* 此 **Experience CloudID** 服務提供永續性的通用ID，可識別Experience Cloud中所有解決方案的訪客。
 
    如需詳細資訊，請參閱[概覽](https://docs.adobe.com/content/help/zh-Hant/id-service/using/intro/overview.html)。
