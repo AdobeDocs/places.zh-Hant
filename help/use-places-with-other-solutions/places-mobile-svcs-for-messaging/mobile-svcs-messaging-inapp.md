@@ -1,18 +1,17 @@
 ---
 title: 應用程式內通知
-description: 本節將說明如何將Places Service與應用程式內訊息搭配使用。
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+description: 本節說明如何將Places Service與應用程式內傳訊搭配使用。
+exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
+source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '661'
 ht-degree: 3%
 
 ---
 
-
 # 應用程式內通知 {#places-push-messaging}
 
-以下資訊說明如何設定「應用程式內訊息」，以從「位置服務」事件觸發。
+下列資訊會示範如何設定應用程式內訊息，以從Places Service事件觸發。
 
 >[!IMPORTANT]
 >
@@ -20,7 +19,7 @@ ht-degree: 3%
 
 ## 應用程式內訊息
 
-Mobile Services可讓您使用傳送至Analytics的位置資料作為應用程式內訊息的觸發事件和／或條件。 如果從SDK引發應用程式內訊息，而不需要等待Analytics處理資料，則觸發器一發生，訊息就會即時顯示。
+Mobile Services可讓您使用傳送至Analytics的位置資料，做為應用程式內訊息的觸發事件和/或條件。 如果從SDK觸發應用程式內訊息，且不需要等待Analytics處理資料，則觸發時訊息可立即顯示。
 
 ### 本機通知
 
@@ -30,42 +29,42 @@ Mobile Services可讓您使用傳送至Analytics的位置資料作為應用程�
 * 警報
 * 本機通知
 
-這些類型是應用程式內訊息，因為是由SDK觸發。 本機通知的外觀和感覺就像推播通知，因為當應用程式在背景時，這些通知就會出現。 當使用者在應用程式背景時進入或退出您的POI時，這些通知也會傳送即時通知。 如需詳細資訊，請參 [閱「置入螢幕擴充功能](/help/places-ext-aep-sdks/places-monitor-extension/places-monitor-extension.md)」。
+這些類型是應用程式內訊息，因為是由SDK觸發。 本機通知的外觀和感覺就像推播通知，因為這些通知會在應用程式於背景時顯示。 當使用者在應用程式於背景時進入或退出您的POI時，這些通知也會傳送即時通知。
 
-### 必要條件
+### 先決條件
 
-在開始之前，您會先瞭解如何在Mobile Services中傳送和建立應用程式內訊息，以及觸發程式的運作方式。 For more information, see [Create an in-app message.](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
+開始之前，您已了解如何在Mobile Services中傳送和建立應用程式內訊息，以及觸發程式的運作方式。 如需詳細資訊，請參閱 [建立應用程式內訊息。](https://docs.adobe.com/content/help/en/mobile-services/using/messaging-ug/inapp-messages/t-in-app-message.html)
 
 ##  Experience Platform Launch 中的規則
 
-您可以建立Experience Platform Launch規則，將您想要用作應用程式內訊息觸發規則一部分的資料傳送至Analytics。 您可以根據使用案例，將Experience Platform Launch規則中Places擴充功能的資料當做事件和／或條件使用。
+您可以建立Experience Platform Launch規則，將您想要用於應用程式內訊息觸發規則的資料傳送至Analytics。 您可以根據您的使用案例，將來自Places擴充功能的資料用作Experience Platform Launch規則中的事件和/或條件。
 
 * 使用位置資料作為觸發事件。
 
-   例如，當使用者輸入POI時，您可以傳送資料至Analytics。
+   例如，您可以在使用者輸入POI時將資料傳送至Analytics。
 
 * 使用位置資料作為觸發事件的條件。
 
-   例如，如果您在Places Service中針對不同POI的天氣建立自訂中繼資料標籤，則可將該中繼資料用作規則條件的參數。 雖然您可以將此條件與前面所述的POI參加項目事件搭配使用，但您也可以將該條件用作任何事件的上下文。
+   例如，如果您在Places Service中針對不同POI的天氣建立自訂中繼資料標籤，可以將該中繼資料當作規則條件的參數。 雖然您可以將此條件與先前所述的POI項目事件搭配使用，但您也可以將條件當作任何事件的內容使用。
 
-設定規則時，請設定動作，將資料傳送至Analytics，以完成規則設定。
+使用正確的事件和條件參數設定規則後，請設定要將資料傳送至Analytics的動作，以完成規則設定。
 
 ## 建立動作
 
-要建立操作，請執行以下操作：
+若要建立動作：
 
 1. 選取 **[!UICONTROL Adobe Analytics]** 擴充功能。
-1. 在下拉 **[!UICONTROL Action type]** 式清單中，選取 **[!UICONTROL Track.]**
-1. 鍵入動作的名稱。
-1. 在右窗格中，選 **[!UICONTROL Context Data]**&#x200B;取鍵值對，以設定將傳送至Analytics的內容資料。
+1. 在 **[!UICONTROL 動作類型]** 下拉清單，選擇 **[!UICONTROL 追蹤。]**
+1. 輸入動作的名稱。
+1. 在右窗格中， **[!UICONTROL 內容資料]**，選取機碼值組，以設定要傳送至Analytics的內容資料。
 
-例如，您可以選 `poiname` 擇作為鍵 `{%%Last Entered POI Name}` 和值。
+例如，您可以選取 `poiname` 作為鍵和 `{%%Last Entered POI Name}` 作為值。
 
 >[!TIP]
 >
->可以設定「分析處理規則」來擷取此上下文資料。 如需詳細資訊，請參閱[處理規則](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)。在「建立 *動作*」中的範例中，「動作」會傳送作 `poiname` 為內容，以說明要傳送至Analytics的POI項目事件。
+>可設定Analytics處理規則來擷取此內容資料。 如需詳細資訊，請參閱[處理規則](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/ref-processing-rules.html)。在 *建立動作*，動作會傳送 `poiname` 說明傳送至Analytics之POI項目事件的內容。
 
-![建立操作](/help/assets/configure-action.png)
+![建立動作](/help/assets/configure-action.png)
 
 以下是完整規則的範例：
 
@@ -73,17 +72,17 @@ Mobile Services可讓您使用傳送至Analytics的位置資料作為應用程�
 
 ## 在Mobile Services中建立應用程式內訊息
 
-在觸發器參數中，您可以透過下列其中一種方式，為訊息建立具有Places Service資料的對象：
+在觸發程式參數中，您可以透過下列其中一種方式，使用Places Service的資料建立訊息的對象：
 
 * 使用特定位置的動作，例如登入或退出。
-* 使用以內容資料傳送的POI中繼資料，以縮小對象的目標。
+* 使用以內容資料傳送的POI中繼資料，以縮小對象的目標範圍。
 
-   此選項可與特定位置的動作（例如登入）搭配使用，或可當成啟動或按鈕點選等其他事件的上下文。
+   此選項可搭配位置特定動作（例如登入）使用，或可作為其他事件（例如啟動或按鈕點按）的內容。
 
-   以下範例說明如何設定應用程式內訊息以歡迎輸入名稱中包含POI **[!UICONTROL Adobe]** 的使用者：
+   以下範例說明如何設定應用程式內訊息，以歡迎進入具有 **[!UICONTROL Adobe]** 名稱中：
 
    ![觸發參數](/help/assets/trigger-parameters.png)
 
-* Mobile Services的「觸發程式」和「特 *徵」頁面中* ,「置入服務」標題中的參數無法與「置入服務」中的資料搭配使用。
+* Places服務標題中的參數 *觸發器和特徵* 頁面無法搭配Places服務的資料使用。
 
    這些參數僅適用於在Mobile Services中建立的舊版Places Service資料庫。
