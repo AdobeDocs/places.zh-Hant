@@ -1,14 +1,13 @@
 ---
 title: 刪除POI
 description: 使用Places REST API刪除POI。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 0325eb3b-f9b2-4b21-bed8-e318e8072a69
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '44'
-ht-degree: 6%
+ht-degree: 9%
 
 ---
-
 
 # 刪除POI {#delete-a-poi}
 
@@ -20,7 +19,7 @@ ht-degree: 6%
 DELETE https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## 標題
+## 標頭
 
 ```text
 -H' Content-Type: application/json'  
@@ -36,9 +35,9 @@ DELETE https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 If successful a Status of "204 No Content" is returned.
 ```
 
-## CURL命令
+## CURL指令
 
-使用下列CURL命令測試API:
+使用下列CURL命令來測試API：
 
 ```text
 curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -46,5 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H
 
 >[!IMPORTANT]
 >
->以實 `<POIID>`際值 `<API KEY>`取代 `<TOKEN>`、、 `<ORGID>` 和。
-
+>Replace `<POIID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 包含實際值。

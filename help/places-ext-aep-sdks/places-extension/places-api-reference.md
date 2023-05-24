@@ -1,28 +1,27 @@
 ---
 title: Places API參考
 description: Places中API參考的相關資訊。
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 32%
 
 ---
 
-
 # Places API參考 {#places-api-reference}
 
 以下是Places擴充功能中API參考的相關資訊：
 
-## 處理地區事件
+## 處理區域事件
 
-當裝置跨越您應用程式中預先定義的「地標服務」區域邊界時，區域和事件類型會傳遞至SDK以進行處理。
+當裝置超過應用程式預先定義的Places Service區域邊界之一時，區域和事件型別就會傳遞至SDK進行處理。
 
-### ProcessGeofence(Android)
+### ProcessGeofence (Android)
 
-處理所 `Geofence` 提供的地區事件 `transitionType`。
+處理a `Geofence` 提供的區域事件 `transitionType`.
 
-傳遞 `transitionType` 自 `GeofencingEvent.getGeofenceTransition()`。 目前 `Geofence.GEOFENCE_TRANSITION_ENTER` 並 `Geofence.GEOFENCE_TRANSITION_EXIT` 受支援。
+傳遞 `transitionType` 從 `GeofencingEvent.getGeofenceTransition()`. 目前 `Geofence.GEOFENCE_TRANSITION_ENTER` 和 `Geofence.GEOFENCE_TRANSITION_EXIT` 支援。
 
 **語法**
 
@@ -34,7 +33,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **範例**
 
-在已註冊接收Android地 `IntentService` 理序列事件的您中呼叫此方法。
+在您的中呼叫此方法 `IntentService` 已註冊接收Android地理圍欄事件的網站。
 
 此方法的程式碼範例如下：
 
@@ -58,9 +57,9 @@ public class GeofenceTransitionsIntentService extends IntentService {
 }
 ```
 
-### ProcessRegionEvent(iOS)
+### ProcessRegionEvent (iOS)
 
-應在委派中呼叫此方 `CLLocationManager` 法，以告知使用者是否已進入或退出特定地區。
+此方法應呼叫於 `CLLocationManager` 委派，告知使用者是否已進入或退出特定區域。
 
 **語法**
 
@@ -85,9 +84,9 @@ public class GeofenceTransitionsIntentService extends IntentService {
 }
 ```
 
-### ProcessGeofercingEvent(Android)
+### ProcessGeofencingEvent (Android)
 
-同時 `Geofences` 處理 `GeofencingEvent` 所有內容。
+全部處理 `Geofences` 在 `GeofencingEvent` 同時。
 
 **語法**
 
@@ -97,7 +96,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **範例**
 
-在已註冊接收Android地 `IntentService` 理序列事件的您中呼叫此方法
+在您的中呼叫此方法 `IntentService` 已註冊接收Android地理圍欄事件的使用者
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -116,9 +115,9 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ## 擷取附近的地標
 
-傳回回回呼中附近POI的有序清單。 如果導致的網路呼叫發生問題，此方法的過載版本會傳回錯誤碼。
+傳回回回回撥中附近POI的排序清單。 如果產生的網路呼叫發生錯誤，此方法的多載版本會傳回錯誤碼。
 
-### GetOnnexerPointsOfInterest(Android)
+### GetNeartherPointsOfInterest (Android)
 
 此方法的語法如下：
 
@@ -165,7 +164,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 );
 ```
 
-### GetOnnexterPointsOfInterest(iOS)
+### GetNeartherPointsOfInterest (iOS)
 
 **語法**
 
@@ -203,11 +202,11 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 ];
 ```
 
-## 擷取目前裝置的興趣點
+## 擷取目前裝置地標
 
-請求設備當前已知位於的POI清單，並在回呼中返回這些POI。
+要求目前已知裝置所在的POI清單，並在回撥中傳回。
 
-### GetCurrentPointsOfInterest(Android)
+### GetCurrentPointsOfInterest (Android)
 
 此方法的語法如下：
 
@@ -231,7 +230,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 });
 ```
 
-### GetCurrentPointsOfInterest(iOS)
+### GetCurrentPointsOfInterest (iOS)
 
 **語法**
 
@@ -255,14 +254,14 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 ## 取得裝置的位置
 
-請求裝置的位置（如先前所知），由Places擴充功能。
+要求Places擴充功能先前所知的裝置位置。
 
 >[!TIP]
 >
->「地標」分機只會知道透過呼叫提供給它的位置 `GetNearbyPointsOfInterest`。
+>Places擴充功能只知道透過呼叫向其提供的位置 `GetNearbyPointsOfInterest`.
 
 
-### GetLastKnownLocation(Android)
+### GetLastKnownLocation (Android)
 
 **語法**
 
@@ -286,7 +285,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 });
 ```
 
-### GetLastKnownLocation(iOS)
+### GetLastKnownLocation (iOS)
 
 **語法**
 
@@ -307,12 +306,12 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 }];
 ```
 
-## 清除用戶端資料
+## 清除使用者端資料
 
 
 ### 清除(Android)
 
-清除位於共用狀態、本機儲存空間和記憶體中之「位置」擴充功能的用戶端資料。
+清除共用狀態、本機儲存和記憶體中Places擴充功能的使用者端資料。
 
 **語法**
 
@@ -330,9 +329,9 @@ public static void clear();
 Places.clear();
 ```
 
-### clear(iOS)
+### 清除(iOS)
 
-清除處於共用狀態、本地儲存和記憶體中的Places擴展的用戶端資料。
+清除Places擴充功能在共用狀態、本機儲存和記憶體中的使用者端資料。
 
 **語法**
 
@@ -352,14 +351,14 @@ Places.clear();
 
 ## 設定位置授權狀態
 
-### setAuthorizationStatus(Android)
+### setAuthorizationStatus (Android)
 
 *從Places v1.4.0開始提供*
 
-在「地點」擴展中設定授權狀態。
+在Places擴充功能中設定授權狀態。
 
-提供的狀態會儲存在「地標」共用狀態，且僅供參考。
-呼叫此方法不會影響此設備的實際位置授權狀態。
+提供的狀態會儲存在Places共用狀態，且僅供參考。
+呼叫此方法不會影響此裝置的實際位置授權狀態。
 
 **語法**
 
@@ -377,16 +376,16 @@ public static void setAuthorizationStatus(final PlacesAuthorizationStatus status
 Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 ```
 
-### setAuthorizationStatus(iOS)
+### setAuthorizationStatus (iOS)
 
 *從ACPPlaces v1.3.0開始提供*
 
-在「地點」擴展中設定授權狀態。
+在Places擴充功能中設定授權狀態。
 
-提供的狀態會儲存在「地標」共用狀態，且僅供參考。
-呼叫此方法不會影響此設備的實際位置授權狀態。
+提供的狀態會儲存在Places共用狀態，且僅供參考。
+呼叫此方法不會影響此裝置的實際位置授權狀態。
 
-當裝置授權狀態變更時，會 `locationManager:didChangeAuthorizationStatus:` 呼叫您的 `CLLocationManagerDelegate` 方法。 在此方法中，您應將新值 `CLAuthorizationStatus` 傳遞至ACPPlaces `setAuthorizationStatus:` API。
+當裝置授權狀態變更時， `locationManager:didChangeAuthorizationStatus:` 您的方法 `CLLocationManagerDelegate` 叫用的是。 您應從此方法內傳遞新的 `CLAuthorizationStatus` acplaces的值 `setAuthorizationStatus:` API。
 
 **語法**
 

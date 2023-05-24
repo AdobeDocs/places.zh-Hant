@@ -1,18 +1,17 @@
 ---
-title: 地點事件參考
-description: '由「地標」擴充功能處理的事件清單。 '
-translation-type: tm+mt
-source-git-commit: 5a0705f02c8ecd540506b628371aec45107df7b2
+title: Places事件參考
+description: Places擴充功能所處理的事件的清單。
+exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '248'
-ht-degree: 24%
+ht-degree: 28%
 
 ---
 
+# Places事件參考 {#places-event-reference}
 
-# 地點事件參考 {#places-event-reference}
-
-以下是由「地標」擴充功能處理的事件清單。
+以下為Places擴充功能處理的事件清單。
 
 ## GetCurrentPointsOfInterest
 
@@ -24,13 +23,13 @@ ht-degree: 24%
 
 **事件說明**
 
-此事件是請求擷取裝置目前所在的POI。
+此事件是要求擷取裝置目前所在的POI。
 
 **資料裝載定義**
 
-n/a
+N/A
 
-## GetOnnexterPointsOfInterest
+## GetNeartherPointsOfInterest
 
 **事件詳細資料**
 
@@ -40,16 +39,16 @@ n/a
 
 **事件說明**
 
-此事件是要求您考慮目前裝置位置和已設定的Places程式庫，以取得附近的POI。
+此事件是取得附近POI的要求，需要考量目前裝置位置和已設定的Places程式庫。
 
 **資料裝載定義**
 
 | 代碼 | 值類型 | 必填 | 預設值 | 說明 |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | 雙倍 | true | n/a | 保留搜索附近POI中心的緯度值。 |
-| longitude | 雙倍 | true | n/a | 保存附近POI搜索中心的經度值。 |
-| 半徑 | 整數 | false | n/a | 半徑（以米為單位），用於搜索附近的POI。 |
-| count | 整數 | false | 10 | 在結果回應事件中返回的POI的最大數量。 |
+| latitude | 兩次 | true | N/A | 儲存搜尋附近POI的中心的緯度值。 |
+| longitude | 兩次 | true | N/A | 儲存搜尋附近POI的中心的經度值。 |
+| 半徑 | 整數 | false | N/A | 搜尋附近POI所使用的半徑（公尺）。 |
+| count | 整數 | false | 10 | 產生回應事件時所傳回的POI數量上限。 |
 
 ## ProcessRegionEvent
 
@@ -61,16 +60,15 @@ n/a
 
 **事件說明**
 
-此事件會使「地標」延伸模組處理地標進入或退出事件。
+此事件會讓Places擴充功能處理地理圍欄登入或退出事件。
 
 **資料裝載定義**
 
 | 代碼 | 值類型 | 必填 | 說明 |
 | :--- | :--- | :--- | :--- |
-| regionid | 字串 | true | 產生事件之地區的ID。 |
-| regioneventtype | int | true | 正在產生的地區事件類型。 1代表進入，2代表退出。 |
+| regionid | 字串 | true | 產生事件的地區識別碼。 |
+| regioneventtype | int | true | 正在產生的區域事件型別。 1代表進入，2代表退出。 |
 
-## Places延伸功能所傳送的事件
+## Places擴充功能傳送的事件
 
-此資訊目前正在進行中。
-
+此資訊目前正在處理中。

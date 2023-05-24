@@ -1,64 +1,63 @@
 ---
-title: Adobe I/O整合概觀
-description: 建立Adobe I/O整合的相關資訊。
-translation-type: tm+mt
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+title: Adobe I/O整合概述
+description: 有關建立Adobe I/O整合的資訊。
+exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 1%
+source-wordcount: '879'
+ht-degree: 5%
 
 ---
 
+# 整合概述和先決條件 {#integration-prereqs}
 
-# Integration overview and prerequisites {#integration-prereqs}
+此資訊會示範如何建立Adobe I/O和Places服務整合。
 
-此資訊會告訴您如何建立Adobe I/O和Places服務整合。
+## 使用者存取的必要條件
 
-## 使用者存取的先決條件
+向貴組織的系統管理員確認下列工作已完成：
 
-向組織的系統管理員確認下列任務已完成：
+* Places核心服務會出現在貴組織的Admin Console中。
+* 您已被新增至組織。
+* 您已被新增為組織中的Places核心服務的使用者。
 
-* 「置入核心服務」會顯示在您組織的管理控制台中。
-* 您已加入組織。
-* 您已新增為「將核心服務置於組織中的使用者」。
+   如需詳細資訊，請參閱 *新增使用者或開發人員至您的Places服務和Experience Platform Launch設定檔* 在 [取得Places Service的存取權](/help/places-gain-access.md).
 
-   如需詳細資訊，請參 *閱「取得Places服務的存取權」中的「將使用者或開發人員新增至您的Places服務和體驗平台啟動設定檔*[」](/help/places-gain-access.md)。
+* 您已被新增為組織中Places核心服務的開發人員。
 
-* 您已新增為「開發人員」，加入貴組織的「放置核心服務」。
+   如需新增開發人員的詳細資訊，請參閱 *新增使用者或開發人員至您的Places服務和Experience Platform Launch設定檔* 在 [取得Places Service的存取權](/help/places-gain-access.md).
 
-   如需新增開發人員的詳細資訊，請參 *閱取得Places服務存取權中的「將使用者或開發人員新增至您的Places服務和Experience Platform Launch設定檔*[」](/help/places-gain-access.md)。
+   如需開發人員角色的詳細資訊，請參閱 [管理開發人員](https://helpx.adobe.com/jp/enterprise/using/manage-developers.html).
 
-   如需開發人員角色的詳細資訊，請參閱「管 [理開發人員](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html)」。
+### REST API要求
 
-### REST API請求
-
-對Places Service REST API的每個請求都需要下列項目：
+對Places Service REST API的每個請求都需要以下專案：
 
 * 組織ID
 * API金鑰
-* 持牌代號
+* 持有人權杖
 
-與Adobe I/O的整合提供這些項目，以及使用JSON網頁Token(JWT)來請求不記名Token的方式。
+與Adobe I/O的整合提供這些專案，以及使用JSON Web權杖(JWT)請求持有人權杖的方法。
 
-* 如需JWT的詳細資訊，請參 [閱JSON Web Token簡介](https://jwt.io/introduction/)。
-* 要為Places服務建立整合，請參 *閱下面的建立Places服務整合* 。
-* 若要瞭解API金鑰整合、產生JWT和公開金鑰憑證，請參閱 [Adobe I/O驗證概觀](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html)。
+* 如需JWT的詳細資訊，請參閱 [JSON Web Token簡介](https://jwt.io/introduction/).
+* 若要建立Places Service的整合，請參閱 *建立Places服務整合* 區段底下。
+* 若要瞭解API金鑰整合、產生JWT和公開金鑰憑證，請參閱 [Adobe I/O驗證概觀](https://www.adobe.io/apis/cloudplatform/console/authentication/gettingstarted.html).
 
 >[!IMPORTANT]
 >
->如果您無法登入Adobe I/O主控台，或如果「建立整合」頁面上不提供「置入服務」選項 *，請參閱「網站服務API概觀」中的「組織需求*」 **[](/help/web-service-api/places-web-services.md)。
+>如果您無法登入Adobe I/O主控台，或Places Service不是 *建立整合頁面*，請參閱 *組織需求* 在 [網站服務API總覽](/help/web-service-api/places-web-services.md).
 
 ## 建立Places服務整合
 
-要建立Places服務整合，請完成以下任務：
+若要建立Places Service整合，請完成下列工作：
 
-### 生成公共密鑰對和私有密鑰對
+### 產生公開和私密金鑰組
 
-若要建立Places Service整合，您需要公用和私用金鑰對。 您可以購買這些對，也可以產生您自己的自簽金鑰。
+若要建立Places Service整合，您需要公開和私密金鑰組。 您可以購買這些密碼組，或自行產生自行簽署的金鑰。
 
-若要產生您自己的自簽金鑰：
+若要產生您自己的自行簽署金鑰：
 
-1. 在終端視窗中，複製並貼上下列每一行，並在貼上每 **[!UICONTROL Enter]** 一行後按：
+1. 在終端機視窗中，複製並貼上下列各行，然後按下 **[!UICONTROL 輸入]** 貼上每一行後：
 
    ```text
       mkdir keys
@@ -68,7 +67,7 @@ ht-degree: 1%
 
    >[!IMPORTANT]
    >
-   >建議您命名索引鍵以方便參考，並將它們儲存在資料夾中。 如果您建立多個整合，您可以輕鬆識別和管理屬於哪個整合的金鑰。
+   >建議您為金鑰命名以方便參考，並將金鑰儲存在資料夾中。 如果您建立多個整合，可以輕鬆識別和管理哪些金鑰屬於哪個整合。
 
 1. 輸入OpenSSL要求的資訊：
 
@@ -82,71 +81,71 @@ ht-degree: 1%
    Email Address:  // Example:  poi@places.com
    ```
 
-   如需OpenSSL的詳細資訊，請參閱 [OpenSSL](https://www.openssl.org/)。
+   如需有關OpenSSL的詳細資訊，請參閱 [OpenSSL](https://www.openssl.org/).
 
    >[!IMPORTANT]
    >
-   >您提供的資訊會併入索引鍵中。
+   >您提供的資訊會整合到索引鍵中。
 
-1. 導覽至和檔案所 `.key` 在 `.crt` 的目錄。
+1. 導覽至「 」所在目錄 `.key` 和 `.crt` 檔案的位置。
 
-   例如，在MacOS中，請至 **[!UICONTROL Macintosh HD]** > **[!UICONTROL users]** > **[!UICONTROL (your user name)]** > **[!UICONTROL Keys]**。
+   例如，在MacOS中，前往 **[!UICONTROL Macintosh HD]** > **[!UICONTROL 使用者]** > **[!UICONTROL （您的使用者名稱）]** > **[!UICONTROL 金鑰]**.
 
-以下視頻將引導您完成生成密鑰對的過程：
+以下影片會引導您完成產生金鑰組的程式：
 
-![整合視訊](/help/assets/places_integration_video.gif)
+![整合影片](/help/assets/places_integration_video.gif)
 
-### 在Adobe I/O主控台中建立Places服務整合
+### 在Adobe I/O主控台中建立Places Service整合
 
-要建立Places服務整合，請執行以下操作：
+若要建立Places Service整合：
 
-1. 請前往 [https://console.adobe.io](https://console.adobe.io) ，並使用您的Adobe ID登入。
-1. 在「快速 **開始** 」區段中，按一下「 **建立整合」**。
-1. 選取 **[!UICONTROL Access an API]** 並按一下 **[!UICONTROL Continue]**。
+1. 前往 [https://console.adobe.io](https://console.adobe.io) 並使用您的Adobe ID登入。
+1. 在 **快速入門** 區段，按一下 **建立整合**.
+1. 選取 **[!UICONTROL 存取API]** 並按一下 **[!UICONTROL 繼續]**.
 
-   **[!UICONTROL Access an API]** 是預設位置。
+   **[!UICONTROL 存取API]** 是預設位置。
 
-1. 如果您可以存取多個Experience Cloud組織，請從右上角的下拉式清單中選取組織。
-1. Under **[!UICONTROL Experience Cloud]**, select **[!UICONTROL Places Service]** as the Adobe service to which you want to integrate and click **[!UICONTROL Continue]**.
-1. 選取 **[!UICONTROL New integration]** 並按一下 **[!UICONTROL Continue]**。
-1. 在「建立新整合」畫面中，輸入名稱和說明。
-1. 將您在上方建 `xxxx_public.crt` 立的檔案拖放至拖放 **[!UICONTROL Public keys certificates]** 區域。
-1. 選擇產品設定檔。
+1. 如果您擁有多個Experience Cloud組織的存取權，請從右上方的下拉式清單中選取組織。
+1. 下 **[!UICONTROL Experience Cloud]**，選取 **[!UICONTROL Places Service]** 作為您想要整合的Adobe服務，然後按一下 **[!UICONTROL 繼續]**.
+1. 選取 **[!UICONTROL 新整合]** 並按一下 **[!UICONTROL 繼續]**.
+1. 在建立新整合畫面上，輸入名稱和說明。
+1. 拖放 `xxxx_public.crt` 檔案（您在上面建立的）至 **[!UICONTROL 公開金鑰憑證]** 拖放區域。
+1. 選取產品設定檔。
 
-   如果您不確定要選擇哪個配置檔案，請與系統管理員聯繫。
-1. 在頁面底部，按一下 **[!UICONTROL Create integration]**。
-1. 數秒後，在「已建立的整 *合」畫面中* ，確認出現下列訊息：
+   如果您不確定要選取哪個設定檔，請聯絡您的系統管理員。
+1. 在頁面底部，按一下 **[!UICONTROL 建立整合]**.
+1. 幾秒後，在 *已建立整合* 畫面，確認出現下列訊息：
 
    `Your integration has been created.`
 
-1. 此時會顯示整合詳細資訊頁面，其頂端是整合名稱。
+1. 整合詳細資訊頁面隨即顯示，整合的名稱位於頂端。
 
-   依預 **[!UICONTROL Overview]** 設會顯示標籤，並顯示API金鑰、您的組織ID、技術帳戶ID，以及您整合的其他詳細資訊。
+   此 **[!UICONTROL 概觀]** 索引標籤預設會出現，並顯示API金鑰、您的組織ID、技術帳戶ID以及有關您整合的其他詳細資訊。
 
 ### 記錄組織ID和API金鑰
 
-1. 在整合詳細資訊頁面上，按一下 **[!UICONTROL Services]** 標籤並確認顯 **[!UICONTROL Places Service]** 示於下方 **[!UICONTROL Configured Services]**。
-1. 在標籤 **[!UICONTROL Overview]** 上，找出並記錄API金鑰（用戶端ID）和組織ID。
+1. 在整合詳細資訊頁面上，按一下 **[!UICONTROL 服務]** 標籤並確認 **[!UICONTROL Places Service]** 顯示於 **[!UICONTROL 已設定的服務]**.
+1. 於 **[!UICONTROL 概觀]** 索引標籤，找到並記錄API金鑰（使用者端ID）和組織ID。
 
    每個Places Service REST API請求都需要這些ID。
 
 ![](/help/assets/places_orgid_api-key.png)
 
-### 產生JWT Token
+### 產生JWT權杖
 
-在整合詳細資訊頁面上，按一 **[!UICONTROL JWT]** 下標籤，以便您透過產生JWT並提供交換URL來測試整合。
+在整合詳細資訊頁面上，按一下 **[!UICONTROL JWT]** 索引標籤來測試整合，方法是產生JWT並提供Exchange URL。
 
-要生成JWT令牌：
+若要產生JWT權杖：
 
-1. 在文字編輯器中，開啟您在上 `private.key` 方建立的檔案。
-1. On the **[!UICONTROL JWT]** tab, copy the contents of the key and paste it in the **[!UICONTROL Paste private key]** field.
-1. 按一下「**[!UICONTROL Generate JWT]**」。
-1. In the **[!UICONTROL Sample CURL command]** section, click **[!UICONTROL Copy]** and paste the contents in your command prompt or terminal window.
-1. 按鍵盤上的鍵 **[!UICONTROL Enter]** 盤運行命令。
+1. 在文字編輯器中，開啟 `private.key` 您在上面建立的檔案。
+1. 在&#x200B;**[!UICONTROL 「JWT」]**&#x200B;標籤上&#x200B;**[!UICONTROL ，複製金鑰的內容並貼到]**「貼上私密金鑰」欄位中。
+1. 按一下 **[!UICONTROL 產生JWT]**.
+1. 在&#x200B;**[!UICONTROL 「Sample CURL 指令」]**&#x200B;區段中，按一下&#x200B;**[!UICONTROL 「複製」]**，然後將內容貼到命令提示字元或終端機視窗中。
+1. 按下以執行命令 **[!UICONTROL 輸入]** 在鍵盤上。
 1. 找到 `"token_type": "bearer"` 和 `"access_token"` 值。
 
-   載體存取Token的值是您在Places Service API請求中使用的值。
+   持有者存取權杖的值會用於您的Places服務API請求。
 
 >[!IMPORTANT]
 >
->Adobe存取Token的有效 **期限** 為24小時，請儲存範例CURL命令（步驟5）。 如果存取Token不再有效，您需要重新產生Token。
+>Adobe存取權杖有效 **僅限** 24小時內，請儲存範例CURL指令（步驟5）。 如果存取權杖不再有效，您需要重新產生權杖。

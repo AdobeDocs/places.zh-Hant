@@ -1,95 +1,94 @@
 ---
-title: 傳送POI登入與退出資料至Analytics
-description: 本節提供如何傳送POI登入與退出資料至Analytics的相關資訊。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: 傳送POI登入和退出資料至Analytics
+description: 本節提供如何將POI登入和退出資料傳送至Analytics的相關資訊。
+exl-id: 69e96261-4902-47dd-a930-a8f3d19c179c
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 2%
+source-wordcount: '432'
+ht-degree: 3%
 
 ---
 
-
-# 傳送POI登入與退出資料至Analytics {#places-data-analytics}
+# 傳送POI登入和退出資料至Analytics {#places-data-analytics}
 
 
 >[!IMPORTANT]
 >
->本節假設您已在應用程式中實作Places服務。 如需實作Places服務的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本節假設您已在應用程式中實施Places服務。 如需實作Places Service的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-在Places Service傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，將Places Service資料傳送至Adobe Analytics。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
+Places服務傳送登入和退出事件後，您可以在Experience Platform Launch中建立規則，將Places服務資料傳送至Adobe Analytics。 若要建立此型別的規則，請在Launch中選取您的屬性，並完成下列步驟：
 
 ## 1.建立規則
 
-1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
+1. 於 **[!UICONTROL 規則]** 標籤，按一下 **[!UICONTROL 建立新規則]**.
 
    請記住以下資訊：
 
-   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
-   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL 建立新規則]** 按鈕將位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL 建立新規則]** 按鈕將位於畫面的右上方。
 
-## 2.選擇事件
+## 2.選取事件
 
-1. 為規則輸入有意義的名稱。
+1. 為您的規則輸入有意義的名稱。
 
-   如此，規則就可在您的規則清單中輕鬆辨識。 在此範例中，規則為命名 **[!UICONTROL Send Data to Analytics]**。
+   如此一來，規則便可在規則清單中輕鬆識別。 在此範例中，規則的名稱為 **[!UICONTROL 將資料傳送至Analytics]**.
 
-1. In the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 事件]** 區段，按一下 **[!UICONTROL 新增]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places Service]**。
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL Places Service]**.
 
-1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Enter POI]**。
+1. 從 **[!UICONTROL 事件型別]** 下拉式清單，選取 **[!UICONTROL 輸入POI]**.
 
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
-   ![&quot;選擇事件&quot;](/help/assets/pt-selectEvent.png)
+   ![&quot;選取事件&quot;](/help/assets/pt-selectEvent.png)
 
 
 ## 3.新增條件
 
 >[!IMPORTANT]
 >
->完成此步驟，將條件新增至規則。 否則，請跳至 *下方定義動作* 。
+>完成此步驟以將條件新增至規則。 否則，請跳至 *定義動作* 下方的。
 
-在此範例中，會建立條件，僅在目前POI的名稱等於時，才會觸發規則 **[!UICONTROL My POI]**。
+在此範例中，會建立條件，使規則只在「目前POI」名稱等於時觸發 **[!UICONTROL 我的POI]**.
 
-1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 條件]** 區段，按一下 **[!UICONTROL 新增]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Places Service]**。
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL Places Service]**.
 
-1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Name]**。
+1. 從 **[!UICONTROL 條件型別]** 下拉式清單，選取 **[!UICONTROL 名稱]**.
 
-1. 在右窗格中的文本欄位中，輸入 **[!UICONTROL My POI]**。
+1. 在右窗格的文字欄位中，輸入 **[!UICONTROL 我的POI]**.
 
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
    ![&quot;設定條件&quot;](/help/assets/pt-setCondition.png)
 
 
-## 4.定義動作
+## 4.定義作業
 
-1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 動作]** 區段，按一下 **[!UICONTROL 新增]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Analytics]**。
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL Adobe Analytics]**.
 
-1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Track]**。
+1. 從 **[!UICONTROL 動作型別]** 下拉式清單，選取 **[!UICONTROL 曲目]**.
 
 1. 在右窗格中，新增您要傳送至Analytics的動作或狀態。
 
-   您也可以選擇新增任何其他內容資料至此請求。 請記住，您可以使用資料元素從SDK動態取得此資料。
+   您也可以選擇將任何其他內容資料新增至此請求。 請記住，您可以使用資料元素，以動態方式從SDK取得此資料。
 
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
-   在下列範例中， `TrackAction` 會傳送呼叫至Analytics，其他內容資料等 `poi.name` 於觸發此登入事件之POI的名稱：
+   在以下範例中， `TrackAction` 呼叫會傳送至Analytics，並包含其他內容資料 `poi.name` 等於觸發此專案事件的POI名稱：
 
    ![&quot;設定動作&quot;](/help/assets/pt-setAction.png)
 
-## 5.儲存規則並重建您的屬性
+## 5.儲存規則並重新建置您的屬性
 
-完成配置後，請確認您的規則看起來與以下映像類似：
+完成設定後，請確認您的規則看起來像以下影像：
 
 ![&quot;規則已建立&quot;](/help/assets/pt-ruleComplete.png)
 
-1. 按一下 **[!UICONTROL Save]**
+1. 按一下&#x200B;**[!UICONTROL 儲存]**
 
-1. 重建您的Launch屬性，並將它部署至正確的環境。
+1. 重新建置Launch屬性，並將其部署至正確的環境。

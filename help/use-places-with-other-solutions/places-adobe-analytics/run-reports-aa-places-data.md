@@ -1,44 +1,43 @@
 ---
-title: 新增位置內容至Analytics請求
+title: 將位置內容新增至Analytics請求
 description: 本節提供如何新增位置內容至Analytics請求的相關資訊。
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+exl-id: bee7b6e3-a75b-4a07-b6e2-f93ce33aa042
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 1%
+source-wordcount: '501'
+ht-degree: 2%
 
 ---
 
-
-# 新增位置內容至Analytics請求 {#run-reports-aa-locserv-data}
+# 將位置內容新增至Analytics請求 {#run-reports-aa-locserv-data}
 
 >[!IMPORTANT]
 >
->本檔案假設您已在應用程式中實施Places服務。 如需實作Places服務的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+>本檔案假設您已在應用程式中實施Places服務。 如需實作Places Service的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-在Places Service傳送進入和退出事件後，您可以在Experience Platform Launch中建立規則，並將您的Places Service資料附加至所有Adobe Analytics事件。 若要建立此類型的規則，請在啟動中選取您的屬性，然後完成下列步驟：
+Places服務傳送登入和退出事件後，您可以在Experience Platform Launch中建立規則，並將Places服務資料附加至所有Adobe Analytics事件。 若要建立此型別的規則，請在Launch中選取您的屬性，並完成下列步驟：
 
 ## 1.建立規則
 
-1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
+1. 於 **[!UICONTROL 規則]** 標籤，按一下 **[!UICONTROL 建立新規則]**.
 
    請記住以下資訊：
-   * 如果您沒有此屬性的現有規則， **[!UICONTROL Create New Rule]** 按鈕就會位於畫面中間。
-   * 如果您的屬性有規則， **[!UICONTROL Create New Rule]** 則按鈕會位於畫面右上方。
+   * 如果您沒有此屬性的現有規則， **[!UICONTROL 建立新規則]** 按鈕將位於畫面中間。
+   * 如果您的屬性有規則， **[!UICONTROL 建立新規則]** 按鈕將位於畫面的右上方。
 
-## 2.選擇事件
+## 2.選取事件
 
-1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。
+1. 為規則提供一個有意義的名稱，以便在規則清單中輕鬆識別。
 
-   在此範例中，規則為命名 **[!UICONTROL Attach Places Service Data to Analytics Track Action Events]**。
+   在此範例中，規則的名稱為 **[!UICONTROL 將Places服務資料附加至Analytics追蹤動作事件]**.
 
-1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 事件]** 區段，按一下 **[!UICONTROL 新增]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL 行動核心]**.
 
-1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Track Action]**。
+1. 從 **[!UICONTROL 事件型別]** 下拉式清單，選取 **[!UICONTROL 追蹤動作]**.
 
-現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有呼叫為 `TrackAction` 基礎。 設定事件後，按一下 **[!UICONTROL Keep Changes]**。
+現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是根據 `TrackAction` 呼叫。 設定事件後，按一下 **[!UICONTROL 保留變更]**.
 
 ![&quot;建立事件&quot;](/help/assets/ad-setEvent_use-analytics-data.png)
 
@@ -47,46 +46,46 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->完成此步驟，將條件新增至規則。 否則，請跳至下 *面的「定義動作* 」區段。
+>完成此程式，將條件新增至規則。 否則，請跳至 *定義動作* 區段底下。
 
-在此範例中，會建立條件，讓規則僅針對AT&amp;T客戶觸發。
+在此範例中，會建立條件，使規則僅針對AT&amp;T客戶觸發。
 
-1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 條件]** 區段，按一下 **[!UICONTROL 新增]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL 行動核心]**.
 
-1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Carrier Name]**。
+1. 從 **[!UICONTROL 條件型別]** 下拉式清單，選取 **[!UICONTROL 電信業者名稱]**.
 
-1. 在右側的窗口中，選中複選框 **[!UICONTROL AT&T]** 。
+1. 在右側的視窗中，選取 **[!UICONTROL AT&amp;T]** 核取方塊。
 
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
 ![&quot;建立條件&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
-## 4.定義動作
+## 4.定義作業
 
-1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
+1. 在 **[!UICONTROL 動作]** 區段，按一下 **[!UICONTROL 新增]**.
 
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL 行動核心]**.
 
-1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
+1. 從 **[!UICONTROL 動作型別]** 下拉式清單，選取 **[!UICONTROL 附加資料]**.
 
-1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
+1. 在右窗格的 **[!UICONTROL JSON裝載]** 欄位中，輸入將新增至此事件的資料。
 
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
-在右窗格中，您可以新增自由格式的JSON裝載，將資料新增至SDK事件，然後監聽此事件的副檔名才能聽到該事件。 在此範例中，有些上下文資料會在Analytics擴充功能處理前新增至此事件。 新增的上下文資料現在會出現在傳出的Analytics點擊上。
+在右側窗格中，您可以新增自由格式JSON裝載，此裝載會在聆聽此事件的擴充功能聽到事件之前，將資料新增至SDK事件。 在此範例中，某些內容資料會在Analytics擴充功能處理此事件之前新增至此事件。 新增的內容資料現在會位於傳出的Analytics點選上。
 
-在下列範例中， `poi.city` 值 `poi.name` 會新增至Analytics事件的上下文資料。 當此事件處理時，新索引鍵的值會由SDK動態決定。
+在以下範例中， `poi.city` 和 `poi.name` 值會新增至Analytics事件的內容資料。 新金鑰的值會在此事件處理時由SDK動態決定。
 
-![「建立動作」](/help/assets/ad-setAction_use-analytics-data.png)
+![&quot;建立動作&quot;](/help/assets/ad-setAction_use-analytics-data.png)
 
-## 5.儲存規則並重建您的屬性
+## 5.儲存規則並重新建置您的屬性
 
-完成配置後，請確認您的規則看起來與以下映像類似：
+完成設定後，請確認您的規則看起來像以下影像：
 
-![&quot;規則已完成。&quot;](/help/assets/ad-ruleComplete_use-analytics-data.png)
+![「規則已完成。」](/help/assets/ad-ruleComplete_use-analytics-data.png)
 
-1. 按一下 **[!UICONTROL Save]**
+1. 按一下&#x200B;**[!UICONTROL 儲存]**
 
-1. 重建您的Launch屬性，並將它部署至正確的環境。
+1. 重新建置Launch屬性，並將其部署至正確的環境。

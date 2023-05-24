@@ -1,30 +1,29 @@
 ---
-title: 使用您自己的螢幕
-description: 您也可以使用Places Service擴充功能API，使用您的監控服務並與Places Service整合。
-translation-type: tm+mt
-source-git-commit: 0ca2162f113fba6bfbd54443109068b1a506762b
+title: 使用您自己的監視器
+description: 您也可以使用監控服務，並使用Places Service擴充功能API與Places Service整合。
+exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%
 
 ---
 
+# 使用您自己的監視器 {#using-your-monitor}
 
-# 使用您自己的螢幕 {#using-your-monitor}
+您也可以使用監控服務，並使用Places擴充功能API與Places服務整合。
 
-您也可以使用Places擴充功能API，使用您的監控服務並與Places服務整合。
+## 註冊地理圍欄
 
-## 註冊地理柵欄
-
-如果您決定使用監控服務，請完成下列步驟，在您目前的位置註冊POI的地理位置：
+如果您決定使用監控服務，請完成下列步驟，註冊目前位置周圍的POI地理圍欄：
 
 ### iOS
 
 在iOS中，完成下列步驟：
 
-1. 將從iOS的核心位置服務取得的位置更新傳遞至Places擴充功能。
+1. 將從iOS核心位置服務取得的位置更新傳遞到Places擴充功能。
 
-1. 使用 `getNearbyPointsOfInterest` Places擴充功能API取得目前位 `ACPPlacesPoi` 置周圍的物件陣列。
+1. 使用 `getNearbyPointsOfInterest` 放置擴充功能API以取得 `ACPPlacesPoi` 物件。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -34,7 +33,7 @@ ht-degree: 1%
    }
    ```
 
-1. 從獲取的對象中提取信 `ACPPlacesPOI` 息，並開始監控這些POI。
+1. 從取得的擷取資訊 `ACPPlacesPOI` 物件並開始監督這些POI。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -58,9 +57,9 @@ ht-degree: 1%
 
 ### Android
 
-1. 將從Google Play服務或Android位置服務取得的位置更新傳遞至Places延伸功能。
+1. 將從Google Play服務或Android位置服務取得的位置更新傳遞到Places擴充功能。
 
-1. 使用 `getNearbyPointsOfInterest` Places Extension API取得目前位置 `PlacesPoi` 周圍的物件清單。
+1. 使用 `getNearbyPointsOfInterest` Places擴充功能API以取得 `PlacesPoi` 物件。
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -78,7 +77,7 @@ ht-degree: 1%
    };
    ```
 
-1. 從所獲取的物件擷取資 `PlacesPOI` 料，並開始監控這些POI。
+1. 從取得的擷取資料 `PlacesPOI` 物件並開始監督這些POI。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -107,13 +106,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->您應謹慎呼叫API，或僅在使用者位置發生重大變更時才呼叫API。
+>您應謹慎呼叫API，或僅在使用者發生重大位置變更時呼叫。
 
-## 張貼地理科學事件
+## 發佈地理圍欄事件
 
 ### iOS
 
-在iOS中，呼叫委 `processGeofenceEvent` 派中的Places API `CLLocationManager` 。 此API會通知您使用者是否已進入或退出特定地區。
+在iOS中，呼叫 `processGeofenceEvent` 將API放入 `CLLocationManager` 委派。 此API會通知您使用者是否已進入或退出特定區域。
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -127,7 +126,7 @@ ht-degree: 1%
 
 ### Android
 
-在Android中，請呼叫方 `processGeofence` 法，以及Geofence廣播接收器中的適當轉場事件。 您可能想要組織收到的地理柵欄清單，以防止重複登入／退出。
+在Android中，呼叫 `processGeofence` 方法，以及地理圍欄廣播接收器中的適當轉變事件。 您可能想要組織收到的地理圍欄清單，以防止重複進入/退出。
 
 ```java
 void onGeofenceReceived(final Intent intent) {

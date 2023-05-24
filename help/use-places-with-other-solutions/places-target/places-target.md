@@ -1,40 +1,39 @@
 ---
 title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用Places Service的相關資訊。
-translation-type: tm+mt
-source-git-commit: d33e4e2d798c7048bdd275cdf6c0aabf3434f789
+exl-id: 6ee91fca-ea48-4de2-8dcf-87981813c678
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '477'
-ht-degree: 2%
+source-wordcount: '536'
+ht-degree: 3%
 
 ---
 
+# 搭配Adobe Target使用Places Service {#places-target}
 
-# 搭配Adobe Target使用Places服務 {#places-target}
+本檔案假設您在應用程式中實作Places擴充功能。 如果您需要實作Places擴充功能的協助，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
-本檔案假設您已在應用程式中實作「位置」擴充功能。 如果您需要實作Places擴充功能的協助，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
-
-在Places擴充功能傳送登入和退出的事件後，您可以利用Launch中的規則，將您的Places服務資料附加至Adobe Target SDK事件。 在啟動中選取您想要的屬性後，您可以完成下列工作以建立此類型的規則：
+在Places擴充功能傳送登入和退出事件後，您可以運用Launch中的規則，將Places服務資料附加至Adobe Target SDK事件。 在Launch中選取所需的屬性後，您可以完成下列工作來建立此型別的規則：
 
 ## 1.建立規則
 
-1. On the **[!UICONTROL Rules]** tab, click **[!UICONTROL Create New Rule]**.
+1. 於 **[!UICONTROL 規則]** 標籤，按一下 **[!UICONTROL 建立新規則]**.
 
    請記住以下資訊：
 
-   * 如果您沒有此屬性的現有規則，則按鈕會位於畫面中間。
-   * 如果您的屬性有規則，則按鈕會位於畫面的右上方。
+   * 如果您沒有此屬性的現有規則，則按鈕將位於畫面中間。
+   * 如果您的屬性有規則，則按鈕會位於畫面右上方。
 
-## 2.選擇事件
+## 2.選取事件
 
-1. 為規則指定有意義的名稱，以便在規則清單中輕鬆辨識。
+1. 為規則提供一個有意義的名稱，以便在規則清單中輕鬆識別。
 
-   在此範例中，規則為命名 **[!UICONTROL Attach Places Service Data to Target Content Requested]**。
+   在此範例中，規則的名稱為 **[!UICONTROL 將Places服務資料附加至請求的目標內容]**.
 
-1. Under the **[!UICONTROL Events]** section, click **[!UICONTROL Add]**.
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Adobe Target]**。
-1. 從下拉 **[!UICONTROL Event Type]** 式清單中，選取 **[!UICONTROL Content Requested]**。
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 在 **[!UICONTROL 事件]** 區段，按一下 **[!UICONTROL 新增]**.
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL Adobe Target]**.
+1. 從 **[!UICONTROL 事件型別]** 下拉式清單，選取 **[!UICONTROL 已要求內容]**.
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
 ![新增事件](/help/assets/ad-setEvent_target.png)
 
@@ -42,43 +41,43 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->如果您要將條件新增至規則，請完成此步驟。 否則，請跳至下 *面的定義動作* 。
+>如果您想要將條件新增至規則，請完成此步驟。 否則，請跳至 *定義動作* 下方的。
 
-在下列範例中，會建立條件，使規則僅針對已啟動應用程式五次以上的使用者觸發。
+在以下範例中，系統會建立條件，讓規則僅針對已啟動應用程式五次或更多次的使用者觸發。
 
-1. Under the **[!UICONTROL Conditions]** section, click **[!UICONTROL Add]**.
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
-1. 從下拉 **[!UICONTROL Condition Type]** 式清單中，選取 **[!UICONTROL Launches]**。
-1. 在右窗格中，修改下拉式清單和數字控制項，讓條件讀取 **[!UICONTROL User has launched the app greater than or equal to 5 times]**。
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 在 **[!UICONTROL 條件]** 區段，按一下 **[!UICONTROL 新增]**.
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL 行動核心]**.
+1. 從 **[!UICONTROL 條件型別]** 下拉式清單，選取 **[!UICONTROL 啟動]**.
+1. 在右窗格中，修改下拉式清單和數位控制項，讓條件可讀取 **[!UICONTROL 使用者已啟動應用程式超過或等於5次]**.
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
 ![新增條件](/help/assets/ad-setCondition_target.png)
 
-## 4.定義動作
+## 4.定義作業
 
-1. Under the **[!UICONTROL Actions]** section, click **[!UICONTROL Add]**.
-1. 從下拉 **[!UICONTROL Extension]** 式清單中，選取 **[!UICONTROL Mobile Core]**。
-1. 從下拉 **[!UICONTROL Action Type]** 式清單中，選取 **[!UICONTROL Attach Data]**。
-1. 在右窗格的欄位中， **[!UICONTROL JSON Payload]** 輸入要新增至此事件的資料。
-1. 按一下「**[!UICONTROL Keep Changes]**」。
+1. 在 **[!UICONTROL 動作]** 區段，按一下 **[!UICONTROL 新增]**.
+1. 從 **[!UICONTROL 副檔名]** 下拉式清單，選取 **[!UICONTROL 行動核心]**.
+1. 從 **[!UICONTROL 動作型別]** 下拉式清單，選取 **[!UICONTROL 附加資料]**.
+1. 在右窗格的 **[!UICONTROL JSON裝載]** 欄位中，輸入將新增至此事件的資料。
+1. 按一下&#x200B;**[!UICONTROL 保留變更]**.
 
-在右窗格中，您可以新增自由格式的JSON裝載，在監聽此事件的副檔名之前，將資料新增至SDK事件。
+在右側窗格中，您可以新增自由格式JSON裝載，此裝載會在監聽此事件的擴充功能聆聽之前，將資料新增至SDK事件。
 
-在下列範例中， `poiCity` 會將值 `poiName` 新增至Target事 **[!UICONTROL mboxparameters]** 件中處理的每個請求。 此事件處理時，SDK會動態決定新索引鍵的值。
+在以下範例中， `poiCity` 和 `poiName` 值會新增至 **[!UICONTROL mboxparameters]** Target事件中處理的每個要求。 新金鑰的值會在此事件處理時由SDK動態決定。
 
 >[!TIP]
 >
->此JSON裝載會對物件使用特殊記 `request` 號。 在原始事件中， `request` 是一組匿名物件。 使用「附加資料」(Attach Data)將資料附加到陣列中的所有對象時，已知包含陣列的鍵上的符號會導致裝載被應用於該陣列中的所有對象。 `[*]`
+>此JSON裝載使用特殊標籤法來 `request` 物件。 在原始事件中， `request` 是匿名物件的陣列。 使用「附加資料」將資料附加至陣列中的所有物件時， `[*]` 在已知包含陣列的索引鍵上加上標籤法，會使裝載套用至該陣列中的所有物件。
 >
->對於數 `request[*]` 組中的每個對象， _可以朗讀的記 `request` 號_。
+>表示法 `request[*]` 可大聲朗讀為 _每個物件的 `request` 陣列_.
 
 ![定義動作](/help/assets/ad-setAction-target.png)
 
-## 5.儲存規則並重建您的屬性
+## 5.儲存規則並重新建置您的屬性
 
-完成配置後，請確認您的規則看起來與以下映像類似：
+完成設定後，請確認您的規則看起來像以下影像：
 
 ![已完成規則](/help/assets/ad-ruleComplete-target.png)
 
-1. 按一下 **[!UICONTROL Save]**
-1. 重建您的Launch屬性，並將它部署至正確的環境。
+1. 按一下&#x200B;**[!UICONTROL 儲存]**
+1. 重新建置Launch屬性，並將其部署至正確的環境。

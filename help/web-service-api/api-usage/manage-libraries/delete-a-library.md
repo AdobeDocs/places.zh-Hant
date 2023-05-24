@@ -1,14 +1,13 @@
 ---
 title: 刪除程式庫
 description: 使用Places REST API刪除程式庫。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: ad45ea38-9e12-43d7-b05f-17d3e40abaf5
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
-
 
 # 刪除程式庫 {#delete-a-library}
 
@@ -20,7 +19,7 @@ ht-degree: 6%
 DELETE https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 ```
 
-## 標題
+## 標頭
 
 ```text
 -H' Content-Type: application/json'  
@@ -36,9 +35,9 @@ DELETE https://api-places.adobe.io/places/placesapi/v1/libraries/<lIBRARYID>
 If successful a Status of "204 No Content" is returned.
 ```
 
-## CURL命令
+## CURL指令
 
-使用下列CURL命令測試此API:
+使用下列CURL命令來測試此API：
 
 ```text
 curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -46,5 +45,4 @@ curl -X DELETE 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRA
 
 >[!IMPORTANT]
 >
->以實際值取 `<lIBRARYID>`代 `<API KEY>`、 `<TOKEN>`和等 `<ORGID>`變數。
-
+>取代變數，例如 `<lIBRARYID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>`包含實際值。

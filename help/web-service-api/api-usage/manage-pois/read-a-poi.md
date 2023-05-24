@@ -1,18 +1,17 @@
 ---
-title: 閱讀POI
+title: 讀取POI
 description: 使用Places REST API讀取POI。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+exl-id: 19eb73c4-5101-47a9-8c79-bc4790ecf472
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
+# 讀取POI {#read-a-poi}
 
-# 閱讀POI {#read-a-poi}
-
-返回POI詳細資訊的GET方法。
+傳回POI詳細資料的GET方法。
 
 ## 請求
 
@@ -20,7 +19,7 @@ ht-degree: 6%
 GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 ```
 
-## 標題
+## 標頭
 
 ```text
 -H' Content-Type: application/json'  
@@ -60,9 +59,9 @@ GET https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>
 }
 ```
 
-## CURL命令
+## CURL指令
 
-使用下列CURL命令測試API:
+使用下列CURL命令來測試API：
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -70,5 +69,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->以實 `<POIID>`際值 `<API KEY>`取代 `<TOKEN>`、、 `<ORIGIN>` 和。
-
+>Replace `<POIID>`， `<API KEY>`， `<TOKEN>`、和 `<ORIGIN>` 包含實際值。

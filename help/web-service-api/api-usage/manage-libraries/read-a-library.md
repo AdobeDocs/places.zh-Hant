@@ -1,17 +1,15 @@
 ---
-title: 閱讀資料庫
-description: 使用Places REST API讀取資料庫。
-translation-type: tm+mt
-source-git-commit: 8a84fe2dc5a0efe94ce3121e589524e3c7a80c5e
+title: 讀取程式庫
+description: 使用Places REST API讀取程式庫。
+exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 6%
+ht-degree: 8%
 
 ---
 
-
-
-# 閱讀資料庫 {#read-a-library}
+# 讀取程式庫 {#read-a-library}
 
 傳回程式庫詳細資料的GET方法。
 
@@ -21,7 +19,7 @@ ht-degree: 6%
 GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 ```
 
-## 標題
+## 標頭
 
 ```text
 -H' Content-Type: application/json'  
@@ -82,9 +80,9 @@ GET https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>
 }
 ```
 
-## CURL命令
+## CURL指令
 
-使用下列CURL命令測試API:
+使用下列CURL命令來測試API：
 
 ```text
 curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYID>' -H 'x-api-key: <API KEY>' -H 'Authorization: Bearer <TOKEN>' -H 'x-gw-ims-org-id: <ORGID>'
@@ -92,5 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->以實 `<LIBRARYID>`際值 `<API KEY>`取代 `<TOKEN>`、、 `<ORGID>` 和。
-
+>Replace `<LIBRARYID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 包含實際值。
