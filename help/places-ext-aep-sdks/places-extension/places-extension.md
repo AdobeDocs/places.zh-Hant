@@ -2,29 +2,29 @@
 title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 795808b38851d5afcedc03f58e9a1d6342830934
+source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '697'
 ht-degree: 5%
 
 ---
 
 # Places 擴充功能 {#places-extension}
 
-Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功能是Places查詢服務API的介面。 透過接聽包含GPS座標和地理圍欄區域事件的事件，此擴充功能會傳送由規則引擎處理的新事件。 Places擴充功能也會擷取並傳送從API擷取之應用程式資料的最近POI清單。 API傳回的區域會儲存在快取和持續性中，以允許有限的離線處理。
+Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功能是Places查詢服務API的介面。 透過接聽包含GPS座標和地理圍欄區域事件的事件，此擴充功能會傳送由規則引擎處理的新事件。 Places擴充功能也會擷取並傳送從API擷取之應用程式資料的最接近POI清單。 API傳回的區域會儲存在快取和持續性中，以供有限的離線處理。
 
 ## 在Adobe Experience Platform Launch中安裝Places擴充功能
 
 1. 在Experience Platform Launch中，按一下 **[!UICONTROL 擴充功能]** 標籤。
-1. 於 **[!UICONTROL 目錄]** 索引標籤中，找到 **[!UICONTROL 地點]** 擴充功能上，然後按一下 **[!UICONTROL 安裝]**.
+1. 在 **[!UICONTROL 目錄]** 索引標籤中，找到 **[!UICONTROL 地點]** 擴充功能上，然後按一下 **[!UICONTROL 安裝]**.
 1. 選取您要在此屬性中使用的Places資料庫。 這些是可在您的應用程式中存取的程式庫。
 1. 按一下&#x200B;**[!UICONTROL 儲存]**。
 
-   當您按一下 **[!UICONTROL 儲存]**，Experience PlatformSDK會在Places服務中搜尋您選取之資料庫中的POI。 當您建置應用程式時，POI資料不會包含在程式庫的下載中，但系統會在執行階段將基於位置的POI子集下載至一般使用者的裝置，並根據使用者的GPS座標進行下載。
+   當您按一下 **[!UICONTROL 儲存]**，Experience PlatformSDK會在地標服務中搜尋您選取之資料庫中的POI。 當您建置應用程式時，POI資料不會包含在程式庫的下載中，但系統會在執行階段將位置型的POI子集下載至一般使用者的裝置，而且會根據使用者的GPS座標。
 
 1. 完成發佈程式以更新SDK設定。
 
-   如需在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://docs.adobe.com/content/help/zh-Hant/launch/using/reference/publish/overview.html).
+   如需在Experience Platform Launch中發佈的詳細資訊，請參閱 [發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant).
 
 ### 設定Places擴充功能 {#configure-places-extension}
 
@@ -32,11 +32,11 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 ## 將Places擴充功能新增至您的應用程式 {#add-places-to-app}
 
-您可以將Places擴充功能新增至Android和iOS應用程式。 您可以在下方看到將「地點」新增至iOS或Android應用程式的步驟。 Places擴充功能也可用於下列平台。 若要在使用這些平台之一進行開發時將地標新增至您的應用程式，請參閱隨附的連結：
+您可以將Places擴充功能新增至Android和iOS應用程式。 您可以在下面看到將Places新增至iOS或Android應用程式的步驟。 Places擴充功能也可用於下列平台。 若要在使用其中一個平台開發時將Places新增至您的應用程式，請參閱隨附的連結：
 
 **[Cordova Places外掛程式](https://github.com/adobe/cordova-acpplaces/blob/master/README.md)**
 
-**[React原生位置外掛程式](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
+**[React原生地標外掛程式](https://github.com/adobe/react-native-acpplaces/blob/master/README.md)**
 
 **[Flutter Places增效模組](https://github.com/adobe/flutter-acpplaces_monitor)**
 
@@ -65,7 +65,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
 
 若要使用Objective-C或Swift將Places擴充功能新增至您的應用程式：
 
-1. 新增地標和 [行動核心](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 資料庫至您的專案。 您需要將下列Pod新增至您的 `Podfile`：
+1. 新增地標和 [行動核心](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core) 資料庫至您的專案。 您將需要新增下列Pod至您的 `Podfile`：
 
    ```objective-c
    pod 'ACPPlaces', '~> 1.0'
@@ -80,7 +80,7 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    pod update
    ```
 
-1. 開啟Xcode，然後在AppDelegate類別中匯入Core和Places標頭：
+1. 開啟Xcode，然後在AppDelegate類別中，匯入Core和Places標頭：
 
    **Objective-C**
 
@@ -96,13 +96,13 @@ Places擴充功能可讓您根據使用者的位置採取行動。 此擴充功�
    import ACPPlaces
    ```
 
-### 使用行動核心註冊Places擴充功能 {#register-places-mobile-core}
+### 透過行動核心註冊Places擴充功能 {#register-places-mobile-core}
 
-您需要在Android和iOS中使用Mobile Core註冊Places擴充功能。
+您需要在Android和iOS中透過Mobile Core註冊Places擴充功能。
 
 #### Android
 
-在您的應用程式的 `OnCreate` 方法註冊Places擴充功能：
+在您的應用程式中 `OnCreate` 方法註冊Places擴充功能：
 
 ```java
 public class PlacesTestApp extends Application {
@@ -124,7 +124,7 @@ public class PlacesTestApp extends Application {
 
 #### iOS
 
-在您的應用程式的 `application:didFinishLaunchingWithOptions:` 方法，以您的其他SDK註冊呼叫註冊Places擴充功能：
+在您的應用程式中 `application:didFinishLaunchingWithOptions:` 方法，以您的其他SDK註冊呼叫註冊Places擴充功能：
 
 **Objective-C**
 
@@ -150,11 +150,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 位置資料可能會很快過時，尤其是當裝置未收到背景位置更新時。
 
-透過設定「 」，控制裝置上Places成員資格資料的存留時間。 `places.membershipttl` 組態設定。 傳入的值代表Places狀態對裝置保持有效的秒數。
+透過設定「 」，控制裝置上Places成員資格資料的存留時間 `places.membershipttl` 組態設定。 傳入的值代表Places狀態對裝置保持有效的秒數。
 
 #### Android
 
-回呼的內 `MobileCore.start()` 在呼叫之前使用必要的變更更新設定 `lifecycleStart`：
+在的回呼內 `MobileCore.start()` 在呼叫之前使用必要的變更更新設定 `lifecycleStart`：
 
 ```java
 public class PlacesTestApp extends Application {
@@ -232,8 +232,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 若要在執行階段以程式設計方式更新SDK設定，請使用下列資訊來變更Places擴充功能設定值。 如需詳細資訊，請參閱 [設定API參考](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/configuration/configuration-api-reference).
 
-| 代碼 | 必填 | 說明 |
+| 索引鍵 | 必填 | 說明 |
 | :--- | :--- | :--- |
-| `places.libraries` | 是 | 行動應用程式的Places擴充功能程式庫。 它會指定程式庫ID和行動應用程式支援的程式庫名稱。 |
-| `places.endpoint` | 是 | 預設Places查詢服務端點，用於取得資料庫和POI的相關資訊。 |
+| `places.libraries` | 是 | 適用於行動應用程式的Places擴充功能資料庫。 它會指定行動應用程式支援的資料庫ID和資料庫名稱。 |
+| `places.endpoint` | 是 | 預設Places查詢服務端點，用於取得有關資料庫和POI的資訊。 |
 | `places.membershipttl` | 無 | 預設值為3600 （一小時內的秒數）。 表示裝置的Places成員資格資訊將維持有效的時間（以秒為單位）。 |
