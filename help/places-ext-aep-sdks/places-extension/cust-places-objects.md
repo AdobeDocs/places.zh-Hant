@@ -1,8 +1,9 @@
 ---
 title: 自訂地標物件
-description: 與Places API搭配使用的自訂原生類別相關資訊。
+description: 有關搭配Places API使用的自訂原生類別的資訊。
+feature: Mobile SDK
 exl-id: deb16ba3-bd59-42b1-85ec-0f7de17f91f8
-source-git-commit: 2f666081fa01c11e832b94c83f2fe2c66eb51766
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 5%
@@ -15,7 +16,7 @@ ht-degree: 5%
 
 ## iOS
 
-### ACPlacesPoi
+### ACPPlacesPoi
 
 定義如下：
 

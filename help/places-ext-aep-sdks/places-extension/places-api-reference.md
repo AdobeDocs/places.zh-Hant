@@ -1,8 +1,9 @@
 ---
 title: Places API參考
 description: Places中API參考的相關資訊。
+feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 32%
@@ -15,9 +16,9 @@ ht-degree: 32%
 
 ## 處理區域事件
 
-當裝置超過應用程式預先定義的Places Service區域邊界之一時，區域和事件型別就會傳遞至SDK進行處理。
+當裝置越過應用程式預先定義的Places Service區域邊界之一時，區域和事件型別就會傳遞至SDK進行處理。
 
-### ProcessGeofence (Android)
+### 程式地理圍欄(Android)
 
 處理a `Geofence` 提供的區域事件 `transitionType`.
 
@@ -33,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **範例**
 
-在您的中呼叫此方法 `IntentService` 已註冊接收Android地理圍欄事件的網站。
+在您的中呼叫此方法 `IntentService` 註冊接收Android地理圍欄事件的網站。
 
 此方法的程式碼範例如下：
 
@@ -59,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-此方法應呼叫於 `CLLocationManager` 委派，告知使用者是否已進入或退出特定區域。
+此方法應在下列位置呼叫： `CLLocationManager` 委派，告知使用者是否已進入或離開特定區域。
 
 **語法**
 
@@ -204,7 +205,7 @@ Places.getNearbyPointsOfInterest(currentLocation, 10,
 
 ## 擷取目前裝置地標
 
-要求目前已知裝置所在的POI清單，並在回撥中傳回。
+要求裝置目前已知所在的POI清單，並在回撥中傳回。
 
 ### GetCurrentPointsOfInterest (Android)
 
@@ -254,11 +255,11 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 ## 取得裝置的位置
 
-要求Places擴充功能先前所知的裝置位置。
+要求Places擴充功能先前所知之裝置的位置。
 
 >[!TIP]
 >
->Places擴充功能只知道透過呼叫向其提供的位置 `GetNearbyPointsOfInterest`.
+>Places擴充功能只知道透過呼叫提供給它的位置 `GetNearbyPointsOfInterest`.
 
 
 ### GetLastKnownLocation (Android)
@@ -311,7 +312,7 @@ Places.getLastKnownLocation(new AdobeCallback<Location>() {
 
 ### 清除(Android)
 
-清除共用狀態、本機儲存和記憶體中Places擴充功能的使用者端資料。
+清除Places擴充功能在共用狀態、本機儲存和記憶體中的使用者端資料。
 
 **語法**
 
@@ -357,7 +358,7 @@ Places.clear();
 
 在Places擴充功能中設定授權狀態。
 
-提供的狀態會儲存在Places共用狀態，且僅供參考。
+提供的狀態會儲存在Places共用狀態，僅供參考。
 呼叫此方法不會影響此裝置的實際位置授權狀態。
 
 **語法**
@@ -382,7 +383,7 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 在Places擴充功能中設定授權狀態。
 
-提供的狀態會儲存在Places共用狀態，且僅供參考。
+提供的狀態會儲存在Places共用狀態，僅供參考。
 呼叫此方法不會影響此裝置的實際位置授權狀態。
 
 當裝置授權狀態變更時， `locationManager:didChangeAuthorizationStatus:` 您的方法 `CLLocationManagerDelegate` 叫用的是。 您應從此方法內傳遞新的 `CLAuthorizationStatus` acplaces的值 `setAuthorizationStatus:` API。
