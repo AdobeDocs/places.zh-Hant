@@ -2,7 +2,8 @@
 audience: end-user
 user-guide-title: Places Service 指南
 user-guide-description: Places Service 是地理位置服務，可讓具備位置感知功能的行動應用程式了解位置內容。
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+feature: Places
+source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
 workflow-type: tm+mt
 source-wordcount: '301'
 ht-degree: 20%
@@ -24,10 +25,10 @@ ht-degree: 20%
    + [大量上傳POI](poi-mgmt-ui/bulk-upload-pois.md)
    + [管理多個程式庫](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
 + 網站服務API {#web-service-api}
-   + [Web服務API總覽](web-service-api/places-web-services.md)
+   + [網站服務API總覽](web-service-api/places-web-services.md)
    + [整合必要條件](web-service-api/adobe-i-o-integration.md)
-   + API使用狀況 {#api-usage}
-      + [API使用方式概觀](web-service-api/api-usage/api-usage-overview.md)
+   + API使用情況 {#api-usage}
+      + [API使用概述](web-service-api/api-usage/api-usage-overview.md)
       + [標題和引數](web-service-api/api-usage/headers-and-parameters.md)
       + 管理程式庫 {#manage-libraries}
          + [管理程式庫概觀](web-service-api/api-usage/manage-libraries/manage-libraries.md)
@@ -39,7 +40,7 @@ ht-degree: 20%
          + [在程式庫上設定排名](web-service-api/api-usage/manage-libraries/set-a-ran-on-your-libraries.md)
          + [取得資料庫排名](web-service-api/api-usage/manage-libraries/get-a-librarys-rank.md)
       + 管理地標 {#manage-pois}
-         + [管理POI總覽](web-service-api/api-usage/manage-pois/manage-pois.md)
+         + [管理POI概覽](web-service-api/api-usage/manage-pois/manage-pois.md)
          + [建立POI](web-service-api/api-usage/manage-pois/create-a-poi.md)
          + [讀取POI](web-service-api/api-usage/manage-pois/read-a-poi.md)
          + [更新POI](web-service-api/api-usage/manage-pois/update-a-poi.md)
@@ -47,7 +48,7 @@ ht-degree: 20%
          + [讀取資料庫中的所有POI](web-service-api/api-usage/manage-pois/read-all-pois-in-a-library.md)
          + [讀取您組織中的所有POI](web-service-api/api-usage/manage-pois/read-all-pois-in-your-organization.md)
          + 批次API {#batch-apis}
-            + [批次API概觀](web-service-api/api-usage/manage-pois/batch-apis/batch-apis.md)
+            + [批次API總覽](web-service-api/api-usage/manage-pois/batch-apis/batch-apis.md)
             + [建立多個POI](web-service-api/api-usage/manage-pois/batch-apis/create-multiple-pois.md)
             + [更新多個POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [刪除多個POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
@@ -60,10 +61,10 @@ ht-degree: 20%
       + [自訂地標物件](places-ext-aep-sdks/places-extension/cust-places-objects.md)
 + [將Places Service與您自己的監控解決方案搭配使用](using-your-own-monitor.md)
 + [不使用作用中區域監視的Places服務](use-places-without-active-monitoring.md)
-+ 將Places服務用作Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
-   + [將Places服務用作Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
++ 使用Places Service做為Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
+   + [使用Places Service做為Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定義資料元素](use-places-launch-workflow/define-data-elements.md)
-   + [建立登入和退出規則](use-places-launch-workflow/create-rule-places-property.md)
+   + [建立登入與退出規則](use-places-launch-workflow/create-rule-places-property.md)
 + 搭配其他Adobe解決方案使用Places Service {#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [搭配Adobe Analytics使用Places Service](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
