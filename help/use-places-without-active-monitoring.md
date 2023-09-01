@@ -2,9 +2,9 @@
 title: 不使用作用中區域監視的Places服務
 description: 本節提供如何在不監督作用中區域的情況下使用Places服務的相關資訊。
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
-source-git-commit: 010de286c25c1eeb989fb76e3c2adaa82ac9fd35
+source-git-commit: 33cbef9b3226be3f013fe82d619b82e093a9752a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 >[!TIP]
 >
->如果您的應用程式使用案例需要主動地區監控，請參閱 [將Places Service與您自己的監控解決方案搭配使用](/help/using-your-own-monitor.md).
+>如果您的應用程式使用案例需要主動式區域監控，請參閱 [將Places Service與您自己的監控解決方案搭配使用](/help/using-your-own-monitor.md).
 
-若要在不使用中區域監視的情況下使用Places服務：
+若要在不使用作用中區域監視的情況下使用Places服務：
 
 ## 1.收集使用者的位置
 
-應用程式開發人員必須透過使用 `CoreLocation.framework` (iOS)或 `Location` Google Play服務(Android)提供的API。
+應用程式開發人員必須使用收集裝置的目前位置 `CoreLocation.framework` (iOS)或 `Location` Google Play Services (Android)提供的API。
 
 如需詳細資訊，請參閱下列檔案：
 
@@ -34,11 +34,11 @@ ht-degree: 1%
 
 ## 2.從SDK擷取附近的地標
 
-取得使用者位置後，您可以將其傳遞至SDK，以取得附近POI的清單。
+取得使用者位置後，您可將其傳遞至SDK，以取得附近POI清單。
 
 ### Android
 
-以下是Android中的實作範例，此範例使用 [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5)：
+以下是Android中的實作範例，使用 [`BroadcastReceiver`](https://codelabs.developers.google.com/codelabs/background-location-updates-android-o/index.html?index=..%2F..index#5)：
 
 ```java
 public class LocationBroadcastReceiver extends BroadcastReceiver {
@@ -84,7 +84,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Objective-C
 
-以下是iOS實作範例。 程式碼顯示了 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) 中的方法 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc)：
+以下是iOS實作範例。 程式碼顯示實施 [`locationManager:didUpdateLocations:`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager?language=objc) 中的方法 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager?language=objc)：
 
 ```objectivec
 - (void) locationManager:(CLLocationManager*)manager didUpdateLocations:(NSArray<CLLocation*>*)locations {
@@ -100,7 +100,7 @@ public class LocationBroadcastReceiver extends BroadcastReceiver {
 
 ### Swift
 
-以下是iOS實作範例。 程式碼顯示了 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) 中的方法 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager)：
+以下是iOS實作範例。 程式碼顯示實施 [`locationManager(_:didUpdateLocations:)`](https://developer.apple.com/documentation/corelocation/cllocationmanagerdelegate/1423615-locationmanager) 中的方法 [`CLLocationManagerDelegate`](https://developer.apple.com/documentation/corelocation/cllocationmanager)：
 
 ```swift
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -116,29 +116,29 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 
 ## 3.將Places資料附加至您的Analytics請求
 
-呼叫 `getNearbyPointsOfInterest` API的Places SDK可透過Launch中的資料元素提供與裝置相關的所有POI資料。 透過使用 [附加資料](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 規則，Places資料可自動新增至日後的Analytics請求。 如此一來，就不需要在收集裝置位置時對Analytics發出一次性呼叫。
+透過呼叫 `getNearbyPointsOfInterest` API和Places SDK會透過Launch中的資料元素提供與裝置相關的所有POI資料。 藉由使用 [附加資料](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data) 規則，Places資料可自動新增至Analytics的未來請求。 如此一來，收集裝置位置時，便不需要對Analytics發出一次性呼叫。
 
 另請參閱 [將位置內容新增至Analytics請求](use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md) 以進一步瞭解此主題。
 
-## 可選 — 當使用者處於POI時觸發登入事件
+## 選用 — 當使用者處於POI中時觸發專案事件
 
 >[!TIP]
 >
 >擷取Places資料的建議方式為 [將Places資料附加至Analytics請求](#attach-places-data-to-your-analytics-requests).
 >
->如果使用案例需要 [區域專案事件](places-ext-aep-sdks/places-extension/places-event-ref.md#processregionevent) 若要由SDK觸發，需要手動完成，如下所述。
+>如果使用案例需要 [區域專案事件](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) 若要由SDK觸發，需要手動完成，如下所述。
 
-傳回的清單 `getNearbyPointsOfInterest` API包含 [自訂物件](places-ext-aep-sdks/places-extension/cust-places-objects.md) 指出使用者目前是否在POI內。 如果使用者位於POI中，您可以讓SDK觸發該區域的登入事件。
+傳回的清單 `getNearbyPointsOfInterest` API包含 [自訂物件](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums) 表示使用者目前是否在POI內。 如果使用者位於POI，您可以讓SDK觸發該區域的進入事件。
 
 >[!IMPORTANT]
 >
->為避免您的應用程式在一次造訪中觸發多個進入事件，請保留您知道使用者已進入的地區的清單。 從SDK處理附近POI的回應時，只有在區域不在您的清單中時才會觸發進入事件。
+>若要防止您的應用程式在一次造訪中觸發多個進入事件，請保留您知道使用者已進入的地區的清單。 處理來自SDK的附近POI回應時，只有在區域不在您的清單中時才會觸發進入事件。
 >
->在以下程式碼範例中， `NSUserDefaults` (iOS)和 `SharedPreferences` (Android)用於管理地區清單：
+>在下列程式碼範例中， `NSUserDefaults` (iOS)和 `SharedPreferences` (Android)可用來管理區域清單：
 
 ### Android
 
-下列程式碼範例說明如何處理callback中提供的結果 `getNearbyPointsOfInterest`， a `List<PlacesPOI>`：
+下列程式碼範例說明如何處理 `getNearbyPointsOfInterest`， a `List<PlacesPOI>`：
 
 ```java
 void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
@@ -176,7 +176,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Objective-C
 
-下列程式碼範例說明如何處理callback中提供的結果 `getNearbyPointsOfInterest:limit:callback:errorCallback:`，和 `NSArray<ACPPlacesPoi *> *`：
+下列程式碼範例說明如何處理 `getNearbyPointsOfInterest:limit:callback:errorCallback:`，和 `NSArray<ACPPlacesPoi *> *`：
 
 ```objectivec
 - (void) handleUpdatedPOIs:(NSArray<ACPPlacesPoi *> *)nearbyPois {
@@ -210,7 +210,7 @@ void handleUpdatedPOIs(final List<PlacesPOI> nearbyPois) {
 
 ### Swift
 
-下列程式碼範例說明如何處理callback中提供的結果 `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`，和 `[ACPPlacesPoi]`：
+下列程式碼範例說明如何處理 `getNearbyPoints(_ ofInterest: CLLocation, limit: UInt, callback: (([ACPPlacesPoi]?) -> Void)?, errorCallback: ((ACPPlacesRequestError) -> Void)?)`，和 `[ACPPlacesPoi]`：
 
 ```swift
 func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
@@ -243,11 +243,11 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 
 以下程式碼範例說明如何擷取裝置的目前位置、觸發必要的進入事件，並確保一次造訪不會針對相同位置獲得多個專案。
 
-此程式碼範例包含下列選擇性步驟： [當使用者處於POI時觸發進入事件](#trigger-entry-events-when-the-user-is-in-a-poi).
+此程式碼範例包含選用的步驟： [當使用者處於POI時觸發進入事件](#trigger-entry-events-when-the-user-is-in-a-poi).
 
 >[!IMPORTANT]
 >
->這些代碼片段包括 **僅限** 範例。 開發人員必須決定要如何實作該功能，且決定應考慮目標作業系統建議的最佳實務。
+>這些程式碼片段包括 **僅限** 範例。 開發人員必須決定要如何實作功能，而且決策應考量目標作業系統建議的最佳實務。
 
 ### Android
 
@@ -410,6 +410,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-除了在SDK中觸發Places Service登入事件之外，由於觸發登入事件，SDK的其餘部分也可以透過以下方式使用定義您POI的所有資料： `data elements` 在Experience Platform Launch中。 具有Experience Platform Launch `rules`，您可以動態地將Places服務資料附加至SDK處理的傳入事件。 例如，您可以附加使用者所在之POI的中繼資料，並將資料以內容資料的形式傳送至Analytics。
+除了在SDK中觸發Places Service進入事件外，由於觸發的進入事件，所有POI定義資料都可由SDK的其他部分透過使用 `data elements` 在Experience Platform Launch中。 具有Experience Platform Launch `rules`，您可以動態地將Places服務資料附加至SDK處理的傳入事件。 例如，您可以附加使用者所在之POI的中繼資料，並將資料當作內容資料傳送至Analytics。
 
 如需詳細資訊，請參閱 [搭配其他Adobe解決方案使用Places Service](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md).

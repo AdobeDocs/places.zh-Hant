@@ -3,9 +3,9 @@ audience: end-user
 user-guide-title: Places Service 指南
 user-guide-description: Places Service 是地理位置服務，可讓具備位置感知功能的行動應用程式了解位置內容。
 feature: Places
-source-git-commit: 30f083087936f54c692ff5aca245a7ee6b970b3a
+source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '290'
 ht-degree: 20%
 
 ---
@@ -54,11 +54,7 @@ ht-degree: 20%
             + [刪除多個POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [查詢API](web-service-api/api-usage/query-apis.md)
 + 行動SDK的擴充功能 {#places-ext-aep-sdks}
-   + Places 擴充功能 {#places-extension}
-      + [Places 擴充功能](places-ext-aep-sdks/places-extension/places-extension.md)
-      + [Places API參考](places-ext-aep-sdks/places-extension/places-api-reference.md)
-      + [Places事件參考](places-ext-aep-sdks/places-extension/places-event-ref.md)
-      + [自訂地標物件](places-ext-aep-sdks/places-extension/cust-places-objects.md)
+   + [Places 擴充功能](places-ext-aep-sdks/places-extension/places-extension.md)
 + [將Places Service與您自己的監控解決方案搭配使用](using-your-own-monitor.md)
 + [不使用作用中區域監視的Places服務](use-places-without-active-monitoring.md)
 + 使用Places Service做為Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
