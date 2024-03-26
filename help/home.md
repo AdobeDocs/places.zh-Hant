@@ -2,10 +2,10 @@
 title: Places Service
 description: Places Service是瞭解行動使用者參與的重要內容。 透過使用此內容，行動應用程式開發人員可以增強應用程式設計，使其成為更個人化且吸引人的體驗。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 10%
+source-wordcount: '663'
+ht-degree: 9%
 
 ---
 
@@ -29,7 +29,7 @@ Places Service可讓您達成下列目標：
 
 * 當有人進入POI時傳送即時通知， *「嗨……歡迎來到體育場。」*
 * 分析您自己的商店與競爭對手商店的客流量。
-* 使用具有位置內容的受眾設定檔，根據離線行為來細分受眾。
+* 使用具有位置內容的對象設定檔，根據離線行為來細分對象。
 * 在相關時鎖定具有店內體驗的使用者。
 
 ## Places服務元件
@@ -44,7 +44,7 @@ Places Service包含下列元件：
 
   在地圖上視覺化POI，以瞭解空間內容並新增/編輯POI及其自訂中繼資料。
 
-* **Places 擴充功能**
+* **Places擴充功能**
 
   多平台行動API介面，用於將位置內容整合到行動應用程式中。 如需SDK的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
 
@@ -85,3 +85,4 @@ Places Service包含下列元件：
 * 此 **EXPERIENCE CLOUDID** 服務提供永續性的通用ID，可識別Experience Cloud中所有解決方案的訪客。
 
   如需詳細資訊，請參閱[概覽](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)。
+
