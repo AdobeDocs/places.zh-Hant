@@ -1,11 +1,11 @@
 ---
 title: 讀取程式庫
-description: 使用Places REST API讀取程式庫。
+description: 使用Places REST API讀取資料庫。
 exl-id: c9c5a862-beab-42a9-8e40-abf93da592ea
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 8%
+ht-degree: 4%
 
 ---
 
@@ -90,4 +90,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->Replace `<LIBRARYID>`， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 包含實際值。
+>將`<LIBRARYID>`、`<API KEY>`、`<TOKEN>`和`<ORGID>`取代為實際值。

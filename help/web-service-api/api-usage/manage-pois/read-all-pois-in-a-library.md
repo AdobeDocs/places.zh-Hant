@@ -1,11 +1,11 @@
 ---
 title: 讀取資料庫中的所有POI
-description: 使用Places REST API讀取程式庫中的所有POI。
+description: 使用Places REST API讀取資料庫中的所有POI。
 exl-id: 08544909-661c-4a14-84e0-bacd0241a844
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
@@ -167,4 +167,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/<LIBRARYI
 
 >[!IMPORTANT]
 >
->取代「」， `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 包含實際值。
+>將「」、`<API KEY>`、`<TOKEN>`和`<ORGID>`取代為實際值。

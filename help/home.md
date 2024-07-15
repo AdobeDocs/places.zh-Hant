@@ -27,7 +27,7 @@ Places Service可讓您達成下列目標：
 
 以下是您使用「地點」的一些方式：
 
-* 當有人進入POI時傳送即時通知， *「嗨……歡迎來到體育場。」*
+* 當有人進入POI時傳送即時通知，*&quot;嗨……歡迎來到體育場。」*
 * 分析您自己的商店與競爭對手商店的客流量。
 * 使用具有位置內容的對象設定檔，根據離線行為來細分對象。
 * 在相關時鎖定具有店內體驗的使用者。
@@ -38,17 +38,17 @@ Places Service包含下列元件：
 
 * **Web服務**
 
-  您可以使用Places REST API來建立和管理POI。 如需REST API的詳細資訊，請參閱 [管理程式庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md) 和 [管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md).
+  您可以使用Places REST API來建立和管理POI。 如需有關REST API的詳細資訊，請參閱[管理資料庫](/help/web-service-api/api-usage/manage-libraries/manage-libraries.md)和[管理POI](/help/web-service-api/api-usage/manage-pois/manage-pois.md)。
 
-* **poi管理介面**
+* **POI管理介面**
 
   在地圖上視覺化POI，以瞭解空間內容並新增/編輯POI及其自訂中繼資料。
 
-* **Places擴充功能**
+* **Places延伸模組**
 
-  多平台行動API介面，用於將位置內容整合到行動應用程式中。 如需SDK的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+  多平台行動API介面，用於將位置內容整合到行動應用程式中。 如需SDK的詳細資訊，請參閱[Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-* **Launch規則**
+* **啟動規則**
 
   地理智慧的Launch規則，可讓您透過登入和退出事件觸發動作。 規則也可讓您在條件中使用地理屬性，以個人化體驗。
 
@@ -56,21 +56,21 @@ Places Service包含下列元件：
 
 以下是本檔案中所使用的一些常用辭彙：
 
-* A **興趣點(POI)** 是貴組織感興趣的地理位置。
+* **興趣點(POI)**&#x200B;是貴組織感興趣的地理位置。
 
   您可以使用名稱、半徑、地址、類別和中繼資料標籤等屬性來定義POI。
 
-* A **地理圍欄** 是POI型別。
+* **地理圍欄**&#x200B;是POI型別。
 
   此POI型別是由經緯度座標定義的虛擬地理邊界。
 
-* A **beacon** 是POI型別。
+* **信標**&#x200B;是POI型別。
 
   此POI型別是一種實體裝置，可透過發出低功率藍芽訊號來代表位置。 未來版本將提供Beacons支援。
 
 * **資料庫**&#x200B;是 POI 的集合，這些 POI 會分組，以供輕鬆地將規則附加至規則集，而非一個 POI。
 
-* 一個 **副檔名** 是在行動應用程式中整合Places SDK所需的Experience Platform Launch擴充功能。
+* **擴充功能**&#x200B;是將Places SDK整合到行動應用程式中所需的Experience Platform Launch擴充功能。
 
   搭配其他行動SDK使用的擴充功能，可將位置內容新增至您的體驗。
 
@@ -80,9 +80,9 @@ Places Service包含下列元件：
 
 * **orgID** 是在整個 Adobe Experience 平台之中代表您組織的 ID。
 
-  如需詳細資訊，請參閱 [尋找您的orgID](https://forums.adobe.com/thread/2339895).
+  如需詳細資訊，請參閱[尋找您的組織ID](https://forums.adobe.com/thread/2339895)。
 
-* 此 **EXPERIENCE CLOUDID** 服務提供永續性的通用ID，可識別Experience Cloud中所有解決方案的訪客。
+* **Experience CloudID**&#x200B;服務提供永續性的通用ID，可識別Experience Cloud中所有解決方案的訪客。
 
   如需詳細資訊，請參閱[概覽](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)。
 

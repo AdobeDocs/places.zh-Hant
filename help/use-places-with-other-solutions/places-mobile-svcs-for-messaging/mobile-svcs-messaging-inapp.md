@@ -4,8 +4,8 @@ description: 本節說明如何使用Places服務及應用程式內傳訊。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 3%
+source-wordcount: '644'
+ht-degree: 2%
 
 ---
 
@@ -33,11 +33,11 @@ Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用�
 
 ### 先決條件
 
-開始之前，您已瞭解如何在Mobile Services中傳送及建立應用程式內訊息，以及觸發器如何運作。 如需詳細資訊，請參閱 [建立應用程式內訊息。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)
+開始之前，您已瞭解如何在Mobile Services中傳送及建立應用程式內訊息，以及觸發器如何運作。 如需詳細資訊，請參閱[建立應用程式內訊息。](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=zh-Hant)
 
-##  Experience Platform Launch 中的規則
+## Experience Platform Launch中的規則
 
-您可以建立Experience Platform Launch規則，將您想要用作為應用程式內訊息觸發器規則一部分的資料傳送至Analytics。 您可以根據使用案例，將Places擴充功能中的資料作為Experience Platform Launch規則中的事件和/或條件使用。
+您可以建立Experience Platform Launch規則，將您想要用作為應用程式內訊息觸發器規則一部分的資料傳送至Analytics。 您可以視使用案例而定，將Places擴充功能中的資料用作Experience Platform Launch規則中的事件和/或條件。
 
 * 使用位置資料作為觸發事件。
 
@@ -53,16 +53,16 @@ Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用�
 
 若要建立動作：
 
-1. 選取 **[!UICONTROL Adobe Analytics]** 副檔名。
-1. 在 **[!UICONTROL 動作型別]** 下拉式清單，選取 **[!UICONTROL 追蹤。]**
+1. 選取&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;擴充功能。
+1. 在&#x200B;**[!UICONTROL 動作型別]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 追蹤。]**
 1. 輸入動作的名稱。
-1. 在右窗格，在 **[!UICONTROL 內容資料]**，選取索引鍵/值組以設定將傳送至Analytics的內容資料。
+1. 在右窗格的&#x200B;**[!UICONTROL 內容資料]**&#x200B;中，選取索引鍵/值組以設定將傳送至Analytics的內容資料。
 
-例如，您可以選取 `poiname` 作為鍵值和 `{%%Last Entered POI Name}` 做為值。
+例如，您可以選取`poiname`作為索引鍵，並選取`{%%Last Entered POI Name}`作為值。
 
 >[!TIP]
 >
->Analytics處理規則可以設定為擷取此內容資料。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。在中的範例中 *建立動作*，該動作會傳送 `poiname` 當作內容，說明傳送至Analytics的POI專案事件。
+>Analytics處理規則可以設定為擷取此內容資料。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。 在&#x200B;*建立動作*&#x200B;的範例中，動作會傳送`poiname`作為內容，以說明傳送至Analytics的POI專案事件。
 
 ![建立動作](/help/assets/configure-action.png)
 
@@ -79,10 +79,10 @@ Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用�
 
   此選項可與位置特定的動作（例如登入）搭配使用，或作為另一個事件（例如啟動或按鈕點選）的前後關聯。
 
-  以下是如何設定應用程式內訊息的範例，以歡迎使用者進入具有下列情形的POI **[!UICONTROL Adobe]** 在名稱中：
+  以下是如何設定應用程式內訊息的範例，以歡迎使用者輸入名稱中有&#x200B;**[!UICONTROL Adobe]**&#x200B;的POI：
 
-  ![觸發器引數](/help/assets/trigger-parameters.png)
+  ![觸發引數](/help/assets/trigger-parameters.png)
 
-* 中的Places服務標題中的引數 *觸發器和特徵* 行動服務中的頁面無法與Places服務的資料搭配使用。
+* Mobile Services中&#x200B;*觸發器和特徵*&#x200B;頁面的Places服務標題中的引數，無法與Places服務的資料搭配使用。
 
   這些引數僅適用於在Mobile Services中建立的舊版Places Service資料庫。

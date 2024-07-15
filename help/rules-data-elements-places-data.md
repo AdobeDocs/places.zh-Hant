@@ -3,8 +3,8 @@ title: 搭配Places資料使用Experience Platform Launch規則和資料元素�
 description: 有關規則和資料元素及Places資料的資訊。
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 38%
+source-wordcount: '229'
+ht-degree: 37%
 
 ---
 
@@ -21,5 +21,5 @@ Experience 平台 Launch 是以規則為基礎的系統，會尋找使用者互�
 
 資料元素是變數，而此變數的值可對映至查詢字串、URL、Cookie值、JavaScript變數等。 在Experience Platform Launch中，您可以利用變數名稱來參照此值。 資料元素的集合會變成定義資料的字典，您可用來建置規則（事件、條件和動作），而資料字典則會跨Experience Platform Launch共用，並可與Places擴充功能搭配使用。
 
-如需資料元素的詳細資訊，請參閱[資料元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hant)和[建立資料元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)。
+如需資料元素的詳細資訊，請參閱[資料元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html)和[建立資料元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)。
 

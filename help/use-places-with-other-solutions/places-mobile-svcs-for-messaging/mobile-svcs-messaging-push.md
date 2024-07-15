@@ -4,8 +4,8 @@ description: 本節說明如何搭配推播通知使用Places服務。
 exl-id: c094fe9c-6148-45ba-850a-f4c520d3362c
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 8%
+source-wordcount: '216'
+ht-degree: 10%
 
 ---
 
@@ -21,18 +21,18 @@ Mobile Services可讓您將推播通知傳送至Adobe Analytics區段。 在Plac
 
 * 行動服務中的推播通知通道已設定。
 
-  如需詳細資訊，請參閱[建立推送訊息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)。
+  如需詳細資訊，請參閱[建立推送訊息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=zh-Hant)。
 
 * 瞭解如何在Mobile Services中將推播通知傳送至Analytics區段。
 
-  如需詳細資訊，請參閱[建立推送訊息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html)。
+  如需詳細資訊，請參閱[建立推送訊息](https://experienceleague.adobe.com/docs/discontinued/using/mobile-services.html?lang=zh-Hant)。
 
 ## 傳送通知
 
-在 **[!UICONTROL 對象]** 的標籤 *建立推播通知* 工作流程中，您可以透過下列其中一種方式來建立此訊息的對象：
+在&#x200B;*建立推播通知*&#x200B;工作流程的&#x200B;**[!UICONTROL 對象]**&#x200B;標籤上，您可以透過下列其中一種方式來建立此訊息的對象：
 
-* 在 **[!UICONTROL Analytics區段]** 從下拉式清單中，選取先前建立的Adobe Analytics區段。
+* 在&#x200B;**[!UICONTROL Analytics區段]**&#x200B;下拉式清單中，選取先前建立的Adobe Analytics區段。
 
-* 在 **[!UICONTROL 自訂區段]** 區段，使用可用的自訂區段引數來建立對象。
+* 在&#x200B;**[!UICONTROL 自訂區段]**&#x200B;區段中，使用可用的自訂區段引數來建立對象。
 
 ![設定推送訊息](/help/assets/push-set-up.png)

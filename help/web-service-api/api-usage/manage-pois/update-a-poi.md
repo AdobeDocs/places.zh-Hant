@@ -5,7 +5,7 @@ exl-id: f155d1d3-88a3-47bc-bffe-a35842a639e2
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '45'
-ht-degree: 11%
+ht-degree: 6%
 
 ---
 
@@ -47,4 +47,4 @@ curl -X PUT 'https://api-places.adobe.io/places/placesapi/v1/pois/<POIID>' -H 'x
 
 >[!IMPORTANT]
 >
->Replace `<POIID>`， `<API KEY>`， `<TOKEN>`， `<ORGID>`、和 `<SINGLEPOIDATA>` 包含實際值。
+>將`<POIID>`、`<API KEY>`、`<TOKEN>`、`<ORGID>`和`<SINGLEPOIDATA>`取代為實際值。

@@ -5,7 +5,7 @@ exl-id: c0abedd0-5ff4-4a01-9f8d-e3d17ea53a97
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '41'
-ht-degree: 9%
+ht-degree: 4%
 
 ---
 
@@ -41,4 +41,4 @@ curl -X GET 'https://api-places.adobe.io/places/placesapi/v1/libraries/rank ' -H
 
 >[!IMPORTANT]
 >
->取代變數，例如 `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 包含實際值。
+>將`<API KEY>`、`<TOKEN>`和`<ORGID>`等變數取代為實際值。

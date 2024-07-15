@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # 搭配Adobe Analytics使用Places Service {#places-with-aa}
 
-透過Adobe Analytics使用Places Service，您可以完成下列工作：
+將Places Service與Adobe Analytics搭配使用，您可以完成下列工作：
 
 * [透過Analytics傳送POI登入和退出資料](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
 * [將位置內容新增至Analytics請求](/help/use-places-with-other-solutions/places-adobe-analytics/run-reports-aa-places-data.md)

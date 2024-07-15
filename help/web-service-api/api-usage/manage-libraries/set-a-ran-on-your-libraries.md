@@ -5,13 +5,13 @@ exl-id: c922bddc-1587-4da8-acb4-c2d69ce11808
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '56'
-ht-degree: 7%
+ht-degree: 3%
 
 ---
 
 # 在程式庫上設定排名 {#set-rank-on-libraries}
 
-一種PUT方法，可讓您在所有程式庫上設定排名順序。
+一種PUT方法，可讓您設定所有程式庫的排名順序。
 
 ## 請求
 
@@ -47,4 +47,4 @@ curl -X PUT `'https://api-places.adobe.io/places/placesapi/v1/libraries/rank'` -
 
 >[!IMPORTANT]
 >
->取代變數，例如 `<API KEY>`， `<TOKEN>`、和 `<ORGID>` 包含實際值。
+>將`<API KEY>`、`<TOKEN>`和`<ORGID>`等變數取代為實際值。

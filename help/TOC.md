@@ -6,7 +6,7 @@ feature: Places
 source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
 workflow-type: tm+mt
 source-wordcount: '290'
-ht-degree: 20%
+ht-degree: 18%
 
 ---
 
@@ -17,20 +17,20 @@ ht-degree: 20%
 + [發行說明](release-notes.md)
 + [快速入門](getting-started.md)
 + [取得Places Service的存取權](places-gain-access.md)
-+ Places Service UI {#poi-mgmt-ui}
++ Places服務UI {#poi-mgmt-ui}
    + [Places Service UI總覽](poi-mgmt-ui/poi-mgmt-ui-overview.md)
    + [建立POI](poi-mgmt-ui/create-a-poi-ui.md)
    + [管理先前建立的POI](poi-mgmt-ui/managing-pois-in-the-places-ui.md)
    + [搭配POI使用中繼資料的策略](poi-mgmt-ui/metadata-with-pois.md)
    + [大量上傳POI](poi-mgmt-ui/bulk-upload-pois.md)
    + [管理多個程式庫](poi-mgmt-ui/manage-libraries-in-the-places-ui.md)
-+ 網站服務API {#web-service-api}
++ Web服務API {#web-service-api}
    + [網站服務API總覽](web-service-api/places-web-services.md)
    + [整合必要條件](web-service-api/adobe-i-o-integration.md)
-   + API使用情況 {#api-usage}
+   + API使用量{#api-usage}
       + [API使用概述](web-service-api/api-usage/api-usage-overview.md)
       + [標題和引數](web-service-api/api-usage/headers-and-parameters.md)
-      + 管理程式庫 {#manage-libraries}
+      + 管理資料庫{#manage-libraries}
          + [管理程式庫概觀](web-service-api/api-usage/manage-libraries/manage-libraries.md)
          + [建立程式庫](web-service-api/api-usage/manage-libraries/create-a-library.md)
          + [讀取程式庫](web-service-api/api-usage/manage-libraries/read-a-library.md)
@@ -53,15 +53,15 @@ ht-degree: 20%
             + [更新多個POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [刪除多個POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [查詢API](web-service-api/api-usage/query-apis.md)
-+ 行動SDK的擴充功能 {#places-ext-aep-sdks}
-   + [Places 擴充功能](places-ext-aep-sdks/places-extension/places-extension.md)
++ 行動SDK {#places-ext-aep-sdks}的擴充功能
+   + [Places延伸模組](places-ext-aep-sdks/places-extension/places-extension.md)
 + [將Places Service與您自己的監控解決方案搭配使用](using-your-own-monitor.md)
 + [不使用作用中區域監視的Places服務](use-places-without-active-monitoring.md)
-+ 使用Places Service做為Experience Platform Launch工作流程的一部分 {#use-places-launch-workflow}
++ 使用Places Service做為Experience Platform Launch工作流程{#use-places-launch-workflow}的一部分
    + [使用Places Service做為Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定義資料元素](use-places-launch-workflow/define-data-elements.md)
    + [建立登入與退出規則](use-places-launch-workflow/create-rule-places-property.md)
-+ 搭配其他Adobe解決方案使用Places Service {#use-places-with-other-solutions}
++ 搭配其他Adobe解決方案{#use-places-with-other-solutions}使用Places Service
    + Adobe Analytics {#places-adobe-analytics}
       + [搭配Adobe Analytics使用Places Service](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [傳送POI登入和退出資料至Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
@@ -77,6 +77,6 @@ ht-degree: 20%
       + [應用程式內訊息](use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
    + Adobe Target {#places-target}
       + [搭配Adobe Target使用Places Service](use-places-with-other-solutions/places-target/places-target.md)
-+ 測試和驗證 {#places-testing-validation}
++ 測試與驗證{#places-testing-validation}
    + [測試及驗證Places服務](places-testing-validation/test-validate-places.md)
 + [常見問答](places-faqs.md)

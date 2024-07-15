@@ -5,7 +5,7 @@ exl-id: 0f5b5b40-11f0-4122-b3d5-c3853a6e8ca5
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 10%
+ht-degree: 6%
 
 ---
 
@@ -96,4 +96,4 @@ curl -X POST 'https://api-places.adobe.io/places/placesapi/v1/pois' -H 'x-api-ke
 
 >[!IMPORTANT]
 >
->記得要取代 `<API KEY>`， `<TOKEN>`， &#39;，&#39;和 `<SINGLEPOIDATA>` 包含實際值。
+>記得要以實際值取代`<API KEY>`、`<TOKEN>`、&#39;，&#39;和`<SINGLEPOIDATA>`。

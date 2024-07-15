@@ -21,9 +21,9 @@ ht-degree: 1%
 
 在iOS中，完成下列步驟：
 
-1. 將從iOS核心位置服務取得的位置更新傳遞到Places擴充功能。
+1. 將從iOS核心位置服務取得的位置更新傳遞至Places擴充功能。
 
-1. 使用 `getNearbyPointsOfInterest` 放置擴充功能API以取得 `ACPPlacesPoi` 物件。
+1. 使用`getNearbyPointsOfInterest` Places擴充功能API取得目前位置周圍的`ACPPlacesPoi`物件陣列。
 
    ```objective-c
    - (void) locationManager: (CLLocationManager*) manager didUpdateLocations: (NSArray<CLLocation*>*) locations {
@@ -33,7 +33,7 @@ ht-degree: 1%
    }
    ```
 
-1. 從取得的擷取資訊 `ACPPlacesPOI` 物件並開始監督這些POI。
+1. 從取得的`ACPPlacesPOI`物件中擷取資訊，並開始監視這些POI。
 
    ```objective-c
    - (void) startMonitoringGeoFences: (NSArray*) newGeoFences {
@@ -57,9 +57,9 @@ ht-degree: 1%
 
 ### Android
 
-1. 將從Google Play服務或Android位置服務取得的位置更新傳遞到Places擴充功能。
+1. 將從Google Play服務或Android定位服務取得的位置更新傳遞到Places擴充功能。
 
-1. 使用 `getNearbyPointsOfInterest` Places擴充功能API以取得 `PlacesPoi` 物件。
+1. 使用`getNearbyPointsOfInterest` Places擴充功能API取得目前位置周圍`PlacesPoi`物件的清單。
 
    ```java
    LocationCallback callback = new LocationCallback() {
@@ -77,7 +77,7 @@ ht-degree: 1%
    };
    ```
 
-1. 從取得的擷取資料 `PlacesPOI` 物件並開始監督這些POI。
+1. 從取得的`PlacesPOI`物件擷取資料，並開始監視這些POI。
 
    ```java
    private void startMonitoringFences(final List<PlacesPOI> nearByPOIs) {
@@ -102,17 +102,17 @@ ht-degree: 1%
    ```
 
 
-呼叫 `getNearbyPointsOfInterest` API會產生網路呼叫，以取得目前位置周圍的位置。
+呼叫`getNearbyPointsOfInterest` API會導致網路呼叫，取得目前位置周圍的位置。
 
 >[!IMPORTANT]
 >
->您應謹慎呼叫API，或僅在使用者發生重大位置變更時呼叫。
+>您應該謹慎呼叫API，或僅在使用者發生重大位置變更時呼叫。
 
 ## 發佈地理圍欄事件
 
 ### iOS
 
-在iOS中，呼叫 `processGeofenceEvent` 將API放入 `CLLocationManager` 委派。 此API會通知您使用者是否已進入或退出特定區域。
+在iOS中，呼叫`CLLocationManager`委派中的`processGeofenceEvent` Places API。 此API會通知您使用者是否已進入或離開特定區域。
 
 ```objective-c
 - (void) locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region {
@@ -126,7 +126,7 @@ ht-degree: 1%
 
 ### Android
 
-在Android中，呼叫 `processGeofence` 方法，以及地理圍欄廣播接收器中的適當轉變事件。 您可能想要組織收到的地理圍欄清單，以防止重複進入/退出。
+在Android中，呼叫`processGeofence`方法，同時在您的地理圍欄廣播接收器呼叫適當的轉換事件。 您可能想要組織收到的地理柵欄清單，以防止重複進入/退出。
 
 ```java
 void onGeofenceReceived(final Intent intent) {

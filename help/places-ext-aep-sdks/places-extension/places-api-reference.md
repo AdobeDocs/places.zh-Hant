@@ -20,9 +20,9 @@ ht-degree: 32%
 
 ### 程式地理圍欄(Android)
 
-處理a `Geofence` 提供的區域事件 `transitionType`.
+處理所提供`transitionType`的`Geofence`地區事件。
 
-傳遞 `transitionType` 從 `GeofencingEvent.getGeofenceTransition()`. 目前 `Geofence.GEOFENCE_TRANSITION_ENTER` 和 `Geofence.GEOFENCE_TRANSITION_EXIT` 支援。
+從`GeofencingEvent.getGeofenceTransition()`傳遞`transitionType`。 目前支援`Geofence.GEOFENCE_TRANSITION_ENTER`和`Geofence.GEOFENCE_TRANSITION_EXIT`。
 
 **語法**
 
@@ -34,7 +34,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **範例**
 
-在您的中呼叫此方法 `IntentService` 註冊接收Android地理圍欄事件的網站。
+在您的`IntentService`中呼叫此方法(已註冊接收Android地理圍欄事件)。
 
 此方法的程式碼範例如下：
 
@@ -60,7 +60,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessRegionEvent (iOS)
 
-此方法應在下列位置呼叫： `CLLocationManager` 委派，告知使用者是否已進入或離開特定區域。
+此方法應在`CLLocationManager`委派中呼叫，這會告知使用者是否已進入或離開特定區域。
 
 **語法**
 
@@ -87,7 +87,7 @@ public class GeofenceTransitionsIntentService extends IntentService {
 
 ### ProcessGeofencingEvent (Android)
 
-全部處理 `Geofences` 在 `GeofencingEvent` 同時。
+同時處理`GeofencingEvent`中的所有`Geofences`。
 
 **語法**
 
@@ -97,7 +97,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **範例**
 
-在您的中呼叫此方法 `IntentService` 已註冊接收Android地理圍欄事件的使用者
+在您的`IntentService`中呼叫此方法(已註冊接收Android地理圍欄事件)
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
@@ -259,7 +259,7 @@ Places.getCurrentPointsOfInterest(new AdobeCallback<List<PlacesPOI>>() {
 
 >[!TIP]
 >
->Places擴充功能只知道透過呼叫提供給它的位置 `GetNearbyPointsOfInterest`.
+>Places擴充功能只知道透過呼叫`GetNearbyPointsOfInterest`而提供給它的位置。
 
 
 ### GetLastKnownLocation (Android)
@@ -354,7 +354,7 @@ Places.clear();
 
 ### setAuthorizationStatus (Android)
 
-*從Places v1.4.0開始提供*
+從Places v1.4.0 *開始提供*
 
 在Places擴充功能中設定授權狀態。
 
@@ -379,14 +379,14 @@ Places.setAuthorizationStatus(PlacesAuthorizationStatus.ALWAYS);
 
 ### setAuthorizationStatus (iOS)
 
-*從ACPPlaces v1.3.0開始提供*
+*從ACPPlaces v1.3.0*&#x200B;開始提供
 
 在Places擴充功能中設定授權狀態。
 
 提供的狀態會儲存在Places共用狀態，僅供參考。
 呼叫此方法不會影響此裝置的實際位置授權狀態。
 
-當裝置授權狀態變更時， `locationManager:didChangeAuthorizationStatus:` 您的方法 `CLLocationManagerDelegate` 叫用的是。 您應從此方法內傳遞新的 `CLAuthorizationStatus` acplaces的值 `setAuthorizationStatus:` API。
+當裝置授權狀態變更時，會叫用您`CLLocationManagerDelegate`的`locationManager:didChangeAuthorizationStatus:`方法。 您應該從此方法中傳遞新的`CLAuthorizationStatus`值至ACPPlaces `setAuthorizationStatus:` API。
 
 **語法**
 

@@ -4,7 +4,7 @@ description: Places Service發行說明。
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
 source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
 workflow-type: tm+mt
-source-wordcount: '1490'
+source-wordcount: '1525'
 ht-degree: 2%
 
 ---
@@ -13,16 +13,16 @@ ht-degree: 2%
 
 ## 2020 年 7 月 8 日
 
-* **Places和Places監視擴充功能**
+* **Places和Places監視延伸**
 
-   * 已新增Places和Places監視擴充功能 [React原生應用程式](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)
-   * 已新增Places和Places監視擴充功能 [Cordova應用程式](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)
+   * 已為[React Native應用程式](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#react-native)新增Places和Places監視延伸
+   * 已為[Cordova應用程式](https://aep-sdks.gitbook.io/docs/resources/upgrading-to-aep/current-sdk-versions#cordova)新增Places和Places監視延伸模組
    * 如需詳細資訊，請參閱： [使用Places擴充功能](https://experienceleague.adobe.com/docs/places/using/places-ext-aep-sdks/places-extension/places-extension.html)
 
 
 ## 2020年5月12日
 
-* **Places Service**
+* **Places服務**
 
    * 使用「匯入POI」按鈕，從CSV檔案大量匯入POI
    * 選取多個POI並大量編輯或新增中繼資料值
@@ -35,7 +35,7 @@ ht-degree: 2%
 
       * 改善的記錄
 
-## 2020 年 5 月 5 日
+## 2020年5月5日
 
 
 * **PlacesMonitor 2.1.3**
@@ -44,20 +44,20 @@ ht-degree: 2%
 
       * 改善的記錄
 
-## 2020 年 2 月 20 日
+## 2020年2月20日
 
 * **ACPPlaces 1.3.1 (iOS)**
 
    * Places擴充功能現在會在核心SDK中向事件中樞報告版本資訊。
-   * 裝置POI會籍資訊的預設存留時間是從收集到現在起的一小時。 如需詳細資訊，請參閱 [修改Places成員資格存留時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * 裝置POI會籍資訊的預設存留時間是從收集到現在起的一小時。 如需詳細資訊，請參閱[修改Places成員資格存留時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **Places 1.4.1 (Android)**
 
    * Places擴充功能現在會在核心SDK中向事件中樞報告版本資訊。
-   * 裝置POI會籍資訊的預設存留時間是從收集到現在起的一小時。 如需詳細資訊，請參閱 [修改Places成員資格存留時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
+   * 裝置POI會籍資訊的預設存留時間是從收集到現在起的一小時。 如需詳細資訊，請參閱[修改Places成員資格存留時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
-## 2020 年 1 月 27 日
+## 2020年1月27日
 
 * **PlacesMonitor 2.2.0**
 
@@ -68,11 +68,11 @@ ht-degree: 2%
 
 ## 2020 年 1 月 9 日
 
-* **Places 1.4.0**
+* **地標1.4.0**
 
    * **Android**
 
-      * 新增API、 `setAuthorizationStatus`，以設定Places服務的裝置授權狀態。 值會儲存並用於Places共用狀態。
+      * 新增API `setAuthorizationStatus`以設定Places服務的裝置授權狀態。 值會儲存並用於Places共用狀態。
 
 ## 2019年12月4日
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 
    * **iOS**
 
-      * 新增API、 `setAuthorizationStatus`，以設定Places服務的裝置授權狀態。 值會儲存並用於Places共用狀態。
+      * 新增API `setAuthorizationStatus`以設定Places服務的裝置授權狀態。 值會儲存並用於Places共用狀態。
 
 ## 2019 年 11 月 25 日
 
@@ -107,18 +107,18 @@ ht-degree: 2%
       * 監視器現在會辨識Android裝置的開機，並視需要根據裝置目前的位置再次向作業系統登入地理圍欄。
       * 修正有時會捨棄登入/退出事件的競爭條件。
 
-## 2019 年 9 月 10 日
+## 2019年10月9
 
 * **PlacesMonitor 2.1.0**
 
    * **iOS**
 
-      * 新增API、 `setRequestAuthorizationLevel`，以設定會提示使用者的位置授權要求型別。
+      * 新增API `setRequestAuthorizationLevel`以設定將提示使用者的位置授權要求型別。
 
 
    * **Android**
 
-      * 新增API、 `setLocationPermission`，以設定會提示使用者的位置許可權要求型別。
+      * 已新增新的API `setLocationPermission`，以設定將提示使用者的位置許可權要求型別。
       * Places監視現在支援Android 10。
 
 ## 2019 年 8 月 8 日
@@ -166,9 +166,9 @@ ht-degree: 2%
 
   新API： `public static void stop (final boolean clearData);`
 
-* 更新使用 `getNearbyPointsOfInterest` API可更有效地處理錯誤案例。
+* 更新使用`getNearbyPointsOfInterest` API更有效處理錯誤情境。
 
-## 2019 年 7 月 25 日
+## 2019年725日
 
 此版本已進行下列更新：
 
@@ -176,11 +176,11 @@ ht-degree: 2%
 
 * 若要清除裝置中的所有Places資料，
 
-  在ACPPlacesMonitor中，取代現有的API `+ (void) stop;` 替換為`+ (void) stop: (BOOL) clearData;`.
+  在ACPPlacesMonitor中，以`+ (void) stop: (BOOL) clearData;`取代現有的API `+ (void) stop;`。
 
-* 更新ACPlaces的使用 `getNearbyPointsOfInterest` API可更有效地處理錯誤案例。
+* 更新使用ACPPlaces `getNearbyPointsOfInterest` API更有效處理錯誤案例。
 
-## 2019 年 7 月 22 日
+## 2019年7月22日
 
 此版本已進行下列更新：
 
@@ -188,22 +188,22 @@ ht-degree: 2%
 
 * 新增API，可從共用狀態、應用程式內記憶體和共用偏好設定中清除所有Places相關資料。
 * 修正應用程式啟動期間未更新共用狀態的問題。
-* 修正以下錯誤： `getNearbyPointsOfInterest` 回呼傳回錯誤碼 `SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR` 沒有網際網路。
-* `getNearbyPointsOfInterest` API （沒有errorCallback）將具有 `successCallback` 使用空白的poi清單呼叫，以防擷取附近的地標時發生錯誤。
+* 修正`getNearbyPointsOfInterest`回呼在無網際網路上傳回錯誤碼`SERVER_RESPONSE_ERROR instead of CONNECTIVITY_ERROR`的錯誤。
+* 如果擷取附近的地標時發生錯誤，`getNearbyPointsOfInterest` API （沒有errorCallback）將會使用空白的poi清單呼叫`successCallback`。
 
-## 2019 年 7 月 19 日
+## 2019年719日
 
 此版本已進行下列更新：
 
 **iOS Places 1.2.0**
 
-新增API以清除共用狀態、應用程式內記憶體和 `NSUserDefaults`.
+新增API以清除共用狀態、應用程式內記憶體和`NSUserDefaults`中所有與Places相關的資料。
 
 ## 2019年6月25日
 
 此版本已進行下列更新：
 
-**iOS Places監視1.0.2**
+**iOS Places監視器1.0.2**
 
 * 改善生活品質，包括更出色的程式碼內檔案和記錄。
 
@@ -218,13 +218,13 @@ ht-degree: 2%
 * 修正在首次啟動後，由於網路狀況不佳，有時導致Places事件遺失的問題。
 * 修正了連續快速處理POI專案事件時，透過規則引擎進行的權杖取代有時會參考不正確POI的問題。
 
-## 2019 年 5 月 30 日
+## 2019年5月30
 
 **Android Places監視器1.0.1**
 
 * 修正當Places監視啟動時，導致POI無法進入事件的問題。
 
-## 2019 年 5 月 28 日
+## 2019年5月28
 
 修正Places使用者介面中的下列問題：
 
@@ -265,7 +265,7 @@ Places監視會管理作業系統層級Location API，並直接與Places擴充�
 
 此版本已進行下列更新：
 
-**iOS Places監視1.0.1**
+**iOS Places監視器1.0.1**
 
 * 新增完整單位測試涵蓋範圍。
 * CI整合(CircleCI)
@@ -281,7 +281,7 @@ Places監視會管理作業系統層級Location API，並直接與Places擴充�
 
 ## 2019 年 2 月 28 日
 
-### 測試版本
+### Beta版本
 
 這是Places Service的第一個版本，這套工具可讓客戶透過真實世界的位置資料來豐富其使用者體驗。 在第一個版本中，我們的主要使用案例是讓行動應用程式擷取自訂位置資料，並透過Adobe Experience Platform Launch對該資料採取行動。
 
@@ -293,8 +293,8 @@ Places監視會管理作業系統層級Location API，並直接與Places擴充�
 
 我們已發佈管理UI，您可在其中檢視及管理地標(POI)。 您也可以將POI整理至程式庫中。 除了標準中繼資料（例如城市、州和類別）之外，我們也支援將自訂中繼資料新增到POI的功能。
 
-* 若要檢視UI，請前往 [https://places.adobe.com](https://places.adobe.com).
-* 若要開始使用UI，請參閱 [快速入門](/help/getting-started.md).
+* 若要檢視UI，請前往[https://places.adobe.com](https://places.adobe.com)。
+* 若要開始使用UI，請參閱[快速入門](/help/getting-started.md)。
 
 #### Places擴充功能
 
@@ -306,7 +306,7 @@ Places監視會管理作業系統層級Location API，並直接與Places擴充�
 * 在POI登入或退出時觸發的規則事件。
 * 建立指向使用者目前POI的資料元素。
 
-如需Places擴充功能的詳細資訊，請參閱 [Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md).
+如需Places擴充功能的詳細資訊，請參閱[Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
 #### Places API
 
@@ -316,9 +316,9 @@ Places監視會管理作業系統層級Location API，並直接與Places擴充�
 * 建置您自己的UI或整合現有的POI資料庫。
 * 使用Places API批次端點來大量匯入POI。
 
-  您可以使用隨附的Python公用程式完成大量匯入。
+  您可以使用隨附的Python公用程式來完成大量匯入。
 
-如需Places API的詳細資訊，請參閱 [網站服務API](/help/web-service-api/places-web-services.md).
+如需Places API的詳細資訊，請參閱[網站服務API](/help/web-service-api/places-web-services.md)。
 
 ### 即將推出
 

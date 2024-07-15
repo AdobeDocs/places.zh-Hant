@@ -1,5 +1,5 @@
 ---
-title: 管理POI總覽
+title: 管理POI概覽
 description: 瞭解並使用POI。
 exl-id: 3e46481b-0fee-4b7b-a6ea-034b89c80d82
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# 管理POI總覽 {#manage-pois}
+# 管理POI概覽 {#manage-pois}
 
 您可以使用Places Service REST API完成下列工作：
 

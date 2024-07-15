@@ -1,6 +1,6 @@
 ---
 title: 搭配Adobe Campaign Standard使用Places Service
-description: 本節概述如何搭配Campaign Standard使用Places服務。
+description: 本節概述如何搭配Campaign Standard使用Places Service。
 exl-id: e2906ad3-5c78-417b-bc9a-4dd259bbafe9
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
