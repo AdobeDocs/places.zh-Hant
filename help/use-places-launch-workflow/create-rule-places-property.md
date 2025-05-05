@@ -54,7 +54,7 @@ Places SDK會維護下列狀態：
 
 >[!CAUTION]
 >
->此範例假設您已建立美國所有咖啡店的 POI 資料庫。如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中建立資料庫*。
+>此範例假設您已建立美國所有咖啡店的 POI 資料庫。如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hant)中建立資料庫*。
 
 下列程式範例說明如何建立規則，讓您在舊金山進入咖啡廳時，將貼文傳回Slack。
 
@@ -124,7 +124,7 @@ Places SDK會維護下列狀態：
 
 ### Publish規則
 
-1. 若要啟用規則，您必須將其發佈。 如需以Experience Platform Launch發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
+1. 若要啟用規則，您必須將其發佈。 如需以Experience Platform Launch發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant)。
 
 ### 超越登入與退出的思考
 

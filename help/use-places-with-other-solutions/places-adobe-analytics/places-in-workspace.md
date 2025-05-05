@@ -23,7 +23,7 @@ ht-degree: 2%
 
 1. Adobe Analytics使用者是管理員且有權存取處理規則。
 
-   如需處理規則的詳細資訊，請參閱[處理規則概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。
+   如需處理規則的詳細資訊，請參閱[處理規則概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hant)。
 
 1. 在Launch屬性中，已針對您想要的Places服務變數建立資料元素。
 
@@ -44,7 +44,7 @@ ht-degree: 2%
 
 ## 2.建立Analytics變數
 
-若要對應內容資料（在步驟1傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參閱[轉換變數(eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html)。
+若要對應內容資料（在步驟1傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參閱[轉換變數(eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=zh-Hant)。
 
 在此範例中，已建立轉換變數&#x200B;**[!UICONTROL Evar2]**，並命名為&#x200B;**[!UICONTROL Places POI名稱]**。 您必須針對要公開在報告中的每個位置變數，建立其他變數。
 
@@ -52,7 +52,7 @@ ht-degree: 2%
 
 ## 3.建立處理規則
 
-需要此步驟才能將內容資料（步驟1）對應至Analytics變數（步驟2）。 如需建立處理規則的詳細資訊，請參閱[處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。
+需要此步驟才能將內容資料（步驟1）對應至Analytics變數（步驟2）。 如需建立處理規則的詳細資訊，請參閱[處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hant)。
 
 在此範例中，已建立處理規則，以將內容資料值&#x200B;**[!UICONTROL poi.name]**&#x200B;對應至&#x200B;**[!UICONTROL Places POI名稱(eVar2)]**。 需為每個已建立的位置變數建立其他處理規則。
 
@@ -60,7 +60,7 @@ ht-degree: 2%
 
 ## 4.在Workspace中產生報表
 
-此步驟顯示Analytics Workspace中的基本報表，用以檢視在步驟1至3中收集的資料。 如需如何使用Analytics Workspace的詳細資訊，請參閱[Analytics Workspace概觀](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)。
+此步驟顯示Analytics Workspace中的基本報表，用以檢視在步驟1至3中收集的資料。 如需如何使用Analytics Workspace的詳細資訊，請參閱[Analytics Workspace概觀](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hant)。
 
 在此範例中，報表有下列設定：
 
