@@ -37,7 +37,7 @@ Places Service傳送登入和退出事件後，您可以在Experience Platform L
 
 1. 從&#x200B;**[!UICONTROL 事件型別]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 追蹤動作]**。
 
-現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有`TrackAction`呼叫為基礎。 設定事件後，按一下[保留變更]。****
+現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有`TrackAction`呼叫為基礎。 設定事件後，按一下[保留變更]。**&#x200B;**
 
 ![&quot;建立事件&quot;](/help/assets/ad-setEvent_use-analytics-data.png)
 

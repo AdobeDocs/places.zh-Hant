@@ -53,15 +53,15 @@ ht-degree: 18%
             + [更新多個POI](web-service-api/api-usage/manage-pois/batch-apis/update-multiple-pois.md)
             + [刪除多個POI](web-service-api/api-usage/manage-pois/batch-apis/delete-multiple-pois.md)
       + [查詢API](web-service-api/api-usage/query-apis.md)
-+ 行動SDK {#places-ext-aep-sdks}的擴充功能
++ 行動SDK的擴充功能 {#places-ext-aep-sdks}
    + [Places延伸模組](places-ext-aep-sdks/places-extension/places-extension.md)
 + [將Places Service與您自己的監控解決方案搭配使用](using-your-own-monitor.md)
 + [不使用作用中區域監視的Places服務](use-places-without-active-monitoring.md)
-+ 使用Places Service做為Experience Platform Launch工作流程{#use-places-launch-workflow}的一部分
++ 使用Places Service做為Experience Platform Launch工作流程的一部分{#use-places-launch-workflow}
    + [使用Places Service做為Experience Platform Launch工作流程的一部分](use-places-launch-workflow/places-launch-workflow.md)
    + [定義資料元素](use-places-launch-workflow/define-data-elements.md)
    + [建立登入與退出規則](use-places-launch-workflow/create-rule-places-property.md)
-+ 搭配其他Adobe解決方案{#use-places-with-other-solutions}使用Places Service
++ 搭配其他Adobe解決方案使用Places Service{#use-places-with-other-solutions}
    + Adobe Analytics {#places-adobe-analytics}
       + [搭配Adobe Analytics使用Places Service](use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)
       + [傳送POI登入和退出資料至Analytics](use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)
