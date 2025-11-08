@@ -36,7 +36,7 @@ metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中�
 | tutorials-title | 教學課程不適合時極少使用 |
 | tutorials-url | 教學課程影片 (helpx 或 KT 教學課程其中之一) 的連結 |
 | mini-toc-levels | 決定右邊欄中顯示的標頭層級數。預設為 2 |
-| git-repo | https://github.com/AdobeDocs/places.en |
+| git-repo | https://github.com/AdobeDocs/places.zh-Hant |
 | 索引 | set index=no for soft launch |
 
 在 TOC.md 檔案中
