@@ -7,14 +7,14 @@ landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
 type: Documentation
 solution-title: Learn & Support
-solution-hub-url: https://helpx.adobe.com/tw/support/experience-cloud.html
+solution-hub-url: https://helpx.adobe.com/support/experience-cloud.html
 getting-started-title: Getting Started
-getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html?lang=zh-Hant
+getting-started-url: https://experienceleague.adobe.com/docs/places/using/getting-started.html
 tutorials-title: Tutorials
-tutorials-url: https://experienceleague.adobe.com/zh-hant#recommended/solutions/experience-platform
+tutorials-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.zh-Hant
 index: true
-source-git-commit: 896a596bfbfb8c97c55263fc3596d957e4ac52c7
+source-git-commit: 4fb4fa8bbf060afaf6a42a31c2936f42ec1044f2
 workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 98%
@@ -38,7 +38,7 @@ metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中�
 | tutorials-title | 教學課程不適合時極少使用 |
 | tutorials-url | 教學課程影片 (helpx 或 KT 教學課程其中之一) 的連結 |
 | mini-toc-levels | 決定右邊欄中顯示的標頭層級數。預設為 2 |
-| git-repo | https://github.com/AdobeDocs/places.zh-Hant |
+| git-repo | https://github.com/AdobeDocs/places.en |
 | 索引 | set index=no for soft launch |
 
 在 TOC.md 檔案中
