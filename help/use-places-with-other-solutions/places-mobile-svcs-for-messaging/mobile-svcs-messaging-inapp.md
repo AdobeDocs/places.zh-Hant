@@ -76,7 +76,7 @@ Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用�
 
 >[!TIP]
 >
->Analytics處理規則可以設定為擷取此內容資料。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html)。 在&#x200B;*建立動作*&#x200B;的範例中，動作會傳送`poiname`作為內容，以說明傳送至Analytics的POI專案事件。
+>Analytics處理規則可以設定為擷取此內容資料。 如需詳細資訊，請參閱[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hant)。 在&#x200B;*建立動作*&#x200B;的範例中，動作會傳送`poiname`作為內容，以說明傳送至Analytics的POI專案事件。
 
 ![建立動作](/help/assets/configure-action.png)
 
