@@ -2,9 +2,14 @@
 title: 不使用作用中區域監視的Places服務
 description: 本節提供如何在不監督作用中區域的情況下使用Places服務的相關資訊。
 exl-id: 0ba7949a-447e-4754-9b45-945e58e29541
-source-git-commit: 33cbef9b3226be3f013fe82d619b82e093a9752a
+TQID: https://experienceleague.adobe.com/xUmdMOa5CvDZSxKFeyse-3vHsUwvm2s04-sIG0FnnCs
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: bef6f891-2e8a-425e-8f99-7ddf22070daaid: c93393a4-e558-47e1-992e-c91ed4d480ceid: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31id: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: b572b7ff-a413-4173-b2b4-d7d3874f1b9bid: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: ee602049-8a18-43df-9299-a689a025a371
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: 786
 ht-degree: 0%
 
 ---
@@ -23,7 +28,7 @@ ht-degree: 0%
 
 若要在不使用作用中區域監視的情況下使用Places服務：
 
-## 1.收集使用者的位置
+## &#x200B;1. 收集使用者的位置
 
 應用程式開發人員必須使用Google Play Services (Android)提供的`CoreLocation.framework` (iOS)或`Location` API，收集裝置的目前位置。
 
@@ -32,7 +37,7 @@ ht-degree: 0%
 - [核心位置](https://developer.apple.com/documentation/corelocation) (Apple)
 - 在Google Play服務中[位置API](https://developer.android.com/training/location) (Google)
 
-## 2.從SDK擷取附近的地標
+## &#x200B;2. 從SDK擷取附近的地標
 
 取得使用者位置後，您可將其傳遞至SDK，以取得附近POI清單。
 
@@ -114,7 +119,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 ```
 
-## 3.將Places資料附加至您的Analytics請求
+## &#x200B;3. 將Places資料附加至Analytics請求
 
 透過呼叫`getNearbyPointsOfInterest` API，Places SDK將可透過Launch中的資料元素提供與裝置相關的所有POI資料。 藉由使用[附加資料](https://aep-sdks.gitbook.io/docs/resources/user-guides/attach-data)規則，Places資料可自動新增至未來的Analytics請求。 如此一來，收集裝置位置時，便不需要對Analytics發出一次性呼叫。
 
@@ -128,7 +133,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 >
 >如果使用案例需要由SDK觸發[區域專案事件](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent)，則需要手動完成，如下所述。
 
-`getNearbyPointsOfInterest` API傳回的清單包含[自訂物件](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)，指出使用者目前是否在POI內。 如果使用者位於POI，您可以讓SDK觸發該區域的進入事件。
+`getNearbyPointsOfInterest` API傳回的清單包含[自訂物件](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#additional-classes-and-enums)，指出使用者目前是否在POI內。 如果使用者位於POI中，您可以讓SDK觸發該區域的進入事件。
 
 >[!IMPORTANT]
 >
@@ -410,6 +415,6 @@ func handleUpdatedPOIs(_ nearbyPois:[ACPPlacesPoi]) {
 }
 ```
 
-除了在SDK中觸發Places Service進入事件外，由於觸發進入事件，所有定義您POI的資料都可以由SDK的其他部分透過Experience Platform Launch中的`data elements`使用。 使用Experience Platform Launch`rules`，您可以動態地將Places服務資料附加至SDK處理的傳入事件。 例如，您可以附加使用者所在之POI的中繼資料，並將資料當作內容資料傳送至Analytics。
+除了在SDK中觸發Places Service進入事件外，由於觸發的進入事件，所有定義您POI的資料都可透過Experience Platform Launch中的`data elements`供SDK其他人員使用。 透過Experience Platform Launch `rules`，您可以動態地將Places服務資料附加至SDK處理的傳入事件。 例如，您可以附加使用者所在之POI的中繼資料，並將資料當作內容資料傳送至Analytics。
 
 如需詳細資訊，請參閱[搭配其他Adobe解決方案使用Places服務](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-analytics-overview.md)。

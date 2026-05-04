@@ -2,9 +2,14 @@
 title: Places Service
 description: Places Service是瞭解行動使用者參與的重要內容。 透過使用此內容，行動應用程式開發人員可以增強應用程式設計，使其成為更個人化且吸引人的體驗。
 exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
-source-git-commit: e78e3c5ee6623d6cdf2a33c0582667a70283fdc6
+TQID: https://experienceleague.adobe.com/4kI1AuV2l-qfC3mOrcsoG9NDRcOPJBdkWPmKkQuDIJk
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: 684
 ht-degree: 9%
 
 ---
@@ -13,7 +18,7 @@ ht-degree: 9%
 
 位置是瞭解及與行動使用者互動的重要內容。 透過使用此內容，行動應用程式開發人員可以增強應用程式設計，使其成為更個人化且吸引人的體驗。
 
-Places Service (先前稱為Adobe Experience Platform Location Service)是一項地理位置服務，可讓具備位置感知功能的行動應用程式使用豐富且簡單易用的SDK介面，搭配有彈性的興趣點資料庫(POI)來瞭解位置環境。
+Places Service （先前稱為Adobe Experience Platform Location Service）是一項地理位置服務，可讓具備位置感知功能的行動應用程式使用豐富且簡單易用的SDK介面，搭配有彈性的興趣點資料庫(POI)來瞭解位置環境。
 
 Places Service可讓您達成下列目標：
 
@@ -27,7 +32,7 @@ Places Service可讓您達成下列目標：
 
 以下是您使用「地點」的一些方式：
 
-* 當有人進入POI時傳送即時通知，*&quot;嗨……歡迎來到體育場。」*
+* 當有人進入POI時傳送即時通知，*「嗨……歡迎來到體育場。」*
 * 分析您自己的商店與競爭對手商店的客流量。
 * 使用具有位置內容的對象設定檔，根據離線行為來細分對象。
 * 在相關時鎖定具有店內體驗的使用者。
@@ -70,7 +75,7 @@ Places Service包含下列元件：
 
 * **資料庫**&#x200B;是 POI 的集合，這些 POI 會分組，以供輕鬆地將規則附加至規則集，而非一個 POI。
 
-* **擴充功能**&#x200B;是將Places SDK整合到行動應用程式中所需的Experience Platform Launch擴充功能。
+* **擴充功能**&#x200B;是Experience Platform Launch擴充功能，整合Places SDK至您的行動應用程式時需要此擴充功能。
 
   搭配其他行動SDK使用的擴充功能，可將位置內容新增至您的體驗。
 
@@ -82,7 +87,7 @@ Places Service包含下列元件：
 
   如需詳細資訊，請參閱[尋找您的組織ID](https://forums.adobe.com/thread/2339895)。
 
-* **Experience CloudID**&#x200B;服務提供永續性的通用ID，可識別Experience Cloud中所有解決方案的訪客。
+* **Experience Cloud ID**&#x200B;服務提供永續性的通用ID，可識別Experience Cloud所有解決方案的訪客。
 
-  如需詳細資訊，請參閱[概覽](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)。
+  如需詳細資訊，請參閱[概觀](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=zh-Hant)。
 

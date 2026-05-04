@@ -2,9 +2,14 @@
 title: 搭配使用POI中繼資料
 description: 本節提供如何搭配POI使用中繼資料的相關資訊和策略。
 exl-id: e669e560-a999-43ff-aeb4-06e6308b0d5c
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/wTzahAs7MMSv0q-cEhkNObBpALUJXqDXlOcqjitezwY
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: 296
 ht-degree: 0%
 
 ---
@@ -17,7 +22,7 @@ POI中繼資料可以透過多種方式使用。 從POI管理的角度來看，�
 
 ## 在Launch中放置服務中繼資料
 
-在Experience Platform Launch中，您可以針對追蹤或傳訊用途上重要的每個Places Service中繼資料欄位，建立資料元素。
+在Experience Platform Launch中，您可以針對追蹤或傳訊用途上重要的每個Places服務中繼資料欄位，建立資料元素。
 
 健身房設施的![資料元素](/help/assets/gymfacility.png)
 

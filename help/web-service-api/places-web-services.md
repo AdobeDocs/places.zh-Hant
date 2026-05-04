@@ -2,9 +2,14 @@
 title: 網站服務API總覽
 description: Places Service是一組服務，可讓Adobe客戶更輕鬆地在正確的時間和正確的地點，將Adobe Experience Cloud和Adobe Experience Platform解決方案與位置資料和正確的體驗水合在一起。
 exl-id: 9e7358d1-3ba0-4304-aeb2-fed7162afb57
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/jP7iQH7X85UZROjsa3XzuN0bJZjjKffODFGGji7XZfQ
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: 336
 ht-degree: 0%
 
 ---
@@ -31,7 +36,7 @@ Places Service REST API可讓您以程式設計方式使用組織的POI。 這�
 
   如需詳細資訊，請參閱[整合總覽與必要條件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*使用者存取的必要條件*。
 
-* 在您的組織中布建Places服務，並且您擁有存取權後，請為Places服務建立Adobe整合。
+* 在您的組織中布建Places服務，而且您擁有存取權後，請為Places服務建立Adobe整合。
 
   如需詳細資訊，請參閱[整合總覽和先決條件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*建立Places服務整合*。
 

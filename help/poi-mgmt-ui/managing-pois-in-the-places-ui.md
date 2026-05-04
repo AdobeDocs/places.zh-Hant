@@ -2,10 +2,15 @@
 title: 管理現有POI
 description: 在Places Service UI中，您可以編輯、刪除或篩選現有POI。
 exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/2VnBQ5-flpx5cyeK3n5b3AOKqnt7RVkdqFBXYa9O5Ys
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 5%
+source-wordcount: 408
+ht-degree: 6%
 
 ---
 
@@ -40,25 +45,25 @@ POI和程式庫是使用Places UI在Places資料庫中建立和管理的。
 
    * 依程式庫：
 
-     a.選取程式庫。
+     答： 選取程式庫。
 
    * 依屬性：
 
-     a.在[屬性]下拉式清單中，選取&#x200B;**[!UICONTROL 國家]**、**[!UICONTROL 州]**&#x200B;或&#x200B;**[!UICONTROL 城市]**。
+     答： 在「屬性」下拉式清單中，選取&#x200B;**[!UICONTROL 國家]**、**[!UICONTROL 州]**&#x200B;或&#x200B;**[!UICONTROL 城市]**。
 
-     b.在下一行，輸入值。
+     b. 在下一行中輸入值。
 
      例如，您可以選取&#x200B;**[!UICONTROL 州]**&#x200B;並輸入&#x200B;**[!UICONTROL 加州]**。
 
    * 包含中繼資料：
 
-     a.輸入索引鍵和值。
+     答： 輸入索引鍵和值。
 
 ## 定義地理圍欄POI
 
 地理圍欄是一種POI，並在資料庫中根據以下索引鍵定義：
 
-| 索引鍵 | 說明 | 必填？ |
+| 索引鍵 | 說明 | 必要? |
 | :--- | :--- | :--- |
 | ID | 指派給每個POI的唯一識別碼 | 是 |
 | 名稱 | 為POI指定的易記名稱。 | 是 |

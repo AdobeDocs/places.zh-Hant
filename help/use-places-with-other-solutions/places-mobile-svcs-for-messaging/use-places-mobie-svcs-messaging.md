@@ -2,10 +2,15 @@
 title: 將Places服務與Mobile Services搭配使用傳送訊息
 description: 本節說明如何搭配Mobile Services使用Places服務傳送訊息。
 exl-id: dfa6b8bb-6bf2-44eb-8bfc-87294807ec3b
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/-axuli6p-QHthMkucGLCcgyHCqrwudXmif-dZwpGli4
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: c20d46e7-1c7d-476c-a50e-3961d4dce35fid: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: 359
+ht-degree: 3%
 
 ---
 
@@ -29,9 +34,9 @@ ht-degree: 1%
 
 * ACP SDK已正確設定Places擴充功能。
 
-  這表示資料可在行動應用程式的Experience Platform Launch規則引擎中作為事件和/或條件使用。 如需詳細資訊，請參閱[Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
+  這表示資料可在Experience Platform Launch規則引擎中，以行動應用程式的事件和/或條件形式使用。 如需詳細資訊，請參閱[Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-* 熟悉如何在行動應用程式中建立Experience Platform Launch規則並發佈至ACP SDK。
+* 熟悉如何在行動應用程式中建立Experience Platform Launch規則，並將其發佈至ACP SDK。
 
   如需詳細資訊，請參閱[規則引擎](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/rules-engine)。
 

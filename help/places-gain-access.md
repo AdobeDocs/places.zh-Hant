@@ -1,11 +1,16 @@
 ---
 title: 取得Places Service的存取權
-description: 本節提供如何新增使用者至Places服務與Experience Platform Launch，讓使用者可以存取Places服務的相關資訊。
+description: 本節提供如何新增使用者至Places Service和Experience Platform Launch，讓使用者能存取Places Service的相關資訊。
 exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
-source-git-commit: c9058e9b70c2ef97151078f43913963471730bd2
+TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+feature_v2: id: c132d929-fa62-4271-803e-b823be07b914id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: b64298cc-90cc-46b7-8917-ee391f1c7516id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f5efb499-54f9-432b-ac5c-599dbac103afid: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 0%
+source-wordcount: 919
+ht-degree: 1%
 
 ---
 
@@ -23,11 +28,11 @@ Places服務現在可在資料收集UI中使用。 您可以從[Adobe Experience
 
 ![資料收集左側面板](/help/assets/places_in_data_collection.png)
 
-如果您在此位置看不到Places服務，請聯絡貴組織的管理員，在Admin Console中將您的使用者ID新增至Adobe Experience Platform。
+如果您在此位置看不到Places服務，請聯絡貴組織的管理員，在Admin Console中將您的使用者ID新增至Adobe Experience Platform 。
 
 ## 新增使用者以存取Places服務和Experience Adobe Experience Platform資料收集
 
-Places現已納入Adobe Experience Platform。 若要允許使用者存取[Places服務](https://experience.adobe.com/#/data-collection/places)，需要以使用者的身分將其新增至Admin Console中的Adobe Experience Platform。 若要讓使用者有權存取Experience Platform資料收集，並取得設定行動屬性及搭配Adobe Experience Platform SDK使用Places所需的許可權，他們也需要在Admin Console中新增至Adobe Experience Platform資料收集，並獲得Adobe Experience Platform資料收集的下列許可權：
+Places現已納入Adobe Experience Platform。 若要允許使用者存取[Places服務](https://experience.adobe.com/#/data-collection/places)，需要以使用者的身分將其新增至Admin Console中的Adobe Experience Platform。 若要讓使用者能存取Experience Platform資料彙集，並取得設定行動屬性及透過Adobe Experience Platform SDK使用地標所需的許可權，他們還需要新增至Admin Console中的Adobe Experience Platform資料彙集，並獲得Adobe Experience Platform資料彙集的下列許可權：
 
 * 「屬性權利」底下的所有許可權：
    * 核准
@@ -44,14 +49,14 @@ Places現已納入Adobe Experience Platform。 若要允許使用者存取[Place
 >
 >只有組織管理員可以存取Admin Console並新增使用者。
 
-### 1.確認已布建Adobe Experience Platform和Adobe Experience Platform資料彙集
+### &#x200B;1. 確認已布建Adobe Experience Platform和Adobe Experience Platform資料收集
 
 1. 登入您的Experience Cloud組織[Adobe Experience Cloud首頁](https://experience.adobe.com)。
 1. 在右上角，按一下Experience Cloud殼層切換器以顯示下拉式功能表。
 
    ![殼層切換器](/help/assets/places_shell_switcher1.png)
 
-1. 在清單底部，按一下&#x200B;**[!UICONTROL Admin Console]**。 (在「快速存取」區段中也可以找到&#x200B;**[!UICONTROL Admin Console]**&#x200B;的連結)。
+1. 在清單底部，按一下&#x200B;**[!UICONTROL Admin Console]**。 （在「快速存取」區段中也可以找到&#x200B;**[!UICONTROL Admin Console]**&#x200B;的連結）。
 
    如果您在清單中看不到&#x200B;**[!UICONTROL Admin Console]**，則表示您不是管理員。 您必須連絡組織管理員，才能完成此程式。
 
@@ -63,14 +68,14 @@ Places現已納入Adobe Experience Platform。 若要允許使用者存取[Place
    >
    >如果需要的組織不在下拉式清單中，這表示您沒有該組織的管理員存取權。
 
-1. 在Admin Console中，按一下[產品]索引標籤，然後確認已顯示&#x200B;**[!UICONTROL Adobe Experience Platform Data Collection]**&#x200B;和&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;的卡片。
+1. 在Admin Console中，按一下「產品」標籤，然後確認已顯示&#x200B;**[!UICONTROL Adobe Experience Platform資料彙集]**&#x200B;和&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;的卡片。
 
    ![](/help/assets/places_provisioned1.png)
 
    這2項產品會自動布建至所有組織，因此應該都會出現。
 
 
-### 2.將使用者新增至這些產品
+### &#x200B;2. 將使用者新增至這些產品
 
 #### 新增使用者以提供Places服務UI的存取權
 

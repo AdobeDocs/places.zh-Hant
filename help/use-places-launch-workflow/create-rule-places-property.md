@@ -1,10 +1,15 @@
 ---
 title: 為您的Places Service屬性建立規則
-description: Places SDK可追蹤目前位置、監控目前位置周圍已設定的POI，並追蹤這些POI的進入與退出事件。
+description: Places SDK可追蹤目前位置、監控目前位置周圍已設定的POI，以及追蹤這些POI的進入與退出事件。
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: 939
 ht-degree: 12%
 
 ---
@@ -26,7 +31,7 @@ ht-degree: 12%
 Places Service提供下列事件，您可以在其上執行規則：
 
 * **輸入POI**，這會在您的客戶進入您設定的POI時，由Places SDK觸發。
-* **退出POI**，這會在您的客戶退出您設定的POI時由Places SDK觸發。
+* **退出POI**，這會在您的客戶退出您設定的POI時，由Places SDK觸發。
 
 ### Places服務條件
 
@@ -54,7 +59,7 @@ Places SDK會維護下列狀態：
 
 >[!CAUTION]
 >
->此範例假設您已建立美國所有咖啡店的 POI 資料庫。如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hant)中建立資料庫*。
+>此範例假設您已建立美國所有咖啡店的 POI 資料庫。 如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中建立資料庫*。
 
 下列程式範例說明如何建立規則，讓您在舊金山進入咖啡廳時，將貼文傳回Slack。
 
@@ -62,7 +67,7 @@ Places SDK會維護下列狀態：
 
 * **事件**： Places專案事件。
 * **條件**：**「目前 POI」**&#x200B;的城市是舊金山
-* **動作**：傳送回傳以Slack客戶輸入的咖啡館名稱。
+* **動作**：將客戶輸入的咖啡館名稱回傳至Slack。
 
 ### 先決條件
 
@@ -78,13 +83,13 @@ Places SDK會維護下列狀態：
 1. 在右窗格中，選取&#x200B;**目前的POI**。
 1. 按一下&#x200B;**儲存**。
 
-### 為Places Service在Experience Platform Launch中建立規則
+### 在Experience Platform Launch for Places Service中建立規則
 
 ![建立規則](/help/assets/placesrule.png)
 
 1. 在 Experience 平台 Launch 中，按一下 **[!UICONTROL 「規則」]**&#x200B;標籤。
 1. 按一下&#x200B;**[!UICONTROL 新增規則]**。
-1. 輸入規則的名稱，例如，在SF **中追蹤咖啡店的專案**。
+1. 輸入規則的名稱，例如，在SF ]**中追蹤咖啡店的專案**[!UICONTROL 。
 
 ### 建立事件
 
@@ -110,24 +115,24 @@ Places SDK會維護下列狀態：
 1. 在&#x200B;**[!UICONTROL 擴充功能]**&#x200B;下拉式清單中，保留預設的&#x200B;**[!UICONTROL 行動核心]**&#x200B;選項。
 1. 選取動作型別，例如&#x200B;**[!UICONTROL 傳送Postback]**。
 
-   a.在&#x200B;**[!UICONTROL URL]**&#x200B;中，輸入Slack的回傳URL，例如`https://hooks.slack.com/services/`。
+   答： 在&#x200B;**[!UICONTROL URL]**&#x200B;中，輸入Slack的回傳URL，例如`https://hooks.slack.com/services/`。
 
-   b.若要傳送貼文內文，請選取&#x200B;**[!UICONTROL 新增Post內文]**&#x200B;核取方塊。
+   b. 若要傳送張貼內容，請選取&#x200B;**[!UICONTROL 新增張貼內容]**&#x200B;核取方塊。
 
-   c.在&#x200B;**[!UICONTROL Post Body]**&#x200B;中新增貼文內文，例如： `{ "text": "A customer has entered" }`
+   c. 在&#x200B;**[!UICONTROL 張貼內文]**&#x200B;中新增張貼內文，例如： `{ "text": "A customer has entered" }`
 
-   c.輸入內容型別，例如&#x200B;**[!UICONTROL application/json]**。
+   c. 輸入內容型別，例如&#x200B;**[!UICONTROL application/json]**。
 
-   d.選取逾時值，例如&#x200B;**[!UICONTROL 5]**。
+   d. 選取逾時值，例如&#x200B;**[!UICONTROL 5]**。
 
 1. 按一下&#x200B;**[!UICONTROL 保留變更]**。
 
-### Publish規則
+### 發佈規則
 
-1. 若要啟用規則，您必須將其發佈。 如需以Experience Platform Launch發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant)。
+1. 若要啟用規則，您必須將其發佈。 如需在Experience Platform Launch中發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 ### 超越登入與退出的思考
 
-使用Places Service地理圍欄專案與退出點來觸發Experience Platform Launch中的規則非常強大，但您也可以使用位置資料作為其他事件引發的條件。 例如，您可以讓行動核心追蹤動作事件觸發器準備就緒，可根據應用程式內的特定trackAction呼叫事件引發。 根據此事件，您可在執行動作之前，為事件放置其他位置條件。 例如，在購買`trackAction`事件發生時開啟應用程式內調查，但若使用者的目前位置包含特定的Places服務中繼資料，則&#x200B;**僅限**。
+在Experience Platform Launch中使用Places Service地理圍欄專案及退出點來觸發規則是極為強大的功能，但您也可以使用位置資料當作其他事件引發的條件。 例如，您可以讓行動核心追蹤動作事件觸發器準備就緒，可根據應用程式內的特定trackAction呼叫事件引發。 根據此事件，您可在執行動作之前，為事件放置其他位置條件。 例如，在購買`trackAction`事件發生時開啟應用程式內調查，但若使用者的目前位置包含特定的Places服務中繼資料，則&#x200B;**僅限**。
 
 ![建立條件](/help/assets/places-condition.png)

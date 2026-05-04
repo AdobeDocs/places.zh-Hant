@@ -2,10 +2,15 @@
 title: 將位置內容新增至Analytics請求
 description: 本節提供如何新增位置內容至Analytics請求的相關資訊。
 exl-id: bee7b6e3-a75b-4a07-b6e2-f93ce33aa042
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/NR-CowJgzUBMVWcbV-EvdyBDsiwLi72yxM-Vjx5oNwk
+product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2: id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 1%
+source-wordcount: 512
+ht-degree: 2%
 
 ---
 
@@ -17,7 +22,7 @@ ht-degree: 1%
 
 Places Service傳送登入和退出事件後，您可以在Experience Platform Launch中建立規則，並將Places Service資料附加至所有Adobe Analytics事件。 若要建立此型別的規則，請在Launch中選取您的屬性，並完成下列步驟：
 
-## 1.建立規則
+## &#x200B;1. 建立規則
 
 1. 在&#x200B;**[!UICONTROL 規則]**&#x200B;標籤上，按一下&#x200B;**[!UICONTROL 建立新規則]**。
 
@@ -37,12 +42,12 @@ Places Service傳送登入和退出事件後，您可以在Experience Platform L
 
 1. 從&#x200B;**[!UICONTROL 事件型別]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 追蹤動作]**。
 
-現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有`TrackAction`呼叫為基礎。 設定事件後，按一下[保留變更]。**&#x200B;**
+現在您可以決定要納入此規則的觸發器。 在此範例中，觸發器是以所有`TrackAction`呼叫為基礎。 設定事件後，按一下[保留變更]。****
 
 ![&quot;建立事件&quot;](/help/assets/ad-setEvent_use-analytics-data.png)
 
 
-## 3.新增條件
+## &#x200B;3. 新增條件
 
 >[!IMPORTANT]
 >
@@ -62,7 +67,7 @@ Places Service傳送登入和退出事件後，您可以在Experience Platform L
 
 ![&quot;建立條件&quot;](/help/assets/ad-setCondition_use-analytics-data.png)
 
-## 4.定義作業
+## &#x200B;4. 定義動作
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段下，按一下&#x200B;**[!UICONTROL 新增]**。
 
@@ -74,13 +79,13 @@ Places Service傳送登入和退出事件後，您可以在Experience Platform L
 
 1. 按一下&#x200B;**[!UICONTROL 保留變更]**。
 
-在右側窗格中，您可以新增自由格式JSON裝載，此裝載會先將資料新增至SDK事件，然後偵聽此事件的擴充功能才能聽到該事件。 在此範例中，某些內容資料會在Analytics擴充功能處理前新增至此事件。 新增的內容資料現在會保留在傳出的Analytics點選上。
+在右側窗格中，您可以新增自由格式JSON裝載，該裝載會先將資料新增至SDK事件，然後偵聽此事件的擴充功能才能聽到該事件。 在此範例中，某些內容資料會在Analytics擴充功能處理前新增至此事件。 新增的內容資料現在會保留在傳出的Analytics點選上。
 
 在下列範例中，`poi.city`和`poi.name`值已新增至Analytics事件的內容資料。 新金鑰的值在此事件處理時由SDK動態決定。
 
 ![&quot;建立動作&quot;](/help/assets/ad-setAction_use-analytics-data.png)
 
-## 5.儲存規則並重新建置您的屬性
+## &#x200B;5. 儲存規則並重新建置您的屬性
 
 完成設定後，請確認您的規則看起來像下列影像：
 
