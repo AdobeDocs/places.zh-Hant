@@ -3,10 +3,19 @@ title: 定義資料元素
 description: 本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。
 exl-id: 57e88a37-0b0b-4064-ab72-382a36a0d01d
 TQID: https://experienceleague.adobe.com/NQ83uUZJtNglAcxD6HNl4Gw1Y8-0-uqfu-hH8H0EITg
-product_v2: id: a829a185-511f-4bf8-8dcf-9e684f8011cfid: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: e08599ea-8888-4294-ba74-3ba0a7762a46
-subfeature_v2: id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0id: f9a2105e-7a47-4e85-9193-31a519a2cb83
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: a829a185-511f-4bf8-8dcf-9e684f8011cf
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+  - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 486
@@ -70,8 +79,8 @@ ht-degree: 1%
 
 ![使用資料元素](/help/assets/use-de-v2.png)
 
-如果規則元件中不存在資料元素選擇器，您可以使用資料元素，方法是以&#x200B;**[!UICONTROL %%]**代號包住資料元素名稱。
-例如，如果資料元素名稱為**[!UICONTROL 最後一個POI城市]**，您可以將&#x200B;**[!UICONTROL 最後一個POI城市]**&#x200B;新增至文字輸入。
+如果規則元件中不存在資料元素選擇器，您可以使用資料元素，方法是以&#x200B;**[!UICONTROL %%]**&#x200B;代號包住資料元素名稱。
+例如，如果資料元素名稱為&#x200B;**[!UICONTROL 最後一個POI城市]**，您可以將&#x200B;**[!UICONTROL 最後一個POI城市]**&#x200B;新增至文字輸入。
 
 
 ## 發佈資料元素
