@@ -1,10 +1,24 @@
 ---
 title: 定義資料元素
-description: 本節提供如何在Experience Platform Launch中為Places建立、使用和發佈資料元素的相關資訊。
+description: 本節提供如何在Experience Platform Launch for Places中建立、使用和發佈資料元素的相關資訊。
 exl-id: 57e88a37-0b0b-4064-ab72-382a36a0d01d
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/NQ83uUZJtNglAcxD6HNl4Gw1Y8-0-uqfu-hH8H0EITg
+product_v2:
+  - id: a829a185-511f-4bf8-8dcf-9e684f8011cf
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+  - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: 486
 ht-degree: 1%
 
 ---
@@ -17,7 +31,7 @@ ht-degree: 1%
 
 資料元素是應用程式資料字典的建置組塊，用於跨行銷和廣告技術收集、組織和傳遞資料。
 
-資料元素是變數，其值可以對應至訪客ID、電信業者名稱、Advertising ID、推播ID等。 在Experience Platform Launch中，您可以利用變數名稱來參照此值。 此資料元素集合會成為定義資料的字典，您可用來建立規則（事件、條件和動作），而且此字典會在所有Experience Platform Launch間共用，可搭配屬性中的任何擴充功能使用。
+資料元素是變數，其值可以對應至訪客ID、電信業者名稱、Advertising ID、推播ID等。 在Experience Platform Launch中，您可以利用變數名稱參考此值。 此資料元素集合會成為已定義資料的字典，您可用來建置規則（事件、條件和動作），且此字典會在Experience Platform Launch間共用，其中可搭配屬性中的任何擴充功能使用。
 
 使用Places擴充功能，您可以參考以下目標的值：
 
@@ -69,6 +83,6 @@ ht-degree: 1%
 例如，如果資料元素名稱為&#x200B;**[!UICONTROL 最後一個POI城市]**，您可以將&#x200B;**[!UICONTROL 最後一個POI城市]**&#x200B;新增至文字輸入。
 
 
-## Publish資料元素
+## 發佈資料元素
 
 如果資料元素用於任何規則元件中，這些資料元素也必須包含在程式庫中並發佈。

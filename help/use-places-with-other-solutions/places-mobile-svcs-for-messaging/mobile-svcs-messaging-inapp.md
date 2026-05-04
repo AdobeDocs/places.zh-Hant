@@ -2,9 +2,23 @@
 title: 應用程式內通知
 description: 本節說明如何使用Places服務及應用程式內傳訊。
 exl-id: c655e64b-0737-44d5-b453-2ac02fb9cbcc
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/Z39ybIytDRlCbkMthWjvk5F-oexy0C9gtqgK1mmyMxM
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: 689
 ht-degree: 2%
 
 ---
@@ -19,7 +33,7 @@ ht-degree: 2%
 
 ## 應用程式內訊息
 
-Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用程式內訊息的觸發事件及/或條件。 如果從SDK引發應用程式內訊息，而且不需要等候Analytics處理資料，一旦觸發就會即時顯示訊息。
+Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用程式內訊息的觸發事件及/或條件。 如果從SDK觸發應用程式內訊息，而且不需要等候Analytics處理資料，一旦觸發即可即時顯示訊息。
 
 ### 本機通知
 
@@ -37,7 +51,7 @@ Mobile Services可讓您使用傳送至Analytics的位置資料，作為應用�
 
 ## Experience Platform Launch中的規則
 
-您可以建立Experience Platform Launch規則，將您想要用作為應用程式內訊息觸發器規則一部分的資料傳送至Analytics。 您可以視使用案例而定，將Places擴充功能中的資料用作Experience Platform Launch規則中的事件和/或條件。
+您可以建立Experience Platform Launch規則，將您想要當作應用程式內訊息觸發器規則使用的資料傳送至Analytics。 您可以在Experience Platform Launch規則中使用Places擴充功能的資料，作為事件和/或條件，端視您的使用案例而定。
 
 * 使用位置資料作為觸發事件。
 

@@ -2,10 +2,22 @@
 title: 傳送POI登入和退出資料至Analytics
 description: 本節提供如何將POI登入與退出資料傳送至Analytics的相關資訊。
 exl-id: 69e96261-4902-47dd-a930-a8f3d19c179c
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/H-NkwK7KNSGPjEKYuWNc8F0f3MIu3wBr5FGjypxnqng
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 1%
+source-wordcount: 443
+ht-degree: 3%
 
 ---
 
@@ -18,7 +30,7 @@ ht-degree: 1%
 
 Places服務傳送登入和退出事件後，您可以在Experience Platform Launch中建立規則，將Places服務資料傳送至Adobe Analytics。 若要建立此型別的規則，請在Launch中選取您的屬性，並完成下列步驟：
 
-## 1.建立規則
+## &#x200B;1. 建立規則
 
 1. 在&#x200B;**[!UICONTROL 規則]**&#x200B;標籤上，按一下&#x200B;**[!UICONTROL 建立新規則]**。
 
@@ -27,7 +39,7 @@ Places服務傳送登入和退出事件後，您可以在Experience Platform Lau
    * 如果您沒有此屬性的現有規則，**[!UICONTROL 建立新規則]**&#x200B;按鈕將會在畫面中央。
    * 如果您的屬性有規則，**[!UICONTROL 建立新規則]**&#x200B;按鈕將會在畫面的右上角。
 
-## 2.選取事件
+## &#x200B;2. 選取事件
 
 1. 為您的規則輸入有意義的名稱。
 
@@ -44,7 +56,7 @@ Places服務傳送登入和退出事件後，您可以在Experience Platform Lau
    ![「選取事件」](/help/assets/pt-selectEvent.png)
 
 
-## 3.新增條件
+## &#x200B;3. 新增條件
 
 >[!IMPORTANT]
 >
@@ -65,7 +77,7 @@ Places服務傳送登入和退出事件後，您可以在Experience Platform Lau
    ![&quot;設定條件&quot;](/help/assets/pt-setCondition.png)
 
 
-## 4.定義作業
+## &#x200B;4. 定義動作
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段下，按一下&#x200B;**[!UICONTROL 新增]**。
 
@@ -83,7 +95,7 @@ Places服務傳送登入和退出事件後，您可以在Experience Platform Lau
 
    ![「設定動作」](/help/assets/pt-setAction.png)
 
-## 5.儲存規則並重新建置您的屬性
+## &#x200B;5. 儲存規則並重新建置您的屬性
 
 完成設定後，請確認您的規則看起來像下列影像：
 

@@ -2,10 +2,21 @@
 title: Adobe Target
 description: 本節提供如何搭配Adobe Target使用Places Service的相關資訊。
 exl-id: 6ee91fca-ea48-4de2-8dcf-87981813c678
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/WsfkEJD0mN5aYKETjcnqiC13dVe5NPYeKfOCTOK82uE
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: 549
+ht-degree: 2%
 
 ---
 
@@ -13,9 +24,9 @@ ht-degree: 1%
 
 本檔案假設您已在應用程式中實施Places擴充功能。 若您需要實作Places擴充功能的協助，請參閱[Places擴充功能](/help/places-ext-aep-sdks/places-extension/places-extension.md)。
 
-在Places擴充功能傳送進入和退出的事件後，您可以運用Launch中的規則，將Places服務資料附加至Adobe Target SDK事件。 在Launch中選取所需的屬性後，您可以完成下列工作來建立此型別的規則：
+在Places擴充功能傳送登入和退出事件後，您可以運用Launch中的規則，將Places服務資料附加至Adobe Target SDK事件。 在Launch中選取所需的屬性後，您可以完成下列工作來建立此型別的規則：
 
-## 1.建立規則
+## &#x200B;1. 建立規則
 
 1. 在&#x200B;**[!UICONTROL 規則]**&#x200B;標籤上，按一下&#x200B;**[!UICONTROL 建立新規則]**。
 
@@ -24,7 +35,7 @@ ht-degree: 1%
    * 如果您沒有此屬性的現有規則，則按鈕會位於畫面中央。
    * 如果您的屬性有規則，按鈕將會位於畫面右上方。
 
-## 2.選取事件
+## &#x200B;2. 選取事件
 
 1. 為規則提供一個有意義的名稱，以便在規則清單中輕鬆識別。
 
@@ -37,7 +48,7 @@ ht-degree: 1%
 
 ![新增事件](/help/assets/ad-setEvent_target.png)
 
-## 3.新增條件
+## &#x200B;3. 新增條件
 
 >[!IMPORTANT]
 >
@@ -53,7 +64,7 @@ ht-degree: 1%
 
 ![新增條件](/help/assets/ad-setCondition_target.png)
 
-## 4.定義作業
+## &#x200B;4. 定義動作
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段下，按一下&#x200B;**[!UICONTROL 新增]**。
 1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;下拉式清單中，選取&#x200B;**[!UICONTROL 行動核心]**。
@@ -61,7 +72,7 @@ ht-degree: 1%
 1. 在右窗格的&#x200B;**[!UICONTROL JSON裝載]**&#x200B;欄位中，輸入將新增至此事件的資料。
 1. 按一下&#x200B;**[!UICONTROL 保留變更]**。
 
-在右窗格中，您可以新增自由格式JSON裝載，該裝載會在SDK事件中新增資料，然後擴充功能就會接聽此事件。
+在右側窗格中，您可以新增自由格式JSON裝載，該裝載會先將資料新增至SDK事件，然後擴充功能才會接聽此事件。
 
 在下列範例中，針對在Target事件中處理的每個要求，`poiCity`與`poiName`值已新增至&#x200B;**[!UICONTROL mboxparameters]**。 新金鑰的值在此事件處理時由SDK動態決定。
 
@@ -73,7 +84,7 @@ ht-degree: 1%
 
 ![定義動作](/help/assets/ad-setAction-target.png)
 
-## 5.儲存規則並重新建置您的屬性
+## &#x200B;5. 儲存規則並重新建置您的屬性
 
 完成設定後，請確認您的規則看起來像下列影像：
 

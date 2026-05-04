@@ -2,9 +2,23 @@
 title: 大量上傳POI
 description: 本節提供如何大量上傳POI的相關資訊。
 exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: 854
 ht-degree: 0%
 
 ---
@@ -33,7 +47,7 @@ Places服務中的&#x200B;**匯入POI**&#x200B;按鈕可用來使用CSV檔案大
 >
 >此資訊也包含在[Git存放庫](https://github.com/adobe/places-scripts)的Readme檔案中。
 
-## CSV 檔案
+## CSV檔案
 
 範例.csv檔案`places_sample.csv`是此封裝的一部分，並包含必要的標頭和範例資料列。 這些標題全部為小寫，且與Places資料庫中使用的保留中繼資料索引鍵相對應。 您新增至.csv檔案的欄會新增至POI資料庫，其位於每個POI的個別中繼資料區段中，做為索引鍵/值組，而標頭值則做為索引鍵。
 
@@ -86,7 +100,7 @@ Places服務UI會使用下列各欄的值：
 1. 從[Git存放庫](https://github.com/adobe/places-scripts)下載檔案到您的本機目錄。
 1. 在文字編輯器中，開啟`config.py`檔案並完成下列工作：
 
-   a.將下列變數值編輯為字串：
+   答： 將下列變數值編輯為字串：
 
    * `csv_file_path`
 
@@ -98,13 +112,13 @@ Places服務UI會使用下列各欄的值：
 
    * `org_id`
 
-     要將POI匯入其中的Experience CloudorgID。 如需有關如何取得組織ID的資訊，請參閱[整合總覽與必要條件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*使用者存取的必要條件*。
+     要將POI匯入其中的Experience Cloud orgID。 如需有關如何取得組織ID的資訊，請參閱[整合總覽與必要條件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*使用者存取的必要條件*。
 
    * `api_key`
 
-     這是從您的Adobe I/OPlaces整合取得的Places REST API金鑰。 如需如何取得API金鑰的詳細資訊，請參閱[整合總覽與必要條件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*使用者存取的必要條件*。
+     這是從您的Adobe I/O Places整合取得的Places REST API金鑰。 如需如何取得API金鑰的詳細資訊，請參閱[整合總覽與必要條件](/help/web-service-api/adobe-i-o-integration.md)中的&#x200B;*使用者存取的必要條件*。
 
-   b.儲存您的變更。
+   b. 儲存您的變更。
 
 1. 在終端機視窗中，導覽至`…/places-scripts/import/`目錄。
 1. 輸入`python ./places_import.py`並按&#x200B;**[!UICONTROL enter]** (**[!UICONTROL return]**)鍵。

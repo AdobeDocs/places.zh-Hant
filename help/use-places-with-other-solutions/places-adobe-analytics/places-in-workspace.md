@@ -2,10 +2,26 @@
 title: 報告Analytics Workspace中的位置資料
 description: 本節提供如何在Analytics Workspace中報告位置資料的相關資訊。
 exl-id: 45ca3c80-71b7-41de-9b00-645504061935
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/Xym9Ko8czyd3wYWVo22sQoK6gk-VvftGVHfIDUys06E
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: c20d46e7-1c7d-476c-a50e-3961d4dce35f
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '427'
-ht-degree: 2%
+source-wordcount: 483
+ht-degree: 4%
 
 ---
 
@@ -23,14 +39,14 @@ ht-degree: 2%
 
 1. Adobe Analytics使用者是管理員且有權存取處理規則。
 
-   如需處理規則的詳細資訊，請參閱[處理規則概述](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hant)。
+   如需處理規則的詳細資訊，請參閱[處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hant)。
 
 1. 在Launch屬性中，已針對您想要的Places服務變數建立資料元素。
 
    如需Launch中資料元素的詳細資訊，請參閱[定義資料元素](/help/use-places-launch-workflow/define-data-elements.md)。
 
 
-## 1.建立Launch規則
+## &#x200B;1. 建立Launch規則
 
 建立規則，讓SDK在裝置進入POI時傳送資料給Analytics。 建立此類規則的說明請參閱[傳送POI專案與結束資料至Analytics](/help/use-places-with-other-solutions/places-adobe-analytics/use-places-adobe-analytics.md)頁面。
 
@@ -42,7 +58,7 @@ ht-degree: 2%
 
 ![「設定動作」](/help/assets/pt-setAction.png)
 
-## 2.建立Analytics變數
+## &#x200B;2. 建立Analytics變數
 
 若要對應內容資料（在步驟1傳送），必須先為Analytics報表套裝建立變數。 如需在Analytics中建立變數的詳細資訊，請參閱[轉換變數(eVars)](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=zh-Hant)。
 
@@ -50,7 +66,7 @@ ht-degree: 2%
 
 ![「建立分析變數」](/help/assets/aa-evar.png)
 
-## 3.建立處理規則
+## &#x200B;3. 建立處理規則
 
 需要此步驟才能將內容資料（步驟1）對應至Analytics變數（步驟2）。 如需建立處理規則的詳細資訊，請參閱[處理規則概觀](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html?lang=zh-Hant)。
 
@@ -58,7 +74,7 @@ ht-degree: 2%
 
 ![&quot;建立處理規則&quot;](/help/assets/aa-processing-rule.png)
 
-## 4.在Workspace中產生報表
+## &#x200B;4. 在Workspace中產生報表
 
 此步驟顯示Analytics Workspace中的基本報表，用以檢視在步驟1至3中收集的資料。 如需如何使用Analytics Workspace的詳細資訊，請參閱[Analytics Workspace概觀](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hant)。
 
@@ -66,7 +82,7 @@ ht-degree: 2%
 
 * 量度 — **[!UICONTROL 發生次數]**
 
-* Dimension- **[!UICONTROL 動作名稱]**
+* Dimension - **[!UICONTROL 動作名稱]**
 
    * 依Dimension劃分 — **[!UICONTROL 地標POI名稱]**
 

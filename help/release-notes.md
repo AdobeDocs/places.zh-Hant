@@ -2,10 +2,28 @@
 title: 發行說明
 description: Places Service發行說明。
 exl-id: 76da9548-4e32-4b23-9a15-7012973915f3
-source-git-commit: d5c216aebd99ffef01c37c17c62576835b52438b
+TQID: https://experienceleague.adobe.com/yo1eXPl9cKbp-EVWQT8gZHcAbSDoIFJVD6xKbdoysMc
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+  - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+  - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '1525'
-ht-degree: 2%
+source-wordcount: 1612
+ht-degree: 3%
 
 ---
 
@@ -48,13 +66,13 @@ ht-degree: 2%
 
 * **ACPPlaces 1.3.1 (iOS)**
 
-   * Places擴充功能現在會在核心SDK中向事件中樞報告版本資訊。
+   * Places擴充功能現在會向核心SDK中的事件中樞報告版本資訊。
    * 裝置POI會籍資訊的預設存留時間是從收集到現在起的一小時。 如需詳細資訊，請參閱[修改Places成員資格存留時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 
 * **Places 1.4.1 (Android)**
 
-   * Places擴充功能現在會在核心SDK中向事件中樞報告版本資訊。
+   * Places擴充功能現在會向核心SDK中的事件中樞報告版本資訊。
    * 裝置POI會籍資訊的預設存留時間是從收集到現在起的一小時。 如需詳細資訊，請參閱[修改Places成員資格存留時間](places-ext-aep-sdks/places-extension/places-extension.md#places-ttl)
 
 ## 2020年1月27日
@@ -168,7 +186,7 @@ ht-degree: 2%
 
 * 更新使用`getNearbyPointsOfInterest` API更有效處理錯誤情境。
 
-## 2019年725日
+## 2019 年 7 月 25 日
 
 此版本已進行下列更新：
 
@@ -218,17 +236,17 @@ ht-degree: 2%
 * 修正在首次啟動後，由於網路狀況不佳，有時導致Places事件遺失的問題。
 * 修正了連續快速處理POI專案事件時，透過規則引擎進行的權杖取代有時會參考不正確POI的問題。
 
-## 2019年5月30
+## 2019 年 5 月 30 日
 
 **Android Places監視器1.0.1**
 
 * 修正當Places監視啟動時，導致POI無法進入事件的問題。
 
-## 2019年5月28
+## 2019 年 5 月 28 日
 
 修正Places使用者介面中的下列問題：
 
-* 更新「地點」的解決方案切換器，使其與Experience Cloud其餘部分一致。
+* 更新「地點」的解決方案切換器，使其與Experience Cloud的其他部分一致。
 * 修正在未進行排名變更的情況下儲存排名的問題。
 * 將UI中允許的最小半徑增加至10米。
 * 修正如果您刪除欄位中的所有數字，半徑欄位會重設回20米的問題。
@@ -298,7 +316,7 @@ Places監視會管理作業系統層級Location API，並直接與Places擴充�
 
 #### Places擴充功能
 
-使用Places擴充功能，您可以將Places服務程式庫新增至行動應用程式，並對其POI採取行動。 使用Experience Platform Launch中的規則產生器，您便可以在使用者進入和退出POI時觸發動作，以利觸發。
+使用Places擴充功能，您可以將Places服務程式庫新增至行動應用程式，並對其POI採取行動。 使用Experience Platform Launch中的規則產生器，您就可以在使用者進入和退出POI時觸發動作，以利觸發。
 
 在Places擴充功能中：
 

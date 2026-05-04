@@ -2,6 +2,8 @@
 cloud: Experience Cloud
 product: places service
 solution: Data Collection, Experience Platform
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
 landing-page-name: mobile
 landing-page-breadcrumb-title: Mobile SDK
 feature-set: Experience Platform
@@ -14,36 +16,36 @@ tutorials-title: Tutorials
 tutorials-url: https://experienceleague.adobe.com/zh-hant#recommended/solutions/experience-platform
 git-repo: https://github.com/AdobeDocs/places.zh-Hant
 index: true
-source-git-commit: 4fb4fa8bbf060afaf6a42a31c2936f42ec1044f2
+source-git-commit: c34560100defb53b29dc8121405bfa51058c69a4
 workflow-type: tm+mt
-source-wordcount: '142'
-ht-degree: 98%
+source-wordcount: 167
+ht-degree: 80%
 
 ---
 
 
 <!-- We need better links for Getting Started and Tutorials. We can do this after we hit stage -->
 
-# 供內部使用的中繼資料
+# 僅限內部使用的中繼資料
 
-metadata.md 檔案包含存放庫層級中繼資料，會傳送至存放庫中的使用手冊 TOC.md 檔案。如果您想變更任何使用手冊的 metadata.md 內容，可以在任何 TOC.md 檔案中進行更改。
+metadata.md 檔案包含存放庫層級的中繼資料，會將這些資料傳遞至存放庫中的使用者指南 TOC.md 檔案。 如果您想變更任何使用者指南的 metadata.md 內容，請在任何 TOC.md 檔案中進行變更。
 
-| 中繼資料您應留意但不影響分數的問題。 | 作用 |
+| 中繼資料 | 功能說明 |
 |--- |--- |
-| solution-title | 在文章標題中作為連結使用 |
-| solution-hub-url | 開啟 helpx 中樞頁面 |
-| solution-icon | 在解決方案標題旁邊顯示解決方案圖示。尚未實作 |
+| solution-title | 可用來當作文章標題中的連結 |
+| solution-hub-url | 開啟 HelpX 中心頁面 |
+| solution-icon | 會在解決方案標題旁，顯示解決方案圖示。 尚未執行 |
 | getting-started-title | 教學課程不適合時極少使用 |
-| getting-started-url | helpx 快速入門頁面的連結 |
+| getting-started-url | 連結至 HelpX 快速入門頁面 |
 | tutorials-title | 教學課程不適合時極少使用 |
-| tutorials-url | 教學課程影片 (helpx 或 KT 教學課程其中之一) 的連結 |
-| mini-toc-levels | 決定右邊欄中顯示的標頭層級數。預設為 2 |
+| tutorials-url | 連結至影片教學課程，包含 HelpX 教學課程，或是 KT 教學課程 |
+| mini-toc-levels | 決定右側邊欄中顯示的標題層級數量。 預設值為 2 |
 | git-repo | https://github.com/AdobeDocs/places.zh-Hant |
-| 索引 | set index=no for soft launch |
+| 索引 | 設定index=no以執行軟啟動 |
 
 在 TOC.md 檔案中
 
-| 中繼資料 | 作用 |
+| 中繼資料 | 功能說明 |
 |--- |--- |
-| user-guide-title | 在文章標題中作為連結使用 |
-| user-guide-url | 開啟 helpx 中樞頁面 |
+| user-guide-title | 可用來當作文章頁首中的連結 |
+| user-guide-url | 開啟 helpx 說明中心頁面 |

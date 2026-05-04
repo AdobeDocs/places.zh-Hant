@@ -1,17 +1,28 @@
 ---
 title: 搭配Adobe Campaign Standard使用Places Service
-description: 本節概述如何搭配Campaign Standard使用Places Service。
+description: 本節概述如何將Places Service與Campaign Standard搭配使用。
 exl-id: e2906ad3-5c78-417b-bc9a-4dd259bbafe9
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+TQID: https://experienceleague.adobe.com/Z6RwbMh-9u5jhGy-6ljjsxt4-P3P14urkMPTo8KjlD4
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+subfeature_v2:
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
-source-wordcount: '53'
+source-wordcount: 54
 ht-degree: 0%
 
 ---
 
 # 搭配Adobe Campaign Standard使用Places Service {#location-service-acs}
 
-當您使用Places Service搭配Campaign Standard時，可以使用以下訊息型別：
+搭配Campaign Standard使用Places Service時，您可以使用下列訊息型別：
 
 * [使用Places服務的推播通知](/help/use-places-with-other-solutions/places-acs/places-acs-push-notifications.md)
 * [使用Places服務的應用程式內傳訊](/help/use-places-with-other-solutions/places-acs/places-acs-in-app-messages.md)
