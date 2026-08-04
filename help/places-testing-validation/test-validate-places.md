@@ -3,10 +3,29 @@ title: 測試及驗證Places服務
 description: 本節提供如何測試及驗證Places服務的相關資訊。
 exl-id: 8dad6619-566b-4aea-b29c-a89192a66441
 TQID: https://experienceleague.adobe.com/nO4tOQW9rp3zjkHT6aJ5IcXHcD9heOaRAJiEchiz1Fk
-product_v2: id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1id: dfc56824-e8b9-499e-85d4-21aedb507314id: e43347a8-f2c5-4aa4-8623-6f13875d7e3aid: e55547f1-a1ff-40c6-8978-026e40ab7fa4id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
-feature_v2: id: c93393a4-e558-47e1-992e-c91ed4d480ceid: d5ef99fa-df0c-4153-bf94-105ad0724167id: daec7ead-f475-492a-a3b3-02ae08565d6fid: e08599ea-8888-4294-ba74-3ba0a7762a46id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7id: ed0d8d0e-04b9-4326-be72-a0fbca265377id: f7c7de77-382f-4f48-8b36-61a170f06d3did: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+  - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+  - id: dfc56824-e8b9-499e-85d4-21aedb507314
+  - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+feature_v2:
+  - id: c93393a4-e558-47e1-992e-c91ed4d480ce
+  - id: d5ef99fa-df0c-4153-bf94-105ad0724167
+  - id: daec7ead-f475-492a-a3b3-02ae08565d6f
+  - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+  - id: eb9732ab-8232-4b21-bc4c-89de86dbe4d7
+  - id: ed0d8d0e-04b9-4326-be72-a0fbca265377
+  - id: f7c7de77-382f-4f48-8b36-61a170f06d3d
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c3bf7e1e-1db5-4c72-9293-e2f0b1ab73d0
+  - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
 workflow-type: tm+mt
 source-wordcount: 1748
@@ -48,7 +67,7 @@ ht-degree: 2%
 |  | **正在使用Places服務測試Adobe Campaign Standard應用程式內傳訊。** |  |
 | 12 | 在主要Campaign控制面板上，設定新的應用程式內訊息（型別=廣播） |  |
 | 12安培 | 在觸發器中，選取&#x200B;**Places事件型別 — 專案作為觸發器**。 |  |
-| 12b | 選取&#x200B;**[!UICONTROL Places自訂中繼資料]**&#x200B;作為額外篩選器 — 使用POI型別= Last Entered POI。<br>我們使用&#x200B;**[!UICONTROL Last Entered]**&#x200B;作為POI型別，因為在大部分情況下，**[!UICONTROL Last Entered]**&#x200B;將與&#x200B;**[!UICONTROL 目前的POI]**&#x200B;相同。 <br><br>**[!UICONTROL 目前的POI ]**只應在有重疊POI地理圍欄的執行個體中使用。 在此情況下，這些POI需要排名，然後**[!UICONTROL &#x200B;目前的POI ]**將顯示使用者目前可能位於的2或3個地理圍欄中的排名最前的POI。 |  |
+| 12b | 選取&#x200B;**[!UICONTROL Places自訂中繼資料]**&#x200B;作為額外篩選器 — 使用POI型別= Last Entered POI。<br>我們使用&#x200B;**[!UICONTROL Last Entered]**&#x200B;作為POI型別，因為在大部分情況下，**[!UICONTROL Last Entered]**&#x200B;將與&#x200B;**[!UICONTROL 目前的POI]**&#x200B;相同。 <br><br>**[!UICONTROL 目前的POI &#x200B;]**&#x200B;只應在有重疊POI地理圍欄的執行個體中使用。 在此情況下，這些POI需要排名，然後&#x200B;**[!UICONTROL &#x200B;目前的POI &#x200B;]**&#x200B;將顯示使用者目前可能位於的2或3個地理圍欄中的排名最前的POI。 |  |
 | 12c | 選取自訂中繼資料索引鍵，協助您縮小將接收訊息的POI範圍。 |  |
 | 12天 | 針對頻率和持續時間，請僅保留一或兩天，這樣如果您不喜歡該條件，則可以在較短的時間內讓觸發程式過期。 |  |
 | 12世紀 | 若為「一直/一次」或「直到點進」，請選取「*一直*」，以便您可以跨多個位置進行測試。 | 當您模擬符合適當中繼資料條件的位置變更時，「一律顯示」應用程式內訊息。 |
