@@ -2,7 +2,7 @@
 title: 使用您自己的監視器
 description: 您也可以使用監控服務，並使用Places Service擴充功能API與Places Service整合。
 exl-id: 8ca4d19b-0f23-4291-b335-af47f03179fa
-source-git-commit: 'null'
+source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 1%
