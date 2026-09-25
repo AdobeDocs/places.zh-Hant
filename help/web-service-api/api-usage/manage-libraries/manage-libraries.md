@@ -6,9 +6,7 @@ source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 5%
-
 ---
-
 # 管理程式庫概觀 {#manage-libraries}
 
 您可以使用Places Service REST API完成下列工作：
