@@ -4,11 +4,9 @@ description: 使用Places服務UI建立POI。
 exl-id: 16df61e3-5a18-4de4-a284-a5d394dc73af
 source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '287'
 ht-degree: 0%
-
 ---
-
 # 建立POI {#create-a-poi}
 
 興趣點(POI)是地圖上對您的組織或公司非常重要的位置或地標。 其中可能包括咖啡館、餐廳、零售場所、體育場等位置。 公司可以定義地標，協助個人化使用者在進入特定地標的地理圍欄區域時的行動體驗。 除了個人化體驗，公司可能也會建立地標，協助他們分析及更瞭解位置流量模式。 大型零售連鎖店可能會選擇為其所有店舖位置建立POI，以針對擁有行動應用程式的使用者取得分析並造訪店舖位置。
