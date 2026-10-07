@@ -3,13 +3,17 @@ title: Places API參考
 description: Places中API參考的相關資訊。
 feature: Mobile SDK
 exl-id: ce1a113c-dee0-49df-8d2f-789ccc1c8322
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '589'
 ht-degree: 32%
-
 ---
-
 # Places API參考 {#places-api-reference}
 
 以下是Places擴充功能中API參考的相關資訊：
@@ -34,7 +38,7 @@ public static void processGeofence(final Geofence geofence, final int transition
 
 **範例**
 
-在您的`IntentService`中呼叫此方法(已註冊接收Android地理圍欄事件)。
+在您的`IntentService`中呼叫此方法（已註冊接收Android地理圍欄事件）。
 
 此方法的程式碼範例如下：
 
@@ -97,7 +101,7 @@ public static void processGeofenceEvent(final GeofencingEvent geofencingEvent);
 
 **範例**
 
-在您的`IntentService`中呼叫此方法(已註冊接收Android地理圍欄事件)
+在您的`IntentService`中呼叫此方法（已註冊接收Android地理圍欄事件）
 
 ```java
 public class GeofenceTransitionsIntentService extends IntentService {
