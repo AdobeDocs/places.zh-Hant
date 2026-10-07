@@ -4,11 +4,9 @@ description: 有關建立Adobe Developer API專案的資訊。
 exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
 source-git-commit: 3d477c6133b74a7e6380d0db1af5125aaa844035
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # Places API存取總覽和先決條件 {#developer-prereqs}
 
 此資訊會說明如何在Adobe Developer Console中建立專案，並產生用於Places API要求的存取權杖。
@@ -20,7 +18,7 @@ ht-degree: 0%
 * 您已被新增到組織。
 * 您已被新增到Adobe Experience Platform中的設定檔。
 
-  如需詳細資訊，請參閱[取得Places服務的存取權](/help/places-gain-access.md)中的&#x200B;*新增使用者或開發人員至您的Places服務並Experience Platform Launch設定檔*。
+  如需詳細資訊，請參閱[取得Places服務的存取權](/help/places-gain-access.md)中的&#x200B;*新增使用者或開發人員至您的Places服務和Experience Platform Launch設定檔*。
 
 ### REST API要求
 
@@ -47,13 +45,13 @@ ht-degree: 0%
 2. 按一下頁面右上角的&#x200B;**[!UICONTROL 主控台]**。
 3. 如果您指派至多個Adobe組織，請從頁面右上角的下拉式清單中選取正確的組織。
 4. 按一下&#x200B;**[!UICONTROL 建立新專案]**&#x200B;按鈕。
-5. 按一下[開始使用新專案]區段中的[新增API] **&#x200B;**&#x200B;按鈕。
+5. 按一下[開始使用新專案]區段中的[新增API] ****&#x200B;按鈕。
 6. 若要選取Places API，請向下捲動頁面至Places卡片，然後按一下卡片右上角的核取方塊。
 7. 按一下&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕。
 8. 選取OAuth伺服器對伺服器選項（如果有選擇）。
 9. 為認證命名，然後按一下&#x200B;**[!UICONTROL 下一步]**。
 10. 選取設定檔（如果有多個設定檔，則任何設定檔都應該有效）。
-11. 按一下[儲存並設定API]&#x200B;**&#x200B;**。
+11. 按一下[儲存並設定API]****。
 12. 在左側面板中，按一下「認證」底下的&#x200B;**[!UICONTROL OAuth伺服器對伺服器]**&#x200B;連結
 13. 此頁面提供下列內容：
     * 產生存取權杖以用於Places服務REST API要求的方法。
