@@ -4,11 +4,9 @@ description: 有關建立Adobe Developer API專案的資訊。
 exl-id: d7d31938-6c0e-40f8-a9d3-30af96043119
 source-git-commit: 3d477c6133b74a7e6380d0db1af5125aaa844035
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 1%
 ---
-
 # Places API存取總覽和先決條件 {#developer-prereqs}
 
 此資訊會說明如何在Adobe Developer Console中建立專案，並產生用於Places API要求的存取權杖。
@@ -20,7 +18,7 @@ ht-degree: 0%
 * 您已被新增到組織。
 * 您已被新增到Adobe Experience Platform中的設定檔。
 
-  如需詳細資訊，請參閱[取得Places服務的存取權](/help/places-gain-access.md)中的&#x200B;*新增使用者或開發人員至您的Places服務並Experience Platform Launch設定檔*。
+  如需詳細資訊，請參閱[取得Places服務的存取權](/help/places-gain-access.md)中的&#x200B;*新增使用者或開發人員至您的Places服務和Experience Platform Launch設定檔*。
 
 ### REST API要求
 

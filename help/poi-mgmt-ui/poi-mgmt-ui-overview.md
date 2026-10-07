@@ -6,9 +6,7 @@ source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 0%
-
 ---
-
 # Places Service UI總覽 {#management-ui-overview}
 
 POI和程式庫是使用Places服務UI在Places服務資料庫中建立和管理的。
