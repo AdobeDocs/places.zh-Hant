@@ -2,13 +2,14 @@
 title: 讀取資料庫中的所有POI
 description: 使用Places REST API讀取資料庫中的所有POI。
 exl-id: 08544909-661c-4a14-84e0-bacd0241a844
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '54'
 ht-degree: 3%
-
 ---
-
 # 讀取資料庫中的所有POI {#read-all-pois-library}
 
 傳回程式庫中所有POI的GET方法。

@@ -2,16 +2,17 @@
 title: 在程式庫上設定排名
 description: 使用Places REST API在程式庫上設定排名。
 exl-id: c922bddc-1587-4da8-acb4-c2d69ce11808
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 3%
-
 ---
-
 # 在程式庫上設定排名 {#set-rank-on-libraries}
 
-一種PUT方法，可讓您設定所有程式庫的排名順序。
+PUT方法可讓您在所有程式庫上設定排名順序。
 
 ## 請求
 

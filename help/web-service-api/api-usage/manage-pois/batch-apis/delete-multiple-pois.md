@@ -2,16 +2,17 @@
 title: 刪除多個POI
 description: 使用批次API來刪除多個POI。
 exl-id: f170b722-e6f4-42a2-b3a6-1bf56965eb17
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '56'
 ht-degree: 5%
-
 ---
-
 # 刪除多個POI {#delete-multiple-pois}
 
-可讓您刪除多個POI的POST方法。
+一種POST方法，可讓您刪除多個POI。
 
 ## 請求
 

@@ -5,23 +5,29 @@ exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
 TQID: https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 1026
+source-wordcount: '1026'
 ht-degree: 1%
-
 ---
-
 # 使用Places服務的推播通知 {#push-notifications}
 
 在本節中，您將瞭解如何使用歷史地理位置資訊來將透過Adobe Campaign Standard傳送的推播通知設為目標。
@@ -61,7 +67,7 @@ ht-degree: 1%
 
 ## 建立規則以將位置資料傳送至Adobe Campaign Standard
 
-Experience Platform Launch中的規則可讓您根據事件觸發器建立複雜的多解決方案工作流程。 透過規則，您可以建立新規則或修改現有規則，並將更新動態部署至您的行動應用程式。 在下列範例中，當使用者進入地理圍欄式POI時，就會觸發規則。 觸發規則後，系統會將更新傳送至Campaign Standard，以根據Experience Cloud ID記錄特定使用者之特定POI的專案。
+Experience Platform Launch中的規則可讓您根據事件觸發器建立複雜的多解決方案工作流程。 透過規則，您可以建立新規則或修改現有規則，並將更新動態部署至您的行動應用程式。 在下列範例中，當使用者進入地理圍欄式POI時，就會觸發規則。 觸發規則後，系統會將更新傳送至Campaign Standard，以根據Experience Cloud ID為特定使用者記錄特定POI的專案。
 
 1. 在您的Experience Platform Launch行動屬性中，按一下&#x200B;**[!UICONTROL 規則]**&#x200B;標籤上的&#x200B;**[!UICONTROL 新增規則]**。
 1. 在&#x200B;**[!UICONTROL Events]**&#x200B;區段下，按一下&#x200B;**[!UICONTROL +]**&#x200B;並選取&#x200B;**[!UICONTROL Places Service]**&#x200B;做為延伸。
@@ -77,7 +83,7 @@ Experience Platform Launch中的規則可讓您根據事件觸發器建立複雜
 1. 在&#x200B;**[!UICONTROL URL]**&#x200B;中，您需要建構您的Campaign Standard位置端點。
 
    URL應類似於`https:///rest/head/mobileAppV5//locations/`。
-確保您使用先前為Campaign伺服器和pKey建立的正確資料元素。
+   確保您使用先前為Campaign伺服器和pKey建立的正確資料元素。
 
 1. 按一下方塊以新增貼文本文並傳送下列內容：
 

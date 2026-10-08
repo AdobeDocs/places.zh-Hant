@@ -2,13 +2,14 @@
 title: 標題和引數
 description: Places服務REST API中可用的標題和引數。
 exl-id: 3c7e76de-f0ff-4966-a3ec-7f64d819c140
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 19%
-
 ---
-
 # 標題和引數 {#headers-and-parameters}
 
 以下是Places Service REST API中可用標頭和引數的詳細資訊：
@@ -20,7 +21,7 @@ ht-degree: 19%
 | `Authorization` | 您的持有人權杖 | 全部 |  |
 | `x-api-key` | 您的API金鑰 | 全部 | `19776964b4cde49e08d8f62e5824f777b` |
 | `x-gw-ims-org-id` | 您的組織ID | 全部 | `18FB61145BAC2FFB0A494777@AdobeOrg` |
-| `Content-Type` | 傳送或接收的內容格式 | PUT，POST | `application/json` |
+| `Content-Type` | 傳送或接收的內容格式 | PUT、POST | `application/json` |
 | `Accept-Language` | 用於錯誤訊息的語言 | 選填 | `en-US` |
 
 ## 程式庫引數

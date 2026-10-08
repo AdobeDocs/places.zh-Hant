@@ -5,25 +5,30 @@ exl-id: 2fb999b4-854a-430f-bb89-4c786d1a89cc
 TQID: https://experienceleague.adobe.com/PP7P3aOL3EKSEPJWedHtfyHRzbCueMtNS-J7Ao4mawo
 product_v2:
   - id: cb954087-f4fc-4456-afb9-e939cabcdc79
+    internal-label: Journey Optimizer
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+    internal-label: Adobe Sign
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 434
+source-wordcount: '434'
 ht-degree: 14%
-
 ---
-
 # 管理程式庫 {#manage-libraries-places-ui}
 
-資料庫是POI的集合。 資料庫中最多可以有150,000個POI，而每個Experience Cloud組織最多可以有100個資料庫。
+資料庫是POI的集合。 一個資料庫中最多可以有150,000個POI，而每個Experience Cloud組織最多可以有100個資料庫。
 
 根據對組織最有用的內容，有多種方式可將POI整理到資料庫中。 有些客戶可能偏好為每個行動應用程式建立個別的資料庫，有些客戶則可能會使用資料庫將特定型別的POI分組，例如咖啡館、公園、飯店等。 例如，一家大型娛樂公司可能有一個圖書館，其中包含一家圖書館內的戶外場所，以及另一家圖書館內的零售店。 一個市政府可能有一個包含市內所有建築的圖書館，另一個包含市內所有公園的圖書館。
 

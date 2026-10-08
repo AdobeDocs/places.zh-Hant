@@ -2,13 +2,14 @@
 title: 刪除POI
 description: 使用Places REST API刪除POI。
 exl-id: 0325eb3b-f9b2-4b21-bed8-e318e8072a69
-source-git-commit: 4ab15ded930b31e4e06920af31f37fdfe45df8eb
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 4%
-
 ---
-
 # 刪除POI {#delete-a-poi}
 
 可讓您刪除POI的DELETE方法。

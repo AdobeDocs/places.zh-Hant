@@ -3,7 +3,13 @@ title: Places 擴充功能
 description: Places擴充功能可讓您根據使用者的位置採取行動。
 feature: Mobile SDK
 exl-id: 09c02753-09b3-4e07-82b2-b6c72c4e0e42
-source-git-commit: 9f2c6fee6e0d6d075b662cc0b6cbee49cf05ee55
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '38'
 ht-degree: 10%

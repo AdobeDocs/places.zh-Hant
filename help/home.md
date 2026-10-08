@@ -5,24 +5,31 @@ exl-id: 7369176f-c072-437a-9ee3-b463c5ff1d12
 TQID: https://experienceleague.adobe.com/4kI1AuV2l-qfC3mOrcsoG9NDRcOPJBdkWPmKkQuDIJk
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+    internal-label: Adobe Sign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 684
+source-wordcount: '684'
 ht-degree: 9%
-
 ---
-
 # Places Service {#home}
 
 位置是瞭解及與行動使用者互動的重要內容。 透過使用此內容，行動應用程式開發人員可以增強應用程式設計，使其成為更個人化且吸引人的體驗。

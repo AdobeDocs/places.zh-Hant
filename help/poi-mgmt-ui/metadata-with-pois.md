@@ -5,24 +5,31 @@ exl-id: e669e560-a999-43ff-aeb4-06e6308b0d5c
 TQID: https://experienceleague.adobe.com/wTzahAs7MMSv0q-cEhkNObBpALUJXqDXlOcqjitezwY
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 296
+source-wordcount: '296'
 ht-degree: 0%
-
 ---
-
 # 搭配POI使用中繼資料的策略 {#using-metadata-pois}
 
 在Places Service中，當您建立新的POI時，只需要名稱、半徑、緯度和經度元素。 如需建立POI的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)。 但是，如果您只輸入最小資訊，則會錯過建立額外值的機會。

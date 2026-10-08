@@ -5,22 +5,27 @@ exl-id: a4cf28ae-1e3c-4724-bca3-ac1d0cd6da09
 TQID: https://experienceleague.adobe.com/2VnBQ5-flpx5cyeK3n5b3AOKqnt7RVkdqFBXYa9O5Ys
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dc5cf79d-43c4-4731-bffa-1df5d7549cb1
+    internal-label: Adobe Sign
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 408
+source-wordcount: '408'
 ht-degree: 6%
-
 ---
-
 # 管理現有POI {#managing-existing-pois}
 
 POI和程式庫是使用Places UI在Places資料庫中建立和管理的。
@@ -85,4 +90,4 @@ POI和程式庫是使用Places UI在Places資料庫中建立和管理的。
 | 國家/地區 | POI的國家/地區。 | 無 |
 | 緯度 | POI中心的緯度座標。 | 是 |
 | 經度 | POI中心的經度座標。 | 是 |
-| 中繼資料 | 可指派給POI的自訂索引鍵和值配對。 此中繼資料可讓您跨資料庫將POI分組，以供每個在下游工作流程中使用規則和篩選器，例如當有人使用「型別=競爭者」輸入POI時傳送推播通知，藉此簡化未來的工作流程。 | 無 |
+| 中繼資料 | 可指派給POI的自訂索引鍵和值配對。 此中繼資料可讓您跨資料庫將POI分組，以供每個在下游工作流程中使用規則和篩選器，例如當有人使用「型別=競爭者」輸入POI時傳送推播通知，藉此簡化未來的工作流程。 | 否 |
