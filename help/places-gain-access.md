@@ -5,26 +5,35 @@ exl-id: f388945e-cf26-4694-9697-9fe564ae4b69
 TQID: https://experienceleague.adobe.com/EYg1wjQJZeHqX7vPnJ1VUZzojqG6ANjS8-VBXV3y51c
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f7bdf6be-dd3b-4d2d-ac52-0e62ed0d3102
+    internal-label: Admin Console
 feature_v2:
   - id: c132d929-fa62-4271-803e-b823be07b914
+    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: b64298cc-90cc-46b7-8917-ee391f1c7516
+    internal-label: Data collection UI
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
   - id: f5efb499-54f9-432b-ac5c-599dbac103af
+    internal-label: Data management
   - id: f6ff4d13-7b5c-4533-8556-95e76673d4cb
+    internal-label: Properties
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
+    internal-label: Data collection
   - id: ebde5b41-29c9-4f5e-9ef6-1197e85409e3
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data management
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 919
+source-wordcount: '919'
 ht-degree: 1%
-
 ---
-
 # 取得Places Service的存取權 {#adding-user-launch-places}
 
 Places服務現在可在資料收集UI中使用。 您可以從[Adobe Experience Cloud首頁](https://experience.adobe.com)上的快速存取功能表存取資料集合。
@@ -46,12 +55,12 @@ Places服務現在可在資料收集UI中使用。 您可以從[Adobe Experience
 Places現已納入Adobe Experience Platform。 若要允許使用者存取[Places服務](https://experience.adobe.com/#/data-collection/places)，需要以使用者的身分將其新增至Admin Console中的Adobe Experience Platform。 若要讓使用者能存取Experience Platform資料彙集，並取得設定行動屬性及透過Adobe Experience Platform SDK使用地標所需的許可權，他們還需要新增至Admin Console中的Adobe Experience Platform資料彙集，並獲得Adobe Experience Platform資料彙集的下列許可權：
 
 * 「屬性權利」底下的所有許可權：
-   * 核准
-   * 開發
-   * 編輯屬性
-   * 管理環境
-   * 管理擴充功能
-   * 發佈
+  * 核准
+  * 開發
+  * 編輯屬性
+  * 管理環境
+  * 管理擴充功能
+  * 發佈
 * 「公司權利」下的「管理屬性」許可權
 
 如果您是第一次新增使用者，請完成下列步驟，將使用者新增至Adobe Experience Platform資料收集和Adobe Experience Platform。 如果您之前已新增使用者，可能會顯示多個設定檔，因此請確定您選取正確的設定檔。
@@ -63,7 +72,7 @@ Places現已納入Adobe Experience Platform。 若要允許使用者存取[Place
 ### &#x200B;1. 確認已布建Adobe Experience Platform和Adobe Experience Platform資料收集
 
 1. 登入您的Experience Cloud組織[Adobe Experience Cloud首頁](https://experience.adobe.com)。
-1. 在右上角，按一下Experience Cloud殼層切換器以顯示下拉式功能表。
+1. 按一下右上角的Experience Cloud殼層切換器，顯示下拉式功能表。
 
    ![殼層切換器](/help/assets/places_shell_switcher1.png)
 

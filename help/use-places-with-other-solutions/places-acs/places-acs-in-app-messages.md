@@ -5,25 +5,33 @@ exl-id: c80727b8-20c9-4ca0-9f2c-20ec646bb7fa
 TQID: https://experienceleague.adobe.com/H2gW4nvnx8Es33S8nCt52OIUsNOY5SG1SZVJPw0BFFg
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: dfc56824-e8b9-499e-85d4-21aedb507314
+    internal-label: Campaign
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 feature_v2:
   - id: d833d0ef-8ed5-4cff-a5e7-9f12abd02a31
+    internal-label: SDKs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 415
+source-wordcount: '415'
 ht-degree: 0%
-
 ---
-
 # 使用Places服務的應用程式內傳訊 {#in-app-messages-loc-service}
 
 此資訊可協助您瞭解如何使用Places服務資訊來傳送應用程式內訊息或本機通知。
@@ -45,7 +53,7 @@ ht-degree: 0%
 
 1. 在您的Adobe Campaign Standard執行個體中，按一下&#x200B;**[!UICONTROL 建立應用程式內訊息]**。
 1. 針對訊息型別，選取&#x200B;**[!UICONTROL 將行動應用程式的所有使用者設為目標]**。
-1. 按一下「下一步」**&#x200B;**&#x200B;並輸入一般詳細資料。
+1. 按一下「下一步」****&#x200B;並輸入一般詳細資料。
 1. 在左窗格中，確認您可以使用與Places服務相關的各種觸發器。
 
    * 如果使用者已輸入POI地理範圍，您可以選擇顯示應用程式內訊息。

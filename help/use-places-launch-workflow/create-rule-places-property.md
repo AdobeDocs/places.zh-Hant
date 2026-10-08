@@ -5,23 +5,29 @@ exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
 TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+    internal-label: Analytics
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
   - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
+    internal-label: Data elements
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 939
+source-wordcount: '939'
 ht-degree: 12%
-
 ---
-
 # 建立登入與退出規則 {#create-entry-exit-rules}
 
 行動應用程式中已安裝Places擴充功能和區域監控解決方案，您可以在Adobe Experience Platform Launch中建立規則，這些規則會觸發或限制位置資料，包括位置登入和退出事件。
@@ -67,7 +73,7 @@ Places SDK會維護下列狀態：
 
 >[!CAUTION]
 >
->此範例假設您已建立美國所有咖啡店的 POI 資料庫。 如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hant)中建立資料庫*。
+>此範例假設您已建立美國所有咖啡店的 POI 資料庫。 如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中建立資料庫*。
 
 下列程式範例說明如何建立規則，讓您在舊金山進入咖啡廳時，將貼文傳回Slack。
 
@@ -97,7 +103,7 @@ Places SDK會維護下列狀態：
 
 1. 在 Experience 平台 Launch 中，按一下 **[!UICONTROL 「規則」]**&#x200B;標籤。
 1. 按一下&#x200B;**[!UICONTROL 新增規則]**。
-1. 輸入規則的名稱，例如，在SF **中追蹤咖啡店的專案**。
+1. 輸入規則的名稱，例如，在SF ]**中追蹤咖啡店的專案**[!UICONTROL 。
 
 ### 建立事件
 
@@ -137,7 +143,7 @@ Places SDK會維護下列狀態：
 
 ### 發佈規則
 
-1. 若要啟用規則，您必須將其發佈。 如需在Experience Platform Launch中發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant)。
+1. 若要啟用規則，您必須將其發佈。 如需在Experience Platform Launch中發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 ### 超越登入與退出的思考
 

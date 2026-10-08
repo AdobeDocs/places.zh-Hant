@@ -1,7 +1,10 @@
 ---
 title: Places Service概觀
 description: 本節提供建立及使用地標(POI)的相關資訊。
-source-git-commit: c22efc36f2eac6b20fc555d998c3988d8c31169e
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%

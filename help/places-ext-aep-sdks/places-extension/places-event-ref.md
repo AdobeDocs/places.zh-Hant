@@ -3,13 +3,17 @@ title: Places事件參考
 description: Places擴充功能處理的事件清單。
 feature: Mobile SDK
 exl-id: 98210ef4-5ff1-4792-b97b-2845ce02e78a
-source-git-commit: f521d5e3b0b69977877d88382ce41fcb7d1c54b9
+product_v2:
+  - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
+feature_v2:
+  - id: a8a79b8d-fdca-499c-a5ef-f88a099d8eb9
+    internal-label: Mobile SDK
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 13%
-
+ht-degree: 17%
 ---
-
 # Places事件參考 {#places-event-reference}
 
 以下為Places擴充功能處理的事件清單。
@@ -46,10 +50,10 @@ ht-degree: 13%
 
 | 索引鍵 | 值型別 | 必要 | 預設值 | 說明 |
 | :--- | :--- | :--- | :--- | :--- |
-| latitude | 雙精度浮點數 | true | 不適用 | 儲存搜尋附近POI的中央緯度值。 |
-| 經度 | 雙精度浮點數 | true | 不適用 | 儲存附近POI搜尋中心的經度值。 |
-| 半徑 | 整數 | false | 不適用 | 搜尋附近POI所使用的半徑（公尺）。 |
-| 計數 | 整數 | false | 10 | 在產生的回應事件中傳回的POI數量上限。 |
+| latitude | 雙精度浮點數 | 真 | 不適用 | 儲存搜尋附近POI的中央緯度值。 |
+| 經度 | 雙精度浮點數 | 真 | 不適用 | 儲存附近POI搜尋中心的經度值。 |
+| 半徑 | 整數 | 假 | 不適用 | 搜尋附近POI所使用的半徑（公尺）。 |
+| 計數 | 整數 | 假 | 10 | 在產生的回應事件中傳回的POI數量上限。 |
 
 ## ProcessRegionEvent
 
@@ -67,8 +71,8 @@ ht-degree: 13%
 
 | 索引鍵 | 值型別 | 必要 | 說明 |
 | :--- | :--- | :--- | :--- |
-| regionid | 字串 | true | 產生事件的地區識別碼。 |
-| regioneventtype | int | true | 正在產生的區域事件型別。 1代表登入，2代表退出。 |
+| regionid | 字串 | 真 | 產生事件的地區識別碼。 |
+| regioneventtype | int | 真 | 正在產生的區域事件型別。 1代表登入，2代表退出。 |
 
 ## Places擴充功能傳送的事件
 

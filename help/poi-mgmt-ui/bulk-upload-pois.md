@@ -5,24 +5,31 @@ exl-id: 72704bfc-5837-4439-bdb2-e77ddf935639
 TQID: https://experienceleague.adobe.com/FVZzn3FwSAFgnRBjkiFwHG8Zl2I-I4fPrqax-zGNclk
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
+    internal-label: CX Enterprise
   - id: e43347a8-f2c5-4aa4-8623-6f13875d7e3a
+    internal-label: Target
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
+    internal-label: Experience Platform
   - id: f002a92a-b99f-47a4-90c8-65e0e415bc7a
+    internal-label: Pass
 feature_v2:
   - id: bef6f891-2e8a-425e-8f99-7ddf22070daa
+    internal-label: APIs
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
+    internal-label: Data collection
 subfeature_v2:
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
+    internal-label: Places
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: f962cef761f006c8e7d45b76ba24746e36bdaba6
+    internal-label: Data collection
+source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
 workflow-type: tm+mt
-source-wordcount: 854
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
 # 大量上傳POI {#bulk-upload-pois}
 
 Places服務中的&#x200B;**匯入POI**&#x200B;按鈕可用來使用CSV檔案大量上傳新的POI。 範例試算表範本可供您顯示需要哪些資料欄，以及如何新增選用的自訂中繼資料。
@@ -78,20 +85,20 @@ Places服務中的&#x200B;**匯入POI**&#x200B;按鈕可用來使用CSV檔案大
 Places服務UI會使用下列各欄的值：
 
 * 顏色，用來作為圖釘的顏色，代表Places服務UI地圖中POI的位置。
-   * 有效值為「」、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56B和#3DC8DE以及「」。
-   * 如果值保留為空白，Places服務UI會使用藍色作為預設顏色。
+  * 有效值為「」、#3E76D0、#AA99E8、#DC2ABA、#FC685B、#FC962E、#F6C436、#BECE5D、#61B56B和#3DC8DE以及「」。
+  * 如果值保留為空白，Places服務UI會使用藍色作為預設顏色。
 
-     值分別對應至藍色(#3E76D0)、紫色(#AA99E8)、fuschia (#DC2ABA)、橘色(#FC685B)、淺橙色(#FC962E)、黃色(#F6C436)、淺綠色(#BECE5D)、綠色(#61B56B)和淺藍色(#3DC8DE)。
+    值分別對應至藍色(#3E76D0)、紫色(#AA99E8)、fuschia (#DC2ABA)、橘色(#FC685B)、淺橙色(#FC962E)、黃色(#F6C436)、淺綠色(#BECE5D)、綠色(#61B56B)和淺藍色(#3DC8DE)。
 
 * 圖示，用來當作圖釘上的圖示，代表Places服務UI地圖上POI的位置。
 
-   * 有效值包括「」、商店、旅館、汽車、飛機、火車、船、體育場、遊樂園、錨點、燒杯、鈴、出價、書、盒子、公事包、瀏覽、筆刷、建築物、電腦、相機、時鐘、教育、手電筒、追蹤、遊戲、女性、男性、禮物、錘子、心、家、鑰匙、啟動、燈泡、信箱、錢、圖釘、促銷、綵帶、購物車、星星、目標、茶壺、thumbDown、thumbUp、陷阱、獎盃、扳手。
+  * 有效值包括「」、商店、旅館、汽車、飛機、火車、船、體育場、遊樂園、錨點、燒杯、鈴、出價、書、盒子、公事包、瀏覽、筆刷、建築物、電腦、相機、時鐘、教育、手電筒、追蹤、遊戲、女性、男性、禮物、錘子、心、家、鑰匙、啟動、燈泡、信箱、錢、圖釘、促銷、綵帶、購物車、星星、目標、茶壺、thumbDown、thumbUp、陷阱、獎盃、扳手。
 
-     圖示值會依照其顯示順序如下圖所示：
+    圖示值會依照其顯示順序如下圖所示：
 
-     UI中的![圖示](/help/assets/UI_icons.png)
+    UI中的![圖示](/help/assets/UI_icons.png)
 
-   * 如果值保留為空白，UI會使用星形作為預設圖示。
+  * 如果值保留為空白，UI會使用星形作為預設圖示。
 
 * 未提及的欄可以保留空白。
 
