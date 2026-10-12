@@ -2,7 +2,7 @@
 title: 為您的Places Service屬性建立規則
 description: Places SDK可追蹤目前位置、監控目前位置周圍已設定的POI，以及追蹤這些POI的進入與退出事件。
 exl-id: dd5aa7ac-55f9-44dc-8632-e483ef3b91a0
-TQID: https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ
+TQID: 'https://experienceleague.adobe.com/jyGVmk-oKX6-5vxZBx6Mz-QF8SBYxAWssvAxJ0QLYWQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -12,18 +12,18 @@ product_v2:
     internal-label: Experience Platform
 feature_v2:
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
+subfeature_v2:
   - id: f9a2105e-7a47-4e85-9193-31a519a2cb83
-    internal-label: Data elements
+    internal-label: Data collection tags data elements
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
     internal-label: Metadata
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '939'
 ht-degree: 12%
@@ -73,7 +73,7 @@ Places SDK會維護下列狀態：
 
 >[!CAUTION]
 >
->此範例假設您已建立美國所有咖啡店的 POI 資料庫。 如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html?lang=zh-Hant)中建立資料庫*。
+>此範例假設您已建立美國所有咖啡店的 POI 資料庫。 如需有關建立POI和資料庫的詳細資訊，請參閱[建立POI](/help/poi-mgmt-ui/create-a-poi-ui.md)和&#x200B;*在[管理多個資料庫](https://experienceleague.adobe.com/docs/places/using/poi-mgmt-ui/manage-libraries-in-the-places-ui.html)中建立資料庫*。
 
 下列程式範例說明如何建立規則，讓您在舊金山進入咖啡廳時，將貼文傳回Slack。
 
@@ -103,7 +103,7 @@ Places SDK會維護下列狀態：
 
 1. 在 Experience 平台 Launch 中，按一下 **[!UICONTROL 「規則」]**&#x200B;標籤。
 1. 按一下&#x200B;**[!UICONTROL 新增規則]**。
-1. 輸入規則的名稱，例如，在SF **中追蹤咖啡店的專案**。
+1. 輸入規則的名稱，例如，在SF ]**中追蹤咖啡店的專案**[!UICONTROL 。
 
 ### 建立事件
 
@@ -143,7 +143,7 @@ Places SDK會維護下列狀態：
 
 ### 發佈規則
 
-1. 若要啟用規則，您必須將其發佈。 如需在Experience Platform Launch中發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant)。
+1. 若要啟用規則，您必須將其發佈。 如需在Experience Platform Launch中發佈規則的詳細資訊，請參閱[發佈](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
 
 ### 超越登入與退出的思考
 

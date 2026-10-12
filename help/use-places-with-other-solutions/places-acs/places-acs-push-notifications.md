@@ -2,7 +2,7 @@
 title: 使用Places服務的推播通知
 description: 本節提供如何在Campaign Standard中搭配推播通知使用Places服務的相關資訊。
 exl-id: 4b50f552-deb8-49cd-9221-fbbf33aaa5f9
-TQID: https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ
+TQID: 'https://experienceleague.adobe.com/tjJD7Qn27sp8wnNcNdjnANIveyzjG1PZ--3C3rCjrMQ'
 product_v2:
   - id: d0a3eab4-7b10-4d96-a71e-6c0f8e7b7c87
     internal-label: CX Enterprise
@@ -13,17 +13,14 @@ product_v2:
   - id: edbd1a0e-46c8-49da-8c10-dba9ec80bba9
     internal-label: Experience Platform
 feature_v2:
-  - id: c132d929-fa62-4271-803e-b823be07b914
-    internal-label: Profile
   - id: e08599ea-8888-4294-ba74-3ba0a7762a46
-    internal-label: Data collection
-subfeature_v2:
+    internal-label: Data collection tags
   - id: d2a6cbf4-df32-480f-909e-b42f66dcb9f0
     internal-label: Places
 topic_v2:
   - id: d3cdead0-685a-4489-9250-4bb709942f66
     internal-label: Data collection
-source-git-commit: d8704da9c84a066f72471421290d4b46c65f41e1
+source-git-commit: 1b8be32cf474f0f65c484158870ece14f7c75ecd
 workflow-type: tm+mt
 source-wordcount: '1026'
 ht-degree: 1%
@@ -115,7 +112,7 @@ Experience Platform Launch中的規則可讓您根據事件觸發器建立複雜
 
 1. 在您的Adobe Campaign Standard執行個體中，按一下&#x200B;**[!UICONTROL 建立推播通知]**。
 1. 對於推播通知型別，請選取&#x200B;**[!UICONTROL 傳送推播至促銷活動設定檔]**。
-1. 按一下「下一步」**&#x200B;**&#x200B;並輸入一般詳細資料。
+1. 按一下「下一步」****&#x200B;並輸入一般詳細資料。
 1. 在「對象」畫面上，按一下&#x200B;**[!UICONTROL 計數]**&#x200B;以決定將會傳送推播通知的估計使用者數目。
 
    >[!TIP]
