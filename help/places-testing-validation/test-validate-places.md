@@ -84,7 +84,7 @@ ht-degree: 2%
 |  | **正在使用Places服務測試Adobe Campaign Standard應用程式內傳訊。** |  |
 | 12 | 在主要Campaign控制面板上，設定新的應用程式內訊息（型別=廣播） |  |
 | 12安培 | 在觸發器中，選取&#x200B;**Places事件型別 — 專案作為觸發器**。 |  |
-| 12b | 選取&#x200B;**[!UICONTROL Places自訂中繼資料]**&#x200B;作為額外篩選器 — 使用POI型別= Last Entered POI。<br>我們使用&#x200B;**[!UICONTROL Last Entered]**&#x200B;作為POI型別，因為在大部分情況下，**[!UICONTROL Last Entered]**&#x200B;將與&#x200B;**[!UICONTROL 目前的POI]**&#x200B;相同。 <br><br>**[!UICONTROL 目前的POI ]**只應在有重疊POI地理圍欄的執行個體中使用。 在此情況下，這些POI需要排名，然後**[!UICONTROL &#x200B;目前的POI ]**將顯示使用者目前可能位於的2或3個地理圍欄中的排名最前的POI。 |  |
+| 12b | 選取&#x200B;**[!UICONTROL Places自訂中繼資料]**&#x200B;作為額外篩選器 — 使用POI型別= Last Entered POI。<br>我們使用&#x200B;**[!UICONTROL Last Entered]**&#x200B;作為POI型別，因為在大部分情況下，**[!UICONTROL Last Entered]**&#x200B;將與&#x200B;**[!UICONTROL 目前的POI]**&#x200B;相同。 <br><br>**[!UICONTROL 目前的POI &#x200B;]**&#x200B;只應在有重疊POI地理圍欄的執行個體中使用。 在此情況下，這些POI需要排名，然後&#x200B;**[!UICONTROL &#x200B;目前的POI &#x200B;]**&#x200B;將顯示使用者目前可能位於的2或3個地理圍欄中的排名最前的POI。 |  |
 | 12c | 選取自訂中繼資料索引鍵，協助您縮小將接收訊息的POI範圍。 |  |
 | 12天 | 針對頻率和持續時間，請僅保留一或兩天，這樣如果您不喜歡該條件，則可以在較短的時間內讓觸發程式過期。 |  |
 | 12世紀 | 若為「一直/一次」或「直到點進」，請選取「*一直*」，以便您可以跨多個位置進行測試。 | 當您模擬符合適當中繼資料條件的位置變更時，「一律顯示」應用程式內訊息。 |
